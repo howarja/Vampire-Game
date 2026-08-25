@@ -8,10 +8,10 @@ func _physics_process(delta: float) -> void:
 		if(!shaking):
 			shaking=true
 			var tween = get_tree().create_tween().set_parallel(true)
-			tween.tween_property($"..", "rotation", deg_to_rad(3), 0.15)
+			tween.tween_property($"..", "rotation", deg_to_rad(3), 0.15).set_trans(Tween.TRANS_QUAD)
 			await tween.finished
 			tween = get_tree().create_tween().set_parallel(true)
-			tween.tween_property($"..", "rotation", deg_to_rad(-3), 0.15)
+			tween.tween_property($"..", "rotation", deg_to_rad(-3), 0.15).set_trans(Tween.TRANS_QUAD)
 			await tween.finished
 			shaking=false
 			

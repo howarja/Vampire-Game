@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://c3mypmddh800v" path="res://scripts/main_menu.gd" id="1_qkhwq"]
 [ext_resource type="PackedScene" uid="uid://llqh6vgtk77" path="res://scenes/settings.tscn" id="2_3d1i7"]
+[ext_resource type="Script" uid="uid://cuixesoyqhje0" path="res://buttonEffects.gd" id="2_48ign"]
 
 [node name="mainMenu" type="Node2D" unique_id=131306304]
 script = ExtResource("1_qkhwq")
@@ -54,4 +55,40 @@ text = "GAME
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="gameText" type="RichTextLabel" parent="." unique_id=1617625460]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -28.0
+offset_right = 1920.0
+offset_bottom = 1052.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(957, 547)
+size_flags_horizontal = 4
+theme_override_constants/line_separation = -56
+theme_override_font_sizes/normal_font_size = 128
+text = "VAMPIRE
+GAME
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="gameText" unique_id=1824723328]
+layout_mode = 0
+offset_left = 680.0
+offset_top = 464.0
+offset_right = 1235.0
+offset_bottom = 684.0
+flat = true
+script = ExtResource("2_48ign")
+
 [node name="Settings" parent="." unique_id=1974824112 instance=ExtResource("2_3d1i7")]
+
+[connection signal="button_down" from="gameText/Button" to="gameText/Button" method="_on_button_down"]
+[connection signal="button_up" from="gameText/Button" to="gameText/Button" method="_on_button_up"]
+[connection signal="mouse_entered" from="gameText/Button" to="gameText/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="gameText/Button" to="gameText/Button" method="_on_mouse_exited"]
+[connection signal="pressed" from="gameText/Button" to="." method="_on_button_pressed"]

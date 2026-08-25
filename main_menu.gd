@@ -2,16 +2,15 @@ extends Node2D
 
 
 @onready var normalText = $normalText
-@onready var text2 = $RichTextLabel2
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	normalText.modulate.a = 0
-	text2.modulate.a = 0
 	fadeText("GAME PRODUCED BY",2.5)
 	await get_tree().create_timer(5).timeout
-	fadeText("James Howard\nJoshua Wolf\nTishar Sreekantam\nTijmen Verstappen\nZach Quinn",3)
+	fadeText("James Howard\nJoshua Wolf\nTishar Sreekantam\nTijmen Verstappen\nDr. Zachavious XII Quinn the 2nd. Sr",3)
 	await get_tree().create_timer(6).timeout
+	logoAnimation()
 
 
 func fadeText(newText,visibleLength):
@@ -24,3 +23,16 @@ func fadeText(newText,visibleLength):
 	tween = get_tree().create_tween()
 	tween.tween_property(normalText, "modulate:a", 0, visibleLength).set_trans(Tween.TRANS_CUBIC)
 	await tween.finished
+
+func logoAnimation():
+	var tween = get_tree().create_tween().set_parallel(true)
+	tween.tween_property($topText, "position", Vector2(0,-240), 4).set_trans(Tween.TRANS_CUBIC)
+	tween.tween_property($topText, "rotation", deg_to_rad(2520), 4).set_trans(Tween.TRANS_QUAD)
+	
+	tween.tween_property($bottomText, "position", Vector2(0,240), 4).set_trans(Tween.TRANS_CUBIC)
+	tween.tween_property($bottomText, "rotation", deg_to_rad(-2520), 4).set_trans(Tween.TRANS_QUAD)
+	await tween.finished
+	
+	tween = get_tree().create_tween().set_parallel(true)
+	tween.tween_property($topText, "position", Vector2(0,-60), 0.2).set_trans(Tween.TRANS_CUBIC)
+	tween.tween_property($bottomText, "position", Vector2(0,60), 0.2).set_trans(Tween.TRANS_CUBIC)

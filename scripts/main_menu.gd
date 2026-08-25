@@ -7,6 +7,7 @@ extends Node2D
 func _ready() -> void:
 	$gameText.visible=false
 	$Settings.visible = false
+	$exitButton.visible=false
 	normalText.modulate.a = 0
 	fadeText("GAME PRODUCED BY",2.5)
 	await get_tree().create_timer(5).timeout
@@ -44,8 +45,13 @@ func logoAnimation():
 	$bottomText.visible=false
 	
 	$gameText.visible=true
+	$exitButton.visible=true
 	$Settings.visible = true
 
 
 func _on_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://startScene.tscn")
+
+
+func _on_exit_button_pressed() -> void:
+	get_tree().root.mode = Window.MODE_MINIMIZED

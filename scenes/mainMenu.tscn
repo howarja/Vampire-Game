@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://c3mypmddh800v" path="res://scripts/main_menu.gd" id="1_qkhwq"]
 [ext_resource type="PackedScene" uid="uid://llqh6vgtk77" path="res://scenes/settings.tscn" id="2_3d1i7"]
 [ext_resource type="Script" uid="uid://cuixesoyqhje0" path="res://buttonEffects.gd" id="2_48ign"]
+[ext_resource type="Texture2D" uid="uid://b3wousrl8g8s5" path="res://icon.svg" id="4_l7wge"]
 
 [node name="mainMenu" type="Node2D" unique_id=131306304]
 script = ExtResource("1_qkhwq")
@@ -13,7 +14,7 @@ offset_top = 7.0
 offset_right = 1913.0
 offset_bottom = 1073.0
 theme_override_font_sizes/normal_font_size = 80
-text = "GAME CREATED BY AURA AURA UARAADAADASDSADWDASDWASDWASDWASDWADASDWASDWASDWASDAWDASDAWDASDWADASDJKHASKJDHJASKLJDHAJIKHGFIUHWREGIUHWESRIUGJKFHWKEJGFHKJDHGKJHDGKJHDG SIGMA"
+text = "GAME CREATED BY AURA AURA AURA AURA  #SIGMA #FORTNITEBATTLEPASS"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -87,8 +88,32 @@ script = ExtResource("2_48ign")
 
 [node name="Settings" parent="." unique_id=1974824112 instance=ExtResource("2_3d1i7")]
 
+[node name="exitButton" type="Sprite2D" parent="." unique_id=1758629971]
+self_modulate = Color(1, 1, 1, 0)
+position = Vector2(972, 848)
+texture = ExtResource("4_l7wge")
+
+[node name="exitButton" type="Button" parent="exitButton" unique_id=260818102]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -181.0
+offset_top = -35.0
+offset_right = 62.0
+offset_bottom = 40.0
+grow_horizontal = 2
+pivot_offset = Vector2(128, 0)
+theme_override_font_sizes/font_size = 48
+text = "Exit Game"
+script = ExtResource("2_48ign")
+
 [connection signal="button_down" from="gameText/Button" to="gameText/Button" method="_on_button_down"]
 [connection signal="button_up" from="gameText/Button" to="gameText/Button" method="_on_button_up"]
 [connection signal="mouse_entered" from="gameText/Button" to="gameText/Button" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="gameText/Button" to="gameText/Button" method="_on_mouse_exited"]
 [connection signal="pressed" from="gameText/Button" to="." method="_on_button_pressed"]
+[connection signal="button_down" from="exitButton/exitButton" to="exitButton/exitButton" method="_on_button_down"]
+[connection signal="button_up" from="exitButton/exitButton" to="exitButton/exitButton" method="_on_button_up"]
+[connection signal="mouse_entered" from="exitButton/exitButton" to="exitButton/exitButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="exitButton/exitButton" to="exitButton/exitButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="exitButton/exitButton" to="." method="_on_exit_button_pressed"]

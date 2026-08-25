@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://48fow5dvp1bx"]
+
+[ext_resource type="Texture2D" uid="uid://b85cn7tf2bm3j" path="res://Sprites/areas/Lounge.png" id="1_u55m2"]
+
+[node name="Area" type="Sprite2D" unique_id=1160717376]
+scale = Vector2(2.045613, 2.0456133)
+texture = ExtResource("1_u55m2")

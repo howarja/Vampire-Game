@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://dn1ofscgxh6r5" path="res://scripts/settings.gd" id="1_sfmi7"]
 [ext_resource type="AudioStream" uid="uid://57nsx46jw77y" path="res://joshHutchersonSoundTest.mp3" id="2_fevh8"]
 [ext_resource type="Texture2D" uid="uid://b3wousrl8g8s5" path="res://icon.svg" id="3_6wm04"]
+[ext_resource type="Script" uid="uid://cuixesoyqhje0" path="res://buttonEffects.gd" id="4_f4mfi"]
 
 [node name="Settings" type="Node2D" unique_id=1974824112]
 script = ExtResource("1_sfmi7")
@@ -99,9 +100,14 @@ offset_top = -64.87671
 offset_right = 65.75339
 offset_bottom = 65.75343
 flat = true
+script = ExtResource("4_f4mfi")
 
 [connection signal="pressed" from="back/testVolume" to="." method="_on_test_volume_pressed"]
 [connection signal="value_changed" from="back/masterVolumeSlider" to="." method="_on_master_volume_slider_value_changed"]
 [connection signal="value_changed" from="back/musicVolumeSlider" to="." method="_on_music_volume_slider_value_changed"]
 [connection signal="value_changed" from="back/SFXVolumeSlider" to="." method="_on_sfx_volume_slider_value_changed"]
+[connection signal="button_down" from="cogButton/Button" to="cogButton/Button" method="_on_button_down"]
+[connection signal="button_up" from="cogButton/Button" to="cogButton/Button" method="_on_button_up"]
+[connection signal="mouse_entered" from="cogButton/Button" to="cogButton/Button" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="cogButton/Button" to="cogButton/Button" method="_on_mouse_exited"]
 [connection signal="pressed" from="cogButton/Button" to="." method="_on_button_pressed"]

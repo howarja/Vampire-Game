@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://llqh6vgtk77"]
+[gd_scene format=3 uid="uid://cf6f7rtyrewhd"]
 
 [ext_resource type="Script" uid="uid://dn1ofscgxh6r5" path="res://scripts/settings.gd" id="1_sfmi7"]
 [ext_resource type="AudioStream" uid="uid://57nsx46jw77y" path="res://joshHutchersonSoundTest.mp3" id="2_fevh8"]

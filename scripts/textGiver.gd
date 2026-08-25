@@ -6,7 +6,7 @@ class_name textGiver
 @export var characterAppearSpeed: float = 0.03;
 var currentCharacterDelay = 0;
 
-@export var currentLine: String;
+var currentLine: String;
 signal lineComplete;
 
 func triggerDialogue(newLine: String, completeTrigger: Callable):

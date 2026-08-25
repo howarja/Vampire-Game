@@ -1,14 +1,16 @@
 extends Control
 
 @export var text: textGiver;
-@export var lines: Array[String];
+var lines: Array[String];
 var currentLine: int = 0;
+
+@export var currentCharacter: character;
 
 var holdingInput: bool = false;
 var canInput: bool = true;
 
 func _ready() -> void:
-	newLine();
+	loadCharacter(currentCharacter)
 	
 func newLine():
 	if currentLine<lines.size():
@@ -24,3 +26,9 @@ func _process(delta: float) -> void:
 
 func renableInput():
 	canInput = true;
+
+func loadCharacter(newCharacter: character):
+	currentCharacter = newCharacter;
+	lines = currentCharacter.introDialaogue;
+	currentLine = 0;
+	newLine();

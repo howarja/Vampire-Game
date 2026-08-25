@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="character" format=3 uid="uid://n2704kdgjax5"]
+
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="1_1rehx"]
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="1_thbnh"]
+
+[sub_resource type="Resource" id="Resource_wimtb"]
+script = ExtResource("1_thbnh")
+prompt = "What's your name again?"
+answer = "county downy"
+metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
+
+[sub_resource type="Resource" id="Resource_hush4"]
+script = ExtResource("1_thbnh")
+prompt = "What's ya adress"
+answer = "456 billionwon street"
+metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
+
+[resource]
+script = ExtResource("1_1rehx")
+fullName = "Count Down"
+introDialaogue = Array[String](["what up", "its me the big count", "get ready for some goblin poker", "yep, its gambling time"])
+questions = Array[ExtResource("1_thbnh")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4")])
+metadata/_custom_type_script = "uid://byskr8hlcn2vi"

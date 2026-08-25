@@ -12,7 +12,8 @@ signal lineComplete;
 func triggerDialogue(newLine: String, completeTrigger: Callable):
 	text.text = "";
 	currentLine = newLine;
-	lineComplete.connect(completeTrigger);
+	if !lineComplete.is_connected(completeTrigger):
+		lineComplete.connect(completeTrigger);
 
 func _process(delta: float) -> void:
 	currentCharacterDelay -= delta;

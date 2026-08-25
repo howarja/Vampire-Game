@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://3phluxpkl6bt"]
+
+[ext_resource type="Script" uid="uid://cd4uhidx2uenh" path="res://Scripts/question_button.gd" id="1_dpk45"]
+
+[node name="QuestionButton" type="Button" unique_id=582315368]
+custom_minimum_size = Vector2(341.78, 0)
+script = ExtResource("1_dpk45")

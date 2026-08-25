@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://d2ski4i32ja3m"]
+
+[ext_resource type="Script" path="res://main_menu.gd" id="1_wut1r"]
+
+[node name="mainMenu" type="Node2D" unique_id=131306304]
+script = ExtResource("1_wut1r")
+
+[node name="normalText" type="RichTextLabel" parent="." unique_id=1553987807]
+offset_left = 10.0
+offset_top = 7.0
+offset_right = 1913.0
+offset_bottom = 1073.0
+theme_override_font_sizes/normal_font_size = 80
+text = "GAME CREATED BY AURA AURA UARAADAADASDSADWDASDWASDWASDWASDWADASDWASDWASDWASDAWDASDAWDASDWADASDJKHASKJDHJASKLJDHAJIKHGFIUHWREGIUHWESRIUGJKFHWKEJGFHKJDHGKJHDGKJHDG SIGMA"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="topText" type="RichTextLabel" parent="." unique_id=1216032056]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -870.0
+offset_right = 1920.0
+offset_bottom = 211.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(963, 541)
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 128
+text = "VAMPIRE
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="bottomText" type="RichTextLabel" parent="." unique_id=1237163147]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = 861.0
+offset_right = 1920.0
+offset_bottom = 1941.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(957, 547)
+size_flags_horizontal = 4
+theme_override_font_sizes/normal_font_size = 128
+text = "GAME
+"
+horizontal_alignment = 1
+vertical_alignment = 1

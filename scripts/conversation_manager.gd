@@ -47,7 +47,7 @@ func loadCharacter(newCharacter: character):
 		var newButton: questionButton = questionButtonScene.instantiate();
 		buttonContainer.add_child(newButton);
 		newButton.connectToConvseration(currentCharacter.questions[i], beginLine);
-		questionButtons.append(newButton)
+		questionButtons.append(newButton);
 	
 	beginLine(currentCharacter.introDialaogue);
 

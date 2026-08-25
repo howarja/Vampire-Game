@@ -5,6 +5,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	$Settings.visible = false
 	normalText.modulate.a = 0
 	fadeText("GAME PRODUCED BY",2.5)
 	await get_tree().create_timer(5).timeout
@@ -36,3 +37,5 @@ func logoAnimation():
 	tween = get_tree().create_tween().set_parallel(true)
 	tween.tween_property($topText, "position", Vector2(0,-60), 0.2).set_trans(Tween.TRANS_CUBIC)
 	tween.tween_property($bottomText, "position", Vector2(0,60), 0.2).set_trans(Tween.TRANS_CUBIC)
+	
+	$Settings.visible = true

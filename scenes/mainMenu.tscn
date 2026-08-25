@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://c26xead5ij1uf"]
 
-[ext_resource type="Script" uid="uid://c3mypmddh800v" path="res://scenes/main_menu.gd" id="1_wut1r"]
+[ext_resource type="Script" uid="uid://c3mypmddh800v" path="res://scripts/main_menu.gd" id="1_qkhwq"]
+[ext_resource type="PackedScene" uid="uid://llqh6vgtk77" path="res://scenes/settings.tscn" id="2_3d1i7"]
 
 [node name="mainMenu" type="Node2D" unique_id=131306304]
-script = ExtResource("1_wut1r")
+script = ExtResource("1_qkhwq")
 
 [node name="normalText" type="RichTextLabel" parent="." unique_id=1553987807]
 offset_left = 10.0
@@ -52,3 +53,5 @@ text = "GAME
 "
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Settings" parent="." unique_id=1974824112 instance=ExtResource("2_3d1i7")]

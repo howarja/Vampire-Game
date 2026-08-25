@@ -1,3 +1,3 @@
 extends Node
 
-@onready var currentVolume = 0.8
+#@onready var currentVolume = 0.8

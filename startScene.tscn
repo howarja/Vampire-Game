@@ -1,3 +1,32 @@
 [gd_scene format=3 uid="uid://gpedpgp5hk8i"]
 
+[ext_resource type="Script" uid="uid://dberhdml3xlet" path="res://Scripts/conversation_manager.gd" id="1_rq48i"]
+[ext_resource type="Script" uid="uid://bndg1f3jq34l3" path="res://Scripts/textGiver.gd" id="2_yagjw"]
+
 [node name="Node2D" type="Node2D" unique_id=2079086675]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=982724521]
+
+[node name="ConversationManager" type="Control" parent="CanvasLayer" unique_id=648713796 node_paths=PackedStringArray("text")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_rq48i")
+text = NodePath("../TextGiver")
+lines = Array[String](["Hello what is up", "Im not a vamoure", "trus me"])
+
+[node name="TextGiver" type="Control" parent="CanvasLayer" unique_id=1438650801 node_paths=PackedStringArray("text")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_yagjw")
+text = NodePath("../Dialgoue")
+currentLine = "Hello this is some dialogue"
+
+[node name="Dialgoue" type="RichTextLabel" parent="CanvasLayer" unique_id=1094312030]
+offset_left = 461.0
+offset_top = 771.0
+offset_right = 1419.0
+offset_bottom = 1039.0

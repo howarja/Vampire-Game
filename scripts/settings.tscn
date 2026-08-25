@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://llqh6vgtk77"]
+
+[ext_resource type="Script" uid="uid://dn1ofscgxh6r5" path="res://scripts/settings.gd" id="1_sfmi7"]
+
+[node name="Settings" type="Node2D" unique_id=1974824112]
+script = ExtResource("1_sfmi7")
+
+[node name="back" type="Panel" parent="." unique_id=447883011]
+offset_right = 1924.0
+offset_bottom = 1082.0
+
+[node name="volumeText" type="RichTextLabel" parent="." unique_id=1510685069]
+offset_left = 870.0
+offset_top = 427.0
+offset_right = 1155.0
+offset_bottom = 533.0
+theme_override_font_sizes/normal_font_size = 58
+text = "Volume"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="volumeSlider" type="HSlider" parent="." unique_id=111225825]
+offset_left = 782.0
+offset_top = 511.0
+offset_right = 1265.0
+offset_bottom = 543.0
+max_value = 1.0
+step = 0.01
+value = 0.8
+
+[connection signal="value_changed" from="volumeSlider" to="." method="_on_volume_slider_value_changed"]

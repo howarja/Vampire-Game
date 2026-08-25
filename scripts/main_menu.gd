@@ -1,9 +1,7 @@
 extends Node2D
 
-
 @onready var normalText = $normalText
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	$gameText.visible=false
 	$Settings.visible = false
@@ -14,7 +12,6 @@ func _ready() -> void:
 	fadeText("James Howard\nJoshua Wolf\nTishar Sreekantam\nTijmen Verstappen\nDr. Zachavious XII Quinn the 2nd. Sr",3)
 	await get_tree().create_timer(6).timeout
 	logoAnimation()
-
 
 func fadeText(newText,visibleLength):
 	normalText.text = newText

@@ -1,13 +1,14 @@
 [gd_scene format=3 uid="uid://gpedpgp5hk8i"]
 
-[ext_resource type="Script" uid="uid://dberhdml3xlet" path="res://Scripts/conversation_manager.gd" id="1_rq48i"]
+[ext_resource type="Script" uid="uid://dberhdml3xlet" path="res://scripts/conversation_manager.gd" id="1_rq48i"]
 [ext_resource type="Resource" uid="uid://n2704kdgjax5" path="res://Characters/CountDown.tres" id="2_1ljrl"]
-[ext_resource type="Script" uid="uid://bndg1f3jq34l3" path="res://Scripts/textGiver.gd" id="2_yagjw"]
+[ext_resource type="Script" uid="uid://bndg1f3jq34l3" path="res://scripts/textGiver.gd" id="2_yagjw"]
 [ext_resource type="Texture2D" uid="uid://cjgwsjboawlj2" path="res://Sprites/areas/Outside.png" id="4_qlfe6"]
 [ext_resource type="Texture2D" uid="uid://b85cn7tf2bm3j" path="res://Sprites/areas/Lounge.png" id="4_vj0vq"]
 [ext_resource type="Script" uid="uid://jncqog3b1d4a" path="res://scenes/movementButton.gd" id="5_8k52c"]
-[ext_resource type="Script" uid="uid://dgg3qst63mw2m" path="res://Scripts/player_manager.gd" id="5_qlfe6"]
+[ext_resource type="Script" uid="uid://dgg3qst63mw2m" path="res://scripts/player_manager.gd" id="5_qlfe6"]
 [ext_resource type="Texture2D" uid="uid://qlfdpkrwrf" path="res://Sprites/areas/UnderGround.png" id="6_avnbb"]
+[ext_resource type="PackedScene" uid="uid://llqh6vgtk77" path="res://scenes/settings.tscn" id="7_jmrrm"]
 
 [node name="Node2D" type="Node2D" unique_id=2079086675]
 
@@ -75,6 +76,9 @@ offset_bottom = 575.0
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 14.51
 theme_override_constants/separation = 191
+
+[node name="Settings" parent="CanvasLayer" unique_id=1974824112 instance=ExtResource("7_jmrrm")]
+position = Vector2(31, -27)
 
 [node name="Person" type="Sprite2D" parent="." unique_id=430508438]
 visible = false

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://llqh6vgtk77"]
 
-[ext_resource type="Script" uid="uid://dn1ofscgxh6r5" path="res://scripts/settings.gd" id="1_sfmi7"]
+[ext_resource type="Script" uid="uid://dn1ofscgxh6r5" path="res://Scripts/settings.gd" id="1_sfmi7"]
+[ext_resource type="AudioStream" path="res://joshHutchersonSoundTest.mp3" id="2_fevh8"]
 [ext_resource type="Texture2D" uid="uid://b3wousrl8g8s5" path="res://icon.svg" id="3_6wm04"]
 [ext_resource type="Script" uid="uid://cuixesoyqhje0" path="res://buttonEffects.gd" id="4_f4mfi"]
 
@@ -11,6 +12,15 @@ script = ExtResource("1_sfmi7")
 visible = false
 offset_right = 1924.0
 offset_bottom = 1082.0
+
+[node name="testVolume" type="Button" parent="back" unique_id=1725884221]
+layout_mode = 0
+offset_left = 816.0
+offset_top = 47.0
+offset_right = 1110.0
+offset_bottom = 122.0
+theme_override_font_sizes/font_size = 48
+text = "Test Volume"
 
 [node name="masterVolumeSlider" type="HSlider" parent="back" unique_id=111225825]
 layout_mode = 0
@@ -75,8 +85,12 @@ text = "SFX Volume"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="testPlayer" type="AudioStreamPlayer2D" parent="." unique_id=1205469343]
+position = Vector2(0, -163)
+stream = ExtResource("2_fevh8")
+
 [node name="cogButton" type="Sprite2D" parent="." unique_id=386072810]
-position = Vector2(1832, 83)
+position = Vector2(1800, 111)
 scale = Vector2(1.140625, 1.140625)
 texture = ExtResource("3_6wm04")
 
@@ -88,6 +102,7 @@ offset_bottom = 65.75343
 flat = true
 script = ExtResource("4_f4mfi")
 
+[connection signal="pressed" from="back/testVolume" to="." method="_on_test_volume_pressed"]
 [connection signal="value_changed" from="back/masterVolumeSlider" to="." method="_on_master_volume_slider_value_changed"]
 [connection signal="value_changed" from="back/musicVolumeSlider" to="." method="_on_music_volume_slider_value_changed"]
 [connection signal="value_changed" from="back/SFXVolumeSlider" to="." method="_on_sfx_volume_slider_value_changed"]

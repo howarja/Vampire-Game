@@ -1,0 +1,193 @@
+[33mcommit 6d25740c75cab29385cc41461036c5fb242c0f1a[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Merge: 34c73bd 56d920d
+Author: james <jimmerjamh7@outlook.com>
+Date:   Wed Aug 26 20:43:11 2026 +1200
+
+    can't move during dialogue
+
+[33mcommit 34c73bd2c2e0567dca2bfa9dcac6064bd412a07f[m
+Author: james <jimmerjamh7@outlook.com>
+Date:   Wed Aug 26 20:35:58 2026 +1200
+
+    can no longer change area during dialogue
+
+[33mcommit 56d920d015c0aec00348055ec8393c2925e64b40[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Deathstalker <verschuerentijmen@gmail.com>
+Date:   Wed Aug 26 20:09:34 2026 +1200
+
+    Changed some things in the main menu and the settings menu
+
+[33mcommit 876238126b16cef508493bc6139bba20c78b7749[m
+Author: Deathstalker <verschuerentijmen@gmail.com>
+Date:   Wed Aug 26 19:44:51 2026 +1200
+
+    Remove bad song things and added audio busses
+
+[33mcommit aeb638b1ba7cfe2d785ddeb179ea81b3204061b1[m
+Author: Joshua <joshuawwolf@gmail.com>
+Date:   Wed Aug 26 19:29:17 2026 +1200
+
+    new vignette sprite
+
+[33mcommit 7bc8fb8d5726655f47cad2dce27655efb3a3362b[m
+Author: james <jimmerjamh7@outlook.com>
+Date:   Wed Aug 26 19:16:01 2026 +1200
+
+    dialogue can be exited
+
+[33mcommit 958b5eb82e02f4c4ec04ed54dd8449ecc04a3e51[m
+Author: Deathstalker <verschuerentijmen@gmail.com>
+Date:   Wed Aug 26 19:05:00 2026 +1200
+
+    Added the fisheye lense shader
+
+[33mcommit 685a03d73d6a6bcf05f337349d9bc477cc44f88a[m
+Author: james <jimmerjamh7@outlook.com>
+Date:   Wed Aug 26 18:21:36 2026 +1200
+
+    click on area to start conversation
+
+[33mcommit 27211888c533a696c19e4c19913dd155a803f0a9[m
+Author: Deathstalker <verschuerentijmen@gmail.com>
+Date:   Wed Aug 26 16:37:26 2026 +1200
+
+    Added phone information system, and phone scene
+
+[33mcommit 93087134ffc672968ca5b265e5e6a7dc22ceb47b[m
+Author: HelloIsReal <60082945+HelloIsReal@users.noreply.github.com>
+Date:   Tue Aug 25 23:00:10 2026 +1200
+
+    Added settings button to main game scene
+
+[33mcommit 14502f7815284d1ec9a6842c37193e17e436e6b9[m
+Author: james <jimmerjamh7@outlook.com>
+Date:   Tue Aug 25 22:07:31 2026 +1200
+
+    added movement between areas
+
+[33mcommit edbd1fcc72cfaf3f8aa99205fc8ce7aba431026a[m
+Author: james <jimmerjamh7@outlook.com>
+Date:   Tue Aug 25 21:33:32 2026 +1200
+
+    added in some images
+
+[33mcommit 9e98cad09ed57ae9a06dcd9484ccae1df3b40d56[m
+Author: HelloIsReal <60082945+HelloIsReal@users.noreply.github.com>
+Date:   Tue Aug 25 19:49:47 2026 +1200
+
+    Added exit button to game
+    
+    - Exit button also works
+
+[33mcommit 22315a68645de7c0eec520124ad2449496a20b7e[m
+Author: HelloIsReal <60082945+HelloIsReal@users.noreply.github.com>
+Date:   Tue Aug 25 19:29:51 2026 +1200
+
+    Added button effect script to main menu start button
+    
+    - Added switch scene when the button is clicked
+    - Added back quad transition for button effect sway tween.
+
+[33mcommit bffc017fe8024cbd20a4243f68fe3a1c520f1be5[m
+Author: james <jimmerjamh7@outlook.com>
+Date:   Tue Aug 25 19:08:50 2026 +1200
+
+    questions added
+
+[33mcommit 7c535771892d0f07cd184101bea60fcce3291b7f[m
+Author: HelloIsReal <60082945+HelloIsReal@users.noreply.github.com>
+Date:   Tue Aug 25 18:56:16 2026 +1200
+
+    Seperated button effects to a standalone script
+
+[33mcommit 8ca4418a0dcdaaf835c9a50438d98b32b7c032c3[m
+Author: HelloIsReal <60082945+HelloIsReal@users.noreply.github.com>
+Date:   Tue Aug 25 18:05:33 2026 +1200
+
+    Read commit description
+    
+    - Simplified volume values in settings script
+    - Moved and fixed some scene conflicts
+    - Made it so the settings menu can be opened and closed with a button (top right image placeholder.)
+    - Added settings scene to intro scene
+
+[33mcommit 20d7ef02b422cb15829337d8311f707712e4ebad[m
+Author: james <jimmerjamh7@outlook.com>
+Date:   Tue Aug 25 17:44:42 2026 +1200
+
+    added character resource
+
+[33mcommit b14ae04eb15dd67f296177612bb4355c197a81f9[m
+Author: HelloIsReal <60082945+HelloIsReal@users.noreply.github.com>
+Date:   Tue Aug 25 17:24:44 2026 +1200
+
+    Added Music and SFX sliders to settings
+
+[33mcommit 0a57fa92253448cfe10eb4ae04a9bacc7ad86efa[m
+Author: james <jimmerjamh7@outlook.com>
+Date:   Tue Aug 25 17:19:11 2026 +1200
+
+    added basic text appearing
+
+[33mcommit 78790e799ed924569dd88cae2f9df166f3328205[m
+Author: HelloIsReal <60082945+HelloIsReal@users.noreply.github.com>
+Date:   Tue Aug 25 17:15:04 2026 +1200
+
+    Master volume slider functions, test volume button
+    
+    - Made the volume slider change the master volume
+    - Added test volume button (Josh Hutcherson whistle. Change for copyright later probably)
+
+[33mcommit 66d249a48d8c6e8db71aac41ddd81eaa79f9070a[m
+Author: HelloIsReal <60082945+HelloIsReal@users.noreply.github.com>
+Date:   Tue Aug 25 17:05:47 2026 +1200
+
+    Created folder for scripts, scenes (read commit desc)
+    
+    - Created settings scene
+    - Created a globals script
+    - Added volume slider (updates volume variable in Globals script)
+    need to make volume slider change global volume
+
+[33mcommit a06eaa5db504f359988c3c164ab9bf37a47327e9[m
+Author: HelloIsReal <60082945+HelloIsReal@users.noreply.github.com>
+Date:   Tue Aug 25 16:56:29 2026 +1200
+
+    Added logo animation to intro
+    
+    - Updated Zach's name to correct spelling
+    - Logo animation function with the super cool animation
+
+[33mcommit 7ffbf6199b31cd43dbec028a8c60ab29ddec85fd[m
+Author: HelloIsReal <60082945+HelloIsReal@users.noreply.github.com>
+Date:   Tue Aug 25 16:18:43 2026 +1200
+
+    Created main menu scene (read commit description)
+    
+    - Added text labels for main menu
+    - Created function in menu for fading/showing text
+    - Added names for intro credit
+
+[33mcommit a33c6d46d6ea29e824a62a3c8ef780987827b651[m
+Author: james <jimmerjamh7@outlook.com>
+Date:   Mon Aug 24 20:06:18 2026 +1200
+
+    modified readme test
+
+[33mcommit d5f9ec2536ba1decd7708a01145835a7e9cc5bcd[m
+Author: HelloIsReal <60082945+HelloIsReal@users.noreply.github.com>
+Date:   Mon Aug 24 20:05:04 2026 +1200
+
+    accident, saved readme so it shows content.
+
+[33mcommit d928c25778e6ddc67124b6e3029c8a17f419abe6[m
+Author: HelloIsReal <60082945+HelloIsReal@users.noreply.github.com>
+Date:   Mon Aug 24 20:03:26 2026 +1200
+
+    Created Readme, added content to readme
+
+[33mcommit f3be8489fb6df6c9aae067da7124db6bcee356c3[m
+Author: james <jimmerjamh7@outlook.com>
+Date:   Mon Aug 24 19:40:05 2026 +1200
+
+    base godot project

@@ -14,3 +14,9 @@ func getCharacter() -> character:
 		return newCharacter;
 	else:
 		return null;
+
+func acceptCharacter(newCharacter: character) -> void:
+	acceptedCharacters.append(newCharacter);
+	
+func isActiveCharacter(check: character):
+	return acceptedCharacters.has(check);

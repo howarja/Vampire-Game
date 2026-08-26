@@ -9,6 +9,7 @@ var clickable: bool = false;
 func _ready() -> void:
 	mouse_entered.connect(mouseOver);
 	mouse_exited.connect(mouseExit)
+	update();
 
 func _input(event: InputEvent) -> void:
 	if (event.is_action_pressed("Primary") && clickable):
@@ -25,7 +26,10 @@ func hideCharacter():
 
 func update():
 	# add if alive
-	sprite.visible = true;
+	sprite.visible = false;
+	if currentCharacter != null:
+		if Globals.characters.isActiveCharacter(currentCharacter):
+			sprite.visible = true;
 
 func mouseOver() -> void:
 	if Globals.conversation.canStartConversation() && sprite.visible:

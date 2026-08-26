@@ -5,10 +5,10 @@ var currentCharacter: character;
 
 func newGuest():
 	currentCharacter = Globals.characters.getCharacter();
-	print("Work");
 	if currentCharacter != null:
 		characterSprite.texture = currentCharacter.sprite;
+		Globals.doorway.loadCharacter(currentCharacter);
+		hideButtons();
 
 func onEntered():
-	print("Work1");
 	newGuest();

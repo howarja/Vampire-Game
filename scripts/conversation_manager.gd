@@ -61,6 +61,7 @@ func loadCharacter(newCharacter: character, interacted: interactableCharacter):
 		questionButtons.append(newButton);
 	
 	inConversation = true;
+	Globals.player.currentArea.hideButtons();
 	beginLine(currentCharacter.introDialaogue);
 
 func beginLine(newLines: Array[String]):
@@ -77,3 +78,4 @@ func exitConversation():
 	lines = [];
 	text.disable();
 	lastInteracted.update();
+	Globals.player.currentArea.showButtons();

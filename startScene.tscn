@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dberhdml3xlet" path="res://Scripts/conversation_manager.gd" id="1_rq48i"]
 [ext_resource type="Resource" uid="uid://n2704kdgjax5" path="res://Characters/CountDown.tres" id="2_1ljrl"]
+[ext_resource type="Script" uid="uid://51h5begqq66c" path="res://area.gd" id="2_jmrrm"]
 [ext_resource type="Script" uid="uid://bndg1f3jq34l3" path="res://Scripts/textGiver.gd" id="2_yagjw"]
 [ext_resource type="Script" uid="uid://btva2ox1ockyg" path="res://Scripts/interactable_character.gd" id="3_ip4ey"]
 [ext_resource type="Script" uid="uid://b7d02u7xi35qp" path="res://Scripts/movement_button.gd" id="3_jmrrm"]
@@ -19,10 +20,13 @@ radius = 91.0
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=982724521]
 
-[node name="Lounge" type="Sprite2D" parent="CanvasLayer" unique_id=1352087972]
+[node name="Lounge" type="Sprite2D" parent="CanvasLayer" unique_id=1352087972 node_paths=PackedStringArray("movementButtons", "characters")]
 position = Vector2(967, 571)
 scale = Vector2(2.045613, 2.0456133)
 texture = ExtResource("4_vj0vq")
+script = ExtResource("2_jmrrm")
+movementButtons = [NodePath("movementButton")]
+characters = [NodePath("InteractableCharacter"), NodePath("InteractableCharacter2")]
 
 [node name="movementButton" type="Button" parent="CanvasLayer/Lounge" unique_id=904897615 node_paths=PackedStringArray("newArea")]
 offset_left = -61.106384
@@ -54,11 +58,13 @@ texture = ExtResource("4_1h7fw")
 [node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Lounge/InteractableCharacter2" unique_id=721168208]
 shape = SubResource("CircleShape2D_3xd07")
 
-[node name="Underground" type="Sprite2D" parent="CanvasLayer" unique_id=174614199]
+[node name="Underground" type="Sprite2D" parent="CanvasLayer" unique_id=174614199 node_paths=PackedStringArray("movementButtons")]
 visible = false
 position = Vector2(967, 571)
 scale = Vector2(2.045613, 2.0456133)
 texture = ExtResource("6_avnbb")
+script = ExtResource("2_jmrrm")
+movementButtons = [NodePath("movementButton")]
 
 [node name="movementButton" type="Button" parent="CanvasLayer/Underground" unique_id=375303595 node_paths=PackedStringArray("newArea")]
 offset_left = -61.106384

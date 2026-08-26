@@ -17,10 +17,14 @@ func _input(event: InputEvent) -> void:
 
 func interact():
 	if Globals.conversation.canStartConversation():
-		sprite.visible = false;
+		hideCharacter();
 		Globals.conversation.loadCharacter(currentCharacter, self);
 
+func hideCharacter():
+	sprite.visible = false;
+
 func update():
+	# add if alive
 	sprite.visible = true;
 
 func mouseOver() -> void:

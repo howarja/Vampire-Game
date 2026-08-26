@@ -1,7 +1,7 @@
 extends Node2D
 class_name playerManager;
 
-@export var currentArea: Node2D;
+@export var currentArea: Area;
 
 func _ready() -> void:
 	Globals.player = self;

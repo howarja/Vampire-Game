@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://c7awdxtytslkh"]
+
+[ext_resource type="Script" uid="uid://btg0l6shgmf4y" path="res://scripts/phone.gd" id="1_08mii"]
+
+[node name="Phone" type="Control" unique_id=2141918312]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_08mii")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1519873522]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ScrollContainer" type="ScrollContainer" parent="TextureRect" unique_id=849470963]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect/ScrollContainer" unique_id=1048250505]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="TextureRect/ScrollContainer/VBoxContainer" unique_id=351912281]
+layout_mode = 2
+
+[node name="Name" type="Label" parent="TextureRect/ScrollContainer/VBoxContainer" unique_id=66108866]
+layout_mode = 2
+
+[node name="DateOfBirth" type="Label" parent="TextureRect/ScrollContainer/VBoxContainer" unique_id=117084253]
+layout_mode = 2
+
+[node name="Address" type="Label" parent="TextureRect/ScrollContainer/VBoxContainer" unique_id=269684565]
+layout_mode = 2
+
+[node name="Bringing" type="Label" parent="TextureRect/ScrollContainer/VBoxContainer" unique_id=1357596991]
+layout_mode = 2
+
+[node name="BloodType" type="Label" parent="TextureRect/ScrollContainer/VBoxContainer" unique_id=1772195927]
+layout_mode = 2
+
+[node name="LifeStatus" type="Label" parent="TextureRect/ScrollContainer/VBoxContainer" unique_id=1846907006]
+layout_mode = 2

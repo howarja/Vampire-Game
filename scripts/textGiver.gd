@@ -15,6 +15,10 @@ func triggerDialogue(newLine: String, completeTrigger: Callable):
 	if !lineComplete.is_connected(completeTrigger):
 		lineComplete.connect(completeTrigger);
 
+func disable():
+	text.text = "";
+	currentLine = "";
+
 func _process(delta: float) -> void:
 	currentCharacterDelay -= delta;
 	if currentCharacterDelay <= 0 && currentLine.length()>0:

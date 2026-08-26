@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dberhdml3xlet" path="res://Scripts/conversation_manager.gd" id="1_rq48i"]
 [ext_resource type="Resource" uid="uid://n2704kdgjax5" path="res://Characters/CountDown.tres" id="2_1ljrl"]
 [ext_resource type="Script" uid="uid://bndg1f3jq34l3" path="res://Scripts/textGiver.gd" id="2_yagjw"]
-[ext_resource type="Script" uid="uid://btva2ox1ockyg" path="res://interactable_character.gd" id="3_ip4ey"]
+[ext_resource type="Script" uid="uid://btva2ox1ockyg" path="res://Scripts/interactable_character.gd" id="3_ip4ey"]
 [ext_resource type="Script" uid="uid://b7d02u7xi35qp" path="res://Scripts/movement_button.gd" id="3_jmrrm"]
 [ext_resource type="Texture2D" uid="uid://b3wousrl8g8s5" path="res://icon.svg" id="4_1h7fw"]
 [ext_resource type="Texture2D" uid="uid://cjgwsjboawlj2" path="res://Sprites/areas/Outside.png" id="4_qlfe6"]
@@ -43,6 +43,17 @@ texture = ExtResource("4_1h7fw")
 [node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Lounge/InteractableCharacter" unique_id=2117342533]
 shape = SubResource("CircleShape2D_3xd07")
 
+[node name="InteractableCharacter2" type="Area2D" parent="CanvasLayer/Lounge" unique_id=1119938866]
+position = Vector2(63.55063, -120.25734)
+script = ExtResource("3_ip4ey")
+currentCharacter = ExtResource("2_1ljrl")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Lounge/InteractableCharacter2" unique_id=2028243806]
+texture = ExtResource("4_1h7fw")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Lounge/InteractableCharacter2" unique_id=721168208]
+shape = SubResource("CircleShape2D_3xd07")
+
 [node name="Underground" type="Sprite2D" parent="CanvasLayer" unique_id=174614199]
 visible = false
 position = Vector2(967, 571)
@@ -57,7 +68,7 @@ offset_bottom = 218.51634
 script = ExtResource("3_jmrrm")
 newArea = NodePath("../../Lounge")
 
-[node name="ConversationManager" type="Control" parent="CanvasLayer" unique_id=648713796 node_paths=PackedStringArray("text", "buttonContainer")]
+[node name="ConversationManager" type="Control" parent="CanvasLayer" unique_id=648713796 node_paths=PackedStringArray("text", "buttonContainer", "exitButton")]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -65,8 +76,8 @@ offset_bottom = 40.0
 mouse_filter = 2
 script = ExtResource("1_rq48i")
 text = NodePath("../TextGiver")
-currentCharacter = ExtResource("2_1ljrl")
 buttonContainer = NodePath("../QuestionOptions")
+exitButton = NodePath("../QuestionOptions/ExitDialogueButton")
 
 [node name="TextGiver" type="Control" parent="CanvasLayer" unique_id=1438650801 node_paths=PackedStringArray("text")]
 layout_mode = 3
@@ -85,13 +96,18 @@ offset_bottom = 1039.0
 mouse_filter = 2
 
 [node name="QuestionOptions" type="HBoxContainer" parent="CanvasLayer" unique_id=1973992520]
-offset_left = 937.0
-offset_top = 307.0
-offset_right = 1887.0
-offset_bottom = 575.0
+offset_left = 1123.0
+offset_top = 771.0
+offset_right = 1885.0
+offset_bottom = 1039.0
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 14.51
-theme_override_constants/separation = 191
+theme_override_constants/separation = 12
+
+[node name="ExitDialogueButton" type="Button" parent="CanvasLayer/QuestionOptions" unique_id=582315368]
+custom_minimum_size = Vector2(207.545, 0)
+layout_mode = 2
+text = "Exit"
 
 [node name="Settings" parent="CanvasLayer" unique_id=1974824112 instance=ExtResource("7_jmrrm")]
 position = Vector2(31, -27)

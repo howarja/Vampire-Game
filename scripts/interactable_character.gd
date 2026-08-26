@@ -1,4 +1,5 @@
 extends Area2D
+class_name interactableCharacter
 
 var clickable: bool = false;
 @export var currentCharacter: character;
@@ -7,6 +8,7 @@ var clickable: bool = false;
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	mouse_entered.connect(mouseOver);
+	mouse_exited.connect(mouseExit)
 
 func _input(event: InputEvent) -> void:
 	if (event.is_action_pressed("Primary") && clickable):
@@ -14,14 +16,16 @@ func _input(event: InputEvent) -> void:
 		mouseExit();
 
 func interact():
-	sprite.visible = false;
-	Globals.conversation.loadCharacter(currentCharacter);
+	if Globals.conversation.canStartConversation():
+		sprite.visible = false;
+		Globals.conversation.loadCharacter(currentCharacter, self);
 
 func update():
 	sprite.visible = true;
 
 func mouseOver() -> void:
-	clickable = true;
+	if Globals.conversation.canStartConversation() && sprite.visible:
+		clickable = true;
 
 func mouseExit() -> void:
 	clickable = false;

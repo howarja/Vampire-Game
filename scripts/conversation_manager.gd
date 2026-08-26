@@ -7,8 +7,11 @@ var currentLine: int = 0;
 
 @onready var questionButtonScene: PackedScene = preload("res://scenes/question_button.tscn");
 var questionButtons: Array[questionButton] = [];
-@export var currentCharacter: character;
+var currentCharacter: character;
+var lastInteracted: interactableCharacter;
+
 @export var buttonContainer: Container;
+@export var exitButton: Button;
 
 var holdingInput: bool = false;
 var canInput: bool = true;
@@ -16,6 +19,8 @@ var inConversation: bool = false;
 
 func _ready() -> void:
 	Globals.conversation = self;
+	exitButton.pressed.connect(exitConversation)
+	canQuestion(false)
 
 func newLine():
 	if currentLine<lines.size():
@@ -41,8 +46,9 @@ func renableInput():
 func canQuestion(enabled: bool):
 	buttonContainer.visible = enabled;
 
-func loadCharacter(newCharacter: character):
+func loadCharacter(newCharacter: character, interacted: interactableCharacter):
 	currentCharacter = newCharacter;
+	lastInteracted = interacted;
 	
 	# destroy existing buttons and re-instantiate them, quicker than re-using
 	for i in questionButtons.size():
@@ -57,8 +63,17 @@ func loadCharacter(newCharacter: character):
 	inConversation = true;
 	beginLine(currentCharacter.introDialaogue);
 
-
 func beginLine(newLines: Array[String]):
 	lines = newLines;
 	currentLine = 0;
 	newLine();
+
+func canStartConversation():
+	return !inConversation;
+
+func exitConversation():
+	inConversation = false;
+	canQuestion(false);
+	lines = [];
+	text.disable();
+	lastInteracted.update();

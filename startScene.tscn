@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://dberhdml3xlet" path="res://Scripts/conversation_manager.gd" id="1_rq48i"]
 [ext_resource type="Resource" uid="uid://n2704kdgjax5" path="res://Characters/CountDown.tres" id="2_1ljrl"]
-[ext_resource type="Script" uid="uid://51h5begqq66c" path="res://area.gd" id="2_jmrrm"]
 [ext_resource type="Script" uid="uid://bndg1f3jq34l3" path="res://Scripts/textGiver.gd" id="2_yagjw"]
 [ext_resource type="Script" uid="uid://btva2ox1ockyg" path="res://Scripts/interactable_character.gd" id="3_ip4ey"]
 [ext_resource type="Script" uid="uid://b7d02u7xi35qp" path="res://Scripts/movement_button.gd" id="3_jmrrm"]
@@ -12,9 +11,20 @@
 [ext_resource type="Script" uid="uid://dgg3qst63mw2m" path="res://Scripts/player_manager.gd" id="5_qlfe6"]
 [ext_resource type="Texture2D" uid="uid://qlfdpkrwrf" path="res://Sprites/areas/UnderGround.png" id="6_avnbb"]
 [ext_resource type="PackedScene" uid="uid://llqh6vgtk77" path="res://scenes/settings.tscn" id="7_jmrrm"]
+[ext_resource type="Shader" uid="uid://bcfj11konudyk" path="res://fisheye.gdshader" id="8_2l27o"]
+[ext_resource type="Script" uid="uid://dp7tlannev5hr" path="res://room.gd" id="8_f32hw"]
+[ext_resource type="Script" uid="uid://bcpjncrq7w8e3" path="res://peep_hole.gd" id="9_tjtsx"]
+[ext_resource type="Script" uid="uid://dep647b6vlno6" path="res://character_manager.gd" id="14_jsjc1"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="15_tjtsx"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3xd07"]
 radius = 91.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jsjc1"]
+shader = ExtResource("8_2l27o")
+shader_parameter/center = Vector2(0.5, 0.175)
+shader_parameter/power = 0.82999998517316
+shader_parameter/radius = 0.1499999966472
 
 [node name="Node2D" type="Node2D" unique_id=2079086675]
 
@@ -24,9 +34,9 @@ radius = 91.0
 position = Vector2(967, 571)
 scale = Vector2(2.045613, 2.0456133)
 texture = ExtResource("4_vj0vq")
-script = ExtResource("2_jmrrm")
+script = ExtResource("8_f32hw")
 movementButtons = [NodePath("movementButton")]
-characters = [NodePath("InteractableCharacter"), NodePath("InteractableCharacter2")]
+characters = [NodePath("InteractableCharacter")]
 
 [node name="movementButton" type="Button" parent="CanvasLayer/Lounge" unique_id=904897615 node_paths=PackedStringArray("newArea")]
 offset_left = -61.106384
@@ -34,7 +44,7 @@ offset_top = 168.65355
 offset_right = 25.420197
 offset_bottom = 218.51634
 script = ExtResource("3_jmrrm")
-newArea = NodePath("../../Underground")
+newArea = NodePath("../../peepHole")
 
 [node name="InteractableCharacter" type="Area2D" parent="CanvasLayer/Lounge" unique_id=656916129]
 position = Vector2(-232.20422, -82.12696)
@@ -47,23 +57,12 @@ texture = ExtResource("4_1h7fw")
 [node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Lounge/InteractableCharacter" unique_id=2117342533]
 shape = SubResource("CircleShape2D_3xd07")
 
-[node name="InteractableCharacter2" type="Area2D" parent="CanvasLayer/Lounge" unique_id=1119938866]
-position = Vector2(63.55063, -120.25734)
-script = ExtResource("3_ip4ey")
-currentCharacter = ExtResource("2_1ljrl")
-
-[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Lounge/InteractableCharacter2" unique_id=2028243806]
-texture = ExtResource("4_1h7fw")
-
-[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Lounge/InteractableCharacter2" unique_id=721168208]
-shape = SubResource("CircleShape2D_3xd07")
-
 [node name="Underground" type="Sprite2D" parent="CanvasLayer" unique_id=174614199 node_paths=PackedStringArray("movementButtons")]
 visible = false
 position = Vector2(967, 571)
 scale = Vector2(2.045613, 2.0456133)
 texture = ExtResource("6_avnbb")
-script = ExtResource("2_jmrrm")
+script = ExtResource("8_f32hw")
 movementButtons = [NodePath("movementButton")]
 
 [node name="movementButton" type="Button" parent="CanvasLayer/Underground" unique_id=375303595 node_paths=PackedStringArray("newArea")]
@@ -73,6 +72,29 @@ offset_right = 25.420197
 offset_bottom = 218.51634
 script = ExtResource("3_jmrrm")
 newArea = NodePath("../../Lounge")
+
+[node name="peepHole" type="Sprite2D" parent="CanvasLayer" unique_id=195838583 node_paths=PackedStringArray("characterSprite", "movementButtons")]
+visible = false
+material = SubResource("ShaderMaterial_jsjc1")
+position = Vector2(967, 571)
+scale = Vector2(2.045613, 2.0456133)
+texture = ExtResource("4_qlfe6")
+vframes = 3
+script = ExtResource("9_tjtsx")
+characterSprite = NodePath("Sprite2D")
+movementButtons = [NodePath("movementButton")]
+
+[node name="movementButton" type="Button" parent="CanvasLayer/peepHole" unique_id=1256232738 node_paths=PackedStringArray("newArea")]
+offset_left = -71.86109
+offset_top = 114.879974
+offset_right = 44.61989
+offset_bottom = 182.00464
+script = ExtResource("3_jmrrm")
+newArea = NodePath("../../Lounge")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/peepHole" unique_id=1678730477]
+position = Vector2(-210.6948, -62.08409)
+scale = Vector2(2.5091062, 2.509106)
 
 [node name="ConversationManager" type="Control" parent="CanvasLayer" unique_id=648713796 node_paths=PackedStringArray("text", "buttonContainer", "exitButton")]
 layout_mode = 3
@@ -137,3 +159,7 @@ frame = 2
 [node name="PlayerManager" type="Node2D" parent="." unique_id=374783410 node_paths=PackedStringArray("currentArea")]
 script = ExtResource("5_qlfe6")
 currentArea = NodePath("../CanvasLayer/Lounge")
+
+[node name="CharacterManager" type="Node2D" parent="." unique_id=779009452]
+script = ExtResource("14_jsjc1")
+unEncounteredCharacters = Array[ExtResource("15_tjtsx")]([ExtResource("2_1ljrl")])

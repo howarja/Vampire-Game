@@ -8,6 +8,6 @@ func _ready() -> void:
 
 func changeAreaTo(newArea: Node2D):
 	if currentArea!=null:
-		currentArea.visible = false;
-		currentArea = newArea;
-	newArea.visible = true;
+		currentArea.exitArea();
+	currentArea = newArea;
+	currentArea.enterArea();

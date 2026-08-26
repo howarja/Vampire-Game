@@ -1,4 +1,4 @@
-extends Sprite2D
+@abstract extends Sprite2D
 class_name Area
 
 @export var movementButtons: Array[Button];
@@ -7,10 +7,13 @@ class_name Area
 func enterArea():
 	updateCharacters();
 	showButtons();
+	show();
+	onEntered();
 
 func exitArea():
 	hideCharacters();
 	hideButtons();
+	hide();
 
 func hideCharacters():
 	for i in characters.size():
@@ -27,3 +30,5 @@ func hideButtons():
 func showButtons():
 	for i in movementButtons.size():
 		movementButtons[i].show();
+
+@abstract func onEntered();

@@ -1,15 +1,21 @@
 [gd_scene format=3 uid="uid://gpedpgp5hk8i"]
 
-[ext_resource type="Script" uid="uid://dberhdml3xlet" path="res://Scripts/conversation_manager.gd" id="1_rq48i"]
+[ext_resource type="Script" uid="uid://dberhdml3xlet" path="res://scripts/conversation_manager.gd" id="1_rq48i"]
 [ext_resource type="Resource" uid="uid://n2704kdgjax5" path="res://Characters/CountDown.tres" id="2_1ljrl"]
+<<<<<<< HEAD
 [ext_resource type="Script" uid="uid://51h5begqq66c" path="res://area.gd" id="2_jmrrm"]
 [ext_resource type="Script" uid="uid://bndg1f3jq34l3" path="res://Scripts/textGiver.gd" id="2_yagjw"]
 [ext_resource type="Script" uid="uid://btva2ox1ockyg" path="res://Scripts/interactable_character.gd" id="3_ip4ey"]
 [ext_resource type="Script" uid="uid://b7d02u7xi35qp" path="res://Scripts/movement_button.gd" id="3_jmrrm"]
+=======
+[ext_resource type="Script" uid="uid://bndg1f3jq34l3" path="res://scripts/textGiver.gd" id="2_yagjw"]
+[ext_resource type="Script" uid="uid://btva2ox1ockyg" path="res://scripts/interactable_character.gd" id="3_ip4ey"]
+[ext_resource type="Script" uid="uid://b7d02u7xi35qp" path="res://scripts/movement_button.gd" id="3_jmrrm"]
+>>>>>>> 56d920d015c0aec00348055ec8393c2925e64b40
 [ext_resource type="Texture2D" uid="uid://b3wousrl8g8s5" path="res://icon.svg" id="4_1h7fw"]
 [ext_resource type="Texture2D" uid="uid://cjgwsjboawlj2" path="res://Sprites/areas/Outside.png" id="4_qlfe6"]
 [ext_resource type="Texture2D" uid="uid://b85cn7tf2bm3j" path="res://Sprites/areas/Lounge.png" id="4_vj0vq"]
-[ext_resource type="Script" uid="uid://dgg3qst63mw2m" path="res://Scripts/player_manager.gd" id="5_qlfe6"]
+[ext_resource type="Script" uid="uid://dgg3qst63mw2m" path="res://scripts/player_manager.gd" id="5_qlfe6"]
 [ext_resource type="Texture2D" uid="uid://qlfdpkrwrf" path="res://Sprites/areas/UnderGround.png" id="6_avnbb"]
 [ext_resource type="PackedScene" uid="uid://llqh6vgtk77" path="res://scenes/settings.tscn" id="7_jmrrm"]
 

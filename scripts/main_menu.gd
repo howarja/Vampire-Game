@@ -51,4 +51,4 @@ func _on_button_pressed() -> void:
 
 
 func _on_exit_button_pressed() -> void:
-	get_tree().root.mode = Window.MODE_MINIMIZED
+	get_tree().quit()

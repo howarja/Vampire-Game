@@ -1,9 +1,6 @@
 [gd_scene format=3 uid="uid://d2ski4i32ja3m"]
 
-[ext_resource type="Script" path="res://main_menu.gd" id="1_wut1r"]
-
 [node name="mainMenu" type="Node2D" unique_id=131306304]
-script = ExtResource("1_wut1r")
 
 [node name="normalText" type="RichTextLabel" parent="." unique_id=1553987807]
 offset_left = 10.0

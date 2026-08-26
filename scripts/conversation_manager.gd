@@ -1,7 +1,8 @@
 extends Control
+class_name conversationManager
 
 @export var text: textGiver;
-var lines: Array[String];
+var lines: Array[String] = [];
 var currentLine: int = 0;
 
 @onready var questionButtonScene: PackedScene = preload("res://scenes/question_button.tscn");
@@ -11,10 +12,11 @@ var questionButtons: Array[questionButton] = [];
 
 var holdingInput: bool = false;
 var canInput: bool = true;
+var inConversation: bool = false;
 
 func _ready() -> void:
-	loadCharacter(currentCharacter)
-	
+	Globals.conversation = self;
+
 func newLine():
 	if currentLine<lines.size():
 		text.triggerDialogue(lines[currentLine], renableInput);
@@ -25,6 +27,9 @@ func newLine():
 		canQuestion(true);
 
 func _process(delta: float) -> void:
+	if !inConversation:
+		return;
+	
 	var isInputing = Input.is_anything_pressed();
 	if isInputing && !holdingInput && canInput:
 		newLine();
@@ -40,7 +45,7 @@ func loadCharacter(newCharacter: character):
 	currentCharacter = newCharacter;
 	
 	# destroy existing buttons and re-instantiate them, quicker than re-using
-	for i in questionButtons.size():	
+	for i in questionButtons.size():
 		questionButtons[i].queue_free();
 	questionButtons = [];
 	for i in currentCharacter.questions.size():
@@ -49,6 +54,7 @@ func loadCharacter(newCharacter: character):
 		newButton.connectToConvseration(currentCharacter.questions[i], beginLine);
 		questionButtons.append(newButton);
 	
+	inConversation = true;
 	beginLine(currentCharacter.introDialaogue);
 
 

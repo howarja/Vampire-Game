@@ -1,45 +1,61 @@
 [gd_scene format=3 uid="uid://gpedpgp5hk8i"]
 
-[ext_resource type="Script" uid="uid://dberhdml3xlet" path="res://scripts/conversation_manager.gd" id="1_rq48i"]
+[ext_resource type="Script" uid="uid://dberhdml3xlet" path="res://Scripts/conversation_manager.gd" id="1_rq48i"]
 [ext_resource type="Resource" uid="uid://n2704kdgjax5" path="res://Characters/CountDown.tres" id="2_1ljrl"]
-[ext_resource type="Script" uid="uid://bndg1f3jq34l3" path="res://scripts/textGiver.gd" id="2_yagjw"]
+[ext_resource type="Script" uid="uid://bndg1f3jq34l3" path="res://Scripts/textGiver.gd" id="2_yagjw"]
+[ext_resource type="Script" uid="uid://btva2ox1ockyg" path="res://interactable_character.gd" id="3_ip4ey"]
+[ext_resource type="Script" uid="uid://b7d02u7xi35qp" path="res://Scripts/movement_button.gd" id="3_jmrrm"]
+[ext_resource type="Texture2D" uid="uid://b3wousrl8g8s5" path="res://icon.svg" id="4_1h7fw"]
 [ext_resource type="Texture2D" uid="uid://cjgwsjboawlj2" path="res://Sprites/areas/Outside.png" id="4_qlfe6"]
 [ext_resource type="Texture2D" uid="uid://b85cn7tf2bm3j" path="res://Sprites/areas/Lounge.png" id="4_vj0vq"]
-[ext_resource type="Script" uid="uid://jncqog3b1d4a" path="res://scenes/movementButton.gd" id="5_8k52c"]
-[ext_resource type="Script" uid="uid://dgg3qst63mw2m" path="res://scripts/player_manager.gd" id="5_qlfe6"]
+[ext_resource type="Script" uid="uid://dgg3qst63mw2m" path="res://Scripts/player_manager.gd" id="5_qlfe6"]
 [ext_resource type="Texture2D" uid="uid://qlfdpkrwrf" path="res://Sprites/areas/UnderGround.png" id="6_avnbb"]
 [ext_resource type="PackedScene" uid="uid://llqh6vgtk77" path="res://scenes/settings.tscn" id="7_jmrrm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3xd07"]
+radius = 91.0
 
 [node name="Node2D" type="Node2D" unique_id=2079086675]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=982724521]
 
-[node name="Area2" type="Sprite2D" parent="CanvasLayer" unique_id=2055831213]
-visible = false
-position = Vector2(953, 655)
-scale = Vector2(2.045613, 2.0456133)
-texture = ExtResource("6_avnbb")
-
-[node name="Button" type="Button" parent="CanvasLayer/Area2" unique_id=1271298431 node_paths=PackedStringArray("newArea")]
-offset_left = -62.5729
-offset_top = 120.7462
-offset_right = 23.953682
-offset_bottom = 170.609
-script = ExtResource("5_8k52c")
-newArea = NodePath("../../Area")
-
-[node name="Area" type="Sprite2D" parent="CanvasLayer" unique_id=1160717376]
+[node name="Lounge" type="Sprite2D" parent="CanvasLayer" unique_id=1352087972]
 position = Vector2(967, 571)
 scale = Vector2(2.045613, 2.0456133)
 texture = ExtResource("4_vj0vq")
 
-[node name="Button" type="Button" parent="CanvasLayer/Area" unique_id=415819674 node_paths=PackedStringArray("newArea")]
+[node name="movementButton" type="Button" parent="CanvasLayer/Lounge" unique_id=904897615 node_paths=PackedStringArray("newArea")]
 offset_left = -61.106384
 offset_top = 168.65355
 offset_right = 25.420197
 offset_bottom = 218.51634
-script = ExtResource("5_8k52c")
-newArea = NodePath("../../Area2")
+script = ExtResource("3_jmrrm")
+newArea = NodePath("../../Underground")
+
+[node name="InteractableCharacter" type="Area2D" parent="CanvasLayer/Lounge" unique_id=656916129]
+position = Vector2(-232.20422, -82.12696)
+script = ExtResource("3_ip4ey")
+currentCharacter = ExtResource("2_1ljrl")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Lounge/InteractableCharacter" unique_id=22743380]
+texture = ExtResource("4_1h7fw")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Lounge/InteractableCharacter" unique_id=2117342533]
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="Underground" type="Sprite2D" parent="CanvasLayer" unique_id=174614199]
+visible = false
+position = Vector2(967, 571)
+scale = Vector2(2.045613, 2.0456133)
+texture = ExtResource("6_avnbb")
+
+[node name="movementButton" type="Button" parent="CanvasLayer/Underground" unique_id=375303595 node_paths=PackedStringArray("newArea")]
+offset_left = -61.106384
+offset_top = 168.65355
+offset_right = 25.420197
+offset_bottom = 218.51634
+script = ExtResource("3_jmrrm")
+newArea = NodePath("../../Lounge")
 
 [node name="ConversationManager" type="Control" parent="CanvasLayer" unique_id=648713796 node_paths=PackedStringArray("text", "buttonContainer")]
 layout_mode = 3
@@ -98,4 +114,4 @@ frame = 2
 
 [node name="PlayerManager" type="Node2D" parent="." unique_id=374783410 node_paths=PackedStringArray("currentArea")]
 script = ExtResource("5_qlfe6")
-currentArea = NodePath("../CanvasLayer/Area")
+currentArea = NodePath("../CanvasLayer/Lounge")

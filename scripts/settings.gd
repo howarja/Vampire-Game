@@ -18,7 +18,6 @@ func _on_sfx_volume_slider_value_changed(value: float) -> void:
 	AudioServer.set_bus_volume_linear(AudioServer.get_bus_index("SFX"), value)
 
 func _on_button_pressed() -> void:
-	
 	if(settingsVisible):
 		settingsVisible=false
 		$back.visible=false

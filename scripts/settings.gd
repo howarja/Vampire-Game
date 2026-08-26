@@ -7,8 +7,6 @@ func _ready() -> void:
 	AudioServer.set_bus_volume_linear(AudioServer.get_bus_index("Music"), $back/musicVolumeSlider.value)
 	AudioServer.set_bus_volume_linear(AudioServer.get_bus_index("SFX"), $back/SFXVolumeSlider.value)
 
-func _on_test_volume_pressed() -> void:
-	$testPlayer.play(6.7)
 
 func _on_master_volume_slider_value_changed(value: float) -> void:
 	AudioServer.set_bus_volume_linear(AudioServer.get_bus_index("Master"), value)

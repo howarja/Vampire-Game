@@ -1,9 +1,9 @@
 extends Node2D
 
-@onready var normalText = $normalText
+@onready var normalText = $TextHolder/normalText
 
 func _ready() -> void:
-	$gameText.visible=false
+	$TextHolder/gameText.visible=false
 	$Settings.visible = false
 	$exitButton.visible=false
 	normalText.modulate.a = 0
@@ -26,22 +26,22 @@ func fadeText(newText,visibleLength):
 
 func logoAnimation():
 	var tween = get_tree().create_tween().set_parallel(true)
-	tween.tween_property($topText, "position", Vector2(0,-240), 4).set_trans(Tween.TRANS_CUBIC)
-	tween.tween_property($topText, "rotation", deg_to_rad(2520), 4).set_trans(Tween.TRANS_QUAD)
+	tween.tween_property($TextHolder/topText, "position", Vector2(0,-240), 4).set_trans(Tween.TRANS_CUBIC)
+	tween.tween_property($TextHolder/topText, "rotation", deg_to_rad(2520), 4).set_trans(Tween.TRANS_QUAD)
 	
-	tween.tween_property($bottomText, "position", Vector2(0,240), 4).set_trans(Tween.TRANS_CUBIC)
-	tween.tween_property($bottomText, "rotation", deg_to_rad(-2520), 4).set_trans(Tween.TRANS_QUAD)
+	tween.tween_property($TextHolder/bottomText, "position", Vector2(0,240), 4).set_trans(Tween.TRANS_CUBIC)
+	tween.tween_property($TextHolder/bottomText, "rotation", deg_to_rad(-2520), 4).set_trans(Tween.TRANS_QUAD)
 	await tween.finished
 	
 	tween = get_tree().create_tween().set_parallel(true)
-	tween.tween_property($topText, "position", Vector2(0,-60), 0.2).set_trans(Tween.TRANS_CUBIC)
-	tween.tween_property($bottomText, "position", Vector2(0,60), 0.2).set_trans(Tween.TRANS_CUBIC)
+	tween.tween_property($TextHolder/topText, "position", Vector2(0,-60), 0.2).set_trans(Tween.TRANS_CUBIC)
+	tween.tween_property($TextHolder/bottomText, "position", Vector2(0,60), 0.2).set_trans(Tween.TRANS_CUBIC)
 	await tween.finished
 	
-	$topText.visible=false
-	$bottomText.visible=false
+	$TextHolder/topText.visible=false
+	$TextHolder/bottomText.visible=false
 	
-	$gameText.visible=true
+	$TextHolder/gameText.visible=true
 	$exitButton.visible=true
 	$Settings.visible = true
 

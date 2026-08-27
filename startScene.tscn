@@ -15,7 +15,10 @@
 [ext_resource type="Shader" uid="uid://bcfj11konudyk" path="res://fisheye.gdshader" id="8_2l27o"]
 [ext_resource type="Script" uid="uid://dp7tlannev5hr" path="res://room.gd" id="8_f32hw"]
 [ext_resource type="Script" uid="uid://bcpjncrq7w8e3" path="res://peep_hole.gd" id="9_tjtsx"]
+[ext_resource type="Texture2D" uid="uid://cfeeuq7fj2ixv" path="res://Sprites/areas/InsideGarage2.png" id="12_3h27y"]
 [ext_resource type="Script" uid="uid://syofd8amwhw8" path="res://doorway_manager.gd" id="12_8yb6a"]
+[ext_resource type="Texture2D" uid="uid://dchyre33bh0lo" path="res://Sprites/areas/Insidehallway.png" id="12_ii36o"]
+[ext_resource type="Texture2D" uid="uid://djfjfvhgairv1" path="res://Sprites/areas/Doorway.png" id="13_kopt5"]
 [ext_resource type="Script" uid="uid://dep647b6vlno6" path="res://character_manager.gd" id="14_jsjc1"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="15_tjtsx"]
 [ext_resource type="Script" uid="uid://cldxtjjlmpc50" path="res://ending.gd" id="18_3vjno"]
@@ -36,8 +39,8 @@ shader_parameter/radius = 0.1499999966472
 
 [node name="PlayerManager" type="Node2D" parent="." unique_id=374783410 node_paths=PackedStringArray("currentArea", "hallway")]
 script = ExtResource("5_qlfe6")
-currentArea = NodePath("../CanvasLayer/Lounge")
-hallway = NodePath("../CanvasLayer/Lounge")
+currentArea = NodePath("../CanvasLayer/Hallway")
+hallway = NodePath("../CanvasLayer/Hallway")
 
 [node name="CharacterManager" type="Node2D" parent="." unique_id=779009452]
 script = ExtResource("14_jsjc1")
@@ -48,6 +51,7 @@ offset = Vector2(500, 375)
 transform = Transform2D(1, 0, 0, 1, 500, 375)
 
 [node name="Lounge" type="Sprite2D" parent="CanvasLayer" unique_id=1352087972 node_paths=PackedStringArray("movementButtons", "characters")]
+visible = false
 texture = ExtResource("4_vj0vq")
 script = ExtResource("8_f32hw")
 movementButtons = [NodePath("movementButton")]
@@ -59,7 +63,7 @@ offset_top = 168.65355
 offset_right = 25.420197
 offset_bottom = 218.51634
 script = ExtResource("3_jmrrm")
-newArea = NodePath("../../peepHole")
+newArea = NodePath("../../Hallway")
 
 [node name="InteractableCharacter" type="Area2D" parent="CanvasLayer/Lounge" unique_id=656916129]
 position = Vector2(-232.20422, -82.12696)
@@ -124,20 +128,6 @@ offset_right = 81.0
 offset_bottom = 32.0
 text = "Cake"
 
-[node name="Underground" type="Sprite2D" parent="CanvasLayer" unique_id=174614199 node_paths=PackedStringArray("movementButtons")]
-visible = false
-texture = ExtResource("6_avnbb")
-script = ExtResource("8_f32hw")
-movementButtons = [NodePath("movementButton")]
-
-[node name="movementButton" type="Button" parent="CanvasLayer/Underground" unique_id=375303595 node_paths=PackedStringArray("newArea")]
-offset_left = -61.106384
-offset_top = 168.65355
-offset_right = 25.420197
-offset_bottom = 218.51634
-script = ExtResource("3_jmrrm")
-newArea = NodePath("../../Lounge")
-
 [node name="peepHole" type="Sprite2D" parent="CanvasLayer" unique_id=195838583 node_paths=PackedStringArray("characterSprite", "maxTimer", "movementButtons")]
 visible = false
 material = SubResource("ShaderMaterial_jsjc1")
@@ -154,7 +144,7 @@ offset_top = 114.879974
 offset_right = 44.61989
 offset_bottom = 182.00464
 script = ExtResource("3_jmrrm")
-newArea = NodePath("../../Lounge")
+newArea = NodePath("../../Hallway")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/peepHole" unique_id=1678730477]
 position = Vector2(-210.6948, -62.08409)
@@ -167,6 +157,101 @@ wait_time = 15.0
 texture = ExtResource("4_qlfe6")
 vframes = 3
 frame = 2
+
+[node name="Hallway" type="Sprite2D" parent="CanvasLayer" unique_id=581124047 node_paths=PackedStringArray("movementButtons")]
+texture = ExtResource("12_ii36o")
+script = ExtResource("8_f32hw")
+movementButtons = [NodePath("movementButton")]
+
+[node name="movementButton" type="Button" parent="CanvasLayer/Hallway" unique_id=1235997405 node_paths=PackedStringArray("newArea")]
+offset_left = 148.0
+offset_top = -57.000015
+offset_right = 234.52658
+offset_bottom = -7.1372223
+text = "Lounge"
+script = ExtResource("3_jmrrm")
+newArea = NodePath("../../Lounge")
+
+[node name="movementButton2" type="Button" parent="CanvasLayer/Hallway" unique_id=188149822 node_paths=PackedStringArray("newArea")]
+offset_left = 302.0
+offset_top = -1.0000153
+offset_right = 388.52658
+offset_bottom = 48.862778
+text = "Garage"
+script = ExtResource("3_jmrrm")
+newArea = NodePath("../../Garage")
+
+[node name="movementButton3" type="Button" parent="CanvasLayer/Hallway" unique_id=1415821590 node_paths=PackedStringArray("newArea")]
+offset_left = -17.0
+offset_top = 164.99998
+offset_right = 69.52658
+offset_bottom = 214.86278
+text = "Doorway"
+script = ExtResource("3_jmrrm")
+newArea = NodePath("../../Doorway")
+
+[node name="Doorway" type="Sprite2D" parent="CanvasLayer" unique_id=78017150 node_paths=PackedStringArray("movementButtons")]
+visible = false
+texture = ExtResource("13_kopt5")
+script = ExtResource("8_f32hw")
+movementButtons = [NodePath("movementButton"), NodePath("movementButton2")]
+
+[node name="movementButton" type="Button" parent="CanvasLayer/Doorway" unique_id=1504971743 node_paths=PackedStringArray("newArea")]
+offset_left = -97.0
+offset_top = 268.0
+offset_right = -10.473419
+offset_bottom = 317.8628
+text = "Hallway"
+script = ExtResource("3_jmrrm")
+newArea = NodePath("../../Hallway")
+
+[node name="movementButton2" type="Button" parent="CanvasLayer/Doorway" unique_id=1311128301 node_paths=PackedStringArray("newArea")]
+offset_left = -131.0
+offset_top = -138.0
+offset_right = -44.47342
+offset_bottom = -88.13721
+text = "Peephole"
+script = ExtResource("3_jmrrm")
+newArea = NodePath("../../peepHole")
+
+[node name="Garage" type="Sprite2D" parent="CanvasLayer" unique_id=1752562995 node_paths=PackedStringArray("movementButtons")]
+visible = false
+texture = ExtResource("12_3h27y")
+script = ExtResource("8_f32hw")
+movementButtons = [NodePath("movementButton"), NodePath("movementButton2")]
+
+[node name="movementButton" type="Button" parent="CanvasLayer/Garage" unique_id=1244336808 node_paths=PackedStringArray("newArea")]
+offset_left = 58.0
+offset_top = 234.99998
+offset_right = 144.52658
+offset_bottom = 284.8628
+text = "Hallway"
+script = ExtResource("3_jmrrm")
+newArea = NodePath("../../Hallway")
+
+[node name="movementButton2" type="Button" parent="CanvasLayer/Garage" unique_id=1957635642 node_paths=PackedStringArray("newArea")]
+offset_left = -441.0
+offset_top = 57.999985
+offset_right = -354.47342
+offset_bottom = 107.86279
+text = "Basement"
+script = ExtResource("3_jmrrm")
+newArea = NodePath("../../Basement")
+
+[node name="Basement" type="Sprite2D" parent="CanvasLayer" unique_id=174614199 node_paths=PackedStringArray("movementButtons")]
+visible = false
+texture = ExtResource("6_avnbb")
+script = ExtResource("8_f32hw")
+movementButtons = [NodePath("movementButton")]
+
+[node name="movementButton" type="Button" parent="CanvasLayer/Basement" unique_id=375303595 node_paths=PackedStringArray("newArea")]
+offset_left = -61.106384
+offset_top = 168.65355
+offset_right = 25.420197
+offset_bottom = 218.51634
+text = "Garage"
+script = ExtResource("3_jmrrm")
+newArea = NodePath("../../Garage")
 
 [node name="ConversationManager" type="Control" parent="CanvasLayer" unique_id=648713796 node_paths=PackedStringArray("text", "buttonContainer", "exitButton", "killButton")]
 layout_mode = 3

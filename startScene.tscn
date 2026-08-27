@@ -33,14 +33,27 @@ shader_parameter/center = Vector2(0.5, 0.175)
 shader_parameter/power = 0.82999998517316
 shader_parameter/radius = 0.1499999966472
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kopt5"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
 [node name="Node2D" type="Node2D" unique_id=2079086675]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=132324970]
 
-[node name="PlayerManager" type="Node2D" parent="." unique_id=374783410 node_paths=PackedStringArray("currentArea", "hallway")]
+[node name="PlayerManager" type="Node2D" parent="." unique_id=374783410 node_paths=PackedStringArray("currentArea", "hallway", "fade")]
 script = ExtResource("5_qlfe6")
 currentArea = NodePath("../CanvasLayer/Hallway")
 hallway = NodePath("../CanvasLayer/Hallway")
+fade = NodePath("../CanvasLayer/BlackFade")
 
 [node name="CharacterManager" type="Node2D" parent="." unique_id=779009452]
 script = ExtResource("14_jsjc1")
@@ -147,8 +160,6 @@ script = ExtResource("3_jmrrm")
 newArea = NodePath("../../Hallway")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/peepHole" unique_id=1678730477]
-position = Vector2(-210.6948, -62.08409)
-scale = Vector2(2.5091062, 2.509106)
 
 [node name="Timer" type="Timer" parent="CanvasLayer/peepHole" unique_id=409054883]
 wait_time = 15.0
@@ -334,6 +345,20 @@ text = "Kill"
 
 [node name="Settings" parent="CanvasLayer" unique_id=1974824112 instance=ExtResource("7_jmrrm")]
 position = Vector2(-500, -375)
+
+[node name="BlackFade" type="Panel" parent="CanvasLayer" unique_id=1949933723]
+modulate = Color(0, 0, 0, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -508.0
+offset_top = -381.0
+offset_right = -496.0
+offset_bottom = -377.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_kopt5")
 
 [node name="Person" type="Sprite2D" parent="." unique_id=430508438]
 texture = ExtResource("4_qlfe6")

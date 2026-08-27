@@ -10,9 +10,12 @@ func enterArea():
 	show();
 	onEntered();
 
+func disableMovement():
+	hideButtons();
+
 func exitArea():
 	hideCharacters();
-	hideButtons();
+	disableMovement();
 	hide();
 
 func hideCharacters():

@@ -6,4 +6,4 @@ func _ready() -> void:
 	pressed.connect(move);
 
 func move():
-	Globals.player.changeAreaTo(newArea);
+	Globals.player.fadeTo(newArea);

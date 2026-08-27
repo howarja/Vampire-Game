@@ -1,14 +1,15 @@
 [gd_scene format=3 uid="uid://gpedpgp5hk8i"]
 
-[ext_resource type="Script" uid="uid://dberhdml3xlet" path="res://scripts/conversation_manager.gd" id="1_rq48i"]
+[ext_resource type="Script" uid="uid://dberhdml3xlet" path="res://Scripts/conversation_manager.gd" id="1_rq48i"]
 [ext_resource type="Resource" uid="uid://n2704kdgjax5" path="res://Characters/CountDown.tres" id="2_1ljrl"]
-[ext_resource type="Script" uid="uid://bndg1f3jq34l3" path="res://scripts/textGiver.gd" id="2_yagjw"]
-[ext_resource type="Script" uid="uid://btva2ox1ockyg" path="res://scripts/interactable_character.gd" id="3_ip4ey"]
-[ext_resource type="Script" uid="uid://b7d02u7xi35qp" path="res://scripts/movement_button.gd" id="3_jmrrm"]
+[ext_resource type="Script" uid="uid://bndg1f3jq34l3" path="res://Scripts/textGiver.gd" id="2_yagjw"]
+[ext_resource type="Script" uid="uid://btva2ox1ockyg" path="res://Scripts/interactable_character.gd" id="3_ip4ey"]
+[ext_resource type="Script" uid="uid://b7d02u7xi35qp" path="res://Scripts/movement_button.gd" id="3_jmrrm"]
 [ext_resource type="Texture2D" uid="uid://b3wousrl8g8s5" path="res://icon.svg" id="4_1h7fw"]
 [ext_resource type="Texture2D" uid="uid://cjgwsjboawlj2" path="res://Sprites/areas/Outside.png" id="4_qlfe6"]
 [ext_resource type="Texture2D" uid="uid://b85cn7tf2bm3j" path="res://Sprites/areas/Lounge.png" id="4_vj0vq"]
-[ext_resource type="Script" uid="uid://dgg3qst63mw2m" path="res://scripts/player_manager.gd" id="5_qlfe6"]
+[ext_resource type="Script" uid="uid://dgg3qst63mw2m" path="res://Scripts/player_manager.gd" id="5_qlfe6"]
+[ext_resource type="Resource" uid="uid://bj6r2225r6vk8" path="res://Characters/CharlieCholick.tres" id="5_wbdqt"]
 [ext_resource type="Texture2D" uid="uid://qlfdpkrwrf" path="res://Sprites/areas/UnderGround.png" id="6_avnbb"]
 [ext_resource type="PackedScene" uid="uid://llqh6vgtk77" path="res://scenes/settings.tscn" id="7_jmrrm"]
 [ext_resource type="Shader" uid="uid://bcfj11konudyk" path="res://fisheye.gdshader" id="8_2l27o"]
@@ -16,7 +17,8 @@
 [ext_resource type="Script" uid="uid://bcpjncrq7w8e3" path="res://peep_hole.gd" id="9_tjtsx"]
 [ext_resource type="Script" uid="uid://syofd8amwhw8" path="res://doorway_manager.gd" id="12_8yb6a"]
 [ext_resource type="Script" uid="uid://dep647b6vlno6" path="res://character_manager.gd" id="14_jsjc1"]
-[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="15_tjtsx"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="15_tjtsx"]
+[ext_resource type="Script" uid="uid://cldxtjjlmpc50" path="res://ending.gd" id="18_3vjno"]
 [ext_resource type="Texture2D" uid="uid://y27g4y1o1qhu" path="res://Sprites/Vignete.png" id="18_c0cp5"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3xd07"]
@@ -32,13 +34,14 @@ shader_parameter/radius = 0.1499999966472
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=132324970]
 
-[node name="PlayerManager" type="Node2D" parent="." unique_id=374783410 node_paths=PackedStringArray("currentArea")]
+[node name="PlayerManager" type="Node2D" parent="." unique_id=374783410 node_paths=PackedStringArray("currentArea", "hallway")]
 script = ExtResource("5_qlfe6")
 currentArea = NodePath("../CanvasLayer/Lounge")
+hallway = NodePath("../CanvasLayer/Lounge")
 
 [node name="CharacterManager" type="Node2D" parent="." unique_id=779009452]
 script = ExtResource("14_jsjc1")
-unEncounteredCharacters = Array[ExtResource("15_tjtsx")]([ExtResource("2_1ljrl")])
+unEncounteredCharacters = Array[ExtResource("15_tjtsx")]([ExtResource("2_1ljrl"), ExtResource("5_wbdqt")])
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=982724521]
 offset = Vector2(500, 375)
@@ -69,6 +72,58 @@ texture = ExtResource("4_1h7fw")
 [node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Lounge/InteractableCharacter" unique_id=2117342533]
 shape = SubResource("CircleShape2D_3xd07")
 
+[node name="EndingManager" type="Control" parent="CanvasLayer/Lounge" unique_id=668338982 node_paths=PackedStringArray("endingButton", "confirmButton", "cancelButton", "endingInfo")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("18_3vjno")
+endingButton = NodePath("EndingButton")
+confirmButton = NodePath("Panel/ConfirmButton")
+cancelButton = NodePath("Panel/CancelButton")
+endingInfo = NodePath("Panel")
+
+[node name="Panel" type="Panel" parent="CanvasLayer/Lounge/EndingManager" unique_id=900292247]
+visible = false
+layout_mode = 0
+offset_left = -181.0
+offset_top = -95.0
+offset_right = 181.0
+offset_bottom = 132.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Lounge/EndingManager/Panel" unique_id=392955541]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "All of the guests have arrived. You are ready to celebrate, this means ending your duties. If any vampires are on the premises then they will eat the host."
+
+[node name="ConfirmButton" type="Button" parent="CanvasLayer/Lounge/EndingManager/Panel" unique_id=102045945]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 160.0
+offset_right = 164.0
+offset_bottom = 209.0
+text = "Confirm"
+
+[node name="CancelButton" type="Button" parent="CanvasLayer/Lounge/EndingManager/Panel" unique_id=1188443232]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 161.0
+offset_right = 327.0
+offset_bottom = 210.0
+text = "Cancel"
+
+[node name="EndingButton" type="Button" parent="CanvasLayer/Lounge/EndingManager" unique_id=981702094]
+layout_mode = 0
+offset_left = -73.0
+offset_top = -24.0
+offset_right = 81.0
+offset_bottom = 32.0
+text = "Cake"
+
 [node name="Underground" type="Sprite2D" parent="CanvasLayer" unique_id=174614199 node_paths=PackedStringArray("movementButtons")]
 visible = false
 texture = ExtResource("6_avnbb")
@@ -83,13 +138,14 @@ offset_bottom = 218.51634
 script = ExtResource("3_jmrrm")
 newArea = NodePath("../../Lounge")
 
-[node name="peepHole" type="Sprite2D" parent="CanvasLayer" unique_id=195838583 node_paths=PackedStringArray("characterSprite", "movementButtons")]
+[node name="peepHole" type="Sprite2D" parent="CanvasLayer" unique_id=195838583 node_paths=PackedStringArray("characterSprite", "maxTimer", "movementButtons")]
 visible = false
 material = SubResource("ShaderMaterial_jsjc1")
 texture = ExtResource("4_qlfe6")
 vframes = 3
 script = ExtResource("9_tjtsx")
 characterSprite = NodePath("Sprite2D")
+maxTimer = NodePath("Timer")
 movementButtons = [NodePath("movementButton")]
 
 [node name="movementButton" type="Button" parent="CanvasLayer/peepHole" unique_id=1256232738 node_paths=PackedStringArray("newArea")]
@@ -103,6 +159,14 @@ newArea = NodePath("../../Lounge")
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/peepHole" unique_id=1678730477]
 position = Vector2(-210.6948, -62.08409)
 scale = Vector2(2.5091062, 2.509106)
+
+[node name="Timer" type="Timer" parent="CanvasLayer/peepHole" unique_id=409054883]
+wait_time = 15.0
+
+[node name="Vignette" type="Sprite2D" parent="CanvasLayer/peepHole" unique_id=1553481169]
+texture = ExtResource("4_qlfe6")
+vframes = 3
+frame = 2
 
 [node name="ConversationManager" type="Control" parent="CanvasLayer" unique_id=648713796 node_paths=PackedStringArray("text", "buttonContainer", "exitButton", "killButton")]
 layout_mode = 3
@@ -190,11 +254,6 @@ position = Vector2(-500, -375)
 texture = ExtResource("4_qlfe6")
 vframes = 3
 frame = 1
-
-[node name="Vignette" type="Sprite2D" parent="." unique_id=1553481169]
-texture = ExtResource("4_qlfe6")
-vframes = 3
-frame = 2
 
 [node name="CanvasLayerBorder" type="CanvasLayer" parent="." unique_id=1724315043]
 layer = 2

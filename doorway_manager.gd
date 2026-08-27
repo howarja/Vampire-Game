@@ -66,3 +66,4 @@ func exitConversation():
 func acceptGuest():
 	Globals.characters.acceptCharacter(currentCharacter);
 	exitConversation();
+	Globals.player.returnToHallway();

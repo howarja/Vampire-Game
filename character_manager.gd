@@ -11,15 +11,23 @@ func getCharacter() -> character:
 	if unEncounteredCharacters.size()>0:
 		var newCharacter: character = unEncounteredCharacters[0];
 		unEncounteredCharacters.remove_at(0);
+		
+		# if no more characters left, enable ending
+		if unEncounteredCharacters.size()<=0:
+			Globals.ending.enableEnding();
+		
 		return newCharacter;
 	else:
 		return null;
 
 func acceptCharacter(newCharacter: character) -> void:
 	acceptedCharacters.append(newCharacter);
-	
+
 func isActiveCharacter(check: character):
 	return acceptedCharacters.has(check);
 
 func removeCharacter(remove: character) -> void:
 	acceptedCharacters.erase(remove);
+
+func noCharacters() -> bool:
+	return (acceptedCharacters.size()==0);

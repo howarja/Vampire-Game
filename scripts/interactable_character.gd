@@ -37,3 +37,6 @@ func mouseOver() -> void:
 
 func mouseExit() -> void:
 	clickable = false;
+
+func kill():
+	Globals.characters.removeCharacter(currentCharacter);

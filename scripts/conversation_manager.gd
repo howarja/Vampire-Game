@@ -12,6 +12,7 @@ var lastInteracted: interactableCharacter;
 
 @export var buttonContainer: Container;
 @export var exitButton: Button;
+@export var killButton: Button;
 
 var holdingInput: bool = false;
 var canInput: bool = true;
@@ -20,6 +21,7 @@ var inConversation: bool = false;
 func _ready() -> void:
 	Globals.conversation = self;
 	exitButton.pressed.connect(exitConversation)
+	killButton.pressed.connect(killCharacter)
 	canQuestion(false)
 
 func newLine():
@@ -79,3 +81,7 @@ func exitConversation():
 	text.disable();
 	lastInteracted.update();
 	Globals.player.currentArea.showButtons();
+
+func killCharacter():
+	lastInteracted.kill();
+	exitConversation();

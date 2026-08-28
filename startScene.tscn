@@ -172,7 +172,7 @@ frame = 2
 [node name="Hallway" type="Sprite2D" parent="CanvasLayer" unique_id=581124047 node_paths=PackedStringArray("movementButtons")]
 texture = ExtResource("12_ii36o")
 script = ExtResource("8_f32hw")
-movementButtons = [NodePath("movementButton")]
+movementButtons = [NodePath("movementButton"), NodePath("movementButton2"), NodePath("movementButton3")]
 
 [node name="movementButton" type="Button" parent="CanvasLayer/Hallway" unique_id=1235997405 node_paths=PackedStringArray("newArea")]
 offset_left = 148.0

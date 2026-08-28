@@ -15,7 +15,7 @@ func changeAreaTo(newArea: Node2D):
 	currentArea.enterArea();
 
 func returnToHallway() -> void:
-	changeAreaTo(hallway);
+	fadeTo(hallway);
 
 func fadeTo(newArea: Node2D):
 	# fade darkness in, load new area, fade darkness out

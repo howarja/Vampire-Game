@@ -80,7 +80,7 @@ func exitConversation():
 	lines = [];
 	text.disable();
 	lastInteracted.update();
-	Globals.player.currentArea.showButtons();
+	Globals.player.fadeTo(Globals.player.currentArea)
 
 func killCharacter():
 	lastInteracted.kill();

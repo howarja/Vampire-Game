@@ -13,6 +13,8 @@ var lastInteracted: interactableCharacter;
 @export var buttonContainer: Container;
 @export var exitButton: Button;
 @export var killButton: Button;
+@export var characterSprite: Sprite2D;
+@export var anim: AnimationPlayer;
 
 var holdingInput: bool = false;
 var canInput: bool = true;
@@ -51,6 +53,7 @@ func canQuestion(enabled: bool):
 func loadCharacter(newCharacter: character, interacted: interactableCharacter):
 	currentCharacter = newCharacter;
 	lastInteracted = interacted;
+	characterSprite.texture = newCharacter.sprite;
 	
 	# destroy existing buttons and re-instantiate them, quicker than re-using
 	for i in questionButtons.size():
@@ -80,8 +83,25 @@ func exitConversation():
 	lines = [];
 	text.disable();
 	lastInteracted.update();
+	characterSprite.texture = null;
 	Globals.player.fadeTo(Globals.player.currentArea)
 
 func killCharacter():
+	# kill the character
 	lastInteracted.kill();
-	exitConversation();
+	anim.play("KillAnim");
+	
+	# disable conversation
+	canQuestion(false);
+	inConversation = false;
+	lines = [];
+	text.disable();
+	lastInteracted.update();
+
+func exitWithoutFade():
+	inConversation = false;
+	canQuestion(false);
+	lines = [];
+	text.disable();
+	lastInteracted.update();
+	characterSprite.texture = null;

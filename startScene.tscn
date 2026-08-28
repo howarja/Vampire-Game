@@ -23,6 +23,7 @@
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="15_tjtsx"]
 [ext_resource type="Script" uid="uid://cldxtjjlmpc50" path="res://ending.gd" id="18_3vjno"]
 [ext_resource type="Texture2D" uid="uid://y27g4y1o1qhu" path="res://Sprites/Vignete.png" id="18_c0cp5"]
+[ext_resource type="Texture2D" uid="uid://cghiky6m7jhx4" path="res://Sprites/Hand gun anim.png" id="21_nxs8g"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3xd07"]
 radius = 91.0
@@ -32,6 +33,155 @@ shader = ExtResource("8_2l27o")
 shader_parameter/center = Vector2(0.5, 0.175)
 shader_parameter/power = 0.82999998517316
 shader_parameter/radius = 0.1499999966472
+
+[sub_resource type="Animation" id="Animation_nxs8g"]
+resource_name = "KillAnim"
+length = 1.7
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GunSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(2, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 9, -0.16666667, -1.5, 0, 0, 0, -0.016666671, 1.5, 0, 0),
+"times": PackedFloat32Array(0, 1, 1.01)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("KillFade:modulate:r")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.18333334, 0, 0, 0, 1, -0.18333334, 0, 0, 0, 0, -0.016666671, 0.16666669, 0, 0, 0, -0.016666671, 0.16666669, 0, 0, 0, -0.016666671, 0, 0, 0),
+"times": PackedFloat32Array(0.93333334, 1, 1.0644946, 1.3, 1.5010269, 1.7)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("KillFade:modulate:g")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.18333334, 0, 0, 0, 1, -0.18333334, 0, 0, 0, 0, -0.016666671, 0.16666669, 0, 0, 0, -0.016666671, 0.16666669, 0, 0, 0, -0.016666671, 0, 0, 0),
+"times": PackedFloat32Array(0.93333334, 1, 1.0644946, 1.3, 1.5010269, 1.7)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("KillFade:modulate:b")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.18333334, 0, 0, 0, 1, -0.18333334, 0, 0, 0, 0, -0.016666671, 0.16666669, 0, 0, 0, -0.016666671, 0.16666669, 0, 0, 0, -0.016666671, 0, 0, 0),
+"times": PackedFloat32Array(0.93333334, 1, 1.0644946, 1.3, 1.5010269, 1.7)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("KillFade:modulate:a")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -0.18333334, -0.16666667, 0, 0, 1, -0.18333334, -0.16666667, 0, 0, 1, -0.016666671, 0, 0, 0, 1, -0.016666671, 0, 0, 0, 0, -0.016666671, 0.16666669, 0, 0),
+"times": PackedFloat32Array(0.93333334, 1, 1.0644946, 1.3, 1.5010269, 1.7)
+}
+tracks/5/type = "method"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath(".")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(1.0666667),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"exitWithoutFade"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_0l8yg"]
+length = 0.001
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GunSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("KillFade:modulate:r")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("KillFade:modulate:g")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("KillFade:modulate:b")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("KillFade:modulate:a")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4lml8"]
+_data = {
+&"KillAnim": SubResource("Animation_nxs8g"),
+&"RESET": SubResource("Animation_0l8yg")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5omdu"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kopt5"]
 content_margin_left = 0.0
@@ -264,17 +414,47 @@ text = "Garage"
 script = ExtResource("3_jmrrm")
 newArea = NodePath("../../Garage")
 
-[node name="ConversationManager" type="Control" parent="CanvasLayer" unique_id=648713796 node_paths=PackedStringArray("text", "buttonContainer", "exitButton", "killButton")]
+[node name="ConversationManager" type="Control" parent="CanvasLayer" unique_id=648713796 node_paths=PackedStringArray("text", "buttonContainer", "exitButton", "killButton", "characterSprite", "anim")]
 layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_rq48i")
 text = NodePath("../TextGiver")
 buttonContainer = NodePath("../QuestionOptions")
 exitButton = NodePath("../QuestionOptions/ExitDialogueButton")
 killButton = NodePath("../QuestionOptions/KillButton")
+characterSprite = NodePath("InDialogueSprite")
+anim = NodePath("ConversationAnim")
+
+[node name="InDialogueSprite" type="Sprite2D" parent="CanvasLayer/ConversationManager" unique_id=1441774159]
+position = Vector2(-223, 0)
+
+[node name="GunSprite" type="Sprite2D" parent="CanvasLayer/ConversationManager" unique_id=348738408]
+position = Vector2(0, 98)
+texture = ExtResource("21_nxs8g")
+hframes = 10
+
+[node name="ConversationAnim" type="AnimationPlayer" parent="CanvasLayer/ConversationManager" unique_id=1858851757]
+libraries/ = SubResource("AnimationLibrary_4lml8")
+
+[node name="KillFade" type="Panel" parent="CanvasLayer/ConversationManager" unique_id=1742685063]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -508.0
+offset_top = -381.0
+offset_right = -496.0
+offset_bottom = -377.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5omdu")
 
 [node name="DoorwayManager" type="Control" parent="CanvasLayer" unique_id=1390457711 node_paths=PackedStringArray("text", "acceptButton", "declineButton")]
 layout_mode = 3

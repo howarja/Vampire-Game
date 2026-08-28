@@ -106,3 +106,4 @@ func exitWithoutFade():
 	text.disable();
 	lastInteracted.update();
 	characterSprite.texture = null;
+	Globals.player.changeAreaTo(Globals.player.currentArea)

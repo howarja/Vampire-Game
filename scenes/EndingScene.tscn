@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://c2ai1lfapplik"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qnm0e"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[node name="EndingScene" type="Node2D" unique_id=2130332170]
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1850741684]
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=306155222]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_qnm0e")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer" unique_id=2064238484]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+bbcode_enabled = true
+text = "[center]
+
+
+
+What a great party!
+
+Innocents killed: 0
+
+Vampires let in: 0
+
+Vampires alive: 0
+
+The host survived!"

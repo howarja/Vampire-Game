@@ -9,6 +9,7 @@ class_name endingManager;
 func _ready() -> void:
 	endingButton.pressed.connect(showInfo);
 	cancelButton.pressed.connect(hideInfo);
+	confirmButton.pressed.connect(confirmEnding);
 	hide();
 	Globals.ending = self;
 	
@@ -22,3 +23,6 @@ func hideInfo():
 
 func enableEnding():
 	show();
+
+func confirmEnding():
+	get_tree().change_scene_to_file("res://scenes/EndingScene.tscn");

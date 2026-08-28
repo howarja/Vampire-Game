@@ -15,7 +15,6 @@ func getCharacter() -> character:
 		# if no more characters left, enable ending
 		if unEncounteredCharacters.size()<=0:
 			Globals.ending.enableEnding();
-		
 		return newCharacter;
 	else:
 		return null;

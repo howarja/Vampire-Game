@@ -89,6 +89,7 @@ func exitConversation():
 func killCharacter():
 	# kill the character
 	lastInteracted.kill();
+	characterSprite.texture = currentCharacter.afraidSprite;
 	anim.play("KillAnim");
 	
 	# disable conversation

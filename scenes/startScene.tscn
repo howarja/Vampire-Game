@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://llqh6vgtk77" path="res://scenes/settings.tscn" id="7_jmrrm"]
 [ext_resource type="Shader" uid="uid://bcfj11konudyk" path="res://shaders/fisheye.gdshader" id="8_2l27o"]
 [ext_resource type="Script" uid="uid://dp7tlannev5hr" path="res://Scripts/room.gd" id="8_f32hw"]
+[ext_resource type="PackedScene" uid="uid://o5bvwg7bgbvg" path="res://scenes/vhs_filter_test.tscn" id="8_judpu"]
 [ext_resource type="Script" uid="uid://bcpjncrq7w8e3" path="res://Scripts/peep_hole.gd" id="9_tjtsx"]
 [ext_resource type="Material" uid="uid://caqmrlgvj6aca" path="res://Materials/fishEyePeephole.tres" id="12_0l8yg"]
 [ext_resource type="Texture2D" uid="uid://cfeeuq7fj2ixv" path="res://Sprites/areas/InsideGarage2.png" id="12_3h27y"]
@@ -574,6 +575,14 @@ anchor_bottom = 0.5
 offset_top = -0.24996948
 offset_right = -3.0
 offset_bottom = -1.0
+
+[node name="VHSfx" parent="CanvasLayer" unique_id=1094916861 instance=ExtResource("8_judpu")]
+z_index = 4096
+offset_left = -551.6666
+offset_top = -417.0
+offset_right = -442.33337
+offset_bottom = -335.0
+mouse_filter = 2
 
 [node name="Person" type="Sprite2D" parent="." unique_id=430508438]
 visible = false

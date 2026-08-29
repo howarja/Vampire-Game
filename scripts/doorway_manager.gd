@@ -63,6 +63,7 @@ func exitConversation():
 	text.disable();
 	Globals.player.currentArea.showButtons();
 	Globals.player.fadeHouseMusic();
+	Globals.player.returnToHallway();
 	
 func acceptGuest():
 	Globals.characters.acceptCharacter(currentCharacter);
@@ -70,6 +71,4 @@ func acceptGuest():
 		Globals.vampiresLetIn+=1;
 	else:
 		Globals.humansLetIn+=1;
-	
 	exitConversation();
-	Globals.player.returnToHallway();

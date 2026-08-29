@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://gmud550rfqg4"
+path="res://.godot/imported/Click2-converted.mp3-22986fcbc7d19e80b9f991f99a7d1265.mp3str"
+
+[deps]
+
+source_file="res://SFX/temp mp3 convert/Click2-converted.mp3"
+dest_files=["res://.godot/imported/Click2-converted.mp3-22986fcbc7d19e80b9f991f99a7d1265.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

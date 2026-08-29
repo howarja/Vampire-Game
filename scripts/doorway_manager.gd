@@ -62,6 +62,7 @@ func exitConversation():
 	lines = [];
 	text.disable();
 	Globals.player.currentArea.showButtons();
+	Globals.player.fadeHouseMusic();
 	
 func acceptGuest():
 	Globals.characters.acceptCharacter(currentCharacter);

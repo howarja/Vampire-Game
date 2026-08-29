@@ -26,3 +26,4 @@ func onEntered():
 		Globals.resetActionTimer(1);
 	else:
 		characterSprite.texture = null;
+	Globals.player.fadeOutsideMusic();

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cghiky6m7jhx4"
-path="res://.godot/imported/Hand gun anim.png-aa70a5cb3e504641a453942cf767472e.ctex"
+path="res://.godot/imported/Hand gun anim.png-f1cf37e7bc28c5b581428a2f22fe6641.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/Hand gun anim.png"
-dest_files=["res://.godot/imported/Hand gun anim.png-aa70a5cb3e504641a453942cf767472e.ctex"]
+source_file="res://Sprites/Hand gun anim.png"
+dest_files=["res://.godot/imported/Hand gun anim.png-f1cf37e7bc28c5b581428a2f22fe6641.ctex"]
 
 [params]
 

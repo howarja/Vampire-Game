@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://2w2s14uuhl1p"
+path="res://.godot/imported/Drag3-converted.mp3-e39a9df84e5f41f30b73d1f413bf7d1f.mp3str"
+
+[deps]
+
+source_file="res://SFX/temp mp3 convert/Drag3-converted.mp3"
+dest_files=["res://.godot/imported/Drag3-converted.mp3-e39a9df84e5f41f30b73d1f413bf7d1f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

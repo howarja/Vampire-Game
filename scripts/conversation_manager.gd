@@ -100,6 +100,7 @@ func killCharacter():
 	lastInteracted.kill();
 	characterSprite.texture = currentCharacter.afraidSprite;
 	anim.play("KillAnim");
+	Globals.player.fadeHouseMusicOutIn(1);
 	
 	# disable conversation
 	canQuestion(false);

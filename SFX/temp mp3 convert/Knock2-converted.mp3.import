@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b6b5oxetne3q7"
+path="res://.godot/imported/Knock2-converted.mp3-a28a473338ac30bd81d73430d6a90d23.mp3str"
+
+[deps]
+
+source_file="res://SFX/temp mp3 convert/Knock2-converted.mp3"
+dest_files=["res://.godot/imported/Knock2-converted.mp3-a28a473338ac30bd81d73430d6a90d23.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

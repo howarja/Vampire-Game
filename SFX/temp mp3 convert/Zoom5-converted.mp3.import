@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://biwpu71snw6df"
+path="res://.godot/imported/Zoom5-converted.mp3-882394c209b1b95fde1825adb07d02fc.mp3str"
+
+[deps]
+
+source_file="res://SFX/temp mp3 convert/Zoom5-converted.mp3"
+dest_files=["res://.godot/imported/Zoom5-converted.mp3-882394c209b1b95fde1825adb07d02fc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c2ai1lfapplik"]
 
 [ext_resource type="Script" uid="uid://c8lbmb2jy31v3" path="res://scenes/ending_scene.gd" id="1_ldsnl"]
+[ext_resource type="AudioStream" uid="uid://bk2pdxxhbgaej" path="res://music/Epic song but scary.wav" id="2_as4tj"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qnm0e"]
 content_margin_left = 0.0
@@ -48,3 +49,8 @@ Vampires let in: 0
 Vampires alive: 0
 
 The host survived!"
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=909243639]
+position = Vector2(391, 640)
+stream = ExtResource("2_as4tj")
+autoplay = true

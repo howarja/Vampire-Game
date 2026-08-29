@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dberhdml3xlet" path="res://Scripts/conversation_manager.gd" id="1_rq48i"]
 [ext_resource type="Resource" uid="uid://n2704kdgjax5" path="res://Characters/CountDown.tres" id="2_1ljrl"]
+[ext_resource type="AudioStream" uid="uid://dljpxhvysohf1" path="res://music/Jingle time.wav" id="2_v3w6o"]
 [ext_resource type="Script" uid="uid://bndg1f3jq34l3" path="res://Scripts/textGiver.gd" id="2_yagjw"]
 [ext_resource type="Script" uid="uid://btva2ox1ockyg" path="res://Scripts/interactable_character.gd" id="3_ip4ey"]
 [ext_resource type="Script" uid="uid://b7d02u7xi35qp" path="res://Scripts/movement_button.gd" id="3_jmrrm"]
@@ -26,6 +27,7 @@
 [ext_resource type="Texture2D" uid="uid://y27g4y1o1qhu" path="res://Sprites/Vignete.png" id="18_c0cp5"]
 [ext_resource type="Texture2D" uid="uid://cghiky6m7jhx4" path="res://Sprites/Hand gun anim.png" id="21_nxs8g"]
 [ext_resource type="PackedScene" uid="uid://c7awdxtytslkh" path="res://scenes/phone.tscn" id="25_lqxam"]
+[ext_resource type="AudioStream" uid="uid://ei38ltoqcv4w" path="res://music/ambiance/Ghostly sfx_static.wav" id="28_judpu"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3xd07"]
 radius = 91.0
@@ -201,11 +203,21 @@ corner_detail = 5
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=132324970]
 
-[node name="PlayerManager" type="Node2D" parent="." unique_id=374783410 node_paths=PackedStringArray("currentArea", "hallway", "fade")]
+[node name="PlayerManager" type="Node2D" parent="." unique_id=374783410 node_paths=PackedStringArray("currentArea", "hallway", "fade", "houseMusic", "outsideMusic")]
 script = ExtResource("5_qlfe6")
 currentArea = NodePath("../CanvasLayer/Hallway")
 hallway = NodePath("../CanvasLayer/Hallway")
 fade = NodePath("../CanvasLayer/BlackFade")
+houseMusic = NodePath("InHouseMusic")
+outsideMusic = NodePath("PeepHoleMusic")
+
+[node name="InHouseMusic" type="AudioStreamPlayer2D" parent="PlayerManager" unique_id=839886360]
+stream = ExtResource("2_v3w6o")
+autoplay = true
+
+[node name="PeepHoleMusic" type="AudioStreamPlayer2D" parent="PlayerManager" unique_id=1871301288]
+stream = ExtResource("28_judpu")
+autoplay = true
 
 [node name="CharacterManager" type="Node2D" parent="." unique_id=779009452]
 script = ExtResource("14_jsjc1")
@@ -217,6 +229,7 @@ transform = Transform2D(1, 0, 0, 1, 500, 375)
 
 [node name="Lounge" type="Sprite2D" parent="CanvasLayer" unique_id=1352087972 node_paths=PackedStringArray("movementButtons", "characters")]
 visible = false
+scale = Vector2(1.1, 1.1)
 texture = ExtResource("4_vj0vq")
 script = ExtResource("8_f32hw")
 movementButtons = [NodePath("movementButton")]
@@ -296,12 +309,15 @@ text = "Cake"
 [node name="peepHole" type="Sprite2D" parent="CanvasLayer" unique_id=195838583 node_paths=PackedStringArray("characterSprite", "maxTimer", "movementButtons")]
 visible = false
 material = ExtResource("12_0l8yg")
+scale = Vector2(1.1, 1.1)
 texture = ExtResource("4_qlfe6")
 vframes = 3
 script = ExtResource("9_tjtsx")
 characterSprite = NodePath("Sprite2D")
 maxTimer = NodePath("Timer")
 movementButtons = [NodePath("movementButton")]
+limit = 10.0
+slowness = 100.0
 
 [node name="movementButton" type="Button" parent="CanvasLayer/peepHole" unique_id=1256232738 node_paths=PackedStringArray("newArea")]
 offset_left = -71.86109
@@ -323,6 +339,7 @@ vframes = 3
 frame = 2
 
 [node name="Hallway" type="Sprite2D" parent="CanvasLayer" unique_id=581124047 node_paths=PackedStringArray("movementButtons")]
+scale = Vector2(1.1, 1.1)
 texture = ExtResource("12_ii36o")
 script = ExtResource("8_f32hw")
 movementButtons = [NodePath("movementButton"), NodePath("movementButton2"), NodePath("movementButton3")]
@@ -356,6 +373,7 @@ newArea = NodePath("../../Doorway")
 
 [node name="Doorway" type="Sprite2D" parent="CanvasLayer" unique_id=78017150 node_paths=PackedStringArray("movementButtons")]
 visible = false
+scale = Vector2(1.1, 1.1)
 texture = ExtResource("13_kopt5")
 script = ExtResource("8_f32hw")
 movementButtons = [NodePath("movementButton"), NodePath("movementButton2")]
@@ -380,6 +398,7 @@ newArea = NodePath("../../peepHole")
 
 [node name="Garage" type="Sprite2D" parent="CanvasLayer" unique_id=1752562995 node_paths=PackedStringArray("movementButtons")]
 visible = false
+scale = Vector2(1.1, 1.1)
 texture = ExtResource("12_3h27y")
 script = ExtResource("8_f32hw")
 movementButtons = [NodePath("movementButton"), NodePath("movementButton2")]
@@ -404,6 +423,7 @@ newArea = NodePath("../../Basement")
 
 [node name="Basement" type="Sprite2D" parent="CanvasLayer" unique_id=174614199 node_paths=PackedStringArray("movementButtons")]
 visible = false
+scale = Vector2(1.1, 1.1)
 texture = ExtResource("6_avnbb")
 script = ExtResource("8_f32hw")
 movementButtons = [NodePath("movementButton")]
@@ -556,6 +576,7 @@ offset_right = -3.0
 offset_bottom = -1.0
 
 [node name="Person" type="Sprite2D" parent="." unique_id=430508438]
+visible = false
 texture = ExtResource("4_qlfe6")
 vframes = 3
 frame = 1

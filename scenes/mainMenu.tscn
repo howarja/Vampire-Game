@@ -1,122 +1,225 @@
 [gd_scene format=3 uid="uid://c26xead5ij1uf"]
 
-[ext_resource type="Script" uid="uid://c3mypmddh800v" path="res://scripts/main_menu.gd" id="1_qkhwq"]
+[ext_resource type="Script" uid="uid://c3mypmddh800v" path="res://Scripts/main_menu.gd" id="1_qkhwq"]
 [ext_resource type="PackedScene" uid="uid://llqh6vgtk77" path="res://scenes/settings.tscn" id="2_3d1i7"]
-[ext_resource type="Script" uid="uid://cuixesoyqhje0" path="res://scripts/buttonEffects.gd" id="2_48ign"]
-[ext_resource type="Texture2D" uid="uid://b3wousrl8g8s5" path="res://icon.svg" id="4_l7wge"]
-[ext_resource type="Texture2D" uid="uid://y27g4y1o1qhu" path="res://sprites/Vignete.png" id="5_7nrmo"]
+[ext_resource type="Script" uid="uid://cuixesoyqhje0" path="res://Scripts/buttonEffects.gd" id="2_48ign"]
+[ext_resource type="Texture2D" uid="uid://y27g4y1o1qhu" path="res://Sprites/Vignete.png" id="5_7nrmo"]
+[ext_resource type="AudioStream" uid="uid://bk2pdxxhbgaej" path="res://music/Epic song but scary.wav" id="5_clbkb"]
 
-[node name="mainMenu" type="Node2D" unique_id=131306304]
+[sub_resource type="Animation" id="Animation_l7wge"]
+resource_name = "Logo"
+length = 5.266667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextHolder/Blood:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.43333334, 0.98),
+"transitions": PackedFloat32Array(0.4352752, 1, 1),
+"update": 0,
+"values": [Vector2(-485, 73), Vector2(244, 73), Vector2(244, 73)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextHolder/Host:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.43333334, 0.98),
+"transitions": PackedFloat32Array(0.4352752, 1, 1),
+"update": 0,
+"values": [Vector2(995, 241), Vector2(250, 241), Vector2(250, 241)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextHolder/Of:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.6, 0.98),
+"transitions": PackedFloat32Array(0.6830213, 1, 1),
+"update": 0,
+"values": [Vector2(-477, 145), Vector2(272, 145), Vector2(272, 145)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("TextHolder/The:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.61333334, 0.98),
+"transitions": PackedFloat32Array(0.6372803, 1, 1),
+"update": 0,
+"values": [Vector2(1003, 210), Vector2(244, 210), Vector2(244, 210)]
+}
+
+[sub_resource type="Animation" id="Animation_7nrmo"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextHolder/Blood:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-485, 73)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("TextHolder/Host:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(995, 241)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextHolder/Of:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-477, 145)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("TextHolder/The:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1003, 210)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_7nrmo"]
+_data = {
+&"Logo": SubResource("Animation_l7wge"),
+&"RESET": SubResource("Animation_7nrmo")
+}
+
+[node name="mainMenu" type="Control" unique_id=2134813361]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("1_qkhwq")
 
 [node name="TextHolder" type="Control" parent="." unique_id=89915920]
-layout_mode = 3
-anchors_preset = 0
-offset_top = 127.0
-offset_right = 40.0
-offset_bottom = 167.0
-scale = Vector2(0.5315729, 0.5315729)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="normalText" type="RichTextLabel" parent="TextHolder" unique_id=1553987807]
-layout_mode = 0
-offset_left = 10.0
-offset_top = 7.0
-offset_right = 1913.0
-offset_bottom = 1073.0
-theme_override_font_sizes/normal_font_size = 80
-text = "GAME CREATED BY AURA AURA AURA AURA  #SIGMA #FORTNITEBATTLEPASS"
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/normal_font_size = 31
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="topText" type="RichTextLabel" parent="TextHolder" unique_id=1216032056]
+[node name="PlayButton" type="Button" parent="TextHolder" unique_id=1824723328]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -890.0
-offset_right = 1900.0
-offset_bottom = 191.0
+offset_left = -73.0
+offset_top = 149.0
+offset_right = 73.0
+offset_bottom = 245.0
 grow_horizontal = 2
 grow_vertical = 2
-pivot_offset = Vector2(963, 541)
-size_flags_horizontal = 4
-theme_override_font_sizes/normal_font_size = 128
-text = "VAMPIRE
-"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="bottomText" type="RichTextLabel" parent="TextHolder" unique_id=1237163147]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = 841.0
-offset_right = 1900.0
-offset_bottom = 1921.0
-grow_horizontal = 2
-grow_vertical = 2
-pivot_offset = Vector2(957, 547)
-size_flags_horizontal = 4
-theme_override_font_sizes/normal_font_size = 128
-text = "GAME
-"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="gameText" type="RichTextLabel" parent="TextHolder" unique_id=1617625460]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -48.0
-offset_right = 1900.0
-offset_bottom = 1032.0
-grow_horizontal = 2
-grow_vertical = 2
-pivot_offset = Vector2(957, 547)
-size_flags_horizontal = 4
-theme_override_constants/line_separation = -56
-theme_override_font_sizes/normal_font_size = 128
-text = "VAMPIRE
-GAME
-"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Button" type="Button" parent="TextHolder/gameText" unique_id=1824723328]
-layout_mode = 0
-offset_left = 680.0
-offset_top = 464.0
-offset_right = 1235.0
-offset_bottom = 684.0
-flat = true
+pivot_offset_ratio = Vector2(0.5, 0.5)
+theme_override_font_sizes/font_size = 64
+text = "Play"
 script = ExtResource("2_48ign")
+
+[node name="Blood" type="RichTextLabel" parent="TextHolder" unique_id=2088444752]
+layout_mode = 0
+offset_left = -485.0
+offset_top = 73.0
+offset_right = 2.036621
+offset_bottom = 210.0
+pivot_offset_ratio = Vector2(0.5, 0.5)
+theme_override_font_sizes/normal_font_size = 85
+text = "Blood"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Of" type="RichTextLabel" parent="TextHolder" unique_id=2027769320]
+layout_mode = 0
+offset_left = -477.0
+offset_top = 145.0
+offset_right = 10.036804
+offset_bottom = 260.0
+pivot_offset_ratio = Vector2(0.5, 0.5)
+theme_override_font_sizes/normal_font_size = 38
+text = "Of"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="The" type="RichTextLabel" parent="TextHolder" unique_id=359343507]
+layout_mode = 0
+offset_left = 1003.0
+offset_top = 210.0
+offset_right = 1490.0374
+offset_bottom = 325.0
+pivot_offset_ratio = Vector2(0.5, 0.5)
+theme_override_font_sizes/normal_font_size = 38
+text = "The"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Host" type="RichTextLabel" parent="TextHolder" unique_id=59266768]
+layout_mode = 0
+offset_left = 995.0
+offset_top = 241.0
+offset_right = 1482.0366
+offset_bottom = 386.0
+pivot_offset_ratio = Vector2(0.5, 0.5)
+theme_override_font_sizes/normal_font_size = 85
+text = "Host"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="Settings" parent="." unique_id=1974824112 instance=ExtResource("2_3d1i7")]
 
-[node name="exitButton" type="Sprite2D" parent="." unique_id=1758629971]
-self_modulate = Color(1, 1, 1, 0)
-position = Vector2(508, 675)
-texture = ExtResource("4_l7wge")
-
-[node name="exitButton" type="Button" parent="exitButton" unique_id=260818102]
+[node name="exitButton2" type="Button" parent="." unique_id=260818102]
+layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -181.0
-offset_top = -35.0
-offset_right = 62.0
-offset_bottom = 40.0
+offset_left = -109.0
+offset_top = 640.0
+offset_right = 134.0
+offset_bottom = 715.0
 grow_horizontal = 2
 pivot_offset = Vector2(128, 0)
 theme_override_font_sizes/font_size = 48
@@ -127,13 +230,21 @@ script = ExtResource("2_48ign")
 position = Vector2(500, 375)
 texture = ExtResource("5_7nrmo")
 
-[connection signal="button_down" from="TextHolder/gameText/Button" to="TextHolder/gameText/Button" method="_on_button_down"]
-[connection signal="button_up" from="TextHolder/gameText/Button" to="TextHolder/gameText/Button" method="_on_button_up"]
-[connection signal="mouse_entered" from="TextHolder/gameText/Button" to="TextHolder/gameText/Button" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="TextHolder/gameText/Button" to="TextHolder/gameText/Button" method="_on_mouse_exited"]
-[connection signal="pressed" from="TextHolder/gameText/Button" to="." method="_on_button_pressed"]
-[connection signal="button_down" from="exitButton/exitButton" to="exitButton/exitButton" method="_on_button_down"]
-[connection signal="button_up" from="exitButton/exitButton" to="exitButton/exitButton" method="_on_button_up"]
-[connection signal="mouse_entered" from="exitButton/exitButton" to="exitButton/exitButton" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="exitButton/exitButton" to="exitButton/exitButton" method="_on_mouse_exited"]
-[connection signal="pressed" from="exitButton/exitButton" to="." method="_on_exit_button_pressed"]
+[node name="MenuAnim" type="AnimationPlayer" parent="." unique_id=761404218]
+libraries/ = SubResource("AnimationLibrary_7nrmo")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1529809983]
+position = Vector2(391, 640)
+stream = ExtResource("5_clbkb")
+autoplay = true
+
+[connection signal="button_down" from="TextHolder/PlayButton" to="TextHolder/PlayButton" method="_on_button_down"]
+[connection signal="button_up" from="TextHolder/PlayButton" to="TextHolder/PlayButton" method="_on_button_up"]
+[connection signal="mouse_entered" from="TextHolder/PlayButton" to="TextHolder/PlayButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="TextHolder/PlayButton" to="TextHolder/PlayButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="TextHolder/PlayButton" to="." method="_on_button_pressed"]
+[connection signal="button_down" from="exitButton2" to="exitButton2" method="_on_button_down"]
+[connection signal="button_up" from="exitButton2" to="exitButton2" method="_on_button_up"]
+[connection signal="mouse_entered" from="exitButton2" to="exitButton2" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="exitButton2" to="exitButton2" method="_on_mouse_exited"]
+[connection signal="pressed" from="exitButton2" to="." method="_on_exit_button_pressed"]

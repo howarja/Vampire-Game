@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dmmobl341pm1o"]
+
+[ext_resource type="Material" uid="uid://c1gtj6yctg6g6" path="res://Materials/pixelate.tres" id="1_0bbmh"]
+
+[node name="Pixelate" type="ColorRect" unique_id=127029814]
+material = ExtResource("1_0bbmh")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

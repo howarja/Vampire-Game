@@ -1,0 +1,15 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://bxy8ahprvdjl3"]
+
+[ext_resource type="Shader" uid="uid://b0sdby6fs56x5" path="res://shaders/image_color_compression.gdshader" id="1_17fbj"]
+[ext_resource type="Texture2D" uid="uid://b3wousrl8g8s5" path="res://icon.svg" id="2_frx43"]
+
+[resource]
+shader = ExtResource("1_17fbj")
+shader_parameter/palette_texture = ExtResource("2_frx43")
+shader_parameter/color_levels = 32.0
+shader_parameter/contrast = 1.0
+shader_parameter/shift = 0.0
+shader_parameter/tolerance = 0.01
+shader_parameter/active_colors = 0
+shader_parameter/old_colors = PackedColorArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+shader_parameter/new_colors = PackedColorArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)

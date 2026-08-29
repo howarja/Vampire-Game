@@ -1,0 +1,7 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://c1gtj6yctg6g6"]
+
+[ext_resource type="Shader" uid="uid://csyh8nqbp0hvr" path="res://shaders/pixelate.gdshader" id="1_lmpci"]
+
+[resource]
+shader = ExtResource("1_lmpci")
+shader_parameter/pixel_size = 3.0000000298024

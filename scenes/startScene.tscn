@@ -51,6 +51,7 @@
 [ext_resource type="Resource" uid="uid://ca2bounl3hsv7" path="res://Characters/RatGod.tres" id="27_2xysg"]
 [ext_resource type="Resource" uid="uid://c0rssvdil1e7u" path="res://Characters/Elizabeth Fisher.tres" id="28_7bw5e"]
 [ext_resource type="AudioStream" uid="uid://ei38ltoqcv4w" path="res://music/ambiance/Ghostly sfx_static.wav" id="28_judpu"]
+[ext_resource type="PackedScene" uid="uid://dmmobl341pm1o" path="res://scenes/pixelate.tscn" id="51_nlj8h"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3xd07"]
 radius = 91.0
@@ -621,6 +622,14 @@ offset_left = -551.6666
 offset_top = -417.0
 offset_right = -442.33337
 offset_bottom = -335.0
+mouse_filter = 2
+
+[node name="Pixelate" parent="CanvasLayer/VHSfx" unique_id=127029814 instance=ExtResource("51_nlj8h")]
+layout_mode = 1
+offset_left = -48.333374
+offset_top = -83.0
+offset_right = 151.66663
+offset_bottom = 167.0
 mouse_filter = 2
 
 [node name="Person" type="Sprite2D" parent="." unique_id=430508438]

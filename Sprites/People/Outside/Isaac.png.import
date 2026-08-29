@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c82e1w2pcp24p"
-path="res://.godot/imported/OutsidePeople13.png-130ef77d23f010bf270c83c1af8d0110.ctex"
+uid="uid://dtndpoepq32o0"
+path="res://.godot/imported/Isaac.png-31fc0ab6cfc62a53973cd2fdead458f8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/People/Outside/OutsidePeople13.png"
-dest_files=["res://.godot/imported/OutsidePeople13.png-130ef77d23f010bf270c83c1af8d0110.ctex"]
+source_file="res://Sprites/People/Outside/Isaac.png"
+dest_files=["res://.godot/imported/Isaac.png-31fc0ab6cfc62a53973cd2fdead458f8.ctex"]
 
 [params]
 

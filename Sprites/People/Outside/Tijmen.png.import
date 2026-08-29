@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dq8ht1qow0avc"
-path="res://.godot/imported/OutsidePeople16.png-e72b7616cfeada1967bc16e5d3c1a1f6.ctex"
+uid="uid://ddilv6nlb4f1m"
+path="res://.godot/imported/Tijmen.png-45abd123948532a00f99622aa6423c59.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/People/Outside/OutsidePeople16.png"
-dest_files=["res://.godot/imported/OutsidePeople16.png-e72b7616cfeada1967bc16e5d3c1a1f6.ctex"]
+source_file="res://Sprites/People/Outside/Tijmen.png"
+dest_files=["res://.godot/imported/Tijmen.png-45abd123948532a00f99622aa6423c59.ctex"]
 
 [params]
 

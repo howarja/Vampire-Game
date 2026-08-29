@@ -12,22 +12,44 @@
 [ext_resource type="Script" uid="uid://dgg3qst63mw2m" path="res://Scripts/player_manager.gd" id="5_qlfe6"]
 [ext_resource type="Resource" uid="uid://bj6r2225r6vk8" path="res://Characters/CharlieCholick.tres" id="5_wbdqt"]
 [ext_resource type="Texture2D" uid="uid://qlfdpkrwrf" path="res://Sprites/areas/UnderGround.png" id="6_avnbb"]
+[ext_resource type="Resource" uid="uid://bkqhvg7bu3eo7" path="res://Characters/SteveDuobler.tres" id="6_judpu"]
 [ext_resource type="PackedScene" uid="uid://llqh6vgtk77" path="res://scenes/settings.tscn" id="7_jmrrm"]
+[ext_resource type="Resource" uid="uid://cokt4gkwlsj1i" path="res://Characters/TuckerJacobs.tres" id="7_x3tw5"]
 [ext_resource type="Shader" uid="uid://bcfj11konudyk" path="res://shaders/fisheye.gdshader" id="8_2l27o"]
 [ext_resource type="Script" uid="uid://dp7tlannev5hr" path="res://Scripts/room.gd" id="8_f32hw"]
 [ext_resource type="PackedScene" uid="uid://o5bvwg7bgbvg" path="res://scenes/vhs_filter_test.tscn" id="8_judpu"]
+[ext_resource type="Resource" uid="uid://d1puh0w3c3eav" path="res://Characters/Batman.tres" id="8_nlj8h"]
+[ext_resource type="Resource" uid="uid://cnsh10eqjmluh" path="res://Characters/Mclovin.tres" id="9_dya7i"]
 [ext_resource type="Script" uid="uid://bcpjncrq7w8e3" path="res://Scripts/peep_hole.gd" id="9_tjtsx"]
+[ext_resource type="Resource" uid="uid://bhpiqqonswruq" path="res://Characters/WilliamGreaves.tres" id="10_sussc"]
+[ext_resource type="Resource" uid="uid://nyhgm7avmwdt" path="res://Characters/SimSoul.tres" id="11_frb8m"]
 [ext_resource type="Material" uid="uid://caqmrlgvj6aca" path="res://Materials/fishEyePeephole.tres" id="12_0l8yg"]
 [ext_resource type="Texture2D" uid="uid://cfeeuq7fj2ixv" path="res://Sprites/areas/InsideGarage2.png" id="12_3h27y"]
 [ext_resource type="Script" uid="uid://syofd8amwhw8" path="res://Scripts/doorway_manager.gd" id="12_8yb6a"]
 [ext_resource type="Texture2D" uid="uid://dchyre33bh0lo" path="res://Sprites/areas/Insidehallway.png" id="12_ii36o"]
+[ext_resource type="Resource" uid="uid://cuggg4fxfk00n" path="res://Characters/MichaelSoul.tres" id="12_x6vsl"]
 [ext_resource type="Texture2D" uid="uid://djfjfvhgairv1" path="res://Sprites/areas/Doorway.png" id="13_kopt5"]
+[ext_resource type="Resource" uid="uid://54st1ebshao6" path="res://Characters/StarkBeever.tres" id="13_yhoku"]
+[ext_resource type="Resource" uid="uid://btlgqcio47d5v" path="res://Characters/JoeLemur.tres" id="14_03vgi"]
 [ext_resource type="Script" uid="uid://dep647b6vlno6" path="res://Scripts/character_manager.gd" id="14_jsjc1"]
+[ext_resource type="Resource" uid="uid://bkdcwsj8eieqp" path="res://Characters/HughMan.tres" id="15_0smob"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="15_tjtsx"]
+[ext_resource type="Resource" uid="uid://d10lxijgj1ybh" path="res://Characters/PeterDouglas.tres" id="16_s8qox"]
+[ext_resource type="Resource" uid="uid://c2evxtplxk00u" path="res://Characters/TimmyJimmy.tres" id="17_jr8db"]
 [ext_resource type="Script" uid="uid://cldxtjjlmpc50" path="res://Scripts/ending.gd" id="18_3vjno"]
+[ext_resource type="Resource" uid="uid://s6pp01nkvhg0" path="res://Characters/HarveyJr.tres" id="18_4qcbm"]
 [ext_resource type="Texture2D" uid="uid://y27g4y1o1qhu" path="res://Sprites/Vignete.png" id="18_c0cp5"]
+[ext_resource type="Resource" uid="uid://bsqrtayk62lfh" path="res://Characters/Sebastian Silvester.tres" id="19_kav1b"]
+[ext_resource type="Resource" uid="uid://danc5xfmors2x" path="res://Characters/MaxFredrickson.tres" id="20_tulyn"]
+[ext_resource type="Resource" uid="uid://bdsbbiwnswj2h" path="res://Characters/BrunhildeStone.tres" id="21_ce0yk"]
 [ext_resource type="Texture2D" uid="uid://cghiky6m7jhx4" path="res://Sprites/Hand gun anim.png" id="21_nxs8g"]
+[ext_resource type="Resource" uid="uid://ddhh8vijouf8k" path="res://Characters/BillyBobbyJr.tres" id="22_1yf3i"]
+[ext_resource type="Resource" uid="uid://cln0iwyoodaps" path="res://Characters/VonPier.tres" id="23_2kk1b"]
+[ext_resource type="Resource" uid="uid://b4xlaq234u2cd" path="res://Characters/JefferyAndersonVampire.tres" id="25_2a0wb"]
 [ext_resource type="PackedScene" uid="uid://c7awdxtytslkh" path="res://scenes/phone.tscn" id="25_lqxam"]
+[ext_resource type="Resource" uid="uid://dx4cbp1fgq0vf" path="res://Characters/MorticiaCauldron.tres" id="26_iwcac"]
+[ext_resource type="Resource" uid="uid://ca2bounl3hsv7" path="res://Characters/RatGod.tres" id="27_2xysg"]
+[ext_resource type="Resource" uid="uid://c0rssvdil1e7u" path="res://Characters/Elizabeth Fisher.tres" id="28_7bw5e"]
 [ext_resource type="AudioStream" uid="uid://ei38ltoqcv4w" path="res://music/ambiance/Ghostly sfx_static.wav" id="28_judpu"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3xd07"]
@@ -170,10 +192,26 @@ tracks/4/keys = {
 "times": PackedFloat32Array(0)
 }
 
+[sub_resource type="Animation" id="Animation_x3tw5"]
+resource_name = "Talking"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("InDialogueSprite:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"update": 0,
+"values": []
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4lml8"]
 _data = {
 &"KillAnim": SubResource("Animation_nxs8g"),
-&"RESET": SubResource("Animation_0l8yg")
+&"RESET": SubResource("Animation_0l8yg"),
+&"Talking": SubResource("Animation_x3tw5")
 }
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5omdu"]
@@ -222,14 +260,13 @@ autoplay = true
 
 [node name="CharacterManager" type="Node2D" parent="." unique_id=779009452]
 script = ExtResource("14_jsjc1")
-unEncounteredCharacters = Array[ExtResource("15_tjtsx")]([ExtResource("2_1ljrl"), ExtResource("5_wbdqt")])
+unEncounteredCharacters = Array[ExtResource("15_tjtsx")]([ExtResource("6_judpu"), ExtResource("7_x3tw5"), ExtResource("8_nlj8h"), ExtResource("9_dya7i"), ExtResource("10_sussc"), ExtResource("11_frb8m"), ExtResource("12_x6vsl"), ExtResource("13_yhoku"), ExtResource("14_03vgi"), ExtResource("15_0smob"), ExtResource("16_s8qox"), ExtResource("17_jr8db"), ExtResource("18_4qcbm"), ExtResource("19_kav1b"), ExtResource("20_tulyn"), ExtResource("21_ce0yk"), ExtResource("22_1yf3i"), ExtResource("23_2kk1b"), ExtResource("5_wbdqt"), ExtResource("25_2a0wb"), ExtResource("26_iwcac"), ExtResource("27_2xysg"), ExtResource("28_7bw5e")])
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=982724521]
 offset = Vector2(500, 375)
 transform = Transform2D(1, 0, 0, 1, 500, 375)
 
 [node name="Lounge" type="Sprite2D" parent="CanvasLayer" unique_id=1352087972 node_paths=PackedStringArray("movementButtons", "characters")]
-visible = false
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("4_vj0vq")
 script = ExtResource("8_f32hw")
@@ -340,6 +377,7 @@ vframes = 3
 frame = 2
 
 [node name="Hallway" type="Sprite2D" parent="CanvasLayer" unique_id=581124047 node_paths=PackedStringArray("movementButtons")]
+visible = false
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("12_ii36o")
 script = ExtResource("8_f32hw")

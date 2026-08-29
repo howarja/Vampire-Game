@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ehrtbpi480wo"
-path="res://.godot/imported/OutsidePeople4.png-0283a279bf0a7585880303ddfea30a9e.ctex"
+uid="uid://d2g08uoafsmti"
+path="res://.godot/imported/Yuki.png-66545db68b29225ea143271eb912ee13.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/People/Outside/OutsidePeople4.png"
-dest_files=["res://.godot/imported/OutsidePeople4.png-0283a279bf0a7585880303ddfea30a9e.ctex"]
+source_file="res://Sprites/People/Outside/Yuki.png"
+dest_files=["res://.godot/imported/Yuki.png-66545db68b29225ea143271eb912ee13.ctex"]
 
 [params]
 

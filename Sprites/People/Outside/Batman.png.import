@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1o70ev7h4tyw"
-path="res://.godot/imported/OutsidePeople12.png-a5a994f05947eb6420e3ca9446cc3fcb.ctex"
+uid="uid://brw7eayneqnpa"
+path="res://.godot/imported/Batman.png-acec074da50156e5d85b2e5d5c6e80ea.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/People/Outside/OutsidePeople12.png"
-dest_files=["res://.godot/imported/OutsidePeople12.png-a5a994f05947eb6420e3ca9446cc3fcb.ctex"]
+source_file="res://Sprites/People/Outside/Batman.png"
+dest_files=["res://.godot/imported/Batman.png-acec074da50156e5d85b2e5d5c6e80ea.ctex"]
 
 [params]
 

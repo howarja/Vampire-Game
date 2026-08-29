@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bp4f604cfnw0w"
-path="res://.godot/imported/OutsidePeople19.png-7f4273c3a24cc9a429344fa9e6978c27.ctex"
+uid="uid://c82e1w2pcp24p"
+path="res://.godot/imported/Samuel2.png-887b1f38794a1b3ed43e24c68cb10bd1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/People/Outside/OutsidePeople19.png"
-dest_files=["res://.godot/imported/OutsidePeople19.png-7f4273c3a24cc9a429344fa9e6978c27.ctex"]
+source_file="res://Sprites/People/Outside/Samuel2.png"
+dest_files=["res://.godot/imported/Samuel2.png-887b1f38794a1b3ed43e24c68cb10bd1.ctex"]
 
 [params]
 

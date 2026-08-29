@@ -13,9 +13,13 @@ func _ready() -> void:
 	playButton.hide();
 	fadeText("A GAME BY\n\nJames Howard\nJoshua Wolf\nTishar Sreekantam\nTijmen Verschueren\nZachary Quinn",3)
 	await get_tree().create_timer(6).timeout;
-	playButton.show();
-	settings.show();
+	#playButton.show();
+	#settings.show();
 	$MenuAnim.play("Logo")
+	var tween = get_tree().create_tween()
+	tween.tween_property($TextHolder/Blood, "position", Vector2(260,45), 2).set_trans(Tween.TRANS_ELASTIC)
+	await tween.finished
+	
 
 func fadeText(newText,visibleLength):
 	normal_text.text = newText

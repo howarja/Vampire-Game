@@ -1,14 +1,15 @@
 [gd_scene format=3 uid="uid://c26xead5ij1uf"]
 
-[ext_resource type="Script" uid="uid://c3mypmddh800v" path="res://Scripts/main_menu.gd" id="1_qkhwq"]
+[ext_resource type="Script" uid="uid://c3mypmddh800v" path="res://scripts/main_menu.gd" id="1_qkhwq"]
 [ext_resource type="PackedScene" uid="uid://llqh6vgtk77" path="res://scenes/settings.tscn" id="2_3d1i7"]
-[ext_resource type="Script" uid="uid://cuixesoyqhje0" path="res://Scripts/buttonEffects.gd" id="2_48ign"]
+[ext_resource type="Script" uid="uid://cuixesoyqhje0" path="res://scripts/buttonEffects.gd" id="2_48ign"]
 [ext_resource type="Texture2D" uid="uid://y27g4y1o1qhu" path="res://Sprites/Vignete.png" id="5_7nrmo"]
 [ext_resource type="AudioStream" uid="uid://bk2pdxxhbgaej" path="res://music/Epic song but scary.wav" id="5_clbkb"]
+[ext_resource type="AudioStream" uid="uid://bhiws2l6ubvbb" path="res://SFX/logoSound/bloodOfTheHost.mp3" id="6_clbkb"]
 
 [sub_resource type="Animation" id="Animation_l7wge"]
 resource_name = "Logo"
-length = 5.266667
+length = 5.766667
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -16,46 +17,33 @@ tracks/0/path = NodePath("TextHolder/Blood:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.43333334, 0.98),
-"transitions": PackedFloat32Array(0.4352752, 1, 1),
+"times": PackedFloat32Array(0, 0.98),
+"transitions": PackedFloat32Array(0.4, 1),
 "update": 0,
-"values": [Vector2(-485, 73), Vector2(244, 73), Vector2(244, 73)]
+"values": [Vector2(259, -455), Vector2(244, 73)]
 }
-tracks/1/type = "value"
+tracks/1/type = "method"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("TextHolder/Host:position")
+tracks/1/path = NodePath("BloodOfTheHost")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.43333334, 0.98),
-"transitions": PackedFloat32Array(0.4352752, 1, 1),
-"update": 0,
-"values": [Vector2(995, 241), Vector2(250, 241), Vector2(250, 241)]
+"times": PackedFloat32Array(),
+"transitions": PackedFloat32Array(),
+"values": []
 }
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("TextHolder/Of:position")
+tracks/2/path = NodePath("BloodOfTheHost:playing")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.6, 0.98),
-"transitions": PackedFloat32Array(0.6830213, 1, 1),
-"update": 0,
-"values": [Vector2(-477, 145), Vector2(272, 145), Vector2(272, 145)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("TextHolder/The:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.61333334, 0.98),
-"transitions": PackedFloat32Array(0.6372803, 1, 1),
-"update": 0,
-"values": [Vector2(1003, 210), Vector2(244, 210), Vector2(244, 210)]
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
 }
 
 [sub_resource type="Animation" id="Animation_7nrmo"]
@@ -75,38 +63,14 @@ tracks/0/keys = {
 tracks/1/type = "value"
 tracks/1/imported = false
 tracks/1/enabled = true
-tracks/1/path = NodePath("TextHolder/Host:position")
+tracks/1/path = NodePath("BloodOfTheHost:playing")
 tracks/1/interp = 1
 tracks/1/loop_wrap = true
 tracks/1/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(995, 241)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("TextHolder/Of:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(-477, 145)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("TextHolder/The:position")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1003, 210)]
+"update": 1,
+"values": [false]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_7nrmo"]
@@ -137,6 +101,7 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_bottom = -7.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/normal_font_size = 31
@@ -166,46 +131,11 @@ layout_mode = 0
 offset_left = -485.0
 offset_top = 73.0
 offset_right = 2.036621
-offset_bottom = 210.0
+offset_bottom = 488.0
 pivot_offset_ratio = Vector2(0.5, 0.5)
 theme_override_font_sizes/normal_font_size = 85
-text = "Blood"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Of" type="RichTextLabel" parent="TextHolder" unique_id=2027769320]
-layout_mode = 0
-offset_left = -477.0
-offset_top = 145.0
-offset_right = 10.036804
-offset_bottom = 260.0
-pivot_offset_ratio = Vector2(0.5, 0.5)
-theme_override_font_sizes/normal_font_size = 38
-text = "Of"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="The" type="RichTextLabel" parent="TextHolder" unique_id=359343507]
-layout_mode = 0
-offset_left = 1003.0
-offset_top = 210.0
-offset_right = 1490.0374
-offset_bottom = 325.0
-pivot_offset_ratio = Vector2(0.5, 0.5)
-theme_override_font_sizes/normal_font_size = 38
-text = "The"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="Host" type="RichTextLabel" parent="TextHolder" unique_id=59266768]
-layout_mode = 0
-offset_left = 995.0
-offset_top = 241.0
-offset_right = 1482.0366
-offset_bottom = 386.0
-pivot_offset_ratio = Vector2(0.5, 0.5)
-theme_override_font_sizes/normal_font_size = 85
-text = "Host"
+text = "Blood OF THE
+HOST"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -233,10 +163,15 @@ texture = ExtResource("5_7nrmo")
 [node name="MenuAnim" type="AnimationPlayer" parent="." unique_id=761404218]
 libraries/ = SubResource("AnimationLibrary_7nrmo")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=1529809983]
+[node name="music" type="AudioStreamPlayer2D" parent="." unique_id=1529809983]
 position = Vector2(391, 640)
 stream = ExtResource("5_clbkb")
 autoplay = true
+
+[node name="BloodOfTheHost" type="AudioStreamPlayer2D" parent="." unique_id=541277287]
+position = Vector2(508, 343)
+stream = ExtResource("6_clbkb")
+volume_db = 13.0
 
 [connection signal="button_down" from="TextHolder/PlayButton" to="TextHolder/PlayButton" method="_on_button_down"]
 [connection signal="button_up" from="TextHolder/PlayButton" to="TextHolder/PlayButton" method="_on_button_up"]

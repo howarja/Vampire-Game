@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://danc5xfmors2x"]
 
-[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="2_uyyts"]
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_uyyts"]
 [ext_resource type="Texture2D" uid="uid://b7rnsbcb6hmuo" path="res://Sprites/People/Outside/Fishbowl.png" id="3_2xq7g"]
-[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="3_31eem"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_31eem"]
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_uyyts")

@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://bkqhvg7bu3eo7"]
 
-[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="1_tr7q8"]
-[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="2_qm2a0"]
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="1_tr7q8"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="2_qm2a0"]
 [ext_resource type="Texture2D" uid="uid://ehrtbpi480wo" path="res://Sprites/People/Outside/Samuel.png" id="3_4ous1"]
 
 [sub_resource type="Resource" id="Resource_wimtb"]

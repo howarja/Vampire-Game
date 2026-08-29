@@ -2,6 +2,7 @@ extends Resource
 class_name character;
 
 @export var fullName: String;
+@export var vampire: bool;
 @export var sprite: Texture2D;
 @export var afraidSprite: Texture2D;
 @export var introDialaogue: Array[String];

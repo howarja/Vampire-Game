@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="character" format=3 uid="uid://bj6r2225r6vk8"]
+
+[ext_resource type="Texture2D" uid="uid://c1f6e5ix2t6xk" path="res://Sprites/People/GreenRoom/InsideGarage2PeopleScared6.png" id="1_0ot8i"]
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="1_b38vs"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="2_0ot8i"]
+[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://Scripts/information.gd" id="2_celvo"]
+[ext_resource type="Texture2D" uid="uid://d2g08uoafsmti" path="res://Sprites/People/Outside/OutsidePeople14.png" id="3_b38vs"]
+
+[sub_resource type="Resource" id="Resource_ewalk"]
+script = ExtResource("2_celvo")
+dateOfBirth = "1"
+address = "2"
+bringing = "3"
+bloodType = "4"
+lifeStatus = "5"
+metadata/_custom_type_script = "uid://l3v0m3s3okyk"
+
+[sub_resource type="Resource" id="Resource_wimtb"]
+script = ExtResource("1_b38vs")
+prompt = "What's your name again?"
+answer = Array[String](["mcCHarles"])
+metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
+
+[sub_resource type="Resource" id="Resource_hush4"]
+script = ExtResource("1_b38vs")
+prompt = "What's ya adress"
+answer = Array[String](["no", "yes", "bo", "uas"])
+metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
+
+[resource]
+script = ExtResource("2_0ot8i")
+fullName = "Charlie Cholick"
+sprite = ExtResource("3_b38vs")
+afraidSprite = ExtResource("1_0ot8i")
+introDialaogue = Array[String](["Help me please sir I need your help. ", "I got attacked, they were chasing me a couple blocks away.", "There is no where else I can go please let me in here I can pay you back."])
+questions = Array[ExtResource("1_b38vs")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4")])
+information = SubResource("Resource_ewalk")
+metadata/_custom_type_script = "uid://byskr8hlcn2vi"

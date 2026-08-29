@@ -65,5 +65,10 @@ func exitConversation():
 	
 func acceptGuest():
 	Globals.characters.acceptCharacter(currentCharacter);
+	if currentCharacter.vampire:
+		Globals.vampiresLetIn+=1;
+	else:
+		Globals.humansLetIn+=1;
+	
 	exitConversation();
 	Globals.player.returnToHallway();

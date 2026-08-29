@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="character" format=3 uid="uid://c2evxtplxk00u"]
+
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_himms"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_7gpwf"]
+
+[sub_resource type="Resource" id="Resource_wimtb"]
+script = ExtResource("2_himms")
+prompt = "What did you bring?"
+answer = Array[String]([""])
+metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
+
+[sub_resource type="Resource" id="Resource_hush4"]
+script = ExtResource("2_himms")
+prompt = "Let me see your invite."
+answer = Array[String]([""])
+metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
+
+[sub_resource type="Resource" id="Resource_0mdo4"]
+script = ExtResource("2_himms")
+prompt = "Can i see your ID?"
+metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
+
+[sub_resource type="Resource" id="Resource_1tlsp"]
+script = ExtResource("2_himms")
+prompt = "Do you have any dietary requirments?"
+metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
+
+[sub_resource type="Resource" id="Resource_c4kb4"]
+script = ExtResource("2_himms")
+prompt = "What is your blood type?"
+metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
+
+[sub_resource type="Resource" id="Resource_lw0dh"]
+script = ExtResource("2_himms")
+prompt = "Where do you live?"
+metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
+
+[resource]
+script = ExtResource("3_7gpwf")
+fullName = "Billy Bobby Jr"
+introDialaogue = Array[String](["Heya partner!", "I recieved an invite to this glorious party!", "I heard there would be some rootin shootin party!"])
+questions = Array[ExtResource("2_himms")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
+metadata/_custom_type_script = "uid://byskr8hlcn2vi"

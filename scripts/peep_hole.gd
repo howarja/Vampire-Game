@@ -11,7 +11,7 @@ func _ready() -> void:
 func newGuest():
 	currentCharacter = Globals.characters.getCharacter();
 	if currentCharacter != null:
-		characterSprite.texture = currentCharacter.sprite;
+		characterSprite.texture = currentCharacter.outDoorSprite;
 		Globals.doorway.loadCharacter(currentCharacter);
 		hideButtons();
 		maxTimer.start();

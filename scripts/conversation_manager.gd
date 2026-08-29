@@ -33,6 +33,7 @@ func newLine():
 		currentLine+=1;
 		canInput = false;
 		canQuestion(false);
+		anim.play("Talking")
 	else:
 		canQuestion(true);
 
@@ -47,6 +48,7 @@ func _process(delta: float) -> void:
 
 func renableInput():
 	canInput = true;
+	anim.play("RESET")
 
 func canQuestion(enabled: bool):
 	buttonContainer.visible = enabled;
@@ -55,7 +57,7 @@ func canQuestion(enabled: bool):
 func loadCharacter(newCharacter: character, interacted: interactableCharacter):
 	currentCharacter = newCharacter;
 	lastInteracted = interacted;
-	characterSprite.texture = newCharacter.sprite;
+	characterSprite.texture = newCharacter.interiorSprite;
 	
 	# destroy existing buttons and re-instantiate them, quicker than re-using
 	for i in questionButtons.size():
@@ -71,7 +73,7 @@ func loadCharacter(newCharacter: character, interacted: interactableCharacter):
 	phone.updatePhone(newCharacter)
 	
 	Globals.player.currentArea.hideButtons();
-	characterSprite.reparent(Globals.player.currentArea, true);
+	reparent(Globals.player.currentArea, true);
 	beginLine(currentCharacter.introDialaogue);
 
 func beginLine(newLines: Array[String]):
@@ -99,7 +101,6 @@ func killCharacter():
 		Globals.humansKilled+=1;
 	
 	lastInteracted.kill();
-	characterSprite.texture = currentCharacter.afraidSprite;
 	anim.play("KillAnim");
 	Globals.player.fadeHouseMusicOutIn(1);
 	
@@ -118,3 +119,6 @@ func exitWithoutFade():
 	lastInteracted.update();
 	characterSprite.texture = null;
 	Globals.player.changeAreaTo(Globals.player.currentArea)
+
+func setAfraid():
+	characterSprite.texture = currentCharacter.afraidSprite;

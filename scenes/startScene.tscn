@@ -1,42 +1,42 @@
 [gd_scene format=3 uid="uid://gpedpgp5hk8i"]
 
-[ext_resource type="Script" uid="uid://dberhdml3xlet" path="res://scripts/conversation_manager.gd" id="1_rq48i"]
+[ext_resource type="Script" uid="uid://dberhdml3xlet" path="res://Scripts/conversation_manager.gd" id="1_rq48i"]
 [ext_resource type="Resource" uid="uid://2uxnklpvd2gy" path="res://Characters/CountDown.tres" id="2_1ljrl"]
 [ext_resource type="AudioStream" uid="uid://dljpxhvysohf1" path="res://music/Jingle time.wav" id="2_v3w6o"]
-[ext_resource type="Script" uid="uid://bndg1f3jq34l3" path="res://scripts/textGiver.gd" id="2_yagjw"]
-[ext_resource type="Script" uid="uid://btva2ox1ockyg" path="res://scripts/interactable_character.gd" id="3_ip4ey"]
-[ext_resource type="Script" uid="uid://b7d02u7xi35qp" path="res://scripts/movement_button.gd" id="3_jmrrm"]
+[ext_resource type="Script" uid="uid://bndg1f3jq34l3" path="res://Scripts/textGiver.gd" id="2_yagjw"]
+[ext_resource type="Script" uid="uid://btva2ox1ockyg" path="res://Scripts/interactable_character.gd" id="3_ip4ey"]
+[ext_resource type="Script" uid="uid://b7d02u7xi35qp" path="res://Scripts/movement_button.gd" id="3_jmrrm"]
 [ext_resource type="Texture2D" uid="uid://b3wousrl8g8s5" path="res://icon.svg" id="4_1h7fw"]
 [ext_resource type="Texture2D" uid="uid://cjgwsjboawlj2" path="res://Sprites/areas/Outside.png" id="4_qlfe6"]
 [ext_resource type="Texture2D" uid="uid://b85cn7tf2bm3j" path="res://Sprites/areas/Lounge.png" id="4_vj0vq"]
-[ext_resource type="Script" uid="uid://dgg3qst63mw2m" path="res://scripts/player_manager.gd" id="5_qlfe6"]
+[ext_resource type="Script" uid="uid://dgg3qst63mw2m" path="res://Scripts/player_manager.gd" id="5_qlfe6"]
 [ext_resource type="Resource" uid="uid://6rs41l7f52yk" path="res://Characters/CharlieCholick.tres" id="5_wbdqt"]
 [ext_resource type="Texture2D" uid="uid://qlfdpkrwrf" path="res://Sprites/areas/UnderGround.png" id="6_avnbb"]
 [ext_resource type="Resource" uid="uid://bkqhvg7bu3eo7" path="res://Characters/SteveDuobler.tres" id="6_judpu"]
 [ext_resource type="PackedScene" uid="uid://llqh6vgtk77" path="res://scenes/settings.tscn" id="7_jmrrm"]
 [ext_resource type="Resource" uid="uid://cokt4gkwlsj1i" path="res://Characters/TuckerJacobs.tres" id="7_x3tw5"]
 [ext_resource type="Shader" uid="uid://bcfj11konudyk" path="res://shaders/fisheye.gdshader" id="8_2l27o"]
-[ext_resource type="Script" uid="uid://dp7tlannev5hr" path="res://scripts/room.gd" id="8_f32hw"]
+[ext_resource type="Script" uid="uid://dp7tlannev5hr" path="res://Scripts/room.gd" id="8_f32hw"]
 [ext_resource type="PackedScene" uid="uid://o5bvwg7bgbvg" path="res://scenes/vhs_filter_test.tscn" id="8_judpu"]
 [ext_resource type="Resource" uid="uid://d1puh0w3c3eav" path="res://Characters/Batman.tres" id="8_nlj8h"]
 [ext_resource type="Resource" uid="uid://cnsh10eqjmluh" path="res://Characters/Mclovin.tres" id="9_dya7i"]
-[ext_resource type="Script" uid="uid://bcpjncrq7w8e3" path="res://scripts/peep_hole.gd" id="9_tjtsx"]
+[ext_resource type="Script" uid="uid://bcpjncrq7w8e3" path="res://Scripts/peep_hole.gd" id="9_tjtsx"]
 [ext_resource type="Resource" uid="uid://bhpiqqonswruq" path="res://Characters/WilliamGreaves.tres" id="10_sussc"]
 [ext_resource type="Resource" uid="uid://nyhgm7avmwdt" path="res://Characters/SimSoul.tres" id="11_frb8m"]
 [ext_resource type="Material" uid="uid://caqmrlgvj6aca" path="res://Materials/fishEyePeephole.tres" id="12_0l8yg"]
 [ext_resource type="Texture2D" uid="uid://cfeeuq7fj2ixv" path="res://Sprites/areas/InsideGarage2.png" id="12_3h27y"]
-[ext_resource type="Script" uid="uid://syofd8amwhw8" path="res://scripts/doorway_manager.gd" id="12_8yb6a"]
+[ext_resource type="Script" uid="uid://syofd8amwhw8" path="res://Scripts/doorway_manager.gd" id="12_8yb6a"]
 [ext_resource type="Texture2D" uid="uid://dchyre33bh0lo" path="res://Sprites/areas/Insidehallway.png" id="12_ii36o"]
 [ext_resource type="Resource" uid="uid://cuggg4fxfk00n" path="res://Characters/MichaelSoul.tres" id="12_x6vsl"]
 [ext_resource type="Texture2D" uid="uid://djfjfvhgairv1" path="res://Sprites/areas/Doorway.png" id="13_kopt5"]
 [ext_resource type="Resource" uid="uid://54st1ebshao6" path="res://Characters/StarkBeever.tres" id="13_yhoku"]
 [ext_resource type="Resource" uid="uid://btlgqcio47d5v" path="res://Characters/JoeLemur.tres" id="14_03vgi"]
-[ext_resource type="Script" uid="uid://dep647b6vlno6" path="res://scripts/character_manager.gd" id="14_jsjc1"]
+[ext_resource type="Script" uid="uid://dep647b6vlno6" path="res://Scripts/character_manager.gd" id="14_jsjc1"]
 [ext_resource type="Resource" uid="uid://bkdcwsj8eieqp" path="res://Characters/HughMan.tres" id="15_0smob"]
-[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="15_tjtsx"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="15_tjtsx"]
 [ext_resource type="Resource" uid="uid://d10lxijgj1ybh" path="res://Characters/PeterDouglas.tres" id="16_s8qox"]
 [ext_resource type="Resource" uid="uid://c2evxtplxk00u" path="res://Characters/TimmyJimmy.tres" id="17_jr8db"]
-[ext_resource type="Script" uid="uid://cldxtjjlmpc50" path="res://scripts/ending.gd" id="18_3vjno"]
+[ext_resource type="Script" uid="uid://cldxtjjlmpc50" path="res://Scripts/ending.gd" id="18_3vjno"]
 [ext_resource type="Resource" uid="uid://s6pp01nkvhg0" path="res://Characters/HarveyJr.tres" id="18_4qcbm"]
 [ext_resource type="Texture2D" uid="uid://y27g4y1o1qhu" path="res://Sprites/Vignete.png" id="18_c0cp5"]
 [ext_resource type="Resource" uid="uid://bsqrtayk62lfh" path="res://Characters/Sebastian Silvester.tres" id="19_kav1b"]
@@ -127,16 +127,43 @@ tracks/5/path = NodePath(".")
 tracks/5/interp = 1
 tracks/5/loop_wrap = true
 tracks/5/keys = {
-"times": PackedFloat32Array(2.0666666),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0.36666667, 2.0666666),
+"transitions": PackedFloat32Array(1, 1),
 "values": [{
+"args": [],
+"method": &"setAfraid"
+}, {
 "args": [],
 "method": &"exitWithoutFade"
 }]
 }
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("InDialogueSprite:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.36666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.1, 1.1), Vector2(1.3, 0.9), Vector2(0.9, 1.3), Vector2(1.1, 1.1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("InDialogueSprite:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.36666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-225, 100), Vector2(-225, 158.34), Vector2(-225, 48.896), Vector2(-225, 100)]
+}
 
 [sub_resource type="Animation" id="Animation_0l8yg"]
-length = 0.001
+length = 2.5333333
 tracks/0/type = "bezier"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -192,9 +219,35 @@ tracks/4/keys = {
 "points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
 "times": PackedFloat32Array(0)
 }
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("InDialogueSprite:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.1, 1.1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("InDialogueSprite:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-225, 100)]
+}
 
 [sub_resource type="Animation" id="Animation_x3tw5"]
 resource_name = "Talking"
+length = 0.4
+loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -202,10 +255,22 @@ tracks/0/path = NodePath("InDialogueSprite:scale")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(),
-"transitions": PackedFloat32Array(),
+"times": PackedFloat32Array(0, 0.13333334, 0.26666668, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
 "update": 0,
-"values": []
+"values": [Vector2(1.1, 1.1), Vector2(1.15, 1.1), Vector2(1.05, 1.15), Vector2(1.1, 1.1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("InDialogueSprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.26666668, 0.3999667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-225, 100), Vector2(-225, 101), Vector2(-225, 85), Vector2(-225, 100)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_4lml8"]
@@ -261,13 +326,14 @@ autoplay = true
 
 [node name="CharacterManager" type="Node2D" parent="." unique_id=779009452]
 script = ExtResource("14_jsjc1")
-unEncounteredCharacters = Array[ExtResource("15_tjtsx")]([ExtResource("6_judpu"), ExtResource("7_x3tw5"), ExtResource("8_nlj8h"), ExtResource("9_dya7i"), ExtResource("10_sussc"), ExtResource("11_frb8m"), ExtResource("12_x6vsl"), ExtResource("13_yhoku"), ExtResource("14_03vgi"), ExtResource("15_0smob"), ExtResource("16_s8qox"), ExtResource("17_jr8db"), ExtResource("18_4qcbm"), ExtResource("19_kav1b"), ExtResource("20_tulyn"), ExtResource("21_ce0yk"), ExtResource("22_1yf3i"), ExtResource("23_2kk1b"), ExtResource("5_wbdqt"), ExtResource("25_2a0wb"), ExtResource("26_iwcac"), ExtResource("27_2xysg"), ExtResource("28_7bw5e")])
+unEncounteredCharacters = Array[ExtResource("15_tjtsx")]([ExtResource("2_1ljrl"), ExtResource("6_judpu"), ExtResource("7_x3tw5"), ExtResource("8_nlj8h"), ExtResource("9_dya7i"), ExtResource("10_sussc"), ExtResource("11_frb8m"), ExtResource("12_x6vsl"), ExtResource("13_yhoku"), ExtResource("14_03vgi"), ExtResource("15_0smob"), ExtResource("16_s8qox"), ExtResource("17_jr8db"), ExtResource("18_4qcbm"), ExtResource("19_kav1b"), ExtResource("20_tulyn"), ExtResource("21_ce0yk"), ExtResource("22_1yf3i"), ExtResource("23_2kk1b"), ExtResource("5_wbdqt"), ExtResource("25_2a0wb"), ExtResource("26_iwcac"), ExtResource("27_2xysg"), ExtResource("28_7bw5e")])
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=982724521]
 offset = Vector2(500, 375)
 transform = Transform2D(1, 0, 0, 1, 500, 375)
 
 [node name="Lounge" type="Sprite2D" parent="CanvasLayer" unique_id=1352087972 node_paths=PackedStringArray("movementButtons", "characters")]
+visible = false
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("4_vj0vq")
 script = ExtResource("8_f32hw")
@@ -378,7 +444,6 @@ vframes = 3
 frame = 2
 
 [node name="Hallway" type="Sprite2D" parent="CanvasLayer" unique_id=581124047 node_paths=PackedStringArray("movementButtons")]
-visible = false
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("12_ii36o")
 script = ExtResource("8_f32hw")
@@ -495,8 +560,9 @@ phone = NodePath("../Phone")
 anim = NodePath("ConversationAnim")
 
 [node name="InDialogueSprite" type="Sprite2D" parent="CanvasLayer/ConversationManager" unique_id=1441774159]
-position = Vector2(-223, 0)
+position = Vector2(-225, 100)
 scale = Vector2(1.1, 1.1)
+offset = Vector2(225, -90)
 
 [node name="GunSprite" type="Sprite2D" parent="CanvasLayer/ConversationManager" unique_id=348738408]
 position = Vector2(0, 98)
@@ -625,6 +691,7 @@ offset_bottom = -335.0
 mouse_filter = 2
 
 [node name="Pixelate" parent="CanvasLayer/VHSfx" unique_id=127029814 instance=ExtResource("51_nlj8h")]
+visible = false
 layout_mode = 1
 offset_left = -48.333374
 offset_top = -83.0

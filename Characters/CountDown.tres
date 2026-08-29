@@ -1,8 +1,15 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://2uxnklpvd2gy"]
 
-[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="1_16vt0"]
-[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="2_mtcoh"]
-[ext_resource type="Texture2D" uid="uid://cubgh3qtgt5sc" path="res://Sprites/People/Outside/Jamie.png" id="3_bsfdu"]
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="1_16vt0"]
+[ext_resource type="Texture2D" uid="uid://yn3n6qrpoofg" path="res://Sprites/People/LivingRoom/LivingRoomPeopleAfraid5.png" id="1_777ir"]
+[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://Scripts/information.gd" id="1_hush4"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="2_mtcoh"]
+[ext_resource type="Texture2D" uid="uid://dn45mb8livwj8" path="res://Sprites/People/LivingRoom/LivingRoomPeopleTalking5.png" id="3_777ir"]
+[ext_resource type="Texture2D" uid="uid://dt7xgd06qe87j" path="res://Sprites/People/Outside/James1.png" id="4_on1d7"]
+
+[sub_resource type="Resource" id="Resource_nlj8h"]
+script = ExtResource("1_hush4")
+metadata/_custom_type_script = "uid://l3v0m3s3okyk"
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("1_16vt0")
@@ -13,7 +20,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 [sub_resource type="Resource" id="Resource_hush4"]
 script = ExtResource("1_16vt0")
 prompt = "Let me see your invite."
-answer = Array[String]([""])
+answer = Array[String](["here is my awesome invite", "isnt it great", "yep it is i know right"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]
@@ -42,7 +49,10 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [resource]
 script = ExtResource("2_mtcoh")
-sprite = ExtResource("3_bsfdu")
-introDialaogue = Array[String](["", "", ""])
+outDoorSprite = ExtResource("4_on1d7")
+interiorSprite = ExtResource("3_777ir")
+afraidSprite = ExtResource("1_777ir")
+introDialaogue = Array[String](["hi", "hi", "hi", "hi"])
 questions = Array[ExtResource("1_16vt0")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
+information = SubResource("Resource_nlj8h")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

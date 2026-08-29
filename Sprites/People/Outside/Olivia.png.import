@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7rnsbcb6hmuo"
-path="res://.godot/imported/OutsidePeople9.png-d0075a5c658ab79e922cfe6025479bef.ctex"
+uid="uid://r865ghpt15om"
+path="res://.godot/imported/Olivia.png-f0fd2835df76485e400bcff9bb35d40e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/People/Outside/OutsidePeople9.png"
-dest_files=["res://.godot/imported/OutsidePeople9.png-d0075a5c658ab79e922cfe6025479bef.ctex"]
+source_file="res://Sprites/People/Outside/Olivia.png"
+dest_files=["res://.godot/imported/Olivia.png-f0fd2835df76485e400bcff9bb35d40e.ctex"]
 
 [params]
 

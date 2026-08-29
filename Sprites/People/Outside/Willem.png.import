@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddilv6nlb4f1m"
-path="res://.godot/imported/OutsidePeople2.png-e6a30b25854c847c8899409ae29948c8.ctex"
+uid="uid://bp4f604cfnw0w"
+path="res://.godot/imported/Willem.png-eeb105455796a5360e6537f546c56a04.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/People/Outside/OutsidePeople2.png"
-dest_files=["res://.godot/imported/OutsidePeople2.png-e6a30b25854c847c8899409ae29948c8.ctex"]
+source_file="res://Sprites/People/Outside/Willem.png"
+dest_files=["res://.godot/imported/Willem.png-eeb105455796a5360e6537f546c56a04.ctex"]
 
 [params]
 

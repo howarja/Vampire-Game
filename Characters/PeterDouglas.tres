@@ -1,7 +1,8 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://d10lxijgj1ybh"]
 
-[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_dgaj8"]
-[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_h4ynm"]
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="2_dgaj8"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="3_h4ynm"]
+[ext_resource type="Texture2D" uid="uid://ddilv6nlb4f1m" path="res://Sprites/People/Outside/Tijmen.png" id="3_xpv74"]
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_dgaj8")
@@ -41,6 +42,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [resource]
 script = ExtResource("3_h4ynm")
+sprite = ExtResource("3_xpv74")
 introDialaogue = Array[String](["", "", ""])
 questions = Array[ExtResource("2_dgaj8")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

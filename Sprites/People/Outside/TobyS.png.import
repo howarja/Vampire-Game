@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b67yllemst6vy"
-path="res://.godot/imported/OutsidePeople3.png-6b408c681b528581a101689463d99088.ctex"
+uid="uid://dq8ht1qow0avc"
+path="res://.godot/imported/TobyS.png-e1fe4705e73abff8c7ac824a796472a0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/People/Outside/OutsidePeople3.png"
-dest_files=["res://.godot/imported/OutsidePeople3.png-6b408c681b528581a101689463d99088.ctex"]
+source_file="res://Sprites/People/Outside/TobyS.png"
+dest_files=["res://.godot/imported/TobyS.png-e1fe4705e73abff8c7ac824a796472a0.ctex"]
 
 [params]
 

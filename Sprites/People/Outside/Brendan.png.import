@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bnr72wxh3p5ft"
-path="res://.godot/imported/OutsidePeople20.png-44055c476ae662737a6b34a362e07b79.ctex"
+uid="uid://b67yllemst6vy"
+path="res://.godot/imported/Brendan.png-e4756440af549dfce4f6e63eb833653d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/People/Outside/OutsidePeople20.png"
-dest_files=["res://.godot/imported/OutsidePeople20.png-44055c476ae662737a6b34a362e07b79.ctex"]
+source_file="res://Sprites/People/Outside/Brendan.png"
+dest_files=["res://.godot/imported/Brendan.png-e4756440af549dfce4f6e63eb833653d.ctex"]
 
 [params]
 

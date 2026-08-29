@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2g08uoafsmti"
-path="res://.godot/imported/OutsidePeople14.png-a79ba00154a5637f71e62790d23c04b1.ctex"
+uid="uid://d1o70ev7h4tyw"
+path="res://.godot/imported/Arlo.png-b612d88eb6f01b5f4e461628714daaae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/People/Outside/OutsidePeople14.png"
-dest_files=["res://.godot/imported/OutsidePeople14.png-a79ba00154a5637f71e62790d23c04b1.ctex"]
+source_file="res://Sprites/People/Outside/Arlo.png"
+dest_files=["res://.godot/imported/Arlo.png-b612d88eb6f01b5f4e461628714daaae.ctex"]
 
 [params]
 

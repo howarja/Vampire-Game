@@ -1,7 +1,8 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://c2evxtplxk00u"]
 
-[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_himms"]
-[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_7gpwf"]
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="2_himms"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="3_7gpwf"]
+[ext_resource type="Texture2D" uid="uid://b67yllemst6vy" path="res://Sprites/People/Outside/Brendan.png" id="3_08ah5"]
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_himms")
@@ -37,7 +38,8 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [resource]
 script = ExtResource("3_7gpwf")
-fullName = "Billy Bobby Jr"
+fullName = "Timmy Jimmy"
+sprite = ExtResource("3_08ah5")
 introDialaogue = Array[String](["Heya partner!", "I recieved an invite to this glorious party!", "I heard there would be some rootin shootin party!"])
 questions = Array[ExtResource("2_himms")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

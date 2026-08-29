@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bk2pdxxhbgaej"
+path="res://.godot/imported/Epic song but scary.wav-d7707f19944727411e10b0939c65da85.sample"
+
+[deps]
+
+source_file="res://music/Epic song but scary.wav"
+dest_files=["res://.godot/imported/Epic song but scary.wav-d7707f19944727411e10b0939c65da85.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

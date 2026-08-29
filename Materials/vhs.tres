@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://da7leuu3gt8jb"]
+
+[ext_resource type="Shader" uid="uid://bksk84btj0efx" path="res://shaders/vhs.gdshader" id="1_msrwh"]
+
+[resource]
+shader = ExtResource("1_msrwh")
+shader_parameter/smearing = 0.4290000203775
+shader_parameter/color_offset = 0.01700000243744
+shader_parameter/sharpening = 0.6000000285
+shader_parameter/static_noise = 0.08
+shader_parameter/vertical_jitter = 0.002
+shader_parameter/scanline_opacity = 0.1
+shader_parameter/vignette_intensity = 0.3

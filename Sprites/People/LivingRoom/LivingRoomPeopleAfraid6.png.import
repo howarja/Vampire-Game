@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6c7effge6mfr"
-path="res://.godot/imported/LivingRoomPeopleAfraid6.png-af54827d9d91250acb4368bebd3147e3.ctex"
+path="res://.godot/imported/LivingRoomPeopleAfraid6.png-707ed32dd0884a6aa4b94e0eb13c81db.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/People/LivingRoom/LivingRoomPeopleAfraid6.png"
-dest_files=["res://.godot/imported/LivingRoomPeopleAfraid6.png-af54827d9d91250acb4368bebd3147e3.ctex"]
+source_file="res://Sprites/People/LivingRoom/LivingRoomPeopleAfraid6.png"
+dest_files=["res://.godot/imported/LivingRoomPeopleAfraid6.png-707ed32dd0884a6aa4b94e0eb13c81db.ctex"]
 
 [params]
 

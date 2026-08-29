@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dchyre33bh0lo"
-path="res://.godot/imported/Insidehallway.png-b2abc2ccd4d7a02f8e06728ca983a9a2.ctex"
+path="res://.godot/imported/Insidehallway.png-5a47e4c3f0278987dce714104783a5a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/areas/Insidehallway.png"
-dest_files=["res://.godot/imported/Insidehallway.png-b2abc2ccd4d7a02f8e06728ca983a9a2.ctex"]
+source_file="res://Sprites/areas/Insidehallway.png"
+dest_files=["res://.godot/imported/Insidehallway.png-5a47e4c3f0278987dce714104783a5a9.ctex"]
 
 [params]
 

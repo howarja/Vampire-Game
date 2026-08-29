@@ -14,6 +14,7 @@ var lastInteracted: interactableCharacter;
 @export var exitButton: Button;
 @export var killButton: Button;
 @export var characterSprite: Sprite2D;
+@export var phone: Phone;
 @export var anim: AnimationPlayer;
 
 var holdingInput: bool = false;
@@ -49,6 +50,7 @@ func renableInput():
 
 func canQuestion(enabled: bool):
 	buttonContainer.visible = enabled;
+	phone.visible = enabled;
 
 func loadCharacter(newCharacter: character, interacted: interactableCharacter):
 	currentCharacter = newCharacter;
@@ -66,6 +68,8 @@ func loadCharacter(newCharacter: character, interacted: interactableCharacter):
 		questionButtons.append(newButton);
 	
 	inConversation = true;
+	phone.updatePhone(newCharacter)
+	
 	Globals.player.currentArea.hideButtons();
 	beginLine(currentCharacter.introDialaogue);
 

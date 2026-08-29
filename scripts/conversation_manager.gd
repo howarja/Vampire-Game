@@ -71,6 +71,7 @@ func loadCharacter(newCharacter: character, interacted: interactableCharacter):
 	phone.updatePhone(newCharacter)
 	
 	Globals.player.currentArea.hideButtons();
+	characterSprite.reparent(Globals.player.currentArea, true);
 	beginLine(currentCharacter.introDialaogue);
 
 func beginLine(newLines: Array[String]):

@@ -457,6 +457,7 @@ anim = NodePath("ConversationAnim")
 
 [node name="InDialogueSprite" type="Sprite2D" parent="CanvasLayer/ConversationManager" unique_id=1441774159]
 position = Vector2(-223, 0)
+scale = Vector2(1.1, 1.1)
 
 [node name="GunSprite" type="Sprite2D" parent="CanvasLayer/ConversationManager" unique_id=348738408]
 position = Vector2(0, 98)

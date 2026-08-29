@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://y27g4y1o1qhu"
-path="res://.godot/imported/Vignete.png-904c4f067b734d0efaf6485c03bcf0e3.ctex"
+path="res://.godot/imported/Vignete.png-08d64590b693ff9d95a8409253ab0804.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Vignete.png"
-dest_files=["res://.godot/imported/Vignete.png-904c4f067b734d0efaf6485c03bcf0e3.ctex"]
+source_file="res://sprites/Vignete.png"
+dest_files=["res://.godot/imported/Vignete.png-08d64590b693ff9d95a8409253ab0804.ctex"]
 
 [params]
 

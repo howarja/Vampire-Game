@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://n2704kdgjax5"]
 
-[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="1_1rehx"]
-[ext_resource type="Texture2D" uid="uid://c1f6e5ix2t6xk" path="res://Sprites/People/GreenRoom/InsideGarage2PeopleScared6.png" id="1_hush4"]
-[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="1_thbnh"]
-[ext_resource type="Texture2D" uid="uid://ddilv6nlb4f1m" path="res://Sprites/People/Outside/OutsidePeople2.png" id="3_wimtb"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="1_1rehx"]
+[ext_resource type="Texture2D" uid="uid://c1f6e5ix2t6xk" path="res://sprites/People/GreenRoom/InsideGarage2PeopleScared6.png" id="1_hush4"]
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="1_thbnh"]
+[ext_resource type="Texture2D" uid="uid://ddilv6nlb4f1m" path="res://sprites/People/Outside/OutsidePeople2.png" id="3_wimtb"]
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("1_thbnh")

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dnee5eesfp7go"
-path="res://.godot/imported/LivingRoomPeopleSitting4.png-07ed85f47bb6eaaa2a026c0ff138aeec.ctex"
+path="res://.godot/imported/LivingRoomPeopleSitting4.png-11b80bbb0a211bfac082fc033808355b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/People/LivingRoom/LivingRoomPeopleSitting4.png"
-dest_files=["res://.godot/imported/LivingRoomPeopleSitting4.png-07ed85f47bb6eaaa2a026c0ff138aeec.ctex"]
+source_file="res://sprites/People/LivingRoom/LivingRoomPeopleSitting4.png"
+dest_files=["res://.godot/imported/LivingRoomPeopleSitting4.png-11b80bbb0a211bfac082fc033808355b.ctex"]
 
 [params]
 

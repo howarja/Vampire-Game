@@ -1,6 +1,6 @@
 [gd_resource type="ShaderMaterial" format=3 uid="uid://caqmrlgvj6aca"]
 
-[ext_resource type="Shader" uid="uid://bcfj11konudyk" path="res://fisheye.gdshader" id="1_mq1rc"]
+[ext_resource type="Shader" uid="uid://bcfj11konudyk" path="res://shaders/fisheye.gdshader" id="1_mq1rc"]
 
 [resource]
 shader = ExtResource("1_mq1rc")

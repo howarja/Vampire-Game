@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dfrk6io2d4m7x"
-path="res://.godot/imported/OutsidePeople8.png-ace73e6091f3deaf998cf59112eeb570.ctex"
+path="res://.godot/imported/OutsidePeople8.png-7c3b74d0bfd129d889e7fe7281373640.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/People/Outside/OutsidePeople8.png"
-dest_files=["res://.godot/imported/OutsidePeople8.png-ace73e6091f3deaf998cf59112eeb570.ctex"]
+source_file="res://sprites/People/Outside/OutsidePeople8.png"
+dest_files=["res://.godot/imported/OutsidePeople8.png-7c3b74d0bfd129d889e7fe7281373640.ctex"]
 
 [params]
 

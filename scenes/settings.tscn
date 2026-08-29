@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dn1ofscgxh6r5" path="res://scripts/settings.gd" id="1_sfmi7"]
 [ext_resource type="Texture2D" uid="uid://b3wousrl8g8s5" path="res://icon.svg" id="3_6wm04"]
-[ext_resource type="Script" uid="uid://cuixesoyqhje0" path="res://buttonEffects.gd" id="4_f4mfi"]
+[ext_resource type="Script" uid="uid://cuixesoyqhje0" path="res://scripts/buttonEffects.gd" id="4_f4mfi"]
 
 [node name="Settings" type="Node2D" unique_id=1974824112]
 script = ExtResource("1_sfmi7")

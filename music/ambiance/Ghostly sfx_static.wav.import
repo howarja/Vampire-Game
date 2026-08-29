@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ei38ltoqcv4w"
+path="res://.godot/imported/Ghostly sfx_static.wav-62427eb7730d9c67b1a9c20879b97d3b.sample"
+
+[deps]
+
+source_file="res://music/ambiance/Ghostly sfx_static.wav"
+dest_files=["res://.godot/imported/Ghostly sfx_static.wav-62427eb7730d9c67b1a9c20879b97d3b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

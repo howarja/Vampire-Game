@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cmiawe00j1jpk"
-path="res://.godot/imported/InsideGarage2PeopleSitting2.png-51984d9ab76aeed2f18f40afcdfbe229.ctex"
+path="res://.godot/imported/InsideGarage2PeopleSitting2.png-d2a00551dd09dbc0d0bcdf8c5b5475da.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/People/GreenRoom/InsideGarage2PeopleSitting2.png"
-dest_files=["res://.godot/imported/InsideGarage2PeopleSitting2.png-51984d9ab76aeed2f18f40afcdfbe229.ctex"]
+source_file="res://sprites/People/GreenRoom/InsideGarage2PeopleSitting2.png"
+dest_files=["res://.godot/imported/InsideGarage2PeopleSitting2.png-d2a00551dd09dbc0d0bcdf8c5b5475da.ctex"]
 
 [params]
 

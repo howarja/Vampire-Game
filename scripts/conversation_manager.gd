@@ -92,6 +92,11 @@ func exitConversation():
 
 func killCharacter():
 	# kill the character
+	if currentCharacter.vampire:
+		Globals.vampiresKilled+=1;
+	else:
+		Globals.humansKilled+=1;
+	
 	lastInteracted.kill();
 	characterSprite.texture = currentCharacter.afraidSprite;
 	anim.play("KillAnim");

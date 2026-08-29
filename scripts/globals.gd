@@ -7,6 +7,11 @@ var characters: characterManager;
 var ending: endingManager;
 var actionTimer: int = 0;
 
+var vampiresLetIn: int = 0;
+var humansLetIn: int = 0;
+var vampiresKilled: int = 0;
+var humansKilled: int = 0;
+
 func actionTaken() -> void:
 	actionTimer -= 1;
 

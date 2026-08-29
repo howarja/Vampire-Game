@@ -30,6 +30,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 [resource]
 script = ExtResource("1_1rehx")
 fullName = "Count Down"
+vampire = true
 sprite = ExtResource("3_wimtb")
 afraidSprite = ExtResource("1_hush4")
 introDialaogue = Array[String](["what up", "its me the big count", "get ready for some goblin poker", "yep, its gambling time"])

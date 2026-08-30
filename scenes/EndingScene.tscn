@@ -3,8 +3,14 @@
 [ext_resource type="Script" uid="uid://c8lbmb2jy31v3" path="res://scenes/ending_scene.gd" id="1_ldsnl"]
 [ext_resource type="AudioStream" uid="uid://bk2pdxxhbgaej" path="res://music/Epic song but scary.wav" id="2_as4tj"]
 [ext_resource type="FontFile" uid="uid://cofv126vqogtf" path="res://BlackOpsOne-Regular.ttf" id="2_oygov"]
+[ext_resource type="AudioStream" uid="uid://domrmftggotly" path="res://music/Genocide.wav" id="2_weo12"]
+[ext_resource type="AudioStream" uid="uid://tnoqbvl3s7dg" path="res://music/bad_ending.wav" id="3_5n375"]
 [ext_resource type="Texture2D" uid="uid://dopv241x543jx" path="res://Sprites/KitchenPeoplecake.png" id="3_jvm3o"]
+[ext_resource type="AudioStream" uid="uid://bak57rp6x82rx" path="res://music/Only Vampires.wav" id="4_1n6l5"]
+[ext_resource type="AudioStream" uid="uid://74ae22rti63s" path="res://music/happy_ending.wav" id="4_85tt6"]
 [ext_resource type="Texture2D" uid="uid://wvlklbh64gk5" path="res://Sprites/20260830_212232.jpg" id="5_4qy0h"]
+[ext_resource type="AudioStream" uid="uid://dg747mds12nbg" path="res://music/medium_ending.wav" id="5_ix7tp"]
+[ext_resource type="AudioStream" uid="uid://burpy0lormos3" path="res://music/medium_plus_ending.wav" id="6_1n6l5"]
 [ext_resource type="Material" uid="uid://cobraaspoty8d" path="res://VHS/vhsRegular.tres" id="6_evwq0"]
 [ext_resource type="Material" uid="uid://c1gtj6yctg6g6" path="res://Materials/pixelate.tres" id="7_weo12"]
 
@@ -23,6 +29,12 @@ corner_detail = 5
 [node name="EndingScene" type="Node2D" unique_id=2130332170 node_paths=PackedStringArray("text")]
 script = ExtResource("1_ldsnl")
 text = NodePath("CanvasLayer/RichTextLabel")
+genocide_song = ExtResource("2_weo12")
+bad_ending = ExtResource("3_5n375")
+only_vampires_ending = ExtResource("4_1n6l5")
+detective_ending = ExtResource("4_85tt6")
+medium_ending = ExtResource("5_ix7tp")
+medium_ending_but_better = ExtResource("6_1n6l5")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1850741684]
 

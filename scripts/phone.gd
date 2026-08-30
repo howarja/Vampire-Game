@@ -2,8 +2,8 @@ extends Control
 class_name Phone
 
 func _ready() -> void:
-	#$ScrollContainer.hide()
-	#pull_out_phone()
+	$ScrollContainer.hide()
+	$AnimatedSprite2D.hide()
 	pass;
 
 var currentCharacter: character;
@@ -14,15 +14,26 @@ var currentCharacter: character;
 @onready var blood_type: Label = $ScrollContainer/VBoxContainer/BloodType;
 @onready var life_status: Label = $ScrollContainer/VBoxContainer/LifeStatus;
 
+var active: bool = false;
+
 func pull_out_phone():
+	if active:
+		return;
+	
+	active = true;
 	$AnimatedSprite2D.show()
 	$AnimatedSprite2D.play("pull_out_phone")
 	await $AnimatedSprite2D.animation_finished
 	$ScrollContainer.show()
 
 func put_away_phone():
-	$ScrollContainer.show()
-	$AnimatedSprite2D.play_backwards("pull_out_phone")
+	if !active:
+		return;
+	
+	active = false;
+	$ScrollContainer.hide()
+	$AnimatedSprite2D.show()
+	$AnimatedSprite2D.play("put_away_phone")
 	await $AnimatedSprite2D.animation_finished
 	$AnimatedSprite2D.hide()
 

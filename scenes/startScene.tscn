@@ -1131,6 +1131,16 @@ offset_right = 585.0
 offset_bottom = 260.0
 mouse_filter = 2
 
+[node name="Phone" parent="CanvasLayer" unique_id=2065358974 instance=ExtResource("25_lqxam")]
+anchors_preset = -1
+anchor_left = -0.5
+anchor_top = -0.50100005
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -0.24996948
+offset_right = -3.0
+offset_bottom = -1.0
+
 [node name="BlackFade" type="Panel" parent="CanvasLayer" unique_id=1949933723]
 modulate = Color(0, 0, 0, 0)
 anchors_preset = 15
@@ -1144,16 +1154,6 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_kopt5")
-
-[node name="Phone" parent="CanvasLayer" unique_id=2065358974 instance=ExtResource("25_lqxam")]
-anchors_preset = -1
-anchor_left = -0.5
-anchor_top = -0.50100005
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_top = -0.24996948
-offset_right = -3.0
-offset_bottom = -1.0
 
 [node name="VHSfx" parent="CanvasLayer" unique_id=1094916861 instance=ExtResource("8_judpu")]
 z_index = 4096

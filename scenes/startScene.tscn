@@ -1120,6 +1120,7 @@ mouse_filter = 2
 copy_mode = 2
 
 [node name="Pixelate" parent="CanvasLayer/VHSfx" unique_id=127029814 instance=ExtResource("51_nlj8h")]
+visible = false
 layout_mode = 1
 offset_left = -48.333374
 offset_top = -83.0

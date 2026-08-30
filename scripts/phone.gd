@@ -1,6 +1,9 @@
 extends Control
 class_name Phone
 
+func _ready() -> void:
+	$ScrollContainer.hide()
+	pull_out_phone()
 
 var currentCharacter: character;
 @onready var nameLabel: Label = $TextureRect/ScrollContainer/VBoxContainer/Name;
@@ -11,10 +14,16 @@ var currentCharacter: character;
 @onready var life_status: Label = $TextureRect/ScrollContainer/VBoxContainer/LifeStatus;
 
 func pull_out_phone():
-	pass
+	$AnimatedSprite2D.show()
+	$AnimatedSprite2D.play("pull_out_phone")
+	await $AnimatedSprite2D.animation_finished
+	$ScrollContainer.show()
 
 func put_away_phone():
-	pass
+	$ScrollContainer.hide()
+	$AnimatedSprite2D.play_backwards("pull_out_phone")
+	await $AnimatedSprite2D.animation_finished
+	$AnimatedSprite2D.hide()
 
 func updatePhone(person: character):
 	currentCharacter = person;

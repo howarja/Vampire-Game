@@ -1,31 +1,101 @@
 [gd_scene format=3 uid="uid://c7awdxtytslkh"]
 
 [ext_resource type="Script" uid="uid://btg0l6shgmf4y" path="res://scripts/phone.gd" id="1_08mii"]
+[ext_resource type="Texture2D" uid="uid://g4fu6m3itrb3" path="res://Sprites/Phone.png" id="2_ewalk"]
+[ext_resource type="FontFile" uid="uid://cofv126vqogtf" path="res://BlackOpsOne-Regular.ttf" id="3_eud1m"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eud1m"]
+atlas = ExtResource("2_ewalk")
+region = Rect2(0, 0, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8nsb0"]
+atlas = ExtResource("2_ewalk")
+region = Rect2(270, 0, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8moxm"]
+atlas = ExtResource("2_ewalk")
+region = Rect2(540, 0, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jmr6v"]
+atlas = ExtResource("2_ewalk")
+region = Rect2(810, 0, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sfhd4"]
+atlas = ExtResource("2_ewalk")
+region = Rect2(1080, 0, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_swfme"]
+atlas = ExtResource("2_ewalk")
+region = Rect2(1350, 0, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5jpdv"]
+atlas = ExtResource("2_ewalk")
+region = Rect2(1620, 0, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3rig2"]
+atlas = ExtResource("2_ewalk")
+region = Rect2(1890, 0, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mseb3"]
+atlas = ExtResource("2_ewalk")
+region = Rect2(2160, 0, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qvaam"]
+atlas = ExtResource("2_ewalk")
+region = Rect2(2430, 0, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_espqj"]
+atlas = ExtResource("2_ewalk")
+region = Rect2(2700, 0, 270, 480)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_08mii"]
 animations = [{
 "frames": [],
-"loop": 1,
-"name": &"idle_phone_away",
+"loop": 0,
+"name": &"none",
 "speed": 5.0
 }, {
-"frames": [],
-"loop": 1,
-"name": &"idle_phone_out",
-"speed": 5.0
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eud1m")
 }, {
-"frames": [],
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8nsb0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8moxm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jmr6v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sfhd4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_swfme")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5jpdv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3rig2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mseb3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qvaam")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_espqj")
+}],
 "loop": 0,
 "name": &"pull_out_phone",
-"speed": 5.0
-}, {
-"frames": [],
-"loop": 0,
-"name": &"put_away_phone",
-"speed": 5.0
+"speed": 10.0
 }]
 
 [sub_resource type="LabelSettings" id="LabelSettings_08mii"]
+font = ExtResource("3_eud1m")
 font_size = 14
 
 [node name="Phone" type="Control" unique_id=2141918312]
@@ -39,20 +109,22 @@ mouse_filter = 2
 script = ExtResource("1_08mii")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=490454106]
+position = Vector2(866, 512)
 sprite_frames = SubResource("SpriteFrames_08mii")
-animation = &"idle_phone_out"
+animation = &"pull_out_phone"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=849470963]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 755.0
-offset_top = 469.0
-offset_right = -94.0
-offset_bottom = -137.0
+offset_left = 766.6076
+offset_top = 372.00003
+offset_right = -102.32373
+offset_bottom = -284.86502
 grow_horizontal = 2
 grow_vertical = 2
+rotation = -0.1413646
 horizontal_scroll_mode = 3
 vertical_scroll_mode = 2
 

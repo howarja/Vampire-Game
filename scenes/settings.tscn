@@ -4,6 +4,8 @@
 [ext_resource type="FontFile" uid="uid://cofv126vqogtf" path="res://BlackOpsOne-Regular.ttf" id="2_f4mfi"]
 [ext_resource type="Texture2D" uid="uid://b27w8qfp0dmt1" path="res://Sprites/gear.png" id="3_f4mfi"]
 [ext_resource type="Script" uid="uid://cuixesoyqhje0" path="res://scripts/buttonEffects.gd" id="4_f4mfi"]
+[ext_resource type="AudioStream" uid="uid://dbhnmvlr4crt2" path="res://SFX/finalSFX/Click4.mp3" id="5_gis3k"]
+[ext_resource type="AudioStream" uid="uid://cyir28p37diov" path="res://SFX/finalSFX/Hover1mp3.mp3" id="6_83j8s"]
 
 [node name="Settings" type="Node2D" unique_id=1974824112]
 script = ExtResource("1_sfmi7")
@@ -95,7 +97,7 @@ vertical_alignment = 1
 [node name="testPlayer" type="AudioStreamPlayer2D" parent="." unique_id=1205469343]
 position = Vector2(0, -163)
 
-[node name="Button" type="Button" parent="." unique_id=1309875183]
+[node name="Button" type="Button" parent="." unique_id=1309875183 node_paths=PackedStringArray("hoverStream", "clickStream")]
 offset_left = 846.0
 offset_top = 16.0
 offset_right = 977.50684
@@ -103,11 +105,21 @@ offset_bottom = 146.63014
 pivot_offset = Vector2(75, 74)
 flat = true
 script = ExtResource("4_f4mfi")
+hoverStream = NodePath("cogButton/ButtonSFX")
+clickStream = NodePath("cogButton/ButtonSFX2")
 
 [node name="cogButton" type="Sprite2D" parent="Button" unique_id=386072810]
 position = Vector2(75, 74)
 scale = Vector2(1.140625, 1.140625)
 texture = ExtResource("3_f4mfi")
+
+[node name="ButtonSFX2" type="AudioStreamPlayer2D" parent="Button/cogButton" unique_id=1175626701]
+stream = ExtResource("5_gis3k")
+volume_db = 5.0
+
+[node name="ButtonSFX" type="AudioStreamPlayer2D" parent="Button/cogButton" unique_id=2012284245]
+stream = ExtResource("6_83j8s")
+volume_db = 5.0
 
 [connection signal="value_changed" from="back/masterVolumeSlider" to="." method="_on_master_volume_slider_value_changed"]
 [connection signal="value_changed" from="back/musicVolumeSlider" to="." method="_on_music_volume_slider_value_changed"]

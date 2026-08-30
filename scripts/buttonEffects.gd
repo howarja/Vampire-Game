@@ -6,6 +6,9 @@ var shaking = false
 
 var initScale;
 
+@export var hoverStream: AudioStreamPlayer2D
+@export var clickStream: AudioStreamPlayer2D
+
 func _ready() -> void:
 	button_down.connect(_on_button_down);
 	button_up.connect(_on_button_up);
@@ -30,6 +33,8 @@ func _physics_process(delta: float) -> void:
 
 
 func _on_button_down() -> void:
+	if(clickStream!=null):
+		clickStream.play(0)
 	var tween = get_tree().create_tween().set_parallel(true)
 	tween.tween_property($".", "scale", initScale*1.1, 0.1).set_trans(Tween.TRANS_CUBIC)
 
@@ -44,6 +49,8 @@ func _on_button_up() -> void:
 
 
 func _on_mouse_entered() -> void:
+	if(hoverStream!=null):
+		hoverStream.play(0)
 	hovering=true
 	var tween = get_tree().create_tween().set_parallel(true)
 	tween.tween_property($".", "scale", initScale*1.4, 0.1).set_trans(Tween.TRANS_CUBIC)

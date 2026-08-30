@@ -28,7 +28,7 @@ var inConversation: bool = false;
 
 func _ready() -> void:
 	Globals.conversation = self;
-	exitButton.pressed.connect(exitConversation);
+	exitButton.pressed.connect(exitWithoutFade);
 	killButton.pressed.connect(killCharacter);
 	canQuestion(false);
 
@@ -66,10 +66,6 @@ func renableInput():
 
 func canQuestion(enabled: bool):
 	buttonContainer.visible = enabled;
-	#if enabled:
-	#	phone.pull_out_phone();
-	#else:
-	#	phone.put_away_phone();
 
 func loadCharacter(newCharacter: character, interacted: interactableCharacter):
 	currentCharacter = newCharacter;
@@ -93,7 +89,8 @@ func loadCharacter(newCharacter: character, interacted: interactableCharacter):
 	
 	Globals.player.currentArea.hideButtons();
 	reparent(Globals.player.currentArea, true);
-	beginLine(currentCharacter.introDialaogue, currentCharacter.introVoicelines);
+	canQuestion(true)
+	#beginLine(currentCharacter.introDialaogue, currentCharacter.introVoicelines);
 
 func loadQuestion(newQuestion: question) -> void:
 	lines = newQuestion.answer;

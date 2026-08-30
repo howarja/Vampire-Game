@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://cuixesoyqhje0" path="res://scripts/buttonEffects.gd" id="2_48ign"]
 [ext_resource type="FontFile" uid="uid://cofv126vqogtf" path="res://BlackOpsOne-Regular.ttf" id="3_lam2r"]
 [ext_resource type="Texture2D" uid="uid://ct1px372cef30" path="res://Sprites/Main menu3.png" id="3_tov5d"]
+[ext_resource type="StyleBox" uid="uid://davtg7gw60hkc" path="res://UI BG.tres" id="4_amia2"]
 [ext_resource type="Texture2D" uid="uid://y27g4y1o1qhu" path="res://Sprites/Vignete.png" id="5_7nrmo"]
 [ext_resource type="AudioStream" uid="uid://bk2pdxxhbgaej" path="res://music/Epic song but scary.wav" id="5_clbkb"]
 [ext_resource type="Texture2D" uid="uid://dwu7gn78ismak" path="res://Sprites/Main menu4.png" id="5_epn8x"]
@@ -179,7 +180,12 @@ grow_vertical = 2
 pivot_offset_ratio = Vector2(0.5, 0.5)
 theme_override_fonts/font = ExtResource("3_lam2r")
 theme_override_font_sizes/font_size = 64
-text = "Play"
+theme_override_styles/normal = ExtResource("4_amia2")
+theme_override_styles/pressed = ExtResource("4_amia2")
+theme_override_styles/hover = ExtResource("4_amia2")
+theme_override_styles/disabled = ExtResource("4_amia2")
+theme_override_styles/focus = ExtResource("4_amia2")
+text = " Play "
 script = ExtResource("2_48ign")
 
 [node name="Blood" type="Sprite2D" parent="TextHolder" unique_id=1531663581]
@@ -201,7 +207,12 @@ grow_horizontal = 2
 pivot_offset = Vector2(128, 0)
 theme_override_fonts/font = ExtResource("3_lam2r")
 theme_override_font_sizes/font_size = 48
-text = "Exit Game"
+theme_override_styles/normal = ExtResource("4_amia2")
+theme_override_styles/pressed = ExtResource("4_amia2")
+theme_override_styles/hover = ExtResource("4_amia2")
+theme_override_styles/disabled = ExtResource("4_amia2")
+theme_override_styles/focus = ExtResource("4_amia2")
+text = " Exit Game "
 script = ExtResource("2_48ign")
 
 [node name="Outline2" type="Sprite2D" parent="." unique_id=1045170875]

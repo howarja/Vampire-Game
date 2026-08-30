@@ -1131,10 +1131,10 @@ offset_right = -479.0
 offset_bottom = -431.0
 
 [node name="DisplayImage" type="TextureRect" parent="CanvasLayer" unique_id=1652663511]
-offset_left = -415.0
-offset_top = -490.0
-offset_right = 585.0
-offset_bottom = 260.0
+offset_left = -513.0
+offset_top = -316.0
+offset_right = 487.0
+offset_bottom = 434.0
 mouse_filter = 2
 
 [node name="Phone" parent="CanvasLayer" unique_id=2065358974 instance=ExtResource("25_lqxam")]

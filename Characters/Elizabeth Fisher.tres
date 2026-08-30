@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://c0rssvdil1e7u"]
 
-[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="1_ne6w6"]
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="1_ne6w6"]
 [ext_resource type="Texture2D" uid="uid://wck5h0ht8hpo" path="res://Sprites/People/LivingRoom/LivingRoomPeopleAfraid3.png" id="1_xxhdo"]
 [ext_resource type="Texture2D" uid="uid://bcitwtc14ouh0" path="res://Sprites/People/LivingRoom/LivingRoomPeopleTalking3.png" id="2_454jn"]
-[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="2_c36fj"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="2_c36fj"]
 [ext_resource type="Texture2D" uid="uid://r865ghpt15om" path="res://Sprites/People/Outside/Olivia.png" id="3_pvblj"]
 
 [sub_resource type="Resource" id="Resource_wimtb"]

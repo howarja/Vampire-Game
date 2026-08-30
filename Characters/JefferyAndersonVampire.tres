@@ -2,8 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://cqytwtaks3r6b" path="res://Sprites/People/basement/InsideGaragePeopleScared5.png" id="1_ooaof"]
 [ext_resource type="Texture2D" uid="uid://05fhqghnuf3l" path="res://Sprites/People/basement/InsideGaragePeopleTalking5.png" id="2_0chsk"]
-[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="2_ooaof"]
-[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="3_0chsk"]
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_ooaof"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_0chsk"]
 [ext_resource type="Texture2D" uid="uid://bnr72wxh3p5ft" path="res://Sprites/People/Outside/James2.png" id="3_ui0fo"]
 
 [sub_resource type="Resource" id="Resource_wimtb"]

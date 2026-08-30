@@ -6,7 +6,7 @@ var lines: Array[String] = [];
 var audio: Array[AudioStreamMP3] = [];
 var currentLine: int = 0;
 
-var saved_question;
+var saved_question: question;
 
 @onready var questionButtonScene: PackedScene = preload("res://scenes/question_button.tscn");
 var questionButtons: Array[questionButton] = [];
@@ -39,6 +39,10 @@ func newLine():
 		canInput = false;
 		canQuestion(false);
 		anim.play("Talking")
+		
+		if saved_question!=null:
+			if saved_question.prompt != "Can i see your ID?":
+				_id.hide();
 	else:
 		canQuestion(true);
 
@@ -53,8 +57,10 @@ func _process(delta: float) -> void:
 
 func renableInput():
 	canInput = true;
-	if saved_question.prompt == "":
-		_id.show()
+	_id.hide();
+	if saved_question!=null:
+		if saved_question.prompt == "Can i see your ID?":
+			_id.show();
 	anim.play("RESET")
 
 func canQuestion(enabled: bool):
@@ -79,6 +85,7 @@ func loadCharacter(newCharacter: character, interacted: interactableCharacter):
 	inConversation = true;
 	phone.updatePhone(newCharacter)
 	_id.update_id(newCharacter)
+	saved_question = null;
 	
 	Globals.player.currentArea.hideButtons();
 	reparent(Globals.player.currentArea, true);
@@ -113,6 +120,8 @@ func exitConversation():
 	lastInteracted.update();
 	characterSprite.texture = null;
 	display.hide();
+	_id.hide();
+	saved_question = null;
 	Globals.player.fadeTo(Globals.player.currentArea, 1)
 
 func killCharacter():
@@ -131,6 +140,8 @@ func killCharacter():
 	inConversation = false;
 	lines = [];
 	display.hide();
+	saved_question = null;
+	_id.hide();
 	text.disable();
 	lastInteracted.update();
 
@@ -139,6 +150,8 @@ func exitWithoutFade():
 	canQuestion(false);
 	lines = [];
 	text.disable();
+	_id.hide();
+	saved_question = null;
 	lastInteracted.update();
 	characterSprite.texture = null;
 	display.hide();

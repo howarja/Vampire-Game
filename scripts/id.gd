@@ -7,7 +7,7 @@ class_name id
 @onready var height_label: Label = $Height;
 @onready var weight_label: Label = $Weight;
 @onready var hair_label: Label = $Hair;
-@onready var eyes_label: Label = $TEyes;
+@onready var eyes_label: Label = $Eyes;
 @onready var social_security_label: Label = $"Social Security";
 
 var currentCharacter: character;

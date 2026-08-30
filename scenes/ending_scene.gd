@@ -55,6 +55,7 @@ func _ready() -> void:
 			text.text += "\n\n Hotel for blood";
 			audio_player.stream = bad_ending;
 			return;
+		audio_player.stream = bad_ending;
 	else:
 		text.text += "\n\n the host survived! You win!";
 		if(humans_alive == 0 && humans_killed == max_humans && vampires_killed == max_vampires):
@@ -84,7 +85,7 @@ func _ready() -> void:
 			## Vamp trap ending(let only vampires in your house and then kill them)
 			text.text += "\n\n You got them all trapped.";
 			text.text += "\n\n Vampire Trap Ending!";
-			audio_player.stream = only_vampires_ending;
+			audio_player.stream = trap_the_vampires_ending;
 			return;
 		else:
 			## Refuse ending(let no one in your house)

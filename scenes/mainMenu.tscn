@@ -15,6 +15,8 @@
 [ext_resource type="Shader" uid="uid://bksk84btj0efx" path="res://shaders/vhs.gdshader" id="8_6b2wv"]
 [ext_resource type="PackedScene" uid="uid://dmmobl341pm1o" path="res://scenes/pixelate.tscn" id="8_dj72i"]
 [ext_resource type="Shader" uid="uid://csyh8nqbp0hvr" path="res://shaders/pixelate.gdshader" id="10_6b2wv"]
+[ext_resource type="AudioStream" uid="uid://cyir28p37diov" path="res://SFX/finalSFX/Hover1mp3.mp3" id="16_25e00"]
+[ext_resource type="AudioStream" uid="uid://dbhnmvlr4crt2" path="res://SFX/finalSFX/Click4.mp3" id="16_jfr2g"]
 
 [sub_resource type="Animation" id="Animation_l7wge"]
 resource_name = "Logo"
@@ -188,7 +190,7 @@ theme_override_font_sizes/normal_font_size = 31
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="PlayButton" type="Button" parent="TextHolder" unique_id=1824723328]
+[node name="PlayButton" type="Button" parent="TextHolder" unique_id=1824723328 node_paths=PackedStringArray("hoverStream", "clickStream")]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -211,6 +213,8 @@ theme_override_styles/disabled = ExtResource("4_amia2")
 theme_override_styles/focus = ExtResource("4_amia2")
 text = " Play "
 script = ExtResource("2_48ign")
+hoverStream = NodePath("../../ButtonSFX")
+clickStream = NodePath("../../ButtonSFX2")
 
 [node name="Blood" type="Sprite2D" parent="TextHolder" unique_id=1531663581]
 position = Vector2(501, -401)
@@ -218,7 +222,7 @@ texture = ExtResource("3_tov5d")
 
 [node name="Settings" parent="." unique_id=1974824112 instance=ExtResource("2_3d1i7")]
 
-[node name="exitButton" type="Button" parent="." unique_id=260818102]
+[node name="exitButton" type="Button" parent="." unique_id=260818102 node_paths=PackedStringArray("hoverStream", "clickStream")]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -238,6 +242,8 @@ theme_override_styles/disabled = ExtResource("4_amia2")
 theme_override_styles/focus = ExtResource("4_amia2")
 text = " Exit Game "
 script = ExtResource("2_48ign")
+hoverStream = NodePath("../ButtonSFX")
+clickStream = NodePath("../ButtonSFX2")
 
 [node name="Outline2" type="Sprite2D" parent="." unique_id=1045170875]
 position = Vector2(500, 376)
@@ -259,6 +265,16 @@ autoplay = true
 position = Vector2(508, 343)
 stream = ExtResource("6_clbkb")
 volume_db = 10.0
+
+[node name="ButtonSFX2" type="AudioStreamPlayer2D" parent="." unique_id=64223299]
+position = Vector2(-49, -34)
+stream = ExtResource("16_jfr2g")
+volume_db = 5.0
+
+[node name="ButtonSFX" type="AudioStreamPlayer2D" parent="." unique_id=1182532484]
+position = Vector2(-49, -34)
+stream = ExtResource("16_25e00")
+volume_db = 5.0
 
 [node name="VHSfx" parent="." unique_id=1094916861 instance=ExtResource("7_y35fp")]
 z_index = 4096

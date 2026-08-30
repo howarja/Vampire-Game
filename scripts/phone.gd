@@ -6,12 +6,12 @@ func _ready() -> void:
 	pull_out_phone()
 
 var currentCharacter: character;
-@onready var nameLabel: Label = $TextureRect/ScrollContainer/VBoxContainer/Name;
-@onready var date_of_birth: Label = $TextureRect/ScrollContainer/VBoxContainer/DateOfBirth;
-@onready var address: Label = $TextureRect/ScrollContainer/VBoxContainer/Address;
-@onready var bringing: Label = $TextureRect/ScrollContainer/VBoxContainer/Bringing;
-@onready var blood_type: Label = $TextureRect/ScrollContainer/VBoxContainer/BloodType;
-@onready var life_status: Label = $TextureRect/ScrollContainer/VBoxContainer/LifeStatus;
+@onready var nameLabel: Label = $ScrollContainer/VBoxContainer/Name;
+@onready var date_of_birth: Label = $ScrollContainer/VBoxContainer/DateOfBirth;
+@onready var address: Label = $ScrollContainer/VBoxContainer/Address;
+@onready var bringing: Label = $ScrollContainer/VBoxContainer/Bringing;
+@onready var blood_type: Label = $ScrollContainer/VBoxContainer/BloodType;
+@onready var life_status: Label = $ScrollContainer/VBoxContainer/LifeStatus;
 
 func pull_out_phone():
 	$AnimatedSprite2D.show()

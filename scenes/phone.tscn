@@ -112,6 +112,8 @@ script = ExtResource("1_08mii")
 position = Vector2(866, 512)
 sprite_frames = SubResource("SpriteFrames_08mii")
 animation = &"pull_out_phone"
+frame = 10
+frame_progress = 1.0
 
 [node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=849470963]
 layout_mode = 1

@@ -2,7 +2,7 @@ extends Node2D
 class_name characterManager
 
 @export var unEncounteredCharacters: Array[character];
-var acceptedCharacters: Array[character];
+@export var acceptedCharacters: Array[character];
 
 func _ready() -> void:
 	Globals.characters = self;

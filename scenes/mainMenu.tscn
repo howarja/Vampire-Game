@@ -110,7 +110,7 @@ _data = {
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_tov5d"]
 shader = ExtResource("8_6b2wv")
 shader_parameter/smearing = 0.50000002375
-shader_parameter/color_offset = -0.024999999557560004
+shader_parameter/color_offset = -0.02499999955756
 shader_parameter/sharpening = 0.4
 shader_parameter/static_noise = 0.08
 shader_parameter/vertical_jitter = 0.002

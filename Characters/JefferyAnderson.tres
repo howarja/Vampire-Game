@@ -9,6 +9,7 @@
 [ext_resource type="AudioStream" uid="uid://dolfptskp8db3" path="res://SFX/Voicelines/JefferyAndersonEnter1.wav" id="4_fqv5d"]
 [ext_resource type="AudioStream" uid="uid://drndnyhnkb245" path="res://SFX/Voicelines/JefferyAndersonEnter2.wav" id="5_q4vql"]
 [ext_resource type="AudioStream" uid="uid://yty4lld1ikjk" path="res://SFX/Voicelines/JefferyAndersonEnter3.wav" id="6_rn7yd"]
+[ext_resource type="Texture2D" uid="uid://cmfy7rsqg5ikx" path="res://Sprites/IamgesForIdentification1.png" id="9_q4vql"]
 
 [sub_resource type="Resource" id="Resource_q86ko"]
 script = ExtResource("2_ymaym")
@@ -34,6 +35,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 script = ExtResource("2_gwqjw")
 prompt = "Let me see your invite."
 answer = Array[String](["Dude calm down here it is.", "Like seriously why are you such an interagotter."])
+image = ExtResource("9_q4vql")
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]

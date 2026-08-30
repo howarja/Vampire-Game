@@ -9,6 +9,7 @@
 [ext_resource type="AudioStream" uid="uid://njpyorpx8dv0" path="res://SFX/Voicelines/StarkBeeverEnter1.wav" id="4_qcsjw"]
 [ext_resource type="AudioStream" uid="uid://jrffdhae1wff" path="res://SFX/Voicelines/StarkBeeverEnter2.wav" id="5_1n0w1"]
 [ext_resource type="AudioStream" uid="uid://bh8dyuacol24v" path="res://SFX/Voicelines/StarkBeeverEnter3.wav" id="6_e38iv"]
+[ext_resource type="Texture2D" uid="uid://cmfy7rsqg5ikx" path="res://Sprites/IamgesForIdentification1.png" id="9_1n0w1"]
 
 [sub_resource type="Resource" id="Resource_q0ves"]
 script = ExtResource("2_c4ho6")
@@ -34,6 +35,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 script = ExtResource("1_gqtub")
 prompt = "Let me see your invite."
 answer = Array[String](["Do I really need to show my invite?", "Also I thought that the host would welcome me in himself.", "Maybe I'll have to talk to him about manners.", "Anyhow, here's my invite."])
+image = ExtResource("9_1n0w1")
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]

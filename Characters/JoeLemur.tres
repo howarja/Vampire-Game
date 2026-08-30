@@ -10,6 +10,7 @@
 [ext_resource type="AudioStream" uid="uid://3onhbi2euhr5" path="res://SFX/Voicelines/JoeLemurEnter2.wav" id="5_4q1cu"]
 [ext_resource type="AudioStream" uid="uid://cjajsx7fntrd3" path="res://SFX/Voicelines/JoeLemurEnter3.wav" id="6_7bbbm"]
 [ext_resource type="AudioStream" uid="uid://2ihvf0bfbp6v" path="res://SFX/Voicelines/JoeLemurEnter4.wav" id="7_l6vhg"]
+[ext_resource type="Texture2D" uid="uid://cmfy7rsqg5ikx" path="res://Sprites/IamgesForIdentification1.png" id="10_4q1cu"]
 
 [sub_resource type="Resource" id="Resource_ha0l6"]
 script = ExtResource("2_ml4ee")
@@ -35,6 +36,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 script = ExtResource("2_2fyne")
 prompt = "Let me see your invite."
 answer = Array[String](["Here you go!", "It may be covered in a bit of grass though..."])
+image = ExtResource("10_4q1cu")
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]

@@ -10,6 +10,7 @@
 [ext_resource type="AudioStream" uid="uid://b6nsfma7hqec5" path="res://SFX/Voicelines/TimmyJimmyEnter2.wav" id="5_osgj7"]
 [ext_resource type="AudioStream" uid="uid://dhxh3tvjvqrhf" path="res://SFX/Voicelines/TimmyJimmyEnter3.wav" id="6_l7dld"]
 [ext_resource type="AudioStream" uid="uid://co2m7j1u54ruq" path="res://SFX/Voicelines/TimmyJimmyEnter4.wav" id="7_nlj30"]
+[ext_resource type="Texture2D" uid="uid://cmfy7rsqg5ikx" path="res://Sprites/IamgesForIdentification1.png" id="10_osgj7"]
 
 [sub_resource type="Resource" id="Resource_eean2"]
 script = ExtResource("2_7gpwf")
@@ -35,6 +36,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 script = ExtResource("2_himms")
 prompt = "Let me see your invite."
 answer = Array[String](["Here you go, even the host knows my skills!"])
+image = ExtResource("10_osgj7")
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]

@@ -9,6 +9,7 @@
 [ext_resource type="AudioStream" uid="uid://c32fkulahmotg" path="res://SFX/Voicelines/ElizabethFisherEnter1.wav" id="4_g3jb6"]
 [ext_resource type="AudioStream" uid="uid://cfr87dc3n7lb1" path="res://SFX/Voicelines/ElizabethFisherEnter2.wav" id="5_irenw"]
 [ext_resource type="AudioStream" uid="uid://dwi77352l0pnx" path="res://SFX/Voicelines/ElizabethFisherEnter3.wav" id="6_d084p"]
+[ext_resource type="Texture2D" uid="uid://cmfy7rsqg5ikx" path="res://Sprites/IamgesForIdentification1.png" id="9_irenw"]
 
 [sub_resource type="Resource" id="Resource_efw2u"]
 script = ExtResource("2_pvblj")
@@ -34,6 +35,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 script = ExtResource("1_ne6w6")
 prompt = "Let me see your invite."
 answer = Array[String](["Here you go!"])
+image = ExtResource("9_irenw")
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]

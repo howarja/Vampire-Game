@@ -11,6 +11,7 @@
 [ext_resource type="AudioStream" uid="uid://bx81qpsh1yvqf" path="res://SFX/Voicelines/JefferyAndersonVampireEnter3.wav" id="6_6fywy"]
 [ext_resource type="AudioStream" uid="uid://oa4h4eab73ni" path="res://SFX/Voicelines/JefferyAndersonVampireEnter4.wav" id="7_a620v"]
 [ext_resource type="AudioStream" uid="uid://vvptyh6hoima" path="res://SFX/Voicelines/JefferyAndersonVampireEnter5.wav" id="8_k3jcp"]
+[ext_resource type="Texture2D" uid="uid://ckkxgtkhf0lmr" path="res://Sprites/IamgesForIdentification2.png" id="11_gxqrh"]
 
 [sub_resource type="Resource" id="Resource_lh7et"]
 script = ExtResource("2_ui0fo")
@@ -36,6 +37,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 script = ExtResource("2_ooaof")
 prompt = "Let me see your invite."
 answer = Array[String](["I've had a tough time and I'm still not safe, that vampire stole my shape and might be hiding around here."])
+image = ExtResource("11_gxqrh")
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]

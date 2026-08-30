@@ -13,6 +13,7 @@
 [ext_resource type="AudioStream" uid="uid://bhu54mxtcdrdb" path="res://SFX/Voicelines/WilliamGreavesEnter5.wav" id="8_v16l8"]
 [ext_resource type="AudioStream" uid="uid://bj8jj57wt6ljv" path="res://SFX/Voicelines/WilliamGreavesEnter6.wav" id="9_3b52b"]
 [ext_resource type="AudioStream" uid="uid://doccbb8eynh3h" path="res://SFX/Voicelines/WilliamGreavesEnter7.wav" id="10_20obr"]
+[ext_resource type="Texture2D" uid="uid://cmfy7rsqg5ikx" path="res://Sprites/IamgesForIdentification1.png" id="13_qblvd"]
 
 [sub_resource type="Resource" id="Resource_5halp"]
 script = ExtResource("2_4e71w")
@@ -38,6 +39,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 script = ExtResource("2_q610j")
 prompt = "Let me see your invite."
 answer = Array[String](["A invite?", " Ahh here you go, it was in my all american owned 100% leather wallet."])
+image = ExtResource("13_qblvd")
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]

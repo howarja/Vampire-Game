@@ -13,6 +13,7 @@
 [ext_resource type="AudioStream" uid="uid://p3ddusmn2tlo" path="res://SFX/Voicelines/MaxFredricksonEnter5.wav" id="8_hepsh"]
 [ext_resource type="AudioStream" uid="uid://dkpi77nia67hf" path="res://SFX/Voicelines/MaxFredricksonEnter6.wav" id="9_3jwy4"]
 [ext_resource type="AudioStream" uid="uid://bn4guoa7n4xnt" path="res://SFX/Voicelines/MaxFredricksonEnter7.wav" id="10_eptfy"]
+[ext_resource type="Texture2D" uid="uid://cmfy7rsqg5ikx" path="res://Sprites/IamgesForIdentification1.png" id="13_vbe1t"]
 
 [sub_resource type="Resource" id="Resource_bgc2m"]
 script = ExtResource("2_amset")
@@ -38,6 +39,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 script = ExtResource("2_uyyts")
 prompt = "Let me see your invite."
 answer = Array[String](["Here it is."])
+image = ExtResource("13_vbe1t")
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]

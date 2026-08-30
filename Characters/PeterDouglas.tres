@@ -9,6 +9,7 @@
 [ext_resource type="AudioStream" uid="uid://7fqt12m06b06" path="res://SFX/Voicelines/PeterDouglasEnter1.wav" id="4_gpvrp"]
 [ext_resource type="AudioStream" uid="uid://bqijorfxcycks" path="res://SFX/Voicelines/PeterDouglasEnter2.wav" id="5_y3gof"]
 [ext_resource type="AudioStream" uid="uid://cot1x1gas3mi8" path="res://SFX/Voicelines/PeterDouglasEnter3.wav" id="6_44ivw"]
+[ext_resource type="Texture2D" uid="uid://cmfy7rsqg5ikx" path="res://Sprites/IamgesForIdentification1.png" id="9_y3gof"]
 
 [sub_resource type="Resource" id="Resource_axjph"]
 script = ExtResource("2_nxitx")
@@ -34,6 +35,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 script = ExtResource("2_dgaj8")
 prompt = "Let me see your invite."
 answer = Array[String](["Of course sir, here you go"])
+image = ExtResource("9_y3gof")
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]

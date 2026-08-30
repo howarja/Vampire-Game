@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dn1ofscgxh6r5" path="res://scripts/settings.gd" id="1_sfmi7"]
 [ext_resource type="FontFile" uid="uid://cofv126vqogtf" path="res://BlackOpsOne-Regular.ttf" id="2_f4mfi"]
-[ext_resource type="Texture2D" uid="uid://b3wousrl8g8s5" path="res://icon.svg" id="3_6wm04"]
+[ext_resource type="Texture2D" uid="uid://b27w8qfp0dmt1" path="res://Sprites/gear.png" id="3_f4mfi"]
 [ext_resource type="Script" uid="uid://cuixesoyqhje0" path="res://scripts/buttonEffects.gd" id="4_f4mfi"]
 
 [node name="Settings" type="Node2D" unique_id=1974824112]
@@ -107,7 +107,7 @@ position = Vector2(0, -163)
 [node name="cogButton" type="Sprite2D" parent="." unique_id=386072810]
 position = Vector2(890, 111)
 scale = Vector2(1.140625, 1.140625)
-texture = ExtResource("3_6wm04")
+texture = ExtResource("3_f4mfi")
 
 [node name="Button" type="Button" parent="cogButton" unique_id=1309875183]
 offset_left = -65.75345

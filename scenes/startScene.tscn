@@ -79,6 +79,7 @@
 [ext_resource type="Texture2D" uid="uid://dopv241x543jx" path="res://Sprites/KitchenPeoplecake.png" id="45_03vgi"]
 [ext_resource type="Texture2D" uid="uid://cpiohx3oi3t38" path="res://Sprites/People/Kitchen/KitchenPeopleSitting1.png" id="45_frb8m"]
 [ext_resource type="AudioStream" uid="uid://bbw32fx54w3so" path="res://SFX/finalSFX/Zoom3.mp3" id="45_x6vsl"]
+[ext_resource type="Texture2D" uid="uid://b00rmw0e51bv4" path="res://Sprites/Buttons_for_moving3 (2).png" id="46_01gc6"]
 [ext_resource type="Texture2D" uid="uid://4ka5a8gfnj2p" path="res://Sprites/People/Kitchen/KitchenPeopleSitting2.png" id="46_x6vsl"]
 [ext_resource type="Texture2D" uid="uid://dmdvtj64b40nn" path="res://Sprites/People/Kitchen/KitchenPeopleSitting3.png" id="47_yhoku"]
 [ext_resource type="AudioStream" uid="uid://mdmbabi2hvgi" path="res://SFX/door_close.mp3" id="49_03vgi"]
@@ -535,52 +536,56 @@ offset_left = 118.18183
 offset_top = -83.63637
 offset_right = 245.18182
 offset_bottom = 63.363632
-icon = ExtResource("44_0smob")
+icon = ExtResource("46_01gc6")
 flat = true
 script = ExtResource("3_jmrrm")
 newArea = NodePath("../../Lounge")
 movementSFX = ExtResource("43_s8qox")
 fadeLength = 2.5
 eyeSymbol = null
+doorArrow = false
 
 [node name="movementButton2" type="Button" parent="CanvasLayer/Hallway" unique_id=188149822 node_paths=PackedStringArray("newArea")]
 offset_left = 273.63635
 offset_top = -40.9091
 offset_right = 400.63635
 offset_bottom = 106.0909
-icon = ExtResource("44_0smob")
+icon = ExtResource("46_01gc6")
 flat = true
 script = ExtResource("3_jmrrm")
 newArea = NodePath("../../Garage")
 movementSFX = ExtResource("44_yhoku")
 fadeLength = null
 eyeSymbol = null
+doorArrow = false
 
 [node name="movementButton3" type="Button" parent="CanvasLayer/Hallway" unique_id=1415821590 node_paths=PackedStringArray("newArea")]
 offset_left = -71.81817
 offset_top = -59.999985
 offset_right = 55.18183
 offset_bottom = 87.000015
-icon = ExtResource("44_0smob")
+icon = ExtResource("46_01gc6")
 flat = true
 script = ExtResource("3_jmrrm")
 newArea = NodePath("../../Doorway")
 movementSFX = ExtResource("44_jr8db")
 fadeLength = 1.8
 eyeSymbol = null
+doorArrow = false
 
 [node name="movementButton4" type="Button" parent="CanvasLayer/Hallway" unique_id=540001184 node_paths=PackedStringArray("newArea")]
 offset_left = -433.63635
 offset_top = -86.363625
 offset_right = -306.63635
 offset_bottom = 60.636375
-icon = ExtResource("44_0smob")
+icon = ExtResource("46_01gc6")
 flat = true
 script = ExtResource("3_jmrrm")
 newArea = NodePath("../../Kitchen")
 movementSFX = ExtResource("43_s8qox")
 fadeLength = 1.8
 eyeSymbol = null
+doorArrow = false
 
 [node name="Doorway" type="Sprite2D" parent="CanvasLayer" unique_id=78017150 node_paths=PackedStringArray("movementButtons")]
 visible = false
@@ -641,13 +646,14 @@ offset_left = -440.9091
 offset_top = -168.18181
 offset_right = -313.9091
 offset_bottom = -21.181808
-icon = ExtResource("44_0smob")
+icon = ExtResource("46_01gc6")
 flat = true
 script = ExtResource("3_jmrrm")
 newArea = NodePath("../../Basement")
 movementSFX = ExtResource("43_s8qox")
 fadeLength = 1.5
 eyeSymbol = null
+doorArrow = false
 
 [node name="InteractableCharacter7" type="Area2D" parent="CanvasLayer/Garage" unique_id=1874917329]
 script = ExtResource("3_ip4ey")
@@ -837,13 +843,14 @@ offset_left = 306.36365
 offset_top = -60.000004
 offset_right = 433.36365
 offset_bottom = 87.0
-icon = ExtResource("44_0smob")
+icon = ExtResource("46_01gc6")
 flat = true
 script = ExtResource("3_jmrrm")
 newArea = NodePath("../../Hallway")
 movementSFX = ExtResource("49_03vgi")
 fadeLength = 1.2
 eyeSymbol = null
+doorArrow = false
 
 [node name="EndingManager" type="Control" parent="CanvasLayer/Kitchen" unique_id=668338982 node_paths=PackedStringArray("endingButton", "confirmButton", "cancelButton", "endingInfo")]
 layout_mode = 3

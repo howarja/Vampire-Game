@@ -6,6 +6,8 @@ var lines: Array[String] = [];
 var audio: Array[AudioStreamMP3] = [];
 var currentLine: int = 0;
 
+var saved_question;
+
 @onready var questionButtonScene: PackedScene = preload("res://scenes/question_button.tscn");
 var questionButtons: Array[questionButton] = [];
 var currentCharacter: character;
@@ -17,6 +19,7 @@ var lastInteracted: interactableCharacter;
 @export var characterSprite: Sprite2D;
 @export var display: TextureRect;
 @export var phone: Phone;
+@export var _id: id;
 @export var anim: AnimationPlayer;
 
 var holdingInput: bool = false;
@@ -50,6 +53,8 @@ func _process(delta: float) -> void:
 
 func renableInput():
 	canInput = true;
+	if saved_question.prompt == "":
+		_id.show()
 	anim.play("RESET")
 
 func canQuestion(enabled: bool):
@@ -73,6 +78,7 @@ func loadCharacter(newCharacter: character, interacted: interactableCharacter):
 	
 	inConversation = true;
 	phone.updatePhone(newCharacter)
+	_id.update_id(newCharacter)
 	
 	Globals.player.currentArea.hideButtons();
 	reparent(Globals.player.currentArea, true);
@@ -80,6 +86,7 @@ func loadCharacter(newCharacter: character, interacted: interactableCharacter):
 
 func loadQuestion(newQuestion: question) -> void:
 	lines = newQuestion.answer;
+	saved_question = newQuestion;
 	if newQuestion.image!=null:
 		display.texture = newQuestion.image;
 		display.show();

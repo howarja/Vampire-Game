@@ -59,6 +59,7 @@
 [ext_resource type="AudioStream" uid="uid://mdmbabi2hvgi" path="res://SFX/door_close.mp3" id="49_03vgi"]
 [ext_resource type="PackedScene" uid="uid://dmmobl341pm1o" path="res://scenes/pixelate.tscn" id="51_nlj8h"]
 [ext_resource type="AudioStream" uid="uid://b7lsqqv46ue8q" path="res://SFX/murder.mp3" id="52_0smob"]
+[ext_resource type="PackedScene" uid="uid://70hcrtv5i5n6" path="res://scenes/id.tscn" id="60_s8qox"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3xd07"]
 radius = 91.0
@@ -752,6 +753,13 @@ anchor_bottom = 0.5
 offset_top = -0.24996948
 offset_right = -3.0
 offset_bottom = -1.0
+
+[node name="id" parent="CanvasLayer" unique_id=788058968 instance=ExtResource("60_s8qox")]
+visible = false
+offset_left = -501.0
+offset_top = -376.0
+offset_right = -501.0
+offset_bottom = -376.0
 
 [node name="VHSfx" parent="CanvasLayer" unique_id=1094916861 instance=ExtResource("8_judpu")]
 z_index = 4096

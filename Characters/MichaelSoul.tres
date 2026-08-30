@@ -1,48 +1,54 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://cuggg4fxfk00n"]
 
+[ext_resource type="Texture2D" uid="uid://c6c7effge6mfr" path="res://Sprites/People/LivingRoom/LivingRoomPeopleAfraid6.png" id="1_ec5va"]
+[ext_resource type="Texture2D" uid="uid://d1j1hpiyjr3jt" path="res://Sprites/People/LivingRoom/LivingRoomPeopleTalking6.png" id="2_15hoe"]
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_ec5va"]
+[ext_resource type="Texture2D" uid="uid://dtndpoepq32o0" path="res://Sprites/People/Outside/Isaac.png" id="3_6q17s"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_15hoe"]
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_ec5va")
 prompt = "What did you bring?"
-answer = Array[String]([""])
+answer = Array[String](["Nothing look I'm really sorry man, I know I promised to bring chips and I let you guys down.", "But anyway, seen Sim round here yet?", "He keeps disapearing on me."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_hush4"]
 script = ExtResource("2_ec5va")
 prompt = "Let me see your invite."
-answer = Array[String]([""])
+answer = Array[String](["Yes yes here is my invitation."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]
 script = ExtResource("2_ec5va")
 prompt = "Can i see your ID?"
-answer = Array[String]([""])
+answer = Array[String](["Of course!"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_1tlsp"]
 script = ExtResource("2_ec5va")
 prompt = "Do you have any dietary requirments?"
-answer = Array[String]([""])
+answer = Array[String](["I'm lactose intolerant."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_c4kb4"]
 script = ExtResource("2_ec5va")
 prompt = "What is your blood type?"
-answer = Array[String]([""])
+answer = Array[String](["It's B+"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_lw0dh"]
 script = ExtResource("2_ec5va")
 prompt = "Where do you live?"
-answer = Array[String]([""])
+answer = Array[String](["With Sim, ask him where we live"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [resource]
 script = ExtResource("3_15hoe")
 fullName = "Michael Soul"
 vampire = true
-introDialaogue = Array[String](["", "", ""])
+outDoorSprite = ExtResource("3_6q17s")
+interiorSprite = ExtResource("2_15hoe")
+afraidSprite = ExtResource("1_ec5va")
+introDialaogue = Array[String](["Ello buddy, I'm Micheal Soul.", "Look I'm really sorry I forgot to bring the chips.", "I hope my brother Sim is in there I really need to see him, he said he was coming.", "Feasting just isn't the same without my bro.", "May I enter?"])
 questions = Array[ExtResource("2_ec5va")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

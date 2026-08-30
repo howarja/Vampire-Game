@@ -1,10 +1,25 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://ca2bounl3hsv7"]
 
+[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="1_impvx"]
 [ext_resource type="Texture2D" uid="uid://cyrqt3ksejec1" path="res://Sprites/People/Kitchen/KitchenPeopleAfraid3.png" id="1_xdaoa"]
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="1_y821a"]
 [ext_resource type="Texture2D" uid="uid://f4acbilmuij6" path="res://Sprites/People/Kitchen/KitchenPeopleTalking3.png" id="2_cdl15"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="2_impvx"]
 [ext_resource type="Texture2D" uid="uid://dkmt4ivj7ahc2" path="res://Sprites/People/Outside/OutsidePeopleTake more3.png" id="3_6hf7l"]
+
+[sub_resource type="Resource" id="Resource_k84n5"]
+script = ExtResource("1_impvx")
+dateOfBirth = "Unknown"
+address = "Sewers"
+bringing = "Rats?"
+bloodType = "Unknown"
+lifeStatus = "Unknown"
+weight = "Unknown"
+height = "7 feet 9 inches"
+hair_color = "Unknown"
+eye_color = "Unknown"
+scocial_security = "000-00-0000"
+metadata/_custom_type_script = "uid://l3v0m3s3okyk"
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("1_y821a")
@@ -50,4 +65,5 @@ interiorSprite = ExtResource("2_cdl15")
 afraidSprite = ExtResource("1_xdaoa")
 introDialaogue = Array[String](["Hehehehe, what is it?", "You ask me if I am a vampire, those creatures are below me!", "I am above all!", "I am the rat god!"])
 questions = Array[ExtResource("1_y821a")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
+information = SubResource("Resource_k84n5")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

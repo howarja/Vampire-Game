@@ -3,8 +3,23 @@
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="1_8i1ka"]
 [ext_resource type="Texture2D" uid="uid://dxpg22q5b3p7k" path="res://Sprites/People/Garage/InsideGarage2PeopleScared4.png" id="1_lem5m"]
 [ext_resource type="Texture2D" uid="uid://due1cmwntrdqe" path="res://Sprites/People/Garage/InsideGarage2PeopleSitting4.png" id="2_2jrfc"]
+[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_g8nvj"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="2_ooas5"]
 [ext_resource type="Texture2D" uid="uid://nbcj41le3p70" path="res://Sprites/People/Outside/TobyG.png" id="3_g8nvj"]
+
+[sub_resource type="Resource" id="Resource_cdl15"]
+script = ExtResource("2_g8nvj")
+dateOfBirth = "25/08/1942"
+address = "9 brendan lane"
+bringing = "gluten free vegan spring roles"
+bloodType = "O-"
+lifeStatus = "Alive"
+weight = "173 lb"
+height = "5 feet 3 inches"
+hair_color = "brown"
+eye_color = "green"
+scocial_security = "587-39-3892"
+metadata/_custom_type_script = "uid://l3v0m3s3okyk"
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("1_8i1ka")
@@ -50,4 +65,5 @@ interiorSprite = ExtResource("2_2jrfc")
 afraidSprite = ExtResource("1_lem5m")
 introDialaogue = Array[String](["Hi-i I I am Seb-sebastian.", "Umm do you know if Br-Brunhilde is here yet?", "I came to see her here."])
 questions = Array[ExtResource("1_8i1ka")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
+information = SubResource("Resource_cdl15")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

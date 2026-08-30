@@ -3,8 +3,23 @@
 [ext_resource type="Texture2D" uid="uid://cx6k6q7xqyfhw" path="res://Sprites/People/LivingRoom/LivingRoomPeopleAfraid1.png" id="1_dgaj8"]
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_dgaj8"]
 [ext_resource type="Texture2D" uid="uid://cnubf2bwo8buj" path="res://Sprites/People/LivingRoom/LivingRoomPeopleTalking1.png" id="2_h4ynm"]
+[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_nxitx"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_h4ynm"]
 [ext_resource type="Texture2D" uid="uid://ddilv6nlb4f1m" path="res://Sprites/People/Outside/Tijmen.png" id="3_nxitx"]
+
+[sub_resource type="Resource" id="Resource_axjph"]
+script = ExtResource("2_nxitx")
+dateOfBirth = "06/03/1934"
+address = "Saint Douglas Island"
+bringing = "Chocolates"
+bloodType = "B-"
+lifeStatus = "Alive"
+weight = "203 lb"
+height = "5 feet 8 inches"
+hair_color = "brown"
+eye_color = "brown"
+scocial_security = "587-39-5426"
+metadata/_custom_type_script = "uid://l3v0m3s3okyk"
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_dgaj8")
@@ -50,4 +65,5 @@ interiorSprite = ExtResource("2_h4ynm")
 afraidSprite = ExtResource("1_dgaj8")
 introDialaogue = Array[String](["Greetings greetings.", "I'm real excited so please let me in.", "Look I drove down from my luxurious palm beach house for this party!"])
 questions = Array[ExtResource("2_dgaj8")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
+information = SubResource("Resource_axjph")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

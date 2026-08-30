@@ -4,7 +4,22 @@
 [ext_resource type="Texture2D" uid="uid://dwhi6uvf5h2ai" path="res://Sprites/People/basement/InsideGaragePeopleScared3.png" id="1_celvo"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="2_0ot8i"]
 [ext_resource type="Texture2D" uid="uid://d3wiccf8hytqr" path="res://Sprites/People/basement/InsideGaragePeopleTalking3.png" id="2_8gc7m"]
+[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_xdc46"]
 [ext_resource type="Texture2D" uid="uid://c82e1w2pcp24p" path="res://Sprites/People/Outside/Samuel2.png" id="3_xdc46"]
+
+[sub_resource type="Resource" id="Resource_yvvos"]
+script = ExtResource("2_xdc46")
+dateOfBirth = "04/21/1943"
+address = "132 Dr Salt Ave"
+bringing = "nothing"
+bloodType = " A-"
+lifeStatus = "Alive"
+weight = "186 lb"
+height = "6 feet 1 inch"
+hair_color = "brown"
+eye_color = "blue"
+scocial_security = "587-39-5176"
+metadata/_custom_type_script = "uid://l3v0m3s3okyk"
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("1_b38vs")
@@ -50,4 +65,5 @@ interiorSprite = ExtResource("2_8gc7m")
 afraidSprite = ExtResource("1_celvo")
 introDialaogue = Array[String](["Help me please sir I need your help.", "I got attacked, they were chasing me a couple blocks away.", "There is no where else I can go please let me in here I can pay you back."])
 questions = Array[ExtResource("1_b38vs")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
+information = SubResource("Resource_yvvos")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

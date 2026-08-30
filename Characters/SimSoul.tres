@@ -2,9 +2,24 @@
 
 [ext_resource type="Texture2D" uid="uid://bi6s13mhdclsx" path="res://Sprites/People/Garage/InsideGarage2PeopleScared6.png" id="1_ohtyb"]
 [ext_resource type="Texture2D" uid="uid://j2lcj1pf4p4a" path="res://Sprites/People/Garage/InsideGarage2PeopleTalking6.png" id="2_ejbln"]
+[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_l7vkg"]
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_ohtyb"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_ejbln"]
 [ext_resource type="Texture2D" uid="uid://d2g08uoafsmti" path="res://Sprites/People/Outside/Yuki.png" id="3_l7vkg"]
+
+[sub_resource type="Resource" id="Resource_xce4b"]
+script = ExtResource("2_l7vkg")
+dateOfBirth = "13/07/1946"
+address = "7 gumperton street"
+bringing = "pack of cola"
+bloodType = "O+"
+lifeStatus = "Alive"
+weight = "179 lb"
+height = "6 feet 4 inches"
+hair_color = "Blonde"
+eye_color = "Blue"
+scocial_security = "587-39-6482"
+metadata/_custom_type_script = "uid://l3v0m3s3okyk"
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_ohtyb")
@@ -50,4 +65,5 @@ interiorSprite = ExtResource("2_ejbln")
 afraidSprite = ExtResource("1_ohtyb")
 introDialaogue = Array[String](["Hey there, new face, I'm Sim Soul.", "I recieved an invitation from the host.", "You dont know the type of convincing I had to do to let my mother let her only child show up here, even though I'm 21.", "Can I come in?  "])
 questions = Array[ExtResource("2_ohtyb")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
+information = SubResource("Resource_xce4b")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

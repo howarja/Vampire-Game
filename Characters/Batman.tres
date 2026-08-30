@@ -4,7 +4,22 @@
 [ext_resource type="Texture2D" uid="uid://ci0vk2abpgtqb" path="res://Sprites/People/basement/InsideGaragePeopleScared2.png" id="1_ul70y"]
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_e5hkb"]
 [ext_resource type="Texture2D" uid="uid://dgafsphuo71uc" path="res://Sprites/People/basement/InsideGaragePeopleTalking2.png" id="2_ehwri"]
+[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_fl2nn"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_0e0cs"]
+
+[sub_resource type="Resource" id="Resource_eud1m"]
+script = ExtResource("2_fl2nn")
+dateOfBirth = "unknown"
+address = "unknown"
+bringing = "unknown"
+bloodType = "unknown"
+lifeStatus = "unknown"
+weight = "unknown"
+height = "unknown"
+hair_color = "unknown"
+eye_color = "unknown"
+scocial_security = "unknown"
+metadata/_custom_type_script = "uid://l3v0m3s3okyk"
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_e5hkb")
@@ -51,4 +66,5 @@ interiorSprite = ExtResource("2_ehwri")
 afraidSprite = ExtResource("1_ul70y")
 introDialaogue = Array[String](["... ... ...", "I am a human.", "I want to join this gathering of humans."])
 questions = Array[ExtResource("2_e5hkb")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
+information = SubResource("Resource_eud1m")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

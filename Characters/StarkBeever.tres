@@ -14,6 +14,11 @@ address = "1600 Pennsylvania Avenue"
 bringing = " Premium gold infused wine with 24 carrat gems around the bottle"
 bloodType = "A-"
 lifeStatus = "Disabled, Missing right arm."
+weight = "158 lb"
+height = "5 feet 11 inches"
+hair_color = "brown"
+eye_color = "brown"
+scocial_security = "587-39-2354"
 metadata/_custom_type_script = "uid://l3v0m3s3okyk"
 
 [sub_resource type="Resource" id="Resource_wimtb"]

@@ -3,8 +3,23 @@
 [ext_resource type="Texture2D" uid="uid://6n4vpl44gnhg" path="res://Sprites/People/Garage/InsideGarage2PeopleScared2.png" id="1_p5ogu"]
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_p5ogu"]
 [ext_resource type="Texture2D" uid="uid://crjn45rcocddn" path="res://Sprites/People/Garage/InsideGarage2PeopleTalking2.png" id="2_tpb0d"]
+[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_vu7ny"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_tpb0d"]
 [ext_resource type="Texture2D" uid="uid://dfrk6io2d4m7x" path="res://Sprites/People/Outside/Hugo.png" id="3_vu7ny"]
+
+[sub_resource type="Resource" id="Resource_rc5ps"]
+script = ExtResource("2_vu7ny")
+dateOfBirth = "02/06/1947"
+address = "189 Dr Salt Ave"
+bringing = "Half Eaten Sandwiches"
+bloodType = "A+"
+lifeStatus = "Alive"
+weight = "168 lb"
+height = "55 feet 9 inches"
+hair_color = "black"
+eye_color = "brown"
+scocial_security = "587-39-2184"
+metadata/_custom_type_script = "uid://l3v0m3s3okyk"
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_p5ogu")
@@ -50,4 +65,5 @@ interiorSprite = ExtResource("2_tpb0d")
 afraidSprite = ExtResource("1_p5ogu")
 introDialaogue = Array[String](["Heya, It's me, Tucker.", "I'm your neighbour from across the road.", "I heard there was a party going on here."])
 questions = Array[ExtResource("2_p5ogu")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
+information = SubResource("Resource_rc5ps")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

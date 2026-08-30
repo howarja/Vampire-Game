@@ -1,10 +1,25 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://cln0iwyoodaps"]
 
 [ext_resource type="Texture2D" uid="uid://dayj4j56w4xym" path="res://Sprites/People/basement/InsideGaragePeopleScared4.png" id="1_xqmih"]
+[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_akcfx"]
 [ext_resource type="Texture2D" uid="uid://d1jvrrny3dcu7" path="res://Sprites/People/basement/InsideGaragePeopleTalking4.png" id="2_c8vdo"]
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_xqmih"]
 [ext_resource type="Texture2D" uid="uid://bp4f604cfnw0w" path="res://Sprites/People/Outside/Willem.png" id="3_akcfx"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_c8vdo"]
+
+[sub_resource type="Resource" id="Resource_t78ih"]
+script = ExtResource("2_akcfx")
+dateOfBirth = "08/02/1946"
+address = "187 jumpers lane"
+bringing = "Nothing"
+bloodType = "AB+"
+lifeStatus = "Alive"
+weight = "178 lb"
+height = "5 feet 3 inches"
+hair_color = "blonde"
+eye_color = "brown"
+scocial_security = "587-39-8235"
+metadata/_custom_type_script = "uid://l3v0m3s3okyk"
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_xqmih")
@@ -50,4 +65,5 @@ interiorSprite = ExtResource("2_c8vdo")
 afraidSprite = ExtResource("1_xqmih")
 introDialaogue = Array[String](["mmmmmmm.", "mmmmmmmmmmmmmm.", "mmm.", "It is I Von Piere.", "I have come since the host was so desperate to invite me.", "Yes I am the best arent I.", "mmmmm.", "Let me in and i will find a place worthy of my beutifull self.", "mmmm."])
 questions = Array[ExtResource("2_xqmih")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
+information = SubResource("Resource_t78ih")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

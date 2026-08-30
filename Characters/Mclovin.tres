@@ -4,7 +4,22 @@
 [ext_resource type="Texture2D" uid="uid://l6dwnj4mm8j" path="res://Sprites/People/Outside/Max.png" id="1_vfqu3"]
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_of7nf"]
 [ext_resource type="Texture2D" uid="uid://dcp17ydw1ptnl" path="res://Sprites/People/Garage/InsideGarage2PeopleTalking8.png" id="2_p0y8t"]
+[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_wos81"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_p0y8t"]
+
+[sub_resource type="Resource" id="Resource_1dbfa"]
+script = ExtResource("2_wos81")
+dateOfBirth = "06/03/1949"
+address = "57 Dr Salt Ave"
+bringing = "Alchohol"
+bloodType = "B+"
+lifeStatus = "Alive"
+weight = "187 lb"
+height = "6 feet 7 inches"
+hair_color = "black"
+eye_color = "brown"
+scocial_security = "587-39-1428"
+metadata/_custom_type_script = "uid://l3v0m3s3okyk"
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_of7nf")
@@ -50,4 +65,5 @@ interiorSprite = ExtResource("2_p0y8t")
 afraidSprite = ExtResource("1_of7nf")
 introDialaogue = Array[String](["Helloo.", "I'm going to the party can I come in.", "I'm mclovin by the way."])
 questions = Array[ExtResource("2_of7nf")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
+information = SubResource("Resource_1dbfa")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

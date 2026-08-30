@@ -48,8 +48,13 @@
 [ext_resource type="AudioStream" uid="uid://cvvm217cqoy5m" path="res://SFX/footsteps_door_open.mp3" id="43_s8qox"]
 [ext_resource type="Texture2D" uid="uid://bm4ks5tgj7hnv" path="res://Sprites/People/basement/InsideGaragePeopleSitting5.png" id="43_sussc"]
 [ext_resource type="AudioStream" uid="uid://dseues4pyy00i" path="res://SFX/footsteps.mp3" id="44_jr8db"]
+[ext_resource type="Texture2D" uid="uid://c272n7fep2q5a" path="res://Sprites/areas/Kitchen.png" id="44_sussc"]
 [ext_resource type="AudioStream" uid="uid://6kthdtpwhkpy" path="res://SFX/DoorOpen.mp3" id="44_yhoku"]
+[ext_resource type="Texture2D" uid="uid://dopv241x543jx" path="res://Sprites/KitchenPeoplecake.png" id="45_03vgi"]
+[ext_resource type="Texture2D" uid="uid://cpiohx3oi3t38" path="res://Sprites/People/Kitchen/KitchenPeopleSitting1.png" id="45_frb8m"]
 [ext_resource type="AudioStream" uid="uid://bbw32fx54w3so" path="res://SFX/finalSFX/Zoom3.mp3" id="45_x6vsl"]
+[ext_resource type="Texture2D" uid="uid://4ka5a8gfnj2p" path="res://Sprites/People/Kitchen/KitchenPeopleSitting2.png" id="46_x6vsl"]
+[ext_resource type="Texture2D" uid="uid://dmdvtj64b40nn" path="res://Sprites/People/Kitchen/KitchenPeopleSitting3.png" id="47_yhoku"]
 [ext_resource type="AudioStream" uid="uid://mdmbabi2hvgi" path="res://SFX/door_close.mp3" id="49_03vgi"]
 [ext_resource type="PackedScene" uid="uid://dmmobl341pm1o" path="res://scenes/pixelate.tscn" id="51_nlj8h"]
 [ext_resource type="AudioStream" uid="uid://b7lsqqv46ue8q" path="res://SFX/murder.mp3" id="52_0smob"]
@@ -443,58 +448,6 @@ texture = ExtResource("15_xs7yf")
 position = Vector2(382.72726, 109.0909)
 shape = SubResource("CircleShape2D_3xd07")
 
-[node name="EndingManager" type="Control" parent="CanvasLayer/Lounge" unique_id=668338982 node_paths=PackedStringArray("endingButton", "confirmButton", "cancelButton", "endingInfo")]
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-script = ExtResource("18_3vjno")
-endingButton = NodePath("EndingButton")
-confirmButton = NodePath("Panel/ConfirmButton")
-cancelButton = NodePath("Panel/CancelButton")
-endingInfo = NodePath("Panel")
-
-[node name="Panel" type="Panel" parent="CanvasLayer/Lounge/EndingManager" unique_id=900292247]
-visible = false
-layout_mode = 0
-offset_left = -181.0
-offset_top = -95.0
-offset_right = 181.0
-offset_bottom = 132.0
-
-[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Lounge/EndingManager/Panel" unique_id=392955541]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-text = "All of the guests have arrived. You are ready to celebrate, this means ending your duties. If any vampires are on the premises then they will eat the host."
-
-[node name="ConfirmButton" type="Button" parent="CanvasLayer/Lounge/EndingManager/Panel" unique_id=102045945]
-layout_mode = 0
-offset_left = 22.0
-offset_top = 160.0
-offset_right = 164.0
-offset_bottom = 209.0
-text = "Confirm"
-
-[node name="CancelButton" type="Button" parent="CanvasLayer/Lounge/EndingManager/Panel" unique_id=1188443232]
-layout_mode = 0
-offset_left = 185.0
-offset_top = 161.0
-offset_right = 327.0
-offset_bottom = 210.0
-text = "Cancel"
-
-[node name="EndingButton" type="Button" parent="CanvasLayer/Lounge/EndingManager" unique_id=981702094]
-layout_mode = 0
-offset_left = -73.0
-offset_top = -24.0
-offset_right = 81.0
-offset_bottom = 32.0
-text = "Cake"
-
 [node name="peepHole" type="Sprite2D" parent="CanvasLayer" unique_id=195838583 node_paths=PackedStringArray("characterSprite", "maxTimer", "movementButtons")]
 visible = false
 material = ExtResource("12_0l8yg")
@@ -780,6 +733,114 @@ texture = ExtResource("43_sussc")
 
 [node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Basement/InteractableCharacter20" unique_id=1643892375]
 position = Vector2(-31.8182, 103.63636)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="Kitchen" type="Sprite2D" parent="CanvasLayer" unique_id=859253974 node_paths=PackedStringArray("movementButtons")]
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("44_sussc")
+script = ExtResource("8_f32hw")
+movementButtons = [NodePath("movementButton")]
+
+[node name="movementButton" type="Button" parent="CanvasLayer/Kitchen" unique_id=1961797361 node_paths=PackedStringArray("newArea")]
+offset_left = 329.0909
+offset_top = 38.18181
+offset_right = 415.6175
+offset_bottom = 88.0446
+text = "Hallway"
+script = ExtResource("3_jmrrm")
+newArea = NodePath("../../Garage")
+movementSFX = ExtResource("49_03vgi")
+fadeLength = 1.2
+
+[node name="EndingManager" type="Control" parent="CanvasLayer/Kitchen" unique_id=668338982 node_paths=PackedStringArray("endingButton", "confirmButton", "cancelButton", "endingInfo")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("18_3vjno")
+endingButton = NodePath("EndingButton")
+confirmButton = NodePath("Panel/ConfirmButton")
+cancelButton = NodePath("Panel/CancelButton")
+endingInfo = NodePath("Panel")
+
+[node name="Panel" type="Panel" parent="CanvasLayer/Kitchen/EndingManager" unique_id=900292247]
+visible = false
+layout_mode = 0
+offset_left = -181.0
+offset_top = -95.0
+offset_right = 181.0
+offset_bottom = 132.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Kitchen/EndingManager/Panel" unique_id=392955541]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "All of the guests have arrived. You are ready to celebrate, this means ending your duties. If any vampires are on the premises then they will eat the host."
+
+[node name="ConfirmButton" type="Button" parent="CanvasLayer/Kitchen/EndingManager/Panel" unique_id=102045945]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 160.0
+offset_right = 164.0
+offset_bottom = 209.0
+text = "Confirm"
+
+[node name="CancelButton" type="Button" parent="CanvasLayer/Kitchen/EndingManager/Panel" unique_id=1188443232]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 161.0
+offset_right = 327.0
+offset_bottom = 210.0
+text = "Cancel"
+
+[node name="EndingButton" type="Button" parent="CanvasLayer/Kitchen/EndingManager" unique_id=981702094]
+layout_mode = 0
+offset_left = 139.99998
+offset_top = 34.54545
+offset_right = 222.35785
+offset_bottom = 144.90906
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Kitchen/EndingManager/EndingButton" unique_id=2111044160]
+layout_mode = 0
+offset_left = -657.2727
+offset_top = -404.54547
+offset_right = 342.7273
+offset_bottom = 345.45453
+mouse_filter = 2
+texture = ExtResource("45_03vgi")
+
+[node name="InteractableCharacter16" type="Area2D" parent="CanvasLayer/Kitchen" unique_id=1238769231]
+script = ExtResource("3_ip4ey")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Kitchen/InteractableCharacter16" unique_id=1843707180]
+texture = ExtResource("45_frb8m")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Kitchen/InteractableCharacter16" unique_id=566207580]
+position = Vector2(-225.45454, 113.636345)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter17" type="Area2D" parent="CanvasLayer/Kitchen" unique_id=448071690]
+script = ExtResource("3_ip4ey")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Kitchen/InteractableCharacter17" unique_id=1883967492]
+texture = ExtResource("46_x6vsl")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Kitchen/InteractableCharacter17" unique_id=691851094]
+position = Vector2(0, -4.545471)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter18" type="Area2D" parent="CanvasLayer/Kitchen" unique_id=1373793539]
+script = ExtResource("3_ip4ey")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Kitchen/InteractableCharacter18" unique_id=722204449]
+texture = ExtResource("47_yhoku")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Kitchen/InteractableCharacter18" unique_id=1744341899]
+position = Vector2(406.36362, 256.36365)
 shape = SubResource("CircleShape2D_3xd07")
 
 [node name="ConversationManager" type="Control" parent="CanvasLayer" unique_id=648713796 node_paths=PackedStringArray("text", "buttonContainer", "exitButton", "killButton", "characterSprite", "display", "phone", "anim")]

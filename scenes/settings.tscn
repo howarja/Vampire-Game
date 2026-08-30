@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://llqh6vgtk77"]
 
 [ext_resource type="Script" uid="uid://dn1ofscgxh6r5" path="res://scripts/settings.gd" id="1_sfmi7"]
+[ext_resource type="FontFile" uid="uid://cofv126vqogtf" path="res://BlackOpsOne-Regular.ttf" id="2_f4mfi"]
 [ext_resource type="Texture2D" uid="uid://b3wousrl8g8s5" path="res://icon.svg" id="3_6wm04"]
 [ext_resource type="Script" uid="uid://cuixesoyqhje0" path="res://scripts/buttonEffects.gd" id="4_f4mfi"]
 
@@ -38,6 +39,11 @@ offset_left = -70.0
 offset_top = -179.0
 offset_right = 984.0
 offset_bottom = -2.0
+theme_override_fonts/normal_font = ExtResource("2_f4mfi")
+theme_override_fonts/bold_font = ExtResource("2_f4mfi")
+theme_override_fonts/bold_italics_font = ExtResource("2_f4mfi")
+theme_override_fonts/italics_font = ExtResource("2_f4mfi")
+theme_override_fonts/mono_font = ExtResource("2_f4mfi")
 theme_override_font_sizes/normal_font_size = 128
 text = "Master Volume"
 horizontal_alignment = 1
@@ -59,6 +65,11 @@ offset_left = -104.0
 offset_top = -156.0
 offset_right = 950.0
 offset_bottom = 21.0
+theme_override_fonts/normal_font = ExtResource("2_f4mfi")
+theme_override_fonts/bold_font = ExtResource("2_f4mfi")
+theme_override_fonts/bold_italics_font = ExtResource("2_f4mfi")
+theme_override_fonts/italics_font = ExtResource("2_f4mfi")
+theme_override_fonts/mono_font = ExtResource("2_f4mfi")
 theme_override_font_sizes/normal_font_size = 110
 text = "Music Volume"
 horizontal_alignment = 1
@@ -80,6 +91,11 @@ offset_left = -104.0
 offset_top = -156.0
 offset_right = 950.0
 offset_bottom = 21.0
+theme_override_fonts/normal_font = ExtResource("2_f4mfi")
+theme_override_fonts/bold_font = ExtResource("2_f4mfi")
+theme_override_fonts/bold_italics_font = ExtResource("2_f4mfi")
+theme_override_fonts/italics_font = ExtResource("2_f4mfi")
+theme_override_fonts/mono_font = ExtResource("2_f4mfi")
 theme_override_font_sizes/normal_font_size = 110
 text = "SFX Volume"
 horizontal_alignment = 1

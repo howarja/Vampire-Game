@@ -60,6 +60,7 @@
 [ext_resource type="AudioStream" uid="uid://mdmbabi2hvgi" path="res://SFX/door_close.mp3" id="49_03vgi"]
 [ext_resource type="PackedScene" uid="uid://dmmobl341pm1o" path="res://scenes/pixelate.tscn" id="51_nlj8h"]
 [ext_resource type="AudioStream" uid="uid://b7lsqqv46ue8q" path="res://SFX/murder.mp3" id="52_0smob"]
+[ext_resource type="FontFile" uid="uid://cofv126vqogtf" path="res://BlackOpsOne-Regular.ttf" id="55_jr8db"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3xd07"]
 radius = 65.97
@@ -946,6 +947,7 @@ offset_top = 12.0
 offset_right = 634.0
 offset_bottom = 188.0
 scale = Vector2(0.52018094, 0.5137473)
+theme_override_fonts/font = ExtResource("55_jr8db")
 text = "accept guest"
 
 [node name="DeclineButton" type="Button" parent="CanvasLayer/DoorwayManager" unique_id=623162512]
@@ -956,6 +958,7 @@ offset_top = 136.00002
 offset_right = 615.0
 offset_bottom = 258.0
 scale = Vector2(0.52018094, 0.5137473)
+theme_override_fonts/font = ExtResource("55_jr8db")
 text = "decline guest"
 
 [node name="TextGiver" type="Control" parent="CanvasLayer" unique_id=1438650801 node_paths=PackedStringArray("text", "audio")]
@@ -976,6 +979,11 @@ offset_top = 51.0
 offset_right = 485.0
 offset_bottom = 319.0
 mouse_filter = 2
+theme_override_fonts/normal_font = ExtResource("55_jr8db")
+theme_override_fonts/bold_font = ExtResource("55_jr8db")
+theme_override_fonts/bold_italics_font = ExtResource("55_jr8db")
+theme_override_fonts/italics_font = ExtResource("55_jr8db")
+theme_override_fonts/mono_font = ExtResource("55_jr8db")
 
 [node name="QuestionOptions" type="HBoxContainer" parent="CanvasLayer" unique_id=1973992520]
 offset_left = -442.0
@@ -990,11 +998,13 @@ theme_override_constants/separation = 12
 [node name="ExitDialogueButton" type="Button" parent="CanvasLayer/QuestionOptions" unique_id=582315368]
 custom_minimum_size = Vector2(207.545, 0)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("55_jr8db")
 text = "Exit"
 
 [node name="KillButton" type="Button" parent="CanvasLayer/QuestionOptions" unique_id=1931583917]
 custom_minimum_size = Vector2(140.365, 0)
 layout_mode = 2
+theme_override_fonts/font = ExtResource("55_jr8db")
 text = "Kill"
 
 [node name="Settings" parent="CanvasLayer" unique_id=1974824112 instance=ExtResource("7_jmrrm")]

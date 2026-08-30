@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://c3mypmddh800v" path="res://scripts/main_menu.gd" id="1_qkhwq"]
 [ext_resource type="PackedScene" uid="uid://llqh6vgtk77" path="res://scenes/settings.tscn" id="2_3d1i7"]
 [ext_resource type="Script" uid="uid://cuixesoyqhje0" path="res://scripts/buttonEffects.gd" id="2_48ign"]
+[ext_resource type="FontFile" uid="uid://cofv126vqogtf" path="res://BlackOpsOne-Regular.ttf" id="3_lam2r"]
 [ext_resource type="Texture2D" uid="uid://ct1px372cef30" path="res://Sprites/Main menu3.png" id="3_tov5d"]
 [ext_resource type="Texture2D" uid="uid://y27g4y1o1qhu" path="res://Sprites/Vignete.png" id="5_7nrmo"]
 [ext_resource type="AudioStream" uid="uid://bk2pdxxhbgaej" path="res://music/Epic song but scary.wav" id="5_clbkb"]
@@ -153,6 +154,11 @@ anchor_bottom = 1.0
 offset_bottom = -7.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("3_lam2r")
+theme_override_fonts/bold_font = ExtResource("3_lam2r")
+theme_override_fonts/bold_italics_font = ExtResource("3_lam2r")
+theme_override_fonts/italics_font = ExtResource("3_lam2r")
+theme_override_fonts/mono_font = ExtResource("3_lam2r")
 theme_override_font_sizes/normal_font_size = 31
 horizontal_alignment = 1
 vertical_alignment = 1
@@ -171,6 +177,7 @@ offset_bottom = 249.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset_ratio = Vector2(0.5, 0.5)
+theme_override_fonts/font = ExtResource("3_lam2r")
 theme_override_font_sizes/font_size = 64
 text = "Play"
 script = ExtResource("2_48ign")
@@ -192,6 +199,7 @@ offset_right = 134.0
 offset_bottom = 719.0
 grow_horizontal = 2
 pivot_offset = Vector2(128, 0)
+theme_override_fonts/font = ExtResource("3_lam2r")
 theme_override_font_sizes/font_size = 48
 text = "Exit Game"
 script = ExtResource("2_48ign")

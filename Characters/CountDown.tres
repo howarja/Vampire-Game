@@ -6,6 +6,13 @@
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="2_mtcoh"]
 [ext_resource type="Texture2D" uid="uid://dn45mb8livwj8" path="res://Sprites/People/LivingRoom/LivingRoomPeopleTalking5.png" id="3_777ir"]
 [ext_resource type="Texture2D" uid="uid://dt7xgd06qe87j" path="res://Sprites/People/Outside/James1.png" id="4_on1d7"]
+[ext_resource type="AudioStream" uid="uid://bhiws2l6ubvbb" path="res://SFX/logoSound/bloodOfTheHost.mp3" id="4_w61v6"]
+[ext_resource type="AudioStream" uid="uid://dhyfjfkdg5alj" path="res://SFX/finalSFX/Knock5.mp3" id="5_uxlpw"]
+[ext_resource type="AudioStream" uid="uid://2lfqwcwbbhd7" path="res://SFX/finalSFX/Door close2.mp3" id="6_oe8nh"]
+[ext_resource type="AudioStream" uid="uid://cgarfpo4iwlf6" path="res://SFX/finalSFX/Knock1.mp3" id="9_3xux6"]
+[ext_resource type="AudioStream" uid="uid://2jxiw1fw0sfj" path="res://SFX/finalSFX/Knock2.mp3" id="10_kxda6"]
+[ext_resource type="AudioStream" uid="uid://45vov037d547" path="res://SFX/finalSFX/Knock3.mp3" id="11_yf4t8"]
+[ext_resource type="Texture2D" uid="uid://b3wousrl8g8s5" path="res://icon.svg" id="12_kxda6"]
 
 [sub_resource type="Resource" id="Resource_nlj8h"]
 script = ExtResource("1_hush4")
@@ -21,6 +28,8 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 script = ExtResource("1_16vt0")
 prompt = "Let me see your invite."
 answer = Array[String](["here is my awesome invite", "isnt it great", "yep it is i know right"])
+audio = Array[AudioStreamMP3]([ExtResource("9_3xux6"), ExtResource("10_kxda6"), ExtResource("11_yf4t8")])
+image = ExtResource("12_kxda6")
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]
@@ -53,6 +62,7 @@ outDoorSprite = ExtResource("4_on1d7")
 interiorSprite = ExtResource("3_777ir")
 afraidSprite = ExtResource("1_777ir")
 introDialaogue = Array[String](["hi", "hi", "hi", "hi"])
+introVoicelines = Array[AudioStreamMP3]([ExtResource("4_w61v6"), ExtResource("5_uxlpw"), ExtResource("6_oe8nh"), ExtResource("4_w61v6")])
 questions = Array[ExtResource("1_16vt0")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 information = SubResource("Resource_nlj8h")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

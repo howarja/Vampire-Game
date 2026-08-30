@@ -3,6 +3,7 @@ class_name conversationManager
 
 @export var text: textGiver;
 var lines: Array[String] = [];
+var audio: Array[AudioStreamMP3] = [];
 var currentLine: int = 0;
 
 @onready var questionButtonScene: PackedScene = preload("res://scenes/question_button.tscn");
@@ -14,6 +15,7 @@ var lastInteracted: interactableCharacter;
 @export var exitButton: Button;
 @export var killButton: Button;
 @export var characterSprite: Sprite2D;
+@export var display: TextureRect;
 @export var phone: Phone;
 @export var anim: AnimationPlayer;
 
@@ -23,13 +25,13 @@ var inConversation: bool = false;
 
 func _ready() -> void:
 	Globals.conversation = self;
-	exitButton.pressed.connect(exitConversation)
-	killButton.pressed.connect(killCharacter)
-	canQuestion(false)
+	exitButton.pressed.connect(exitConversation);
+	killButton.pressed.connect(killCharacter);
+	canQuestion(false);
 
 func newLine():
 	if currentLine<lines.size():
-		text.triggerDialogue(lines[currentLine], renableInput);
+		text.triggerDialogue(lines[currentLine], audio[currentLine], renableInput);
 		currentLine+=1;
 		canInput = false;
 		canQuestion(false);
@@ -66,7 +68,7 @@ func loadCharacter(newCharacter: character, interacted: interactableCharacter):
 	for i in currentCharacter.questions.size():
 		var newButton: questionButton = questionButtonScene.instantiate();
 		buttonContainer.add_child(newButton);
-		newButton.connectToConvseration(currentCharacter.questions[i], beginLine);
+		newButton.connectToConvseration(currentCharacter.questions[i], loadQuestion);
 		questionButtons.append(newButton);
 	
 	inConversation = true;
@@ -74,10 +76,22 @@ func loadCharacter(newCharacter: character, interacted: interactableCharacter):
 	
 	Globals.player.currentArea.hideButtons();
 	reparent(Globals.player.currentArea, true);
-	beginLine(currentCharacter.introDialaogue);
+	beginLine(currentCharacter.introDialaogue, currentCharacter.introVoicelines);
 
-func beginLine(newLines: Array[String]):
+func loadQuestion(newQuestion: question) -> void:
+	lines = newQuestion.answer;
+	if newQuestion.image!=null:
+		display.texture = newQuestion.image;
+		display.show();
+	else:
+		display.hide();
+	audio = newQuestion.audio;
+	currentLine = 0;
+	newLine();
+
+func beginLine(newLines: Array[String], audioFiles: Array[AudioStreamMP3]) -> void:
 	lines = newLines;
+	audio = audioFiles;
 	currentLine = 0;
 	newLine();
 
@@ -91,6 +105,7 @@ func exitConversation():
 	text.disable();
 	lastInteracted.update();
 	characterSprite.texture = null;
+	display.hide();
 	Globals.player.fadeTo(Globals.player.currentArea)
 
 func killCharacter():
@@ -108,6 +123,7 @@ func killCharacter():
 	canQuestion(false);
 	inConversation = false;
 	lines = [];
+	display.hide();
 	text.disable();
 	lastInteracted.update();
 
@@ -118,6 +134,7 @@ func exitWithoutFade():
 	text.disable();
 	lastInteracted.update();
 	characterSprite.texture = null;
+	display.hide();
 	Globals.player.changeAreaTo(Globals.player.currentArea)
 
 func setAfraid():

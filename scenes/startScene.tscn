@@ -542,7 +542,7 @@ text = "Garage"
 script = ExtResource("3_jmrrm")
 newArea = NodePath("../../Garage")
 
-[node name="ConversationManager" type="Control" parent="CanvasLayer" unique_id=648713796 node_paths=PackedStringArray("text", "buttonContainer", "exitButton", "killButton", "characterSprite", "phone", "anim")]
+[node name="ConversationManager" type="Control" parent="CanvasLayer" unique_id=648713796 node_paths=PackedStringArray("text", "buttonContainer", "exitButton", "killButton", "characterSprite", "display", "phone", "anim")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -556,6 +556,7 @@ buttonContainer = NodePath("../QuestionOptions")
 exitButton = NodePath("../QuestionOptions/ExitDialogueButton")
 killButton = NodePath("../QuestionOptions/KillButton")
 characterSprite = NodePath("InDialogueSprite")
+display = NodePath("DisplayImage")
 phone = NodePath("../Phone")
 anim = NodePath("ConversationAnim")
 
@@ -586,6 +587,13 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_5omdu")
+
+[node name="DisplayImage" type="TextureRect" parent="CanvasLayer/ConversationManager" unique_id=1652663511]
+layout_mode = 0
+offset_left = -22.0
+offset_top = -344.0
+offset_right = 279.0
+offset_bottom = -43.0
 
 [node name="DoorwayManager" type="Control" parent="CanvasLayer" unique_id=1390457711 node_paths=PackedStringArray("text", "acceptButton", "declineButton")]
 layout_mode = 3
@@ -618,7 +626,7 @@ offset_bottom = 258.0
 scale = Vector2(0.52018094, 0.5137473)
 text = "decline guest"
 
-[node name="TextGiver" type="Control" parent="CanvasLayer" unique_id=1438650801 node_paths=PackedStringArray("text")]
+[node name="TextGiver" type="Control" parent="CanvasLayer" unique_id=1438650801 node_paths=PackedStringArray("text", "audio")]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
@@ -626,6 +634,9 @@ offset_bottom = 40.0
 mouse_filter = 2
 script = ExtResource("2_yagjw")
 text = NodePath("../Dialgoue")
+audio = NodePath("DialogueAudio")
+
+[node name="DialogueAudio" type="AudioStreamPlayer2D" parent="CanvasLayer/TextGiver" unique_id=1954864631]
 
 [node name="Dialgoue" type="RichTextLabel" parent="CanvasLayer" unique_id=1094312030]
 offset_left = -473.0

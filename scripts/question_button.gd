@@ -14,4 +14,4 @@ func connectToConvseration(newQuestion: question, startAnswer: Callable):
 	trigger.connect(startAnswer);
 
 func onPressed():
-	trigger.emit(currentQuestion.answer)
+	trigger.emit(currentQuestion)

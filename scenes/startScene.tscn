@@ -51,14 +51,12 @@
 [ext_resource type="Resource" uid="uid://ca2bounl3hsv7" path="res://Characters/RatGod.tres" id="27_2xysg"]
 [ext_resource type="Resource" uid="uid://c0rssvdil1e7u" path="res://Characters/Elizabeth Fisher.tres" id="28_7bw5e"]
 [ext_resource type="AudioStream" uid="uid://ei38ltoqcv4w" path="res://music/ambiance/Ghostly sfx_static.wav" id="28_judpu"]
-[ext_resource type="AudioStream" uid="uid://2lfqwcwbbhd7" path="res://SFX/finalSFX/Door close2.mp3" id="39_s8qox"]
-[ext_resource type="AudioStream" uid="uid://n7rj4ekl22os" path="res://SFX/finalSFX/Accept1.mp3" id="41_dya7i"]
-[ext_resource type="AudioStream" uid="uid://cbwiyi3lu1wgg" path="res://SFX/finalSFX/Click1.mp3" id="41_frb8m"]
-[ext_resource type="AudioStream" uid="uid://dbcohb0i6bn4l" path="res://SFX/finalSFX/Accept2.mp3" id="41_sussc"]
-[ext_resource type="AudioStream" uid="uid://citu6abfktgh4" path="res://SFX/finalSFX/Door open1.mp3" id="45_x6vsl"]
-[ext_resource type="AudioStream" uid="uid://ccj84c0owjne8" path="res://SFX/finalSFX/Door close1 short.mp3" id="47_yhoku"]
-[ext_resource type="AudioStream" uid="uid://dbhnmvlr4crt2" path="res://SFX/finalSFX/Click4.mp3" id="48_03vgi"]
-[ext_resource type="AudioStream" uid="uid://c1ts53liknf3" path="res://SFX/finalSFX/Click3.mp3" id="50_0smob"]
+[ext_resource type="AudioStream" uid="uid://cwl1o1l7gx5nk" path="res://SFX/doorclose_footsteps.mp3" id="33_x6vsl"]
+[ext_resource type="AudioStream" uid="uid://cvvm217cqoy5m" path="res://SFX/footsteps_door_open.mp3" id="43_s8qox"]
+[ext_resource type="AudioStream" uid="uid://dseues4pyy00i" path="res://SFX/footsteps.mp3" id="44_jr8db"]
+[ext_resource type="AudioStream" uid="uid://6kthdtpwhkpy" path="res://SFX/DoorOpen.mp3" id="44_yhoku"]
+[ext_resource type="AudioStream" uid="uid://bbw32fx54w3so" path="res://SFX/finalSFX/Zoom3.mp3" id="45_x6vsl"]
+[ext_resource type="AudioStream" uid="uid://mdmbabi2hvgi" path="res://SFX/door_close.mp3" id="49_03vgi"]
 [ext_resource type="PackedScene" uid="uid://dmmobl341pm1o" path="res://scenes/pixelate.tscn" id="51_nlj8h"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3xd07"]
@@ -359,7 +357,8 @@ offset_right = 25.420197
 offset_bottom = 218.51634
 script = ExtResource("3_jmrrm")
 newArea = NodePath("../../Hallway")
-movementSFX = ExtResource("41_sussc")
+movementSFX = ExtResource("33_x6vsl")
+fadeLength = 1.5
 
 [node name="InteractableCharacter" type="Area2D" parent="CanvasLayer/Lounge" unique_id=656916129]
 position = Vector2(-232.20422, -82.12696)
@@ -445,7 +444,7 @@ offset_right = 44.61989
 offset_bottom = 182.00464
 script = ExtResource("3_jmrrm")
 newArea = NodePath("../../Hallway")
-movementSFX = ExtResource("39_s8qox")
+movementSFX = ExtResource("44_jr8db")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/peepHole" unique_id=1678730477]
 material = SubResource("ShaderMaterial_4lml8")
@@ -472,7 +471,8 @@ offset_bottom = -7.1372223
 text = "Lounge"
 script = ExtResource("3_jmrrm")
 newArea = NodePath("../../Lounge")
-movementSFX = ExtResource("41_frb8m")
+movementSFX = ExtResource("43_s8qox")
+fadeLength = 2.5
 
 [node name="movementButton2" type="Button" parent="CanvasLayer/Hallway" unique_id=188149822 node_paths=PackedStringArray("newArea")]
 offset_left = 302.0
@@ -482,7 +482,7 @@ offset_bottom = 48.862778
 text = "Garage"
 script = ExtResource("3_jmrrm")
 newArea = NodePath("../../Garage")
-movementSFX = ExtResource("41_sussc")
+movementSFX = ExtResource("44_yhoku")
 
 [node name="movementButton3" type="Button" parent="CanvasLayer/Hallway" unique_id=1415821590 node_paths=PackedStringArray("newArea")]
 offset_left = -17.0
@@ -492,7 +492,8 @@ offset_bottom = 214.86278
 text = "Doorway"
 script = ExtResource("3_jmrrm")
 newArea = NodePath("../../Doorway")
-movementSFX = ExtResource("41_dya7i")
+movementSFX = ExtResource("44_jr8db")
+fadeLength = 1.8
 
 [node name="Doorway" type="Sprite2D" parent="CanvasLayer" unique_id=78017150 node_paths=PackedStringArray("movementButtons")]
 visible = false
@@ -509,7 +510,8 @@ offset_bottom = 317.8628
 text = "Hallway"
 script = ExtResource("3_jmrrm")
 newArea = NodePath("../../Hallway")
-movementSFX = ExtResource("41_dya7i")
+movementSFX = ExtResource("44_jr8db")
+fadeLength = 1.8
 
 [node name="movementButton2" type="Button" parent="CanvasLayer/Doorway" unique_id=1311128301 node_paths=PackedStringArray("newArea")]
 offset_left = -131.0
@@ -536,7 +538,8 @@ offset_bottom = 284.8628
 text = "Hallway"
 script = ExtResource("3_jmrrm")
 newArea = NodePath("../../Hallway")
-movementSFX = ExtResource("47_yhoku")
+movementSFX = ExtResource("49_03vgi")
+fadeLength = 1.2
 
 [node name="movementButton2" type="Button" parent="CanvasLayer/Garage" unique_id=1957635642 node_paths=PackedStringArray("newArea")]
 offset_left = -441.0
@@ -546,7 +549,8 @@ offset_bottom = 107.86279
 text = "Basement"
 script = ExtResource("3_jmrrm")
 newArea = NodePath("../../Basement")
-movementSFX = ExtResource("48_03vgi")
+movementSFX = ExtResource("43_s8qox")
+fadeLength = 1.5
 
 [node name="Basement" type="Sprite2D" parent="CanvasLayer" unique_id=174614199 node_paths=PackedStringArray("movementButtons")]
 visible = false
@@ -563,7 +567,8 @@ offset_bottom = 218.51634
 text = "Garage"
 script = ExtResource("3_jmrrm")
 newArea = NodePath("../../Garage")
-movementSFX = ExtResource("50_0smob")
+movementSFX = ExtResource("49_03vgi")
+fadeLength = 1.2
 
 [node name="ConversationManager" type="Control" parent="CanvasLayer" unique_id=648713796 node_paths=PackedStringArray("text", "buttonContainer", "exitButton", "killButton", "characterSprite", "display", "phone", "anim")]
 layout_mode = 3

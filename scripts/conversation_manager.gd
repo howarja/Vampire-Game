@@ -106,7 +106,7 @@ func exitConversation():
 	lastInteracted.update();
 	characterSprite.texture = null;
 	display.hide();
-	Globals.player.fadeTo(Globals.player.currentArea)
+	Globals.player.fadeTo(Globals.player.currentArea, 1)
 
 func killCharacter():
 	# kill the character

@@ -1,7 +1,6 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://bkdcwsj8eieqp"]
 
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="2_ajy50"]
-[ext_resource type="Texture2D" uid="uid://cghiky6m7jhx4" path="res://Sprites/Hand gun anim.png" id="3_6y2me"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="3_q86ko"]
 
 [sub_resource type="Resource" id="Resource_wimtb"]
@@ -42,7 +41,6 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [resource]
 script = ExtResource("3_q86ko")
-sprite = ExtResource("3_6y2me")
 introDialaogue = Array[String](["", "", ""])
 questions = Array[ExtResource("2_ajy50")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

@@ -1,7 +1,6 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://cuggg4fxfk00n"]
 
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="2_ec5va"]
-[ext_resource type="Texture2D" uid="uid://dtndpoepq32o0" path="res://Sprites/People/Outside/Isaac.png" id="3_7u1oa"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="3_15hoe"]
 
 [sub_resource type="Resource" id="Resource_wimtb"]
@@ -43,7 +42,6 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 [resource]
 script = ExtResource("3_15hoe")
 vampire = true
-sprite = ExtResource("3_7u1oa")
 introDialaogue = Array[String](["", "", ""])
 questions = Array[ExtResource("2_ec5va")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

@@ -25,16 +25,16 @@ func changeAreaTo(newArea: Area) -> void:
 		fadeOutsideMusic();
 
 func returnToHallway() -> void:
-	fadeTo(hallway);
+	fadeTo(hallway, 1);
 
-func fadeTo(newArea: Area) -> void:
+func fadeTo(newArea: Area, fadeLength: float) -> void:
 	# fade darkness in, load new area, fade darkness out
 	currentArea.disableMovement();
 	var tween1 = create_tween();
 	var dark: Color = Color(0.0, 0.0, 0.0, 1.0);
 	tween1.tween_property(fade, "modulate", dark, 0.5);
 	
-	await get_tree().create_timer(1).timeout
+	await get_tree().create_timer(fadeLength).timeout
 	changeAreaTo(newArea)
 	
 	var opaque: Color = Color(0.0, 0.0, 0.0, 0.0);

@@ -2,7 +2,6 @@
 
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="2_ooaof"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="3_0chsk"]
-[ext_resource type="Texture2D" uid="uid://bnr72wxh3p5ft" path="res://Sprites/People/Outside/James2.png" id="3_gswec"]
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_ooaof")
@@ -43,7 +42,6 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 [resource]
 script = ExtResource("3_0chsk")
 vampire = true
-sprite = ExtResource("3_gswec")
 introDialaogue = Array[String](["", "", ""])
 questions = Array[ExtResource("2_ooaof")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

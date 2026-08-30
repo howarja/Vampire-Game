@@ -1,6 +1,32 @@
 [gd_scene format=3 uid="uid://c7awdxtytslkh"]
 
-[ext_resource type="Script" uid="uid://btg0l6shgmf4y" path="res://Scripts/phone.gd" id="1_08mii"]
+[ext_resource type="Script" uid="uid://btg0l6shgmf4y" path="res://scripts/phone.gd" id="1_08mii"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_08mii"]
+animations = [{
+"frames": [],
+"loop": 1,
+"name": &"idle_phone_away",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 1,
+"name": &"idle_phone_out",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 0,
+"name": &"pull_out_phone",
+"speed": 5.0
+}, {
+"frames": [],
+"loop": 0,
+"name": &"put_away_phone",
+"speed": 5.0
+}]
+
+[sub_resource type="LabelSettings" id="LabelSettings_08mii"]
+font_size = 14
 
 [node name="Phone" type="Control" unique_id=2141918312]
 layout_mode = 3
@@ -12,47 +38,67 @@ grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_08mii")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=1519873522]
-layout_mode = 0
-offset_left = 755.0
-offset_top = 469.0
-offset_right = 1002.0
-offset_bottom = 750.0
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=490454106]
+sprite_frames = SubResource("SpriteFrames_08mii")
+animation = &"idle_phone_out"
 
-[node name="ScrollContainer" type="ScrollContainer" parent="TextureRect" unique_id=849470963]
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=849470963]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 755.0
+offset_top = 469.0
+offset_right = -94.0
+offset_bottom = -137.0
 grow_horizontal = 2
 grow_vertical = 2
+horizontal_scroll_mode = 3
+vertical_scroll_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="TextureRect/ScrollContainer" unique_id=1048250505]
+[node name="VBoxContainer" type="VBoxContainer" parent="ScrollContainer" unique_id=1048250505]
 layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
 
-[node name="TextureRect" type="TextureRect" parent="TextureRect/ScrollContainer/VBoxContainer" unique_id=351912281]
+[node name="Name" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=66108866]
 layout_mode = 2
-
-[node name="Name" type="Label" parent="TextureRect/ScrollContainer/VBoxContainer" unique_id=66108866]
-layout_mode = 2
+size_flags_vertical = 5
 text = "county dowm"
+label_settings = SubResource("LabelSettings_08mii")
+horizontal_alignment = 1
 
-[node name="DateOfBirth" type="Label" parent="TextureRect/ScrollContainer/VBoxContainer" unique_id=117084253]
+[node name="DateOfBirth" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=117084253]
 layout_mode = 2
+size_flags_vertical = 5
 text = "12345"
+label_settings = SubResource("LabelSettings_08mii")
+horizontal_alignment = 1
 
-[node name="Address" type="Label" parent="TextureRect/ScrollContainer/VBoxContainer" unique_id=269684565]
+[node name="Address" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=269684565]
 layout_mode = 2
+size_flags_vertical = 5
 text = "castle"
+label_settings = SubResource("LabelSettings_08mii")
+horizontal_alignment = 1
 
-[node name="Bringing" type="Label" parent="TextureRect/ScrollContainer/VBoxContainer" unique_id=1357596991]
+[node name="Bringing" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=1357596991]
 layout_mode = 2
+size_flags_vertical = 5
 text = "Poker"
+label_settings = SubResource("LabelSettings_08mii")
+horizontal_alignment = 1
 
-[node name="BloodType" type="Label" parent="TextureRect/ScrollContainer/VBoxContainer" unique_id=1772195927]
+[node name="BloodType" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=1772195927]
 layout_mode = 2
+size_flags_vertical = 5
 text = "Good"
+label_settings = SubResource("LabelSettings_08mii")
+horizontal_alignment = 1
 
-[node name="LifeStatus" type="Label" parent="TextureRect/ScrollContainer/VBoxContainer" unique_id=1846907006]
+[node name="LifeStatus" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=1846907006]
 layout_mode = 2
+size_flags_vertical = 5
 text = "Too alive"
+label_settings = SubResource("LabelSettings_08mii")
+horizontal_alignment = 1

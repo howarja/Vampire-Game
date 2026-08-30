@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://b4xlaq234u2cd"]
 
-[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_ooaof"]
-[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_0chsk"]
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="2_ooaof"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="3_0chsk"]
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_ooaof")

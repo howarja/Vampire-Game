@@ -1,43 +1,64 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://c2evxtplxk00u"]
 
-[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_himms"]
-[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_7gpwf"]
+[ext_resource type="Texture2D" uid="uid://ce5iil05cc8b" path="res://Sprites/People/LivingRoom/LivingRoomPeopleAfraid2.png" id="1_himms"]
+[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://Scripts/information.gd" id="2_7gpwf"]
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="2_himms"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="3_7gpwf"]
+[ext_resource type="Texture2D" uid="uid://b67yllemst6vy" path="res://Sprites/People/Outside/Brendan.png" id="3_08ah5"]
+[ext_resource type="Texture2D" uid="uid://d25kjtkpgsbvn" path="res://Sprites/People/LivingRoom/LivingRoomPeopleSitting2.png" id="3_8otdg"]
+
+[sub_resource type="Resource" id="Resource_2kx0n"]
+script = ExtResource("2_7gpwf")
+dateOfBirth = "12/2/1945"
+address = "54 Kingston Drive"
+bringing = "Nothing"
+bloodType = "AB+"
+lifeStatus = "Alive"
+metadata/_custom_type_script = "uid://l3v0m3s3okyk"
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_himms")
 prompt = "What did you bring?"
-answer = Array[String]([""])
+answer = Array[String](["Oh nothing...", "Nothing important for you to know about atleast.", "Not yet atleast.", "Hehe"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_hush4"]
 script = ExtResource("2_himms")
 prompt = "Let me see your invite."
-answer = Array[String]([""])
+answer = Array[String](["Here you go, even the host knows my skills!"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]
 script = ExtResource("2_himms")
 prompt = "Can i see your ID?"
+answer = Array[String](["Don't you just love my little games?", "Here is my proffesional master prankster Identification if you really want to see it. "])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_1tlsp"]
 script = ExtResource("2_himms")
 prompt = "Do you have any dietary requirments?"
+answer = Array[String](["What a fun idea!", "Feed me food, if I die to an alergic reaction I win, if  I dont, you will!"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_c4kb4"]
 script = ExtResource("2_himms")
 prompt = "What is your blood type?"
+answer = Array[String](["I begin with AB and end in the opposite of positive, what am I?"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_lw0dh"]
 script = ExtResource("2_himms")
 prompt = "Where do you live?"
+answer = Array[String](["Take a guess!"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [resource]
 script = ExtResource("3_7gpwf")
 fullName = "Timmy Jimmy"
-introDialaogue = Array[String](["Heya partner!", "I recieved an invite to this glorious party!", "I heard there would be some rootin shootin party!"])
+outDoorSprite = ExtResource("3_08ah5")
+interiorSprite = ExtResource("3_8otdg")
+afraidSprite = ExtResource("1_himms")
+introDialaogue = Array[String](["Let me in to the house.", "I will show you my tricks if you can answer my riddles three.", "I will make all the guests DIE with loughter!", "They will not see my shenanigans coming."])
 questions = Array[ExtResource("2_himms")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
+information = SubResource("Resource_2kx0n")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

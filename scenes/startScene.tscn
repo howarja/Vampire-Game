@@ -1,68 +1,61 @@
 [gd_scene format=3 uid="uid://gpedpgp5hk8i"]
 
-[ext_resource type="Script" uid="uid://dberhdml3xlet" path="res://scripts/conversation_manager.gd" id="1_rq48i"]
-[ext_resource type="Resource" uid="uid://2uxnklpvd2gy" path="res://Characters/CountDown.tres" id="2_1ljrl"]
+[ext_resource type="Script" uid="uid://dberhdml3xlet" path="res://Scripts/conversation_manager.gd" id="1_rq48i"]
 [ext_resource type="AudioStream" uid="uid://dljpxhvysohf1" path="res://music/Jingle time.wav" id="2_v3w6o"]
-[ext_resource type="Script" uid="uid://bndg1f3jq34l3" path="res://scripts/textGiver.gd" id="2_yagjw"]
-[ext_resource type="Script" uid="uid://btva2ox1ockyg" path="res://scripts/interactable_character.gd" id="3_ip4ey"]
-[ext_resource type="Script" uid="uid://b7d02u7xi35qp" path="res://scripts/movement_button.gd" id="3_jmrrm"]
-[ext_resource type="Texture2D" uid="uid://b3wousrl8g8s5" path="res://icon.svg" id="4_1h7fw"]
+[ext_resource type="Script" uid="uid://bndg1f3jq34l3" path="res://Scripts/textGiver.gd" id="2_yagjw"]
+[ext_resource type="Script" uid="uid://btva2ox1ockyg" path="res://Scripts/interactable_character.gd" id="3_ip4ey"]
+[ext_resource type="Script" uid="uid://b7d02u7xi35qp" path="res://Scripts/movement_button.gd" id="3_jmrrm"]
 [ext_resource type="Texture2D" uid="uid://cjgwsjboawlj2" path="res://Sprites/areas/Outside.png" id="4_qlfe6"]
 [ext_resource type="Texture2D" uid="uid://b85cn7tf2bm3j" path="res://Sprites/areas/Lounge.png" id="4_vj0vq"]
-[ext_resource type="Script" uid="uid://dgg3qst63mw2m" path="res://scripts/player_manager.gd" id="5_qlfe6"]
-[ext_resource type="Resource" uid="uid://6rs41l7f52yk" path="res://Characters/CharlieCholick.tres" id="5_wbdqt"]
+[ext_resource type="Script" uid="uid://dgg3qst63mw2m" path="res://Scripts/player_manager.gd" id="5_qlfe6"]
 [ext_resource type="Texture2D" uid="uid://qlfdpkrwrf" path="res://Sprites/areas/UnderGround.png" id="6_avnbb"]
-[ext_resource type="Resource" uid="uid://bkqhvg7bu3eo7" path="res://Characters/SteveDuobler.tres" id="6_judpu"]
 [ext_resource type="PackedScene" uid="uid://llqh6vgtk77" path="res://scenes/settings.tscn" id="7_jmrrm"]
-[ext_resource type="Resource" uid="uid://cokt4gkwlsj1i" path="res://Characters/TuckerJacobs.tres" id="7_x3tw5"]
 [ext_resource type="Shader" uid="uid://bcfj11konudyk" path="res://shaders/fisheye.gdshader" id="8_2l27o"]
-[ext_resource type="Script" uid="uid://dp7tlannev5hr" path="res://scripts/room.gd" id="8_f32hw"]
+[ext_resource type="Script" uid="uid://dp7tlannev5hr" path="res://Scripts/room.gd" id="8_f32hw"]
 [ext_resource type="PackedScene" uid="uid://o5bvwg7bgbvg" path="res://scenes/vhs_filter_test.tscn" id="8_judpu"]
-[ext_resource type="Resource" uid="uid://d1puh0w3c3eav" path="res://Characters/Batman.tres" id="8_nlj8h"]
-[ext_resource type="Resource" uid="uid://cnsh10eqjmluh" path="res://Characters/Mclovin.tres" id="9_dya7i"]
-[ext_resource type="Script" uid="uid://bcpjncrq7w8e3" path="res://scripts/peep_hole.gd" id="9_tjtsx"]
-[ext_resource type="Resource" uid="uid://bhpiqqonswruq" path="res://Characters/WilliamGreaves.tres" id="10_sussc"]
-[ext_resource type="Resource" uid="uid://nyhgm7avmwdt" path="res://Characters/SimSoul.tres" id="11_frb8m"]
+[ext_resource type="Script" uid="uid://bcpjncrq7w8e3" path="res://Scripts/peep_hole.gd" id="9_tjtsx"]
+[ext_resource type="Texture2D" uid="uid://bhlsph6bm7vge" path="res://Sprites/People/LivingRoom/LivingRoomPeopleSitting1.png" id="10_u732n"]
+[ext_resource type="Texture2D" uid="uid://d25kjtkpgsbvn" path="res://Sprites/People/LivingRoom/LivingRoomPeopleSitting2.png" id="11_jqr1d"]
 [ext_resource type="Material" uid="uid://caqmrlgvj6aca" path="res://Materials/fishEyePeephole.tres" id="12_0l8yg"]
 [ext_resource type="Texture2D" uid="uid://cfeeuq7fj2ixv" path="res://Sprites/areas/InsideGarage2.png" id="12_3h27y"]
-[ext_resource type="Script" uid="uid://syofd8amwhw8" path="res://scripts/doorway_manager.gd" id="12_8yb6a"]
+[ext_resource type="Script" uid="uid://syofd8amwhw8" path="res://Scripts/doorway_manager.gd" id="12_8yb6a"]
 [ext_resource type="Texture2D" uid="uid://dchyre33bh0lo" path="res://Sprites/areas/Insidehallway.png" id="12_ii36o"]
-[ext_resource type="Resource" uid="uid://cuggg4fxfk00n" path="res://Characters/MichaelSoul.tres" id="12_x6vsl"]
+[ext_resource type="Texture2D" uid="uid://ceawse3w8s3g1" path="res://Sprites/People/LivingRoom/LivingRoomPeopleSitting3.png" id="12_xs7yf"]
+[ext_resource type="Texture2D" uid="uid://dnee5eesfp7go" path="res://Sprites/People/LivingRoom/LivingRoomPeopleSitting4.png" id="13_jde52"]
 [ext_resource type="Texture2D" uid="uid://djfjfvhgairv1" path="res://Sprites/areas/Doorway.png" id="13_kopt5"]
-[ext_resource type="Resource" uid="uid://54st1ebshao6" path="res://Characters/StarkBeever.tres" id="13_yhoku"]
-[ext_resource type="Resource" uid="uid://btlgqcio47d5v" path="res://Characters/JoeLemur.tres" id="14_03vgi"]
-[ext_resource type="Script" uid="uid://dep647b6vlno6" path="res://scripts/character_manager.gd" id="14_jsjc1"]
-[ext_resource type="Resource" uid="uid://bkdcwsj8eieqp" path="res://Characters/HughMan.tres" id="15_0smob"]
-[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="15_tjtsx"]
-[ext_resource type="Resource" uid="uid://d10lxijgj1ybh" path="res://Characters/PeterDouglas.tres" id="16_s8qox"]
-[ext_resource type="Resource" uid="uid://c2evxtplxk00u" path="res://Characters/TimmyJimmy.tres" id="17_jr8db"]
-[ext_resource type="Script" uid="uid://cldxtjjlmpc50" path="res://scripts/ending.gd" id="18_3vjno"]
-[ext_resource type="Resource" uid="uid://s6pp01nkvhg0" path="res://Characters/HarveyJr.tres" id="18_4qcbm"]
+[ext_resource type="Texture2D" uid="uid://cx6npp12lj0vj" path="res://Sprites/People/LivingRoom/LivingRoomPeopleSitting5.png" id="14_b2oih"]
+[ext_resource type="Script" uid="uid://dep647b6vlno6" path="res://Scripts/character_manager.gd" id="14_jsjc1"]
+[ext_resource type="Texture2D" uid="uid://bu7jtmdy6v723" path="res://Sprites/People/LivingRoom/LivingRoomPeopleSitting6.png" id="15_xs7yf"]
+[ext_resource type="Script" uid="uid://cldxtjjlmpc50" path="res://Scripts/ending.gd" id="18_3vjno"]
 [ext_resource type="Texture2D" uid="uid://y27g4y1o1qhu" path="res://Sprites/Vignete.png" id="18_c0cp5"]
-[ext_resource type="Resource" uid="uid://bsqrtayk62lfh" path="res://Characters/Sebastian Silvester.tres" id="19_kav1b"]
-[ext_resource type="Resource" uid="uid://danc5xfmors2x" path="res://Characters/MaxFredrickson.tres" id="20_tulyn"]
-[ext_resource type="Resource" uid="uid://bdsbbiwnswj2h" path="res://Characters/BrunhildeStone.tres" id="21_ce0yk"]
 [ext_resource type="Texture2D" uid="uid://cghiky6m7jhx4" path="res://Sprites/Hand gun anim.png" id="21_nxs8g"]
-[ext_resource type="Resource" uid="uid://ddhh8vijouf8k" path="res://Characters/BillyBobbyJr.tres" id="22_1yf3i"]
-[ext_resource type="Resource" uid="uid://cln0iwyoodaps" path="res://Characters/VonPier.tres" id="23_2kk1b"]
-[ext_resource type="Resource" uid="uid://b4xlaq234u2cd" path="res://Characters/JefferyAndersonVampire.tres" id="25_2a0wb"]
 [ext_resource type="PackedScene" uid="uid://c7awdxtytslkh" path="res://scenes/phone.tscn" id="25_lqxam"]
-[ext_resource type="Resource" uid="uid://dx4cbp1fgq0vf" path="res://Characters/MorticiaCauldron.tres" id="26_iwcac"]
-[ext_resource type="Resource" uid="uid://ca2bounl3hsv7" path="res://Characters/RatGod.tres" id="27_2xysg"]
-[ext_resource type="Resource" uid="uid://c0rssvdil1e7u" path="res://Characters/Elizabeth Fisher.tres" id="28_7bw5e"]
 [ext_resource type="AudioStream" uid="uid://ei38ltoqcv4w" path="res://music/ambiance/Ghostly sfx_static.wav" id="28_judpu"]
+[ext_resource type="Texture2D" uid="uid://d1vwxxuclqet4" path="res://Sprites/People/Garage/InsideGarage2PeopleSitting1.png" id="29_jde52"]
+[ext_resource type="Texture2D" uid="uid://ryjmlku6panf" path="res://Sprites/People/Garage/InsideGarage2PeopleSitting2.png" id="30_b2oih"]
+[ext_resource type="Texture2D" uid="uid://3rkva4806xtr" path="res://Sprites/People/Garage/InsideGarage2PeopleSitting3.png" id="31_0mfjb"]
+[ext_resource type="Texture2D" uid="uid://due1cmwntrdqe" path="res://Sprites/People/Garage/InsideGarage2PeopleSitting4.png" id="32_yqlca"]
+[ext_resource type="Texture2D" uid="uid://so555v8f6egm" path="res://Sprites/People/Garage/InsideGarage2PeopleSitting5.png" id="33_jn3cd"]
 [ext_resource type="AudioStream" uid="uid://cwl1o1l7gx5nk" path="res://SFX/doorclose_footsteps.mp3" id="33_x6vsl"]
+[ext_resource type="Texture2D" uid="uid://bkrxnclhf70o0" path="res://Sprites/People/Garage/InsideGarage2PeopleSitting6.png" id="34_mevlm"]
+[ext_resource type="Texture2D" uid="uid://di08hw0k7d2ry" path="res://Sprites/People/Garage/InsideGarage2PeopleSitting7.png" id="35_l0mc2"]
+[ext_resource type="Texture2D" uid="uid://cireyalf02tad" path="res://Sprites/People/Garage/InsideGarage2PeopleSitting8.png" id="36_x3tw5"]
+[ext_resource type="Texture2D" uid="uid://dk6aoeofgvvkp" path="res://Sprites/People/Garage/InsideGarage2PeopleSitting9.png" id="37_nlj8h"]
+[ext_resource type="Texture2D" uid="uid://v2b5w6vvnk8m" path="res://Sprites/People/basement/InsideGaragePeopleSitting1.png" id="39_dya7i"]
+[ext_resource type="Texture2D" uid="uid://duprhmwin0e0a" path="res://Sprites/People/basement/InsideGaragePeopleSitting2.png" id="40_sussc"]
+[ext_resource type="Texture2D" uid="uid://bok5ra43actjk" path="res://Sprites/People/basement/InsideGaragePeopleSitting3.png" id="41_frb8m"]
+[ext_resource type="Texture2D" uid="uid://cq6tglcujvr1g" path="res://Sprites/People/basement/InsideGaragePeopleSitting4.png" id="42_dya7i"]
 [ext_resource type="AudioStream" uid="uid://cvvm217cqoy5m" path="res://SFX/footsteps_door_open.mp3" id="43_s8qox"]
+[ext_resource type="Texture2D" uid="uid://bm4ks5tgj7hnv" path="res://Sprites/People/basement/InsideGaragePeopleSitting5.png" id="43_sussc"]
 [ext_resource type="AudioStream" uid="uid://dseues4pyy00i" path="res://SFX/footsteps.mp3" id="44_jr8db"]
 [ext_resource type="AudioStream" uid="uid://6kthdtpwhkpy" path="res://SFX/DoorOpen.mp3" id="44_yhoku"]
 [ext_resource type="AudioStream" uid="uid://bbw32fx54w3so" path="res://SFX/finalSFX/Zoom3.mp3" id="45_x6vsl"]
 [ext_resource type="AudioStream" uid="uid://mdmbabi2hvgi" path="res://SFX/door_close.mp3" id="49_03vgi"]
 [ext_resource type="PackedScene" uid="uid://dmmobl341pm1o" path="res://scenes/pixelate.tscn" id="51_nlj8h"]
 [ext_resource type="AudioStream" uid="uid://b7lsqqv46ue8q" path="res://SFX/murder.mp3" id="52_0smob"]
-[ext_resource type="PackedScene" uid="uid://70hcrtv5i5n6" path="res://scenes/id.tscn" id="60_s8qox"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3xd07"]
-radius = 91.0
+radius = 65.97
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_4lml8"]
 shader = ExtResource("8_2l27o")
@@ -367,7 +360,6 @@ stream = ExtResource("28_judpu")
 
 [node name="CharacterManager" type="Node2D" parent="." unique_id=779009452]
 script = ExtResource("14_jsjc1")
-unEncounteredCharacters = Array[ExtResource("15_tjtsx")]([ExtResource("2_1ljrl"), ExtResource("6_judpu"), ExtResource("7_x3tw5"), ExtResource("8_nlj8h"), ExtResource("9_dya7i"), ExtResource("10_sussc"), ExtResource("11_frb8m"), ExtResource("12_x6vsl"), ExtResource("13_yhoku"), ExtResource("14_03vgi"), ExtResource("15_0smob"), ExtResource("16_s8qox"), ExtResource("17_jr8db"), ExtResource("18_4qcbm"), ExtResource("19_kav1b"), ExtResource("20_tulyn"), ExtResource("21_ce0yk"), ExtResource("22_1yf3i"), ExtResource("23_2kk1b"), ExtResource("5_wbdqt"), ExtResource("25_2a0wb"), ExtResource("26_iwcac"), ExtResource("27_2xysg"), ExtResource("28_7bw5e")])
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=982724521]
 offset = Vector2(500, 375)
@@ -392,14 +384,63 @@ movementSFX = ExtResource("33_x6vsl")
 fadeLength = 1.5
 
 [node name="InteractableCharacter" type="Area2D" parent="CanvasLayer/Lounge" unique_id=656916129]
-position = Vector2(-232.20422, -82.12696)
 script = ExtResource("3_ip4ey")
-currentCharacter = ExtResource("2_1ljrl")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Lounge/InteractableCharacter" unique_id=22743380]
-texture = ExtResource("4_1h7fw")
+texture = ExtResource("10_u732n")
 
 [node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Lounge/InteractableCharacter" unique_id=2117342533]
+position = Vector2(-111.81818, -108.181816)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter2" type="Area2D" parent="CanvasLayer/Lounge" unique_id=1841598684]
+script = ExtResource("3_ip4ey")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Lounge/InteractableCharacter2" unique_id=782526729]
+texture = ExtResource("11_jqr1d")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Lounge/InteractableCharacter2" unique_id=661710949]
+position = Vector2(122.727264, -107.27273)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter3" type="Area2D" parent="CanvasLayer/Lounge" unique_id=1087782006]
+script = ExtResource("3_ip4ey")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Lounge/InteractableCharacter3" unique_id=1417415536]
+texture = ExtResource("12_xs7yf")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Lounge/InteractableCharacter3" unique_id=1692669148]
+position = Vector2(-269.0909, -179.99998)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter4" type="Area2D" parent="CanvasLayer/Lounge" unique_id=1203240665]
+script = ExtResource("3_ip4ey")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Lounge/InteractableCharacter4" unique_id=769401867]
+texture = ExtResource("13_jde52")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Lounge/InteractableCharacter4" unique_id=1231634949]
+position = Vector2(347.27267, -47.272736)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter5" type="Area2D" parent="CanvasLayer/Lounge" unique_id=99513005]
+script = ExtResource("3_ip4ey")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Lounge/InteractableCharacter5" unique_id=1022929033]
+texture = ExtResource("14_b2oih")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Lounge/InteractableCharacter5" unique_id=1604420785]
+position = Vector2(-392.72726, 20.90908)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter6" type="Area2D" parent="CanvasLayer/Lounge" unique_id=736375813]
+script = ExtResource("3_ip4ey")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Lounge/InteractableCharacter6" unique_id=729367262]
+texture = ExtResource("15_xs7yf")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Lounge/InteractableCharacter6" unique_id=222762204]
+position = Vector2(382.72726, 109.0909)
 shape = SubResource("CircleShape2D_3xd07")
 
 [node name="EndingManager" type="Control" parent="CanvasLayer/Lounge" unique_id=668338982 node_paths=PackedStringArray("endingButton", "confirmButton", "cancelButton", "endingInfo")]
@@ -583,6 +624,96 @@ newArea = NodePath("../../Basement")
 movementSFX = ExtResource("43_s8qox")
 fadeLength = 1.5
 
+[node name="InteractableCharacter7" type="Area2D" parent="CanvasLayer/Garage" unique_id=1874917329]
+script = ExtResource("3_ip4ey")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter7" unique_id=1601721267]
+texture = ExtResource("29_jde52")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Garage/InteractableCharacter7" unique_id=1406595775]
+position = Vector2(-217.27274, 38.18181)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter8" type="Area2D" parent="CanvasLayer/Garage" unique_id=420919012]
+script = ExtResource("3_ip4ey")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter8" unique_id=1344299151]
+texture = ExtResource("30_b2oih")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Garage/InteractableCharacter8" unique_id=643998786]
+position = Vector2(106.36362, -14.545464)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter9" type="Area2D" parent="CanvasLayer/Garage" unique_id=376519951]
+script = ExtResource("3_ip4ey")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter9" unique_id=1147716020]
+texture = ExtResource("31_0mfjb")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Garage/InteractableCharacter9" unique_id=1901696207]
+position = Vector2(236.36362, -88.18182)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter10" type="Area2D" parent="CanvasLayer/Garage" unique_id=739749733]
+script = ExtResource("3_ip4ey")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter10" unique_id=509126745]
+texture = ExtResource("32_yqlca")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Garage/InteractableCharacter10" unique_id=1347442285]
+position = Vector2(370.90906, 75.45453)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter11" type="Area2D" parent="CanvasLayer/Garage" unique_id=793108238]
+script = ExtResource("3_ip4ey")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter11" unique_id=1481931211]
+texture = ExtResource("33_jn3cd")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Garage/InteractableCharacter11" unique_id=2086171850]
+position = Vector2(-281.81818, 42.727257)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter12" type="Area2D" parent="CanvasLayer/Garage" unique_id=385038915]
+script = ExtResource("3_ip4ey")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter12" unique_id=1793006857]
+texture = ExtResource("34_mevlm")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Garage/InteractableCharacter12" unique_id=1235859122]
+position = Vector2(-99.09091, -46.363647)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter13" type="Area2D" parent="CanvasLayer/Garage" unique_id=1231971160]
+script = ExtResource("3_ip4ey")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter13" unique_id=1177189961]
+texture = ExtResource("35_l0mc2")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Garage/InteractableCharacter13" unique_id=2087379446]
+position = Vector2(275.45453, 9.999989)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter14" type="Area2D" parent="CanvasLayer/Garage" unique_id=879521536]
+script = ExtResource("3_ip4ey")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter14" unique_id=936392144]
+texture = ExtResource("36_x3tw5")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Garage/InteractableCharacter14" unique_id=458295847]
+position = Vector2(5.454529, -10.000011)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter15" type="Area2D" parent="CanvasLayer/Garage" unique_id=1924381713]
+script = ExtResource("3_ip4ey")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter15" unique_id=1497764700]
+texture = ExtResource("37_nlj8h")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Garage/InteractableCharacter15" unique_id=1205216770]
+position = Vector2(178.18182, 83.63635)
+shape = SubResource("CircleShape2D_3xd07")
+
 [node name="Basement" type="Sprite2D" parent="CanvasLayer" unique_id=174614199 node_paths=PackedStringArray("movementButtons")]
 visible = false
 scale = Vector2(1.1, 1.1)
@@ -600,6 +731,56 @@ script = ExtResource("3_jmrrm")
 newArea = NodePath("../../Garage")
 movementSFX = ExtResource("49_03vgi")
 fadeLength = 1.2
+
+[node name="InteractableCharacter16" type="Area2D" parent="CanvasLayer/Basement" unique_id=1019637325]
+script = ExtResource("3_ip4ey")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Basement/InteractableCharacter16" unique_id=1989212685]
+texture = ExtResource("39_dya7i")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Basement/InteractableCharacter16" unique_id=1860724896]
+position = Vector2(-189.09088, 6.3636246)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter17" type="Area2D" parent="CanvasLayer/Basement" unique_id=699019801]
+script = ExtResource("3_ip4ey")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Basement/InteractableCharacter17" unique_id=144851562]
+texture = ExtResource("40_sussc")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Basement/InteractableCharacter17" unique_id=1517934042]
+position = Vector2(301.81818, -111.81819)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter18" type="Area2D" parent="CanvasLayer/Basement" unique_id=2047766395]
+script = ExtResource("3_ip4ey")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Basement/InteractableCharacter18" unique_id=787803059]
+texture = ExtResource("41_frb8m")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Basement/InteractableCharacter18" unique_id=1294311831]
+position = Vector2(-76.36362, -213.63635)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter19" type="Area2D" parent="CanvasLayer/Basement" unique_id=1919882017]
+script = ExtResource("3_ip4ey")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Basement/InteractableCharacter19" unique_id=558010024]
+texture = ExtResource("42_dya7i")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Basement/InteractableCharacter19" unique_id=2028733991]
+position = Vector2(83.636345, -53.63636)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter20" type="Area2D" parent="CanvasLayer/Basement" unique_id=606103486]
+script = ExtResource("3_ip4ey")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Basement/InteractableCharacter20" unique_id=1872902281]
+texture = ExtResource("43_sussc")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Basement/InteractableCharacter20" unique_id=1643892375]
+position = Vector2(-31.8182, 103.63636)
+shape = SubResource("CircleShape2D_3xd07")
 
 [node name="ConversationManager" type="Control" parent="CanvasLayer" unique_id=648713796 node_paths=PackedStringArray("text", "buttonContainer", "exitButton", "killButton", "characterSprite", "display", "phone", "anim")]
 layout_mode = 3
@@ -753,13 +934,6 @@ anchor_bottom = 0.5
 offset_top = -0.24996948
 offset_right = -3.0
 offset_bottom = -1.0
-
-[node name="id" parent="CanvasLayer" unique_id=788058968 instance=ExtResource("60_s8qox")]
-visible = false
-offset_left = -501.0
-offset_top = -376.0
-offset_right = -501.0
-offset_bottom = -376.0
 
 [node name="VHSfx" parent="CanvasLayer" unique_id=1094916861 instance=ExtResource("8_judpu")]
 z_index = 4096

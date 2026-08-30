@@ -2,9 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://brw7eayneqnpa" path="res://Sprites/People/Outside/Batman.png" id="1_iq1j4"]
 [ext_resource type="Texture2D" uid="uid://ci0vk2abpgtqb" path="res://Sprites/People/basement/InsideGaragePeopleScared2.png" id="1_ul70y"]
-[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_e5hkb"]
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="2_e5hkb"]
 [ext_resource type="Texture2D" uid="uid://dgafsphuo71uc" path="res://Sprites/People/basement/InsideGaragePeopleTalking2.png" id="2_ehwri"]
-[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_0e0cs"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="3_0e0cs"]
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_e5hkb")

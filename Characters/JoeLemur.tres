@@ -1,8 +1,8 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://btlgqcio47d5v"]
 
 [ext_resource type="Texture2D" uid="uid://c1f6e5ix2t6xk" path="res://Sprites/People/GreenRoom/InsideGarage2PeopleScared6.png" id="1_p7kbv"]
-[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_2fyne"]
-[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_spw87"]
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="2_2fyne"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="3_spw87"]
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_2fyne")

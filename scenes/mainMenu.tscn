@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://c26xead5ij1uf"]
 
-[ext_resource type="Script" uid="uid://c3mypmddh800v" path="res://Scripts/main_menu.gd" id="1_qkhwq"]
+[ext_resource type="Script" uid="uid://c3mypmddh800v" path="res://scripts/main_menu.gd" id="1_qkhwq"]
 [ext_resource type="PackedScene" uid="uid://llqh6vgtk77" path="res://scenes/settings.tscn" id="2_3d1i7"]
-[ext_resource type="Script" uid="uid://cuixesoyqhje0" path="res://Scripts/buttonEffects.gd" id="2_48ign"]
+[ext_resource type="Script" uid="uid://cuixesoyqhje0" path="res://scripts/buttonEffects.gd" id="2_48ign"]
 [ext_resource type="Texture2D" uid="uid://y27g4y1o1qhu" path="res://Sprites/Vignete.png" id="5_7nrmo"]
 [ext_resource type="AudioStream" uid="uid://bk2pdxxhbgaej" path="res://music/Epic song but scary.wav" id="5_clbkb"]
 [ext_resource type="AudioStream" uid="uid://bhiws2l6ubvbb" path="res://SFX/logoSound/bloodOfTheHost.mp3" id="6_clbkb"]

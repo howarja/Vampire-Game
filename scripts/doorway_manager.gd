@@ -24,7 +24,7 @@ func _ready() -> void:
 
 func newLine():
 	if currentLine<lines.size():
-		text.triggerDialogue(lines[currentLine], audio[currentLine], renableInput);
+		text.triggerDialogue(lines[currentLine], null, renableInput);
 		currentLine+=1;
 		canInput = false;
 		canQuestion(false);

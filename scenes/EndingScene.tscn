@@ -77,13 +77,21 @@ position = Vector2(511, 451)
 scale = Vector2(0.3, 0.3)
 texture = ExtResource("5_4qy0h")
 
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2033140179]
+offset_left = -2989.0
+offset_top = -1766.0
+offset_right = -1989.0
+offset_bottom = -1016.0
+scale = Vector2(5, 5)
+texture = ExtResource("3_jvm3o")
+
 [node name="ColorRect2" type="ColorRect" parent="." unique_id=1420628527]
 z_index = 29
 material = ExtResource("6_evwq0")
 offset_left = -607.0
-offset_top = -125.0
-offset_right = 1208.0
-offset_bottom = 949.0
+offset_top = -125.00012
+offset_right = 1207.9999
+offset_bottom = 948.9999
 
 [node name="BackBufferCopy" type="BackBufferCopy" parent="ColorRect2" unique_id=628462531]
 copy_mode = 2
@@ -94,11 +102,3 @@ material = ExtResource("7_weo12")
 layout_mode = 0
 offset_right = 1815.0
 offset_bottom = 1074.0
-
-[node name="TextureRect" type="TextureRect" parent="." unique_id=2033140179]
-offset_left = -2989.0
-offset_top = -1766.0
-offset_right = -1989.0
-offset_bottom = -1016.0
-scale = Vector2(5, 5)
-texture = ExtResource("3_jvm3o")

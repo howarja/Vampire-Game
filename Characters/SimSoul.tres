@@ -10,6 +10,7 @@
 [ext_resource type="AudioStream" uid="uid://c37ovdagjacyj" path="res://SFX/Voicelines/SimSoulEnter2.wav" id="5_htukj"]
 [ext_resource type="AudioStream" uid="uid://bw3cb3711w5uh" path="res://SFX/Voicelines/SimSoulEnter3.wav" id="6_anm4r"]
 [ext_resource type="AudioStream" uid="uid://g8caacvclpnm" path="res://SFX/Voicelines/SimSoulEnter4.wav" id="7_jq8ba"]
+[ext_resource type="Texture2D" uid="uid://cmfy7rsqg5ikx" path="res://Sprites/IamgesForIdentification1.png" id="10_htukj"]
 
 [sub_resource type="Resource" id="Resource_xce4b"]
 script = ExtResource("2_l7vkg")
@@ -35,6 +36,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 script = ExtResource("2_ohtyb")
 prompt = "Let me see your invite."
 answer = Array[String](["Here you go."])
+image = ExtResource("10_htukj")
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]

@@ -9,6 +9,7 @@
 [ext_resource type="AudioStream" uid="uid://b3620aolx7wqf" path="res://SFX/Voicelines/BrunhildeStoneEnter1.wav" id="4_6q5q2"]
 [ext_resource type="AudioStream" uid="uid://beosd0o1tdfd1" path="res://SFX/Voicelines/BrunhildeStoneEnter2.wav" id="5_5c6dj"]
 [ext_resource type="AudioStream" uid="uid://qyfwuvi2fpnh" path="res://SFX/Voicelines/BrunhildeStoneEnter3.wav" id="6_85ipe"]
+[ext_resource type="Texture2D" uid="uid://cmfy7rsqg5ikx" path="res://Sprites/IamgesForIdentification1.png" id="9_5c6dj"]
 
 [sub_resource type="Resource" id="Resource_0245l"]
 script = ExtResource("2_yhify")
@@ -34,6 +35,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 script = ExtResource("2_oj37w")
 prompt = "Let me see your invite."
 answer = Array[String](["How rude, who wouldnt invite me?"])
+image = ExtResource("9_5c6dj")
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]

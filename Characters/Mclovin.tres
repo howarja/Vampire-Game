@@ -38,7 +38,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]
 script = ExtResource("2_of7nf")
-prompt = "Can i see your ID?"
+prompt = "May I see your ID?"
 answer = Array[String](["Wow this makes me feel young again."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 

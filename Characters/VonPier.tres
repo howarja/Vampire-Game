@@ -15,6 +15,7 @@
 [ext_resource type="AudioStream" uid="uid://bsjmqijs8a2ey" path="res://SFX/Voicelines/VonPierEnter7.wav" id="10_xv5dg"]
 [ext_resource type="AudioStream" uid="uid://bb1rrt3cilwuf" path="res://SFX/Voicelines/VonPierEnter8.wav" id="11_o5ekg"]
 [ext_resource type="AudioStream" uid="uid://lvqfous318km" path="res://SFX/Voicelines/VonPierEnter9.wav" id="12_oxj7o"]
+[ext_resource type="Texture2D" uid="uid://cmfy7rsqg5ikx" path="res://Sprites/IamgesForIdentification1.png" id="15_v1n2r"]
 
 [sub_resource type="Resource" id="Resource_t78ih"]
 script = ExtResource("2_akcfx")
@@ -40,6 +41,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 script = ExtResource("2_xqmih")
 prompt = "Let me see your invite."
 answer = Array[String](["Of coooourse.", "This is my invite where you can practically see the host begging me to come.", "mmmm."])
+image = ExtResource("15_v1n2r")
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]

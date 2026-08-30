@@ -14,15 +14,6 @@ offset_right = 1924.0
 offset_bottom = 1082.0
 scale = Vector2(0.5248667, 0.7011306)
 
-[node name="testVolume" type="Button" parent="back" unique_id=1725884221]
-layout_mode = 0
-offset_left = 816.0
-offset_top = 47.0
-offset_right = 1110.0
-offset_bottom = 122.0
-theme_override_font_sizes/font_size = 48
-text = "Test Volume"
-
 [node name="masterVolumeSlider" type="HSlider" parent="back" unique_id=111225825]
 layout_mode = 0
 offset_left = 548.0
@@ -118,7 +109,6 @@ position = Vector2(75, 74)
 scale = Vector2(1.140625, 1.140625)
 texture = ExtResource("3_f4mfi")
 
-[connection signal="pressed" from="back/testVolume" to="." method="_on_test_volume_pressed"]
 [connection signal="value_changed" from="back/masterVolumeSlider" to="." method="_on_master_volume_slider_value_changed"]
 [connection signal="value_changed" from="back/musicVolumeSlider" to="." method="_on_music_volume_slider_value_changed"]
 [connection signal="value_changed" from="back/SFXVolumeSlider" to="." method="_on_sfx_volume_slider_value_changed"]

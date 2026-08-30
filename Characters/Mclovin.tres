@@ -6,6 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://dcp17ydw1ptnl" path="res://Sprites/People/Garage/InsideGarage2PeopleTalking8.png" id="2_p0y8t"]
 [ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_wos81"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_p0y8t"]
+[ext_resource type="AudioStream" uid="uid://dimtt8a2i6slv" path="res://SFX/Voicelines/MclovinEnter1.wav" id="4_usgjf"]
+[ext_resource type="AudioStream" uid="uid://dbuab0nfbl1lo" path="res://SFX/Voicelines/MclovinEnter2.wav" id="5_bjsc2"]
+[ext_resource type="AudioStream" uid="uid://c8dvlbc6cm5q3" path="res://SFX/Voicelines/MclovinEnter3.wav" id="6_is5kn"]
 
 [sub_resource type="Resource" id="Resource_1dbfa"]
 script = ExtResource("2_wos81")
@@ -64,6 +67,7 @@ outDoorSprite = ExtResource("1_vfqu3")
 interiorSprite = ExtResource("2_p0y8t")
 afraidSprite = ExtResource("1_of7nf")
 introDialaogue = Array[String](["Helloo.", "I'm going to the party can I come in.", "I'm mclovin by the way."])
+introVoicelines = Array[AudioStreamWAV]([ExtResource("4_usgjf"), ExtResource("5_bjsc2"), ExtResource("6_is5kn")])
 questions = Array[ExtResource("2_of7nf")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 information = SubResource("Resource_1dbfa")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

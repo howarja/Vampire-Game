@@ -6,6 +6,11 @@
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_ec5va"]
 [ext_resource type="Texture2D" uid="uid://dtndpoepq32o0" path="res://Sprites/People/Outside/Isaac.png" id="3_6q17s"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_15hoe"]
+[ext_resource type="AudioStream" uid="uid://c50oiqyeb6dp5" path="res://SFX/Voicelines/MichaelSoulEnter1.wav" id="4_ldrkl"]
+[ext_resource type="AudioStream" uid="uid://bjxqm8y8p5jsd" path="res://SFX/Voicelines/MichaelSoulEnter2.wav" id="5_acw6c"]
+[ext_resource type="AudioStream" uid="uid://c4dbdgotiepim" path="res://SFX/Voicelines/MichaelSoulEnter3.wav" id="6_0fb2r"]
+[ext_resource type="AudioStream" uid="uid://cpskhr40175u2" path="res://SFX/Voicelines/MichaelSoulEnter4.wav" id="7_q0e76"]
+[ext_resource type="AudioStream" uid="uid://cqueci6e4x27b" path="res://SFX/Voicelines/MichaelSoulEnter5.wav" id="8_picnb"]
 
 [sub_resource type="Resource" id="Resource_toy1e"]
 script = ExtResource("2_6q17s")
@@ -65,6 +70,7 @@ outDoorSprite = ExtResource("3_6q17s")
 interiorSprite = ExtResource("2_15hoe")
 afraidSprite = ExtResource("1_ec5va")
 introDialaogue = Array[String](["Ello buddy, I'm Micheal Soul.", "Look I'm really sorry I forgot to bring the chips.", "I hope my brother Sim is in there I really need to see him, he said he was coming.", "Feasting just isn't the same without my bro.", "May I enter?"])
+introVoicelines = Array[AudioStreamWAV]([ExtResource("4_ldrkl"), ExtResource("5_acw6c"), ExtResource("6_0fb2r"), ExtResource("7_q0e76"), ExtResource("8_picnb")])
 questions = Array[ExtResource("2_ec5va")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 information = SubResource("Resource_toy1e")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

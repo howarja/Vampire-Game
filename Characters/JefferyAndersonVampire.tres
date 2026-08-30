@@ -6,6 +6,11 @@
 [ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_ui0fo"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_0chsk"]
 [ext_resource type="Texture2D" uid="uid://bnr72wxh3p5ft" path="res://Sprites/People/Outside/James2.png" id="3_ui0fo"]
+[ext_resource type="AudioStream" uid="uid://d31f53gqt3cpb" path="res://SFX/Voicelines/JefferyAndersonVampireEnter1.wav" id="4_xguml"]
+[ext_resource type="AudioStream" uid="uid://retjv6q4ov7v" path="res://SFX/Voicelines/JefferyAndersonVampireEnter2.wav" id="5_gxqrh"]
+[ext_resource type="AudioStream" uid="uid://bx81qpsh1yvqf" path="res://SFX/Voicelines/JefferyAndersonVampireEnter3.wav" id="6_6fywy"]
+[ext_resource type="AudioStream" uid="uid://oa4h4eab73ni" path="res://SFX/Voicelines/JefferyAndersonVampireEnter4.wav" id="7_a620v"]
+[ext_resource type="AudioStream" uid="uid://vvptyh6hoima" path="res://SFX/Voicelines/JefferyAndersonVampireEnter5.wav" id="8_k3jcp"]
 
 [sub_resource type="Resource" id="Resource_lh7et"]
 script = ExtResource("2_ui0fo")
@@ -65,6 +70,7 @@ outDoorSprite = ExtResource("3_ui0fo")
 interiorSprite = ExtResource("2_0chsk")
 afraidSprite = ExtResource("1_ooaof")
 introDialaogue = Array[String](["Hello is this the party.", "My name is Jeffery Anderson, Did you see someone who looks like me already, seriously if you let him in you are not safe.", "I can tell you he is a vampire, you need to let me in. ", "You are in danger.", "Trust me."])
+introVoicelines = Array[AudioStreamWAV]([ExtResource("4_xguml"), ExtResource("5_gxqrh"), ExtResource("6_6fywy"), ExtResource("7_a620v"), ExtResource("8_k3jcp")])
 questions = Array[ExtResource("2_ooaof")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 information = SubResource("Resource_lh7et")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

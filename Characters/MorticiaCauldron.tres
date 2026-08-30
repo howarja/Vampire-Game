@@ -1,13 +1,12 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://dx4cbp1fgq0vf"]
 
-<<<<<<< Updated upstream
-[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="2_mvyiq"]
-[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="3_x757y"]
-=======
 [ext_resource type="Texture2D" uid="uid://c1f6e5ix2t6xk" path="res://Sprites/People/GreenRoom/InsideGarage2PeopleScared6.png" id="1_3obqv"]
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_mvyiq"]
+[ext_resource type="AudioStream" uid="uid://ipotf53etx31" path="res://SFX/Voicelines/MorticiaCauldronEnter1.wav" id="2_x6ndj"]
+[ext_resource type="AudioStream" uid="uid://cr0uwr6uy1qna" path="res://SFX/Voicelines/MorticiaCauldronEnter2.wav" id="3_le3tq"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_x757y"]
->>>>>>> Stashed changes
+[ext_resource type="AudioStream" uid="uid://x0rxk08sii8h" path="res://SFX/Voicelines/MorticiaCauldronEnter3.wav" id="4_tssu7"]
+[ext_resource type="AudioStream" uid="uid://fay54776il0o" path="res://SFX/Voicelines/MorticiaCauldronEnter4.wav" id="5_ll7qf"]
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_mvyiq")
@@ -52,5 +51,6 @@ outDoorSprite = ExtResource("1_3obqv")
 interiorSprite = ExtResource("1_3obqv")
 afraidSprite = ExtResource("1_3obqv")
 introDialaogue = Array[String](["hmmmmm...", "I forcast that something may occur tonight...", "Something troubling.", "I'm Morticia, Morticia Cauldron"])
+introVoicelines = Array[AudioStreamWAV]([ExtResource("2_x6ndj"), ExtResource("3_le3tq"), ExtResource("4_tssu7"), ExtResource("5_ll7qf")])
 questions = Array[ExtResource("2_mvyiq")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

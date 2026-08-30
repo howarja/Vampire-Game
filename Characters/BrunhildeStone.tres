@@ -6,6 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://oovshrghnycj" path="res://Sprites/People/Garage/InsideGarage2PeopleTalking9.png" id="2_yvvos"]
 [ext_resource type="Texture2D" uid="uid://cubgh3qtgt5sc" path="res://Sprites/People/Outside/Jaime.png" id="3_oj37w"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_yvvos"]
+[ext_resource type="AudioStream" uid="uid://b3620aolx7wqf" path="res://SFX/Voicelines/BrunhildeStoneEnter1.wav" id="4_6q5q2"]
+[ext_resource type="AudioStream" uid="uid://beosd0o1tdfd1" path="res://SFX/Voicelines/BrunhildeStoneEnter2.wav" id="5_5c6dj"]
+[ext_resource type="AudioStream" uid="uid://qyfwuvi2fpnh" path="res://SFX/Voicelines/BrunhildeStoneEnter3.wav" id="6_85ipe"]
 
 [sub_resource type="Resource" id="Resource_0245l"]
 script = ExtResource("2_yhify")
@@ -64,6 +67,7 @@ outDoorSprite = ExtResource("3_oj37w")
 interiorSprite = ExtResource("2_yvvos")
 afraidSprite = ExtResource("1_oj37w")
 introDialaogue = Array[String](["What do you mean I cant come in, just open the damn door!", "Do I look like one of those things to you how disrespectfull!?!", "Honestly this party sucks already."])
+introVoicelines = Array[AudioStreamWAV]([ExtResource("4_6q5q2"), ExtResource("5_5c6dj"), ExtResource("6_85ipe")])
 questions = Array[ExtResource("2_oj37w")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 information = SubResource("Resource_0245l")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

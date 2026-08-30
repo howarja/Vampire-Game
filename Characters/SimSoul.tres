@@ -6,6 +6,10 @@
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_ohtyb"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_ejbln"]
 [ext_resource type="Texture2D" uid="uid://d2g08uoafsmti" path="res://Sprites/People/Outside/Yuki.png" id="3_l7vkg"]
+[ext_resource type="AudioStream" uid="uid://blf26lkchlq2b" path="res://SFX/Voicelines/SimSoulEnter1.wav" id="4_s4dxs"]
+[ext_resource type="AudioStream" uid="uid://c37ovdagjacyj" path="res://SFX/Voicelines/SimSoulEnter2.wav" id="5_htukj"]
+[ext_resource type="AudioStream" uid="uid://bw3cb3711w5uh" path="res://SFX/Voicelines/SimSoulEnter3.wav" id="6_anm4r"]
+[ext_resource type="AudioStream" uid="uid://g8caacvclpnm" path="res://SFX/Voicelines/SimSoulEnter4.wav" id="7_jq8ba"]
 
 [sub_resource type="Resource" id="Resource_xce4b"]
 script = ExtResource("2_l7vkg")
@@ -64,6 +68,7 @@ outDoorSprite = ExtResource("3_l7vkg")
 interiorSprite = ExtResource("2_ejbln")
 afraidSprite = ExtResource("1_ohtyb")
 introDialaogue = Array[String](["Hey there, new face, I'm Sim Soul.", "I recieved an invitation from the host.", "You dont know the type of convincing I had to do to let my mother let her only child show up here, even though I'm 21.", "Can I come in?  "])
+introVoicelines = Array[AudioStreamWAV]([ExtResource("4_s4dxs"), ExtResource("5_htukj"), ExtResource("6_anm4r"), ExtResource("7_jq8ba")])
 questions = Array[ExtResource("2_ohtyb")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 information = SubResource("Resource_xce4b")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

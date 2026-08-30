@@ -6,6 +6,10 @@
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_7gpwf"]
 [ext_resource type="Texture2D" uid="uid://b67yllemst6vy" path="res://Sprites/People/Outside/Brendan.png" id="3_08ah5"]
 [ext_resource type="Texture2D" uid="uid://fn1qhstkarbo" path="res://Sprites/People/LivingRoom/LivingRoomPeopleTalking2.png" id="3_8otdg"]
+[ext_resource type="AudioStream" uid="uid://b13x3j5kn76g1" path="res://SFX/Voicelines/TimmyJimmyEnter1.wav" id="4_37xa3"]
+[ext_resource type="AudioStream" uid="uid://b6nsfma7hqec5" path="res://SFX/Voicelines/TimmyJimmyEnter2.wav" id="5_osgj7"]
+[ext_resource type="AudioStream" uid="uid://dhxh3tvjvqrhf" path="res://SFX/Voicelines/TimmyJimmyEnter3.wav" id="6_l7dld"]
+[ext_resource type="AudioStream" uid="uid://co2m7j1u54ruq" path="res://SFX/Voicelines/TimmyJimmyEnter4.wav" id="7_nlj30"]
 
 [sub_resource type="Resource" id="Resource_eean2"]
 script = ExtResource("2_7gpwf")
@@ -64,6 +68,7 @@ outDoorSprite = ExtResource("3_08ah5")
 interiorSprite = ExtResource("3_8otdg")
 afraidSprite = ExtResource("1_himms")
 introDialaogue = Array[String](["Let me in to the house.", "I will show you my tricks if you can answer my riddles three.", "I will make all the guests DIE with loughter!!!", "They will not see my shenanigans coming. "])
+introVoicelines = Array[AudioStreamWAV]([ExtResource("4_37xa3"), ExtResource("5_osgj7"), ExtResource("6_l7dld"), ExtResource("7_nlj30")])
 questions = Array[ExtResource("2_himms")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 information = SubResource("Resource_eean2")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

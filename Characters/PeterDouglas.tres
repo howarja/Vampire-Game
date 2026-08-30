@@ -6,6 +6,9 @@
 [ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_nxitx"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_h4ynm"]
 [ext_resource type="Texture2D" uid="uid://ddilv6nlb4f1m" path="res://Sprites/People/Outside/Tijmen.png" id="3_nxitx"]
+[ext_resource type="AudioStream" uid="uid://7fqt12m06b06" path="res://SFX/Voicelines/PeterDouglasEnter1.wav" id="4_gpvrp"]
+[ext_resource type="AudioStream" uid="uid://bqijorfxcycks" path="res://SFX/Voicelines/PeterDouglasEnter2.wav" id="5_y3gof"]
+[ext_resource type="AudioStream" uid="uid://cot1x1gas3mi8" path="res://SFX/Voicelines/PeterDouglasEnter3.wav" id="6_44ivw"]
 
 [sub_resource type="Resource" id="Resource_axjph"]
 script = ExtResource("2_nxitx")
@@ -64,6 +67,7 @@ outDoorSprite = ExtResource("3_nxitx")
 interiorSprite = ExtResource("2_h4ynm")
 afraidSprite = ExtResource("1_dgaj8")
 introDialaogue = Array[String](["Greetings greetings.", "I'm real excited so please let me in.", "Look I drove down from my luxurious palm beach house for this party!"])
+introVoicelines = Array[AudioStreamWAV]([ExtResource("4_gpvrp"), ExtResource("5_y3gof"), ExtResource("6_44ivw")])
 questions = Array[ExtResource("2_dgaj8")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 information = SubResource("Resource_axjph")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

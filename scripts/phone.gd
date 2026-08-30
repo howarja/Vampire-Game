@@ -2,8 +2,9 @@ extends Control
 class_name Phone
 
 func _ready() -> void:
-	$ScrollContainer.hide()
-	pull_out_phone()
+	#$ScrollContainer.hide()
+	#pull_out_phone()
+	pass;
 
 var currentCharacter: character;
 @onready var nameLabel: Label = $ScrollContainer/VBoxContainer/Name;
@@ -20,7 +21,7 @@ func pull_out_phone():
 	$ScrollContainer.show()
 
 func put_away_phone():
-	$ScrollContainer.hide()
+	$ScrollContainer.show()
 	$AnimatedSprite2D.play_backwards("pull_out_phone")
 	await $AnimatedSprite2D.animation_finished
 	$AnimatedSprite2D.hide()

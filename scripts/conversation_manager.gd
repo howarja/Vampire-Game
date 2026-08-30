@@ -65,7 +65,10 @@ func renableInput():
 
 func canQuestion(enabled: bool):
 	buttonContainer.visible = enabled;
-	phone.visible = enabled;
+	#if enabled:
+	#	phone.pull_out_phone();
+	#else:
+	#	phone.put_away_phone();
 
 func loadCharacter(newCharacter: character, interacted: interactableCharacter):
 	currentCharacter = newCharacter;

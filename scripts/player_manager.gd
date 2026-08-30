@@ -5,6 +5,7 @@ class_name playerManager;
 @export var hallway: Area;
 @export var fade: Panel;
 
+@export var movementSFX: AudioStreamPlayer2D;
 @export var houseMusic: AudioStreamPlayer2D;
 @export var outsideMusic: AudioStreamPlayer2D;
 
@@ -12,16 +13,21 @@ func _ready() -> void:
 	Globals.player = self;
 	fadeHouseMusic();
 
-func changeAreaTo(newArea: Node2D) -> void:
+func changeAreaTo(newArea: Area) -> void:
 	if currentArea!=null:
 		currentArea.exitArea();
 	currentArea = newArea;
 	currentArea.enterArea();
+	
+	if currentArea.indoors:
+		fadeHouseMusic();
+	else:
+		fadeOutsideMusic();
 
 func returnToHallway() -> void:
 	fadeTo(hallway);
 
-func fadeTo(newArea: Node2D) -> void:
+func fadeTo(newArea: Area) -> void:
 	# fade darkness in, load new area, fade darkness out
 	currentArea.disableMovement();
 	var tween1 = create_tween();
@@ -53,3 +59,9 @@ func fadeHouseMusicOutIn(length: int) -> void:
 	await get_tree().create_timer(length+1).timeout;
 	var fadeInTween = create_tween();
 	fadeInTween.tween_property(houseMusic, "volume_db", 0, 1);
+
+func playMovement(sfx: AudioStreamMP3) -> void:
+	if sfx!=null:
+		movementSFX.stop();
+		movementSFX.stream = sfx;
+		movementSFX.play();

@@ -1,6 +1,7 @@
 @abstract extends Sprite2D
 class_name Area
 
+@export var indoors: bool = true;
 @export var movementButtons: Array[Button];
 @export var characters: Array[interactableCharacter];
 

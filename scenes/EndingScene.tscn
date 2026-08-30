@@ -13,6 +13,12 @@
 [ext_resource type="AudioStream" uid="uid://burpy0lormos3" path="res://music/medium_plus_ending.wav" id="6_1n6l5"]
 [ext_resource type="Material" uid="uid://cobraaspoty8d" path="res://VHS/vhsRegular.tres" id="6_evwq0"]
 [ext_resource type="Material" uid="uid://c1gtj6yctg6g6" path="res://Materials/pixelate.tres" id="7_weo12"]
+[ext_resource type="Shader" uid="uid://csyh8nqbp0hvr" path="res://shaders/pixelate.gdshader" id="9_o0y22"]
+[ext_resource type="StyleBox" uid="uid://davtg7gw60hkc" path="res://UI BG.tres" id="14_b8elu"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3klfd"]
+shader = ExtResource("9_o0y22")
+shader_parameter/pixel_size = 1.0000000149012
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qnm0e"]
 content_margin_left = 0.0
@@ -38,6 +44,26 @@ medium_ending_but_better = ExtResource("6_1n6l5")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1850741684]
 
+[node name="ColorRect2" type="ColorRect" parent="CanvasLayer" unique_id=1630486792]
+z_index = 29
+material = ExtResource("6_evwq0")
+offset_left = -347.0
+offset_top = -68.0
+offset_right = 1467.9999
+offset_bottom = 1006.0
+mouse_filter = 2
+
+[node name="BackBufferCopy" type="BackBufferCopy" parent="CanvasLayer/ColorRect2" unique_id=990981142]
+copy_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer/ColorRect2" unique_id=712831962]
+z_index = 29
+material = SubResource("ShaderMaterial_3klfd")
+layout_mode = 0
+offset_right = 1815.0
+offset_bottom = 1074.0
+mouse_filter = 2
+
 [node name="Panel" type="Panel" parent="CanvasLayer" unique_id=306155222]
 visible = false
 anchors_preset = 15
@@ -51,10 +77,10 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_qnm0e")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = 1.0
-offset_top = -23.0
-offset_right = 1.0
-offset_bottom = -23.0
+offset_left = -257.0
+offset_top = -8.0
+offset_right = -255.99988
+offset_bottom = -8.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/normal_font = ExtResource("2_oygov")
@@ -104,6 +130,7 @@ offset_left = -607.0
 offset_top = -125.00012
 offset_right = 1207.9999
 offset_bottom = 948.9999
+mouse_filter = 2
 
 [node name="BackBufferCopy" type="BackBufferCopy" parent="ColorRect2" unique_id=628462531]
 copy_mode = 2
@@ -114,3 +141,20 @@ material = ExtResource("7_weo12")
 layout_mode = 0
 offset_right = 1815.0
 offset_bottom = 1074.0
+mouse_filter = 2
+
+[node name="ReturnToMenuButton" type="Button" parent="." unique_id=809976559]
+custom_minimum_size = Vector2(207.545, 0)
+offset_left = 614.0
+offset_top = 678.0
+offset_right = 986.0
+offset_bottom = 736.0
+theme_override_fonts/font = ExtResource("2_oygov")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = ExtResource("14_b8elu")
+theme_override_styles/pressed = ExtResource("14_b8elu")
+theme_override_styles/hover = ExtResource("14_b8elu")
+theme_override_styles/disabled = ExtResource("14_b8elu")
+text = "Return to Menu"
+
+[connection signal="pressed" from="ReturnToMenuButton" to="." method="return_to_menu"]

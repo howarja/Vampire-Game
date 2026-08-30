@@ -9,6 +9,8 @@ extends Node2D
 @export var medium_ending_but_better: AudioStreamWAV
 @onready var audio_player: AudioStreamPlayer2D = $AudioStreamPlayer2D
 
+@onready var menu_scene = "res://scenes/mainMenu.tscn"
+
 func _ready() -> void:
 	var max_humans = 17
 	var max_vampires = 6
@@ -93,3 +95,7 @@ func _ready() -> void:
 			text.text += "\n\n Bad Host Ending!";
 			audio_player.stream = medium_ending_but_better;
 			pass
+
+
+func return_to_menu():
+	get_tree().change_scene_to_file(menu_scene)

@@ -6,6 +6,15 @@
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_xqmih"]
 [ext_resource type="Texture2D" uid="uid://bp4f604cfnw0w" path="res://Sprites/People/Outside/Willem.png" id="3_akcfx"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_c8vdo"]
+[ext_resource type="AudioStream" uid="uid://b5deqrg1xneq" path="res://SFX/Voicelines/VonPierEnter1.wav" id="4_tte8a"]
+[ext_resource type="AudioStream" uid="uid://buc7uekm0x7hi" path="res://SFX/Voicelines/VonPierEnter2.wav" id="5_v1n2r"]
+[ext_resource type="AudioStream" uid="uid://c1hxl8qlm42pu" path="res://SFX/Voicelines/VonPierEnter3.wav" id="6_gcpfm"]
+[ext_resource type="AudioStream" uid="uid://blrcip0wc8sh8" path="res://SFX/Voicelines/VonPierEnter4.wav" id="7_vgnor"]
+[ext_resource type="AudioStream" uid="uid://bqkqpytuejwxx" path="res://SFX/Voicelines/VonPierEnter5.wav" id="8_24tdt"]
+[ext_resource type="AudioStream" uid="uid://bcn3xot5true1" path="res://SFX/Voicelines/VonPierEnter6.wav" id="9_6rwho"]
+[ext_resource type="AudioStream" uid="uid://bsjmqijs8a2ey" path="res://SFX/Voicelines/VonPierEnter7.wav" id="10_xv5dg"]
+[ext_resource type="AudioStream" uid="uid://bb1rrt3cilwuf" path="res://SFX/Voicelines/VonPierEnter8.wav" id="11_o5ekg"]
+[ext_resource type="AudioStream" uid="uid://lvqfous318km" path="res://SFX/Voicelines/VonPierEnter9.wav" id="12_oxj7o"]
 
 [sub_resource type="Resource" id="Resource_t78ih"]
 script = ExtResource("2_akcfx")
@@ -64,6 +73,7 @@ outDoorSprite = ExtResource("3_akcfx")
 interiorSprite = ExtResource("2_c8vdo")
 afraidSprite = ExtResource("1_xqmih")
 introDialaogue = Array[String](["mmmmmmm.", "mmmmmmmmmmmmmm.", "mmm.", "It is I Von Piere.", "I have come since the host was so desperate to invite me.", "Yes I am the best arent I.", "mmmmm.", "Let me in and i will find a place worthy of my beutifull self.", "mmmm."])
+introVoicelines = Array[AudioStreamWAV]([ExtResource("4_tte8a"), ExtResource("5_v1n2r"), ExtResource("6_gcpfm"), ExtResource("7_vgnor"), ExtResource("8_24tdt"), ExtResource("9_6rwho"), ExtResource("10_xv5dg"), ExtResource("11_o5ekg"), ExtResource("12_oxj7o")])
 questions = Array[ExtResource("2_xqmih")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 information = SubResource("Resource_t78ih")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

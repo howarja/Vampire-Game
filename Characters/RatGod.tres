@@ -1,47 +1,53 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://ca2bounl3hsv7"]
 
+[ext_resource type="Texture2D" uid="uid://cyrqt3ksejec1" path="res://Sprites/People/Kitchen/KitchenPeopleAfraid3.png" id="1_xdaoa"]
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="1_y821a"]
+[ext_resource type="Texture2D" uid="uid://f4acbilmuij6" path="res://Sprites/People/Kitchen/KitchenPeopleTalking3.png" id="2_cdl15"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="2_impvx"]
+[ext_resource type="Texture2D" uid="uid://dkmt4ivj7ahc2" path="res://Sprites/People/Outside/OutsidePeopleTake more3.png" id="3_6hf7l"]
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("1_y821a")
 prompt = "What did you bring?"
-answer = Array[String]([""])
+answer = Array[String](["My godly presence!!!"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_hush4"]
 script = ExtResource("1_y821a")
 prompt = "Let me see your invite."
-answer = Array[String]([""])
+answer = Array[String](["I do not need to prove myself to you mortal!"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]
 script = ExtResource("1_y821a")
 prompt = "Can i see your ID?"
-answer = Array[String]([""])
+answer = Array[String](["I am not registerd in the government as I stand above all as the rat god!"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_1tlsp"]
 script = ExtResource("1_y821a")
 prompt = "Do you have any dietary requirments?"
-answer = Array[String]([""])
+answer = Array[String](["I refuse to eat any lactose of any kind, the cheese is for my servents!"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_c4kb4"]
 script = ExtResource("1_y821a")
 prompt = "What is your blood type?"
-answer = Array[String]([""])
+answer = Array[String](["My blood is that of the rats"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_lw0dh"]
 script = ExtResource("1_y821a")
 prompt = "Where do you live?"
-answer = Array[String]([""])
+answer = Array[String](["Down below in the sewers of old with my kin!"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [resource]
 script = ExtResource("2_impvx")
 fullName = "Rat God"
-introDialaogue = Array[String](["", "", ""])
+outDoorSprite = ExtResource("3_6hf7l")
+interiorSprite = ExtResource("2_cdl15")
+afraidSprite = ExtResource("1_xdaoa")
+introDialaogue = Array[String](["Hehehehe, what is it?", "You ask me if I am a vampire, those creatures are below me!", "I am above all!", "I am the rat god!"])
 questions = Array[ExtResource("1_y821a")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

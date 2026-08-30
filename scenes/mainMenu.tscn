@@ -66,6 +66,18 @@ tracks/3/keys = {
 "update": 1,
 "values": [true]
 }
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("exitButton:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
 
 [sub_resource type="Animation" id="Animation_7nrmo"]
 length = 0.001
@@ -100,6 +112,18 @@ tracks/2/path = NodePath("Settings:visible")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("exitButton:visible")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 1,
@@ -171,10 +195,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -67.0
-offset_top = 153.0
-offset_right = 79.0
-offset_bottom = 249.0
+offset_left = -84.5
+offset_top = 117.0
+offset_right = 96.5
+offset_bottom = 213.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset_ratio = Vector2(0.5, 0.5)
@@ -194,17 +218,17 @@ texture = ExtResource("3_tov5d")
 
 [node name="Settings" parent="." unique_id=1974824112 instance=ExtResource("2_3d1i7")]
 
-[node name="exitButton2" type="Button" parent="." unique_id=260818102]
+[node name="exitButton" type="Button" parent="." unique_id=260818102]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -109.0
-offset_top = 644.0
-offset_right = 134.0
-offset_bottom = 719.0
+offset_left = -127.0
+offset_top = 608.0
+offset_right = 152.0
+offset_bottom = 683.0
 grow_horizontal = 2
-pivot_offset = Vector2(128, 0)
+pivot_offset = Vector2(133, 38)
 theme_override_fonts/font = ExtResource("3_lam2r")
 theme_override_font_sizes/font_size = 48
 theme_override_styles/normal = ExtResource("4_amia2")
@@ -262,9 +286,9 @@ mouse_filter = 2
 [connection signal="button_up" from="TextHolder/PlayButton" to="TextHolder/PlayButton" method="_on_button_up"]
 [connection signal="mouse_entered" from="TextHolder/PlayButton" to="TextHolder/PlayButton" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="TextHolder/PlayButton" to="TextHolder/PlayButton" method="_on_mouse_exited"]
-[connection signal="pressed" from="TextHolder/PlayButton" to="." method="_on_button_pressed"]
-[connection signal="button_down" from="exitButton2" to="exitButton2" method="_on_button_down"]
-[connection signal="button_up" from="exitButton2" to="exitButton2" method="_on_button_up"]
-[connection signal="mouse_entered" from="exitButton2" to="exitButton2" method="_on_mouse_entered"]
-[connection signal="mouse_exited" from="exitButton2" to="exitButton2" method="_on_mouse_exited"]
-[connection signal="pressed" from="exitButton2" to="." method="_on_exit_button_pressed"]
+[connection signal="pressed" from="TextHolder/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="button_down" from="exitButton" to="exitButton" method="_on_button_down"]
+[connection signal="button_up" from="exitButton" to="exitButton" method="_on_button_up"]
+[connection signal="mouse_entered" from="exitButton" to="exitButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="exitButton" to="exitButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="exitButton" to="." method="_on_exit_button_pressed"]

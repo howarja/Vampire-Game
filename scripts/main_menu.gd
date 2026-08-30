@@ -3,8 +3,8 @@ extends Control
 @onready var normal_text = $TextHolder/normalText
 
 @onready var settings = $Settings
-@onready var playButton = $TextHolder/PlayButton;
-@onready var exit_button = $exitButton2
+@onready var playButton = $TextHolder/PlayButton
+@onready var exit_button = $exitButton
 
 func _ready() -> void:
 	settings.hide();
@@ -18,6 +18,7 @@ func _ready() -> void:
 	tween.tween_property($TextHolder/Blood, "position", Vector2(500,0), 2).set_trans(Tween.TRANS_ELASTIC)
 	tween.tween_property($TextHolder/Blood, "rotation", deg_to_rad(360), 2).set_trans(Tween.TRANS_ELASTIC)
 	await tween.finished
+	#exit_button.show()
 	
 
 func fadeText(newText,visibleLength):
@@ -30,3 +31,7 @@ func fadeText(newText,visibleLength):
 	tween = get_tree().create_tween()
 	tween.tween_property(normal_text, "modulate:a", 0, visibleLength).set_trans(Tween.TRANS_CUBIC)
 	await tween.finished
+
+
+func _on_play_button_pressed() -> void:
+	get_tree().change_scene_to_file("res://scenes/startScene.tscn")

@@ -1,46 +1,62 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://6rs41l7f52yk"]
 
+<<<<<<< HEAD
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="1_b38vs"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="2_0ot8i"]
+=======
+<<<<<<< Updated upstream
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="1_b38vs"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="2_0ot8i"]
+=======
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="1_b38vs"]
+[ext_resource type="Texture2D" uid="uid://dwhi6uvf5h2ai" path="res://Sprites/People/basement/InsideGaragePeopleScared3.png" id="1_celvo"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="2_0ot8i"]
+[ext_resource type="Texture2D" uid="uid://d3wiccf8hytqr" path="res://Sprites/People/basement/InsideGaragePeopleTalking3.png" id="2_8gc7m"]
+[ext_resource type="Texture2D" uid="uid://c82e1w2pcp24p" path="res://Sprites/People/Outside/Samuel2.png" id="3_xdc46"]
+>>>>>>> Stashed changes
+>>>>>>> 529d69be26d3bc2649e080eaf729c8e96d5791ea
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("1_b38vs")
 prompt = "What did you bring?"
-answer = Array[String](["mcCHarles"])
+answer = Array[String](["Dude please leave me alone I need to blend in, I don't know what those guys want with me but I'm not safe"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_hush4"]
 script = ExtResource("1_b38vs")
 prompt = "Let me see your invite."
-answer = Array[String]([""])
+answer = Array[String](["You know very well I dont have one, thanks for letting me in by the way"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]
 script = ExtResource("1_b38vs")
 prompt = "Can i see your ID?"
-answer = Array[String]([""])
+answer = Array[String](["They beat me and took my wallet.", " I don't have any ID, all I can tell you is that my name is Charlie Cholick, please just trust me."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_1tlsp"]
 script = ExtResource("1_b38vs")
 prompt = "Do you have any dietary requirments?"
-answer = Array[String]([""])
+answer = Array[String](["No I'm not hungry, I really can't eat right now."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_c4kb4"]
 script = ExtResource("1_b38vs")
 prompt = "What is your blood type?"
-answer = Array[String]([""])
+answer = Array[String](["I don't know"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_lw0dh"]
 script = ExtResource("1_b38vs")
 prompt = "Where do you live?"
-answer = Array[String]([""])
+answer = Array[String](["I live in a old apartment building in 5g on fallingstar street.", "Those guys who attacked me have my keys so its not safe there"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [resource]
 script = ExtResource("2_0ot8i")
-introDialaogue = Array[String](["", "", ""])
+outDoorSprite = ExtResource("3_xdc46")
+interiorSprite = ExtResource("2_8gc7m")
+afraidSprite = ExtResource("1_celvo")
+introDialaogue = Array[String](["Help me please sir I need your help.", "I got attacked, they were chasing me a couple blocks away.", "There is no where else I can go please let me in here I can pay you back."])
 questions = Array[ExtResource("1_b38vs")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

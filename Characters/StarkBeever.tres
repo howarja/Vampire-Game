@@ -1,47 +1,65 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://54st1ebshao6"]
 
-[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="1_gqtub"]
-[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="2_6qlb5"]
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="1_gqtub"]
+[ext_resource type="Texture2D" uid="uid://bnayowqcwu317" path="res://Sprites/People/LivingRoom/LivingRoomPeopleAfraid4.png" id="1_t1v5r"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="2_6qlb5"]
+[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_c4ho6"]
+[ext_resource type="Texture2D" uid="uid://e7gghqrefca0" path="res://Sprites/People/LivingRoom/LivingRoomPeopleTalking4.png" id="2_eean2"]
+[ext_resource type="Texture2D" uid="uid://ctmx2iog0bwlj" path="res://Sprites/People/Outside/Tishar.png" id="3_c4ho6"]
+
+[sub_resource type="Resource" id="Resource_q0ves"]
+script = ExtResource("2_c4ho6")
+dateOfBirth = "04/09/1941"
+address = "1600 Pennsylvania Avenue"
+bringing = " Premium gold infused wine with 24 carrat gems around the bottle"
+bloodType = "A-"
+lifeStatus = "Disabled, Missing right arm."
+metadata/_custom_type_script = "uid://l3v0m3s3okyk"
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("1_gqtub")
 prompt = "What did you bring?"
-answer = Array[String]([""])
+answer = Array[String](["I brought only the best for this party!", "A gold infused wine with 24 carrat gems around the circumfrence of the bottle.", "Only the best for my buisness partner!"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_hush4"]
 script = ExtResource("1_gqtub")
 prompt = "Let me see your invite."
-answer = Array[String]([""])
+answer = Array[String](["Do I really need to show my invite?", "Also I thought that the host would welcome me in himself.", "Maybe I'll have to talk to him about manners.", "Anyhow, here's my invite."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]
 script = ExtResource("1_gqtub")
 prompt = "Can i see your ID?"
-answer = Array[String]([""])
+answer = Array[String](["Do I look under 21 to you?!", "I don't see the need to show you my ID!", "I'm a fully grown adult in my late 20s, and I will not provide some random my personal identity!"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_1tlsp"]
 script = ExtResource("1_gqtub")
 prompt = "Do you have any dietary requirments?"
-answer = Array[String]([""])
+answer = Array[String](["I only eat fresh meals cooked within 19 minutes since they've been made.", "Any longer and the food is room temperature and spoiled!"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_c4kb4"]
 script = ExtResource("1_gqtub")
 prompt = "What is your blood type?"
-answer = Array[String]([""])
+answer = Array[String](["Its pure gold."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_lw0dh"]
 script = ExtResource("1_gqtub")
 prompt = "Where do you live?"
-answer = Array[String]([""])
+answer = Array[String](["The white house with my chap, the president."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [resource]
 script = ExtResource("2_6qlb5")
+fullName = "Stark Beever"
 vampire = true
-introDialaogue = Array[String](["", "", ""])
+outDoorSprite = ExtResource("3_c4ho6")
+interiorSprite = ExtResource("2_eean2")
+afraidSprite = ExtResource("1_t1v5r")
+introDialaogue = Array[String](["Hello, it is my pleasure to make your aquaintence.", "I've known the host since the beginning of our exploits.", "I would love to have a nice long chat alone with the host if I could."])
 questions = Array[ExtResource("1_gqtub")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
+information = SubResource("Resource_q0ves")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

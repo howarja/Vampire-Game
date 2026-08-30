@@ -1,46 +1,64 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://bkdcwsj8eieqp"]
 
-[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="2_ajy50"]
-[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="3_q86ko"]
+[ext_resource type="Texture2D" uid="uid://c0fr4doq0w7l4" path="res://Sprites/People/Garage/InsideGarage2PeopleScared1.png" id="1_q86ko"]
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_ajy50"]
+[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_xeenu"]
+[ext_resource type="Texture2D" uid="uid://bduxms8i5x1nn" path="res://Sprites/People/Garage/InsideGarage2PeopleTalking1.png" id="3_8afky"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_q86ko"]
+[ext_resource type="Texture2D" uid="uid://2d4gyq54kfde" path="res://Sprites/People/Outside/Amy.png" id="4_8tc8k"]
+
+[sub_resource type="Resource" id="Resource_ne6w6"]
+script = ExtResource("2_xeenu")
+dateOfBirth = "07/12/1936"
+address = " 83 kingston drive"
+bringing = "moonshine"
+bloodType = "A-"
+lifeStatus = "Alive"
+metadata/_custom_type_script = "uid://l3v0m3s3okyk"
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_ajy50")
 prompt = "What did you bring?"
-answer = Array[String]([""])
+answer = Array[String](["mmmeeeee?", "iiiii brroouuuughhhttt thhheee gooooodssss mannn, mooonshiinne.", "Calllll meeee jeesssusss wiitthhh thhhisssss aallllcooohollll bllloooooddddd.", "dooonnn''t toouuuchhh thhhoughhh iittt thoouughhh iiittt's myy perrrrssonnnal ssuuuply."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_hush4"]
 script = ExtResource("2_ajy50")
 prompt = "Let me see your invite."
-answer = Array[String]([""])
+answer = Array[String](["brooooo yoouuuu leett meee iinnnn.", "iii doon't goott onneee okkaayyy.", "Whattt aarree yaaa gonnna doo bout iiit nowww."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]
 script = ExtResource("2_ajy50")
 prompt = "Can i see your ID?"
-answer = Array[String]([""])
+answer = Array[String](["Seee imm oveerr 21 stopp quuesstioning myy mooonshiinee. "])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_1tlsp"]
 script = ExtResource("2_ajy50")
 prompt = "Do you have any dietary requirments?"
-answer = Array[String]([""])
+answer = Array[String](["Immm heeeerreee foorr the alcoholll juust likkeee evvveryy boddy else brooo.", "Allsooo whyyy the heeeelllll yoouu puuut out garrrlic att thiiss, keeep thooose vegieeess ouuut offf heere."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_c4kb4"]
 script = ExtResource("2_ajy50")
 prompt = "What is your blood type?"
-answer = Array[String]([""])
+answer = Array[String](["bllooooodddd soouuuunndsss cooolll duuuuddee."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_lw0dh"]
 script = ExtResource("2_ajy50")
 prompt = "Where do you live?"
-answer = Array[String]([""])
+answer = Array[String](["wooooahhhh crrreeeppp alllerrrtt geeettt al llloood ooff dhiss guyyy."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [resource]
 script = ExtResource("3_q86ko")
-introDialaogue = Array[String](["", "", ""])
+fullName = "HughMan"
+outDoorSprite = ExtResource("4_8tc8k")
+interiorSprite = ExtResource("3_8afky")
+afraidSprite = ExtResource("1_q86ko")
+introDialaogue = Array[String](["whhaatsss uppp maaaaannnn.", "Allllriiight llooookk maaaybbee I'm aalreeeady aa litttlee wasssteed.", "Buuuttt its fine, juuusstt lemme innn, hurrryy upppp I wannnnaaa keeepp paarrttyying."])
 questions = Array[ExtResource("2_ajy50")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
+information = SubResource("Resource_ne6w6")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

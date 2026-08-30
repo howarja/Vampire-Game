@@ -88,6 +88,7 @@
 [ext_resource type="FontFile" uid="uid://cofv126vqogtf" path="res://BlackOpsOne-Regular.ttf" id="55_jr8db"]
 [ext_resource type="PackedScene" uid="uid://70hcrtv5i5n6" path="res://scenes/id.tscn" id="76_j33vn"]
 [ext_resource type="StyleBox" uid="uid://davtg7gw60hkc" path="res://UI BG.tres" id="81_hp6ks"]
+[ext_resource type="Script" uid="uid://cuixesoyqhje0" path="res://scripts/buttonEffects.gd" id="82_8e13r"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3xd07"]
 radius = 65.97
@@ -1012,36 +1013,40 @@ visible = false
 self_modulate = Color(6.6901744e-06, 0.74751836, 0.33022302, 1)
 layout_mode = 0
 offset_left = 143.0
-offset_top = -257.0
-offset_right = 717.3071
-offset_bottom = -81.0
+offset_top = -241.0
+offset_right = 433.7764
+offset_bottom = -127.287445
 scale = Vector2(0.52018094, 0.5137473)
+pivot_offset = Vector2(152.36304, 60.340942)
 theme_override_fonts/font = ExtResource("55_jr8db")
-theme_override_font_sizes/font_size = 75
+theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = ExtResource("81_hp6ks")
 theme_override_styles/pressed = ExtResource("81_hp6ks")
 theme_override_styles/hover = ExtResource("81_hp6ks")
 theme_override_styles/disabled = ExtResource("81_hp6ks")
 theme_override_styles/focus = ExtResource("81_hp6ks")
 text = "accept"
+script = ExtResource("82_8e13r")
 
 [node name="DeclineButton" type="Button" parent="CanvasLayer/DoorwayManager" unique_id=623162512]
 visible = false
 self_modulate = Color(1, 0, 0, 1)
 layout_mode = 0
-offset_left = -448.00003
-offset_top = -260.0
-offset_right = 129.37595
-offset_bottom = -84.0
+offset_left = -444.00003
+offset_top = -256.0
+offset_right = -133.2233
+offset_bottom = -134.50146
 scale = Vector2(0.52018094, 0.5137473)
+pivot_offset = Vector2(155.06169, 72.01985)
 theme_override_fonts/font = ExtResource("55_jr8db")
-theme_override_font_sizes/font_size = 75
+theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = ExtResource("81_hp6ks")
 theme_override_styles/pressed = ExtResource("81_hp6ks")
 theme_override_styles/hover = ExtResource("81_hp6ks")
 theme_override_styles/disabled = ExtResource("81_hp6ks")
 theme_override_styles/focus = ExtResource("81_hp6ks")
 text = "decline"
+script = ExtResource("82_8e13r")
 
 [node name="TextGiver" type="Control" parent="CanvasLayer" unique_id=1438650801 node_paths=PackedStringArray("text", "audio")]
 layout_mode = 3
@@ -1057,17 +1062,18 @@ audio = NodePath("DialogueAudio")
 
 [node name="TextBg" type="Panel" parent="CanvasLayer" unique_id=1192261869]
 self_modulate = Color(1, 1, 1, 0)
-offset_left = -163.0
+offset_left = -292.0
 offset_top = 156.0
-offset_right = 177.0
+offset_right = 306.0
 offset_bottom = 331.0
+mouse_filter = 2
 theme_override_styles/panel = ExtResource("81_hp6ks")
 
 [node name="Dialgoue" type="RichTextLabel" parent="CanvasLayer/TextBg" unique_id=1094312030]
 layout_mode = 0
 offset_left = 11.0
 offset_top = 10.0
-offset_right = 325.0
+offset_right = 576.0
 offset_bottom = 164.0
 mouse_filter = 2
 theme_override_colors/default_color = Color(0.6079645, 0.4625635, 1.0954857, 1)

@@ -25,7 +25,6 @@ metadata/_custom_type_script = "uid://l3v0m3s3okyk"
 script = ExtResource("2_e5hkb")
 prompt = "What did you bring?"
 answer = Array[String](["... ... ...", "I am a human."])
-audio = Array[AudioStreamMP3]([null, null])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_hush4"]

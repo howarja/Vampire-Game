@@ -6,6 +6,9 @@
 [ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_jxpct"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="2_qm2a0"]
 [ext_resource type="Texture2D" uid="uid://ehrtbpi480wo" path="res://Sprites/People/Outside/Samuel.png" id="3_jxpct"]
+[ext_resource type="AudioStream" uid="uid://cuj56h85c1s22" path="res://SFX/Voicelines/SteveDuoblerEnter1.wav" id="4_aboym"]
+[ext_resource type="AudioStream" uid="uid://bboumecwoe515" path="res://SFX/Voicelines/SteveDuoblerEnter2.wav" id="5_fo0gn"]
+[ext_resource type="AudioStream" uid="uid://coc3ye0hheq11" path="res://SFX/Voicelines/SteveDuoblerEnter3.wav" id="6_g5dwd"]
 [ext_resource type="Texture2D" uid="uid://cmfy7rsqg5ikx" path="res://Sprites/IamgesForIdentification1.png" id="6_jxpct"]
 
 [sub_resource type="Resource" id="Resource_iall0"]
@@ -66,6 +69,7 @@ outDoorSprite = ExtResource("3_jxpct")
 interiorSprite = ExtResource("2_h5tux")
 afraidSprite = ExtResource("1_y274g")
 introDialaogue = Array[String](["Yoooo!", "How's the party going?", "I can't wait to meet some new people tonight, though I've been hearing rumours about vampires possibly roaming nearby recently..."])
+introVoicelines = Array[AudioStreamWAV]([ExtResource("4_aboym"), ExtResource("5_fo0gn"), ExtResource("6_g5dwd")])
 questions = Array[ExtResource("1_tr7q8")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 information = SubResource("Resource_iall0")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

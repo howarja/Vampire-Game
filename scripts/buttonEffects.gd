@@ -4,6 +4,12 @@ class_name buttonEffects
 var hovering=false
 var shaking=false
 
+func _ready() -> void:
+	button_down.connect(_on_button_down);
+	button_up.connect(_on_button_up);
+	mouse_entered.connect(_on_mouse_entered);
+	mouse_exited.connect(_on_mouse_exited);
+
 func _physics_process(delta: float) -> void:
 	if(hovering):
 		if(!shaking):

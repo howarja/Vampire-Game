@@ -10,6 +10,12 @@ var currentCharacter: character;
 @onready var blood_type: Label = $TextureRect/ScrollContainer/VBoxContainer/BloodType;
 @onready var life_status: Label = $TextureRect/ScrollContainer/VBoxContainer/LifeStatus;
 
+func pull_out_phone():
+	pass
+
+func put_away_phone():
+	pass
+
 func updatePhone(person: character):
 	currentCharacter = person;
 	nameLabel.text = person.fullName;

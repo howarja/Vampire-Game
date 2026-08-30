@@ -48,6 +48,7 @@
 [ext_resource type="Resource" uid="uid://danc5xfmors2x" path="res://Characters/MaxFredrickson.tres" id="20_tulyn"]
 [ext_resource type="Resource" uid="uid://bdsbbiwnswj2h" path="res://Characters/BrunhildeStone.tres" id="21_ce0yk"]
 [ext_resource type="Texture2D" uid="uid://cghiky6m7jhx4" path="res://Sprites/Hand gun anim.png" id="21_nxs8g"]
+[ext_resource type="Resource" uid="uid://ddhh8vijouf8k" path="res://Characters/BillyBobbyJr.tres" id="22_1yf3i"]
 [ext_resource type="Resource" uid="uid://cln0iwyoodaps" path="res://Characters/VonPier.tres" id="23_2kk1b"]
 [ext_resource type="Resource" uid="uid://b4xlaq234u2cd" path="res://Characters/JefferyAndersonVampire.tres" id="25_2a0wb"]
 [ext_resource type="PackedScene" uid="uid://c7awdxtytslkh" path="res://scenes/phone.tscn" id="25_lqxam"]
@@ -419,6 +420,7 @@ fadeLength = 1.5
 
 [node name="InteractableCharacter" type="Area2D" parent="CanvasLayer/Lounge" unique_id=656916129]
 script = ExtResource("3_ip4ey")
+currentCharacter = ExtResource("16_s8qox")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Lounge/InteractableCharacter" unique_id=22743380]
 texture = ExtResource("10_u732n")
@@ -429,6 +431,7 @@ shape = SubResource("CircleShape2D_3xd07")
 
 [node name="InteractableCharacter2" type="Area2D" parent="CanvasLayer/Lounge" unique_id=1841598684]
 script = ExtResource("3_ip4ey")
+currentCharacter = ExtResource("17_jr8db")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Lounge/InteractableCharacter2" unique_id=782526729]
 texture = ExtResource("11_jqr1d")
@@ -439,6 +442,7 @@ shape = SubResource("CircleShape2D_3xd07")
 
 [node name="InteractableCharacter3" type="Area2D" parent="CanvasLayer/Lounge" unique_id=1087782006]
 script = ExtResource("3_ip4ey")
+currentCharacter = ExtResource("28_7bw5e")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Lounge/InteractableCharacter3" unique_id=1417415536]
 texture = ExtResource("12_xs7yf")
@@ -449,6 +453,7 @@ shape = SubResource("CircleShape2D_3xd07")
 
 [node name="InteractableCharacter4" type="Area2D" parent="CanvasLayer/Lounge" unique_id=1203240665]
 script = ExtResource("3_ip4ey")
+currentCharacter = ExtResource("13_yhoku")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Lounge/InteractableCharacter4" unique_id=769401867]
 texture = ExtResource("13_jde52")
@@ -459,6 +464,7 @@ shape = SubResource("CircleShape2D_3xd07")
 
 [node name="InteractableCharacter5" type="Area2D" parent="CanvasLayer/Lounge" unique_id=99513005]
 script = ExtResource("3_ip4ey")
+currentCharacter = ExtResource("13_hado3")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Lounge/InteractableCharacter5" unique_id=1022929033]
 texture = ExtResource("14_b2oih")
@@ -469,6 +475,7 @@ shape = SubResource("CircleShape2D_3xd07")
 
 [node name="InteractableCharacter6" type="Area2D" parent="CanvasLayer/Lounge" unique_id=736375813]
 script = ExtResource("3_ip4ey")
+currentCharacter = ExtResource("12_x6vsl")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Lounge/InteractableCharacter6" unique_id=729367262]
 texture = ExtResource("15_xs7yf")
@@ -630,6 +637,7 @@ fadeLength = 1.5
 
 [node name="InteractableCharacter7" type="Area2D" parent="CanvasLayer/Garage" unique_id=1874917329]
 script = ExtResource("3_ip4ey")
+currentCharacter = ExtResource("15_0smob")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter7" unique_id=1601721267]
 texture = ExtResource("29_jde52")
@@ -640,6 +648,7 @@ shape = SubResource("CircleShape2D_3xd07")
 
 [node name="InteractableCharacter8" type="Area2D" parent="CanvasLayer/Garage" unique_id=420919012]
 script = ExtResource("3_ip4ey")
+currentCharacter = ExtResource("7_x3tw5")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter8" unique_id=1344299151]
 texture = ExtResource("30_b2oih")
@@ -650,6 +659,7 @@ shape = SubResource("CircleShape2D_3xd07")
 
 [node name="InteractableCharacter9" type="Area2D" parent="CanvasLayer/Garage" unique_id=376519951]
 script = ExtResource("3_ip4ey")
+currentCharacter = ExtResource("20_tulyn")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter9" unique_id=1147716020]
 texture = ExtResource("31_0mfjb")
@@ -660,6 +670,7 @@ shape = SubResource("CircleShape2D_3xd07")
 
 [node name="InteractableCharacter10" type="Area2D" parent="CanvasLayer/Garage" unique_id=739749733]
 script = ExtResource("3_ip4ey")
+currentCharacter = ExtResource("19_kav1b")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter10" unique_id=509126745]
 texture = ExtResource("32_yqlca")
@@ -670,6 +681,7 @@ shape = SubResource("CircleShape2D_3xd07")
 
 [node name="InteractableCharacter11" type="Area2D" parent="CanvasLayer/Garage" unique_id=793108238]
 script = ExtResource("3_ip4ey")
+currentCharacter = ExtResource("10_sussc")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter11" unique_id=1481931211]
 texture = ExtResource("33_jn3cd")
@@ -680,6 +692,7 @@ shape = SubResource("CircleShape2D_3xd07")
 
 [node name="InteractableCharacter12" type="Area2D" parent="CanvasLayer/Garage" unique_id=385038915]
 script = ExtResource("3_ip4ey")
+currentCharacter = ExtResource("11_frb8m")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter12" unique_id=1793006857]
 texture = ExtResource("34_mevlm")
@@ -690,6 +703,7 @@ shape = SubResource("CircleShape2D_3xd07")
 
 [node name="InteractableCharacter13" type="Area2D" parent="CanvasLayer/Garage" unique_id=1231971160]
 script = ExtResource("3_ip4ey")
+currentCharacter = ExtResource("22_1yf3i")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter13" unique_id=1177189961]
 texture = ExtResource("35_l0mc2")
@@ -700,6 +714,7 @@ shape = SubResource("CircleShape2D_3xd07")
 
 [node name="InteractableCharacter14" type="Area2D" parent="CanvasLayer/Garage" unique_id=879521536]
 script = ExtResource("3_ip4ey")
+currentCharacter = ExtResource("9_dya7i")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter14" unique_id=936392144]
 texture = ExtResource("36_x3tw5")
@@ -710,6 +725,7 @@ shape = SubResource("CircleShape2D_3xd07")
 
 [node name="InteractableCharacter15" type="Area2D" parent="CanvasLayer/Garage" unique_id=1924381713]
 script = ExtResource("3_ip4ey")
+currentCharacter = ExtResource("21_ce0yk")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter15" unique_id=1497764700]
 texture = ExtResource("37_nlj8h")
@@ -719,7 +735,6 @@ position = Vector2(178.18182, 83.63635)
 shape = SubResource("CircleShape2D_3xd07")
 
 [node name="Basement" type="Sprite2D" parent="CanvasLayer" unique_id=174614199 node_paths=PackedStringArray("movementButtons")]
-visible = false
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("6_avnbb")
 script = ExtResource("8_f32hw")
@@ -739,6 +754,7 @@ fadeLength = 1.2
 
 [node name="InteractableCharacter16" type="Area2D" parent="CanvasLayer/Basement" unique_id=1019637325]
 script = ExtResource("3_ip4ey")
+currentCharacter = ExtResource("6_judpu")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Basement/InteractableCharacter16" unique_id=1989212685]
 texture = ExtResource("39_dya7i")
@@ -749,6 +765,7 @@ shape = SubResource("CircleShape2D_3xd07")
 
 [node name="InteractableCharacter17" type="Area2D" parent="CanvasLayer/Basement" unique_id=699019801]
 script = ExtResource("3_ip4ey")
+currentCharacter = ExtResource("8_nlj8h")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Basement/InteractableCharacter17" unique_id=144851562]
 texture = ExtResource("40_sussc")
@@ -759,6 +776,7 @@ shape = SubResource("CircleShape2D_3xd07")
 
 [node name="InteractableCharacter18" type="Area2D" parent="CanvasLayer/Basement" unique_id=2047766395]
 script = ExtResource("3_ip4ey")
+currentCharacter = ExtResource("5_wbdqt")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Basement/InteractableCharacter18" unique_id=787803059]
 texture = ExtResource("41_frb8m")
@@ -769,6 +787,7 @@ shape = SubResource("CircleShape2D_3xd07")
 
 [node name="InteractableCharacter19" type="Area2D" parent="CanvasLayer/Basement" unique_id=1919882017]
 script = ExtResource("3_ip4ey")
+currentCharacter = ExtResource("23_2kk1b")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Basement/InteractableCharacter19" unique_id=558010024]
 texture = ExtResource("42_dya7i")
@@ -779,6 +798,7 @@ shape = SubResource("CircleShape2D_3xd07")
 
 [node name="InteractableCharacter20" type="Area2D" parent="CanvasLayer/Basement" unique_id=606103486]
 script = ExtResource("3_ip4ey")
+currentCharacter = ExtResource("25_2a0wb")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Basement/InteractableCharacter20" unique_id=1872902281]
 texture = ExtResource("43_sussc")
@@ -869,6 +889,7 @@ texture = ExtResource("45_03vgi")
 
 [node name="InteractableCharacter16" type="Area2D" parent="CanvasLayer/Kitchen" unique_id=1238769231]
 script = ExtResource("3_ip4ey")
+currentCharacter = ExtResource("18_4qcbm")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Kitchen/InteractableCharacter16" unique_id=1843707180]
 texture = ExtResource("45_frb8m")
@@ -879,6 +900,7 @@ shape = SubResource("CircleShape2D_3xd07")
 
 [node name="InteractableCharacter17" type="Area2D" parent="CanvasLayer/Kitchen" unique_id=448071690]
 script = ExtResource("3_ip4ey")
+currentCharacter = ExtResource("14_03vgi")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Kitchen/InteractableCharacter17" unique_id=1883967492]
 texture = ExtResource("46_x6vsl")
@@ -889,6 +911,7 @@ shape = SubResource("CircleShape2D_3xd07")
 
 [node name="InteractableCharacter18" type="Area2D" parent="CanvasLayer/Kitchen" unique_id=1373793539]
 script = ExtResource("3_ip4ey")
+currentCharacter = ExtResource("27_2xysg")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Kitchen/InteractableCharacter18" unique_id=722204449]
 texture = ExtResource("47_yhoku")

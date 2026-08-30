@@ -33,3 +33,4 @@ func updatePhone(person: character):
 	bringing.text = person.information.bringing;
 	blood_type.text = person.information.bloodType;
 	life_status.text = person.information.lifeStatus;
+	pull_out_phone();

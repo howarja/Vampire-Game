@@ -7,6 +7,6 @@ class_name character;
 @export var interiorSprite: Texture2D;
 @export var afraidSprite: Texture2D;
 @export var introDialaogue: Array[String];
-@export var introVoicelines: Array[AudioStreamMP3];
+@export var introVoicelines: Array[AudioStreamWAV];
 @export var questions: Array[question];
 @export var information: Information

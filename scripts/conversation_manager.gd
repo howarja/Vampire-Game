@@ -3,7 +3,7 @@ class_name conversationManager
 
 @export var text: textGiver;
 var lines: Array[String] = [];
-var audio: Array[AudioStreamMP3] = [];
+var audio: Array[AudioStreamWAV] = [];
 var currentLine: int = 0;
 
 var saved_question: question;
@@ -103,7 +103,7 @@ func loadQuestion(newQuestion: question) -> void:
 	currentLine = 0;
 	newLine();
 
-func beginLine(newLines: Array[String], audioFiles: Array[AudioStreamMP3]) -> void:
+func beginLine(newLines: Array[String], audioFiles: Array[AudioStreamWAV]) -> void:
 	lines = newLines;
 	audio = audioFiles;
 	currentLine = 0;
@@ -121,6 +121,7 @@ func exitConversation():
 	characterSprite.texture = null;
 	display.hide();
 	_id.hide();
+	phone.put_away_phone();
 	saved_question = null;
 	Globals.player.fadeTo(Globals.player.currentArea, 1)
 
@@ -142,6 +143,7 @@ func killCharacter():
 	display.hide();
 	saved_question = null;
 	_id.hide();
+	phone.put_away_phone();
 	text.disable();
 	lastInteracted.update();
 
@@ -155,6 +157,7 @@ func exitWithoutFade():
 	lastInteracted.update();
 	characterSprite.texture = null;
 	display.hide();
+	phone.put_away_phone();
 	Globals.player.changeAreaTo(Globals.player.currentArea)
 
 func setAfraid():

@@ -58,6 +58,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [resource]
 script = ExtResource("2_mtcoh")
+fullName = "Count Down"
 outDoorSprite = ExtResource("4_on1d7")
 interiorSprite = ExtResource("3_777ir")
 afraidSprite = ExtResource("1_777ir")

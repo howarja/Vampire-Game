@@ -1,9 +1,9 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://54st1ebshao6"]
 
-[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="1_gqtub"]
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="1_gqtub"]
 [ext_resource type="Texture2D" uid="uid://bnayowqcwu317" path="res://Sprites/People/LivingRoom/LivingRoomPeopleAfraid4.png" id="1_t1v5r"]
-[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="2_6qlb5"]
-[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://Scripts/information.gd" id="2_c4ho6"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="2_6qlb5"]
+[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_c4ho6"]
 [ext_resource type="Texture2D" uid="uid://e7gghqrefca0" path="res://Sprites/People/LivingRoom/LivingRoomPeopleTalking4.png" id="2_eean2"]
 [ext_resource type="Texture2D" uid="uid://ctmx2iog0bwlj" path="res://Sprites/People/Outside/Tishar.png" id="3_c4ho6"]
 

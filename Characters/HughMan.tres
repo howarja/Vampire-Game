@@ -1,10 +1,10 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://bkdcwsj8eieqp"]
 
 [ext_resource type="Texture2D" uid="uid://c0fr4doq0w7l4" path="res://Sprites/People/Garage/InsideGarage2PeopleScared1.png" id="1_q86ko"]
-[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="2_ajy50"]
-[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://Scripts/information.gd" id="2_xeenu"]
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_ajy50"]
+[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_xeenu"]
 [ext_resource type="Texture2D" uid="uid://bduxms8i5x1nn" path="res://Sprites/People/Garage/InsideGarage2PeopleTalking1.png" id="3_8afky"]
-[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="3_q86ko"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_q86ko"]
 [ext_resource type="Texture2D" uid="uid://2d4gyq54kfde" path="res://Sprites/People/Outside/Amy.png" id="4_8tc8k"]
 
 [sub_resource type="Resource" id="Resource_ne6w6"]

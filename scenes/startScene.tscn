@@ -1059,6 +1059,7 @@ text = NodePath("../TextBg/Dialgoue")
 audio = NodePath("DialogueAudio")
 
 [node name="DialogueAudio" type="AudioStreamPlayer2D" parent="CanvasLayer/TextGiver" unique_id=1954864631]
+volume_db = -2.0
 
 [node name="TextBg" type="Panel" parent="CanvasLayer" unique_id=1192261869]
 self_modulate = Color(1, 1, 1, 0)

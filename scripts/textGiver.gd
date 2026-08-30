@@ -21,8 +21,10 @@ func triggerDialogue(newLine: String, audioFile: AudioStreamWAV, completeTrigger
 	if audio.playing:
 		audio.stop();
 	audio.stream = audioFile;
+	characterAppearSpeed = 0.03;
 	if audioFile!=null:
 		audio.play();
+		characterAppearSpeed = (audio.stream.get_length()/newLine.length())*0.75;
 
 func disable():
 	text.text = "";

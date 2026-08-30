@@ -109,6 +109,7 @@ texture = ExtResource("3_jvm3o")
 position = Vector2(391, 640)
 stream = ExtResource("2_as4tj")
 autoplay = true
+bus = &"Music"
 
 [node name="20260830212232" type="Sprite2D" parent="." unique_id=794281257]
 position = Vector2(511, 451)

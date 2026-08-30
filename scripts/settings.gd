@@ -9,13 +9,13 @@ func _ready() -> void:
 
 
 func _on_master_volume_slider_value_changed(value: float) -> void:
-	AudioServer.set_bus_volume_linear(AudioServer.get_bus_index("Master"), value)
+	AudioServer.set_bus_volume_linear(AudioServer.get_bus_index("Master"), linear_to_db(value))
 
 func _on_music_volume_slider_value_changed(value: float) -> void:
-	AudioServer.set_bus_volume_linear(AudioServer.get_bus_index("Music"), value)
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Music"), linear_to_db(value))
 
 func _on_sfx_volume_slider_value_changed(value: float) -> void:
-	AudioServer.set_bus_volume_linear(AudioServer.get_bus_index("SFX"), value)
+	AudioServer.set_bus_volume_linear(AudioServer.get_bus_index("SFX"), linear_to_db(value))
 
 func _on_button_pressed() -> void:
 	if(settingsVisible):

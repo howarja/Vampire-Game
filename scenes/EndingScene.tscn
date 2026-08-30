@@ -2,6 +2,11 @@
 
 [ext_resource type="Script" uid="uid://c8lbmb2jy31v3" path="res://scenes/ending_scene.gd" id="1_ldsnl"]
 [ext_resource type="AudioStream" uid="uid://bk2pdxxhbgaej" path="res://music/Epic song but scary.wav" id="2_as4tj"]
+[ext_resource type="FontFile" uid="uid://cofv126vqogtf" path="res://BlackOpsOne-Regular.ttf" id="2_oygov"]
+[ext_resource type="Texture2D" uid="uid://dopv241x543jx" path="res://Sprites/KitchenPeoplecake.png" id="3_jvm3o"]
+[ext_resource type="Texture2D" uid="uid://wvlklbh64gk5" path="res://Sprites/20260830_212232.jpg" id="5_4qy0h"]
+[ext_resource type="Material" uid="uid://cobraaspoty8d" path="res://VHS/vhsRegular.tres" id="6_evwq0"]
+[ext_resource type="Material" uid="uid://c1gtj6yctg6g6" path="res://Materials/pixelate.tres" id="7_weo12"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qnm0e"]
 content_margin_left = 0.0
@@ -22,6 +27,7 @@ text = NodePath("CanvasLayer/RichTextLabel")
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1850741684]
 
 [node name="Panel" type="Panel" parent="CanvasLayer" unique_id=306155222]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -33,8 +39,13 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_qnm0e")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -23.0
+offset_right = 1.0
+offset_bottom = -23.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("2_oygov")
 bbcode_enabled = true
 text = "[center]
 
@@ -50,7 +61,44 @@ Vampires alive: 0
 
 The host survived!"
 
+[node name="KitchenPeoplecake" type="Sprite2D" parent="CanvasLayer" unique_id=1083015316]
+visible = false
+position = Vector2(-288, 194)
+scale = Vector2(4, 4)
+texture = ExtResource("3_jvm3o")
+
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=909243639]
 position = Vector2(391, 640)
 stream = ExtResource("2_as4tj")
 autoplay = true
+
+[node name="20260830212232" type="Sprite2D" parent="." unique_id=794281257]
+position = Vector2(511, 451)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("5_4qy0h")
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1420628527]
+z_index = 29
+material = ExtResource("6_evwq0")
+offset_left = -607.0
+offset_top = -125.0
+offset_right = 1208.0
+offset_bottom = 949.0
+
+[node name="BackBufferCopy" type="BackBufferCopy" parent="ColorRect2" unique_id=628462531]
+copy_mode = 2
+
+[node name="ColorRect" type="ColorRect" parent="ColorRect2" unique_id=185886719]
+z_index = 29
+material = ExtResource("7_weo12")
+layout_mode = 0
+offset_right = 1815.0
+offset_bottom = 1074.0
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=2033140179]
+offset_left = -2989.0
+offset_top = -1766.0
+offset_right = -1989.0
+offset_bottom = -1016.0
+scale = Vector2(5, 5)
+texture = ExtResource("3_jvm3o")

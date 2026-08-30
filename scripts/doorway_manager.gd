@@ -3,7 +3,7 @@ class_name doorwayManager;
 
 @export var text: textGiver;
 var lines: Array[String] = [];
-var audio: Array[AudioStreamMP3] = [];
+var audio: Array[AudioStreamWAV] = [];
 var currentLine: int = 0;
 
 @export var acceptButton: Button;
@@ -51,7 +51,7 @@ func loadCharacter(newCharacter: character):
 	currentCharacter = newCharacter;
 	beginLine(currentCharacter.introDialaogue, currentCharacter.introVoicelines);
 
-func beginLine(newLines: Array[String], newAudio: Array[AudioStreamMP3]):
+func beginLine(newLines: Array[String], newAudio: Array[AudioStreamWAV]):
 	lines = newLines;
 	audio = newAudio;
 	currentLine = 0;

@@ -1,47 +1,53 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://bsqrtayk62lfh"]
 
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="1_8i1ka"]
+[ext_resource type="Texture2D" uid="uid://dxpg22q5b3p7k" path="res://Sprites/People/Garage/InsideGarage2PeopleScared4.png" id="1_lem5m"]
+[ext_resource type="Texture2D" uid="uid://due1cmwntrdqe" path="res://Sprites/People/Garage/InsideGarage2PeopleSitting4.png" id="2_2jrfc"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="2_ooas5"]
+[ext_resource type="Texture2D" uid="uid://nbcj41le3p70" path="res://Sprites/People/Outside/TobyG.png" id="3_g8nvj"]
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("1_8i1ka")
 prompt = "What did you bring?"
-answer = Array[String](["mcCHarles"])
+answer = Array[String](["I br-brought these gluten free vegan spring roles"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_hush4"]
 script = ExtResource("1_8i1ka")
 prompt = "Let me see your invite."
-answer = Array[String]([""])
+answer = Array[String](["H-Here it is"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]
 script = ExtResource("1_8i1ka")
 prompt = "Can i see your ID?"
-answer = Array[String]([""])
+answer = Array[String](["Ok mister"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_1tlsp"]
 script = ExtResource("1_8i1ka")
 prompt = "Do you have any dietary requirments?"
-answer = Array[String]([""])
+answer = Array[String](["I am alergic to all nut t-types, gl-gl-gluten and I am lactose intolerant"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_c4kb4"]
 script = ExtResource("1_8i1ka")
 prompt = "What is your blood type?"
-answer = Array[String]([""])
+answer = Array[String](["I am O- the universal doner that can be t-taken by anyone"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_lw0dh"]
 script = ExtResource("1_8i1ka")
 prompt = "Where do you live?"
-answer = Array[String]([""])
+answer = Array[String](["I live at 9 brendan lane"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [resource]
 script = ExtResource("2_ooas5")
 fullName = "Sebastian Silvester"
-introDialaogue = Array[String](["", "", ""])
+outDoorSprite = ExtResource("3_g8nvj")
+interiorSprite = ExtResource("2_2jrfc")
+afraidSprite = ExtResource("1_lem5m")
+introDialaogue = Array[String](["Hi-i I I am Seb-sebastian.", "Umm do you know if Br-Brunhilde is here yet?", "I came to see her here."])
 questions = Array[ExtResource("1_8i1ka")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

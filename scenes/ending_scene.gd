@@ -1,6 +1,12 @@
 extends Node2D
 
 @export var text: RichTextLabel;
+@export var genocide_song: AudioStreamWAV
+@export var bad_ending: AudioStreamWAV
+@export var trap_the_vampires_ending: AudioStreamWAV
+@export var detective_ending: AudioStreamWAV
+@export var medium_ending: AudioStreamWAV
+@export var medium_ending_but_better: AudioStreamWAV
 @onready var audio_player: AudioStreamPlayer2D = $AudioStreamPlayer2D
 
 func _ready() -> void:
@@ -31,48 +37,59 @@ func _ready() -> void:
 	
 	if vampiresAlive > 0:
 		text.text += "\n\n the host was killed and eaten by vampires. You failed.";
+		
 		if(humans_killed > 0 ):
 			## killed a human and theres still vampires remaining
 			text.text += "\n\n You got the wrong one";
 			text.text += "\n\n Blind Ending!";
+			audio_player.stream = bad_ending;
 			return;
 		else: if(vampiresAlive == 1):
 			text.text += "\n\n You missed one!";
 			text.text += "\n\n There Was One Left Ending!";
+			audio_player.stream = bad_ending;
 			return;
 		else: if humans_let_in == 0:
 			## only let vampires in
 			text.text += "\n\n You have a type, and its for blood suckers.";
 			text.text += "\n\n Hotel for blood";
+			audio_player.stream = bad_ending;
 			return;
+		audio_player.stream = bad_ending;
 	else:
 		text.text += "\n\n the host survived! You win!";
 		if(humans_alive == 0 && humans_killed == max_humans && vampires_killed == max_vampires):
 			## Genocide ending
 			text.text += "\n\n But at what cost?";
 			text.text += "\n\n Genocide Ending!";
+			audio_player.stream = genocide_song;
 			return;
 		else: if(humans_killed > 0):
 			## let both humans and vampires in and killed atleast one of both
 			text.text += "\n\n You Killed a human??? You Murder!!!";
 			text.text += "\n\n Prison Ending!";
+			audio_player.stream = medium_ending;
 			return;
 		else: if(humans_let_in > 0 && vampires_let_in > 0):
 			text.text += "\n\n Thats some top tier detective work!";
 			text.text += "\n\n Detective Ending!";
+			audio_player.stream = detective_ending;
 			return;
 		else: if(vampires_let_in == 0):
 			## only let humans in only ending(let only humans in your house)
 			text.text += "\n\n You were very picky";
 			text.text += "\n\n Racist Ending!";
+			audio_player.stream = detective_ending;
 			return;
 		else: if(vampires_let_in > 0 && humans_let_in == 0):
 			## Vamp trap ending(let only vampires in your house and then kill them)
 			text.text += "\n\n You got them all trapped.";
 			text.text += "\n\n Vampire Trap Ending!";
+			audio_player.stream = trap_the_vampires_ending;
 			return;
 		else:
 			## Refuse ending(let no one in your house)
 			text.text += "\n\n Thats not very nice refusing all of your guests.";
 			text.text += "\n\n Bad Host Ending!";
+			audio_player.stream = medium_ending_but_better;
 			pass

@@ -1,48 +1,65 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://d1puh0w3c3eav"]
 
-[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="2_e5hkb"]
-[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="3_0e0cs"]
+[ext_resource type="Texture2D" uid="uid://brw7eayneqnpa" path="res://Sprites/People/Outside/Batman.png" id="1_iq1j4"]
+[ext_resource type="Texture2D" uid="uid://ci0vk2abpgtqb" path="res://Sprites/People/basement/InsideGaragePeopleScared2.png" id="1_ul70y"]
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_e5hkb"]
+[ext_resource type="Texture2D" uid="uid://dgafsphuo71uc" path="res://Sprites/People/basement/InsideGaragePeopleTalking2.png" id="2_ehwri"]
+[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_fl2nn"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_0e0cs"]
+
+[sub_resource type="Resource" id="Resource_c0cp5"]
+script = ExtResource("2_fl2nn")
+dateOfBirth = "unknown"
+address = "unknown"
+bringing = "unknown"
+bloodType = "unknown"
+lifeStatus = "unknown"
+metadata/_custom_type_script = "uid://l3v0m3s3okyk"
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_e5hkb")
 prompt = "What did you bring?"
-answer = Array[String](["mcCHarles"])
+answer = Array[String](["... ... ... ", "I am a human."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_hush4"]
 script = ExtResource("2_e5hkb")
 prompt = "Let me see your invite."
-answer = Array[String]([""])
+answer = Array[String](["... ... ... ", "I am a human."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]
 script = ExtResource("2_e5hkb")
 prompt = "Can i see your ID?"
-answer = Array[String]([""])
+answer = Array[String](["... ... ... ", "I am a human."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_1tlsp"]
 script = ExtResource("2_e5hkb")
 prompt = "Do you have any dietary requirments?"
-answer = Array[String]([""])
+answer = Array[String](["... ... ... ", "I am a human."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_c4kb4"]
 script = ExtResource("2_e5hkb")
 prompt = "What is your blood type?"
-answer = Array[String]([""])
+answer = Array[String](["... ... ... ", "I am a human."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_lw0dh"]
 script = ExtResource("2_e5hkb")
 prompt = "Where do you live?"
-answer = Array[String]([""])
+answer = Array[String](["... ... ... ", "I am a human."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [resource]
 script = ExtResource("3_0e0cs")
-fullName = "Batman"
+fullName = "???"
 vampire = true
-introDialaogue = Array[String](["", "", ""])
+outDoorSprite = ExtResource("1_iq1j4")
+interiorSprite = ExtResource("2_ehwri")
+afraidSprite = ExtResource("1_ul70y")
+introDialaogue = Array[String]([".... ... ...", "I  am a human. ", "I want to join this gathering of humans."])
 questions = Array[ExtResource("2_e5hkb")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
+information = SubResource("Resource_c0cp5")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

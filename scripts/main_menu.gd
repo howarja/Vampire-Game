@@ -17,7 +17,7 @@ func _ready() -> void:
 	#settings.show();
 	$MenuAnim.play("Logo")
 	var tween = get_tree().create_tween()
-	tween.tween_property($TextHolder/Blood, "position", Vector2(260,45), 2).set_trans(Tween.TRANS_ELASTIC)
+	tween.tween_property($TextHolder/Blood, "position", Vector2(500,0), 2).set_trans(Tween.TRANS_ELASTIC)
 	await tween.finished
 	
 

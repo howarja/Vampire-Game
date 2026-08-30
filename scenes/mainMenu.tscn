@@ -3,8 +3,11 @@
 [ext_resource type="Script" uid="uid://c3mypmddh800v" path="res://scripts/main_menu.gd" id="1_qkhwq"]
 [ext_resource type="PackedScene" uid="uid://llqh6vgtk77" path="res://scenes/settings.tscn" id="2_3d1i7"]
 [ext_resource type="Script" uid="uid://cuixesoyqhje0" path="res://scripts/buttonEffects.gd" id="2_48ign"]
+[ext_resource type="Texture2D" uid="uid://ct1px372cef30" path="res://Sprites/Main menu3.png" id="3_tov5d"]
 [ext_resource type="Texture2D" uid="uid://y27g4y1o1qhu" path="res://Sprites/Vignete.png" id="5_7nrmo"]
 [ext_resource type="AudioStream" uid="uid://bk2pdxxhbgaej" path="res://music/Epic song but scary.wav" id="5_clbkb"]
+[ext_resource type="Texture2D" uid="uid://dwu7gn78ismak" path="res://Sprites/Main menu4.png" id="5_epn8x"]
+[ext_resource type="Texture2D" uid="uid://setk6xk1lcdc" path="res://Sprites/Main menu5.png" id="5_vt84v"]
 [ext_resource type="AudioStream" uid="uid://bhiws2l6ubvbb" path="res://SFX/logoSound/bloodOfTheHost.mp3" id="6_clbkb"]
 [ext_resource type="PackedScene" uid="uid://o5bvwg7bgbvg" path="res://scenes/vhs_filter_test.tscn" id="7_y35fp"]
 [ext_resource type="Shader" uid="uid://bksk84btj0efx" path="res://shaders/vhs.gdshader" id="8_6b2wv"]
@@ -130,6 +133,10 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_qkhwq")
 
+[node name="BG" type="Sprite2D" parent="." unique_id=1691676287]
+position = Vector2(500, 375)
+texture = ExtResource("5_epn8x")
+
 [node name="TextHolder" type="Control" parent="." unique_id=89915920]
 layout_mode = 1
 anchors_preset = 15
@@ -168,19 +175,9 @@ theme_override_font_sizes/font_size = 64
 text = "Play"
 script = ExtResource("2_48ign")
 
-[node name="Blood" type="RichTextLabel" parent="TextHolder" unique_id=2088444752]
-self_modulate = Color(1, 0, 0, 1)
-layout_mode = 0
-offset_left = 260.0
-offset_top = -423.0
-offset_right = 747.03674
-offset_bottom = -8.0
-pivot_offset_ratio = Vector2(0.5, 0.5)
-theme_override_font_sizes/normal_font_size = 85
-text = "Blood OF THE
-HOST"
-horizontal_alignment = 1
-vertical_alignment = 1
+[node name="Blood" type="Sprite2D" parent="TextHolder" unique_id=1531663581]
+position = Vector2(501, -401)
+texture = ExtResource("3_tov5d")
 
 [node name="Settings" parent="." unique_id=1974824112 instance=ExtResource("2_3d1i7")]
 
@@ -198,6 +195,10 @@ pivot_offset = Vector2(128, 0)
 theme_override_font_sizes/font_size = 48
 text = "Exit Game"
 script = ExtResource("2_48ign")
+
+[node name="Outline2" type="Sprite2D" parent="." unique_id=1045170875]
+position = Vector2(500, 376)
+texture = ExtResource("5_vt84v")
 
 [node name="Vignete" type="Sprite2D" parent="." unique_id=1364870032]
 position = Vector2(500, 375)

@@ -1,8 +1,10 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://s6pp01nkvhg0"]
 
-[ext_resource type="Texture2D" uid="uid://yn3n6qrpoofg" path="res://Sprites/People/LivingRoom/LivingRoomPeopleAfraid5.png" id="1_8e2xy"]
-[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="2_qfs7x"]
-[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="3_r18tx"]
+[ext_resource type="Texture2D" uid="uid://cr2dlxd5gy7qk" path="res://Sprites/People/Kitchen/KitchenPeopleAfraid1.png" id="1_qfs7x"]
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_qfs7x"]
+[ext_resource type="Texture2D" uid="uid://hcw4ncv6a08c" path="res://Sprites/People/Kitchen/KitchenPeopleTalking1.png" id="2_r18tx"]
+[ext_resource type="Texture2D" uid="uid://dqy5600bplwpb" path="res://Sprites/People/Outside/OutsidePeopleTake more1.png" id="3_83sy3"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_r18tx"]
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_qfs7x")
@@ -44,9 +46,9 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 script = ExtResource("3_r18tx")
 fullName = "Harvey Jr"
 vampire = true
-outDoorSprite = ExtResource("1_8e2xy")
-interiorSprite = ExtResource("1_8e2xy")
-afraidSprite = ExtResource("1_8e2xy")
+outDoorSprite = ExtResource("3_83sy3")
+interiorSprite = ExtResource("2_r18tx")
+afraidSprite = ExtResource("1_qfs7x")
 introDialaogue = Array[String](["Hiya there! I was invited to some party?", "Am I at the right house?", "Ah, so you are just greeting us, makes sense ever since this vampire problem.", "I hope you've done your job well enough and theres none in there... May I come in?"])
 questions = Array[ExtResource("2_qfs7x")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

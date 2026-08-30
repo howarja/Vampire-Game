@@ -1,8 +1,10 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://btlgqcio47d5v"]
 
-[ext_resource type="Texture2D" uid="uid://c1f6e5ix2t6xk" path="res://Sprites/People/GreenRoom/InsideGarage2PeopleScared6.png" id="1_p7kbv"]
-[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="2_2fyne"]
-[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="3_spw87"]
+[ext_resource type="Texture2D" uid="uid://cr4k6t78d5ggw" path="res://Sprites/People/Kitchen/KitchenPeopleAfraid2.png" id="1_2fyne"]
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_2fyne"]
+[ext_resource type="Texture2D" uid="uid://dywkurr36bxfq" path="res://Sprites/People/Kitchen/KitchenPeopleTalking2.png" id="2_spw87"]
+[ext_resource type="Texture2D" uid="uid://bcfx4kqi3hxy1" path="res://Sprites/People/Outside/OutsidePeopleTake more2.png" id="3_ml4ee"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_spw87"]
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_2fyne")
@@ -43,9 +45,9 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 [resource]
 script = ExtResource("3_spw87")
 fullName = "Joe Lemur"
-outDoorSprite = ExtResource("1_p7kbv")
-interiorSprite = ExtResource("1_p7kbv")
-afraidSprite = ExtResource("1_p7kbv")
+outDoorSprite = ExtResource("3_ml4ee")
+interiorSprite = ExtResource("2_spw87")
+afraidSprite = ExtResource("1_2fyne")
 introDialaogue = Array[String](["Hey!", "It's me!", "Your friendly neighbourhood Joe!", "Just a gardener who loves nature!"])
 questions = Array[ExtResource("2_2fyne")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

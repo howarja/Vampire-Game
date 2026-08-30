@@ -1,0 +1,70 @@
+[gd_resource type="Resource" script_class="character" format=3 uid="uid://6fw7urgsbg71"]
+
+[ext_resource type="Texture2D" uid="uid://bg0trpyvwewhv" path="res://Sprites/People/Kitchen/KitchenPeopleHostScared.png" id="1_85ist"]
+[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_5eoib"]
+[ext_resource type="Texture2D" uid="uid://7in1kcm6pova" path="res://Sprites/People/Kitchen/KitchenPeopleHosTalking.png" id="3_85ist"]
+[ext_resource type="Texture2D" uid="uid://db4ahpnw8s37a" path="res://Sprites/People/Kitchen/OutsidePeopleTakeHost.png" id="6_85ist"]
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="7_4t5ay"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="8_nviys"]
+
+[sub_resource type="Resource" id="Resource_eud1m"]
+script = ExtResource("2_5eoib")
+dateOfBirth = "17/07/1943"
+address = "This house"
+bringing = "nothing"
+bloodType = "O-"
+lifeStatus = "Alive"
+weight = "200 lb"
+height = "7 feet 3 inches"
+hair_color = "black"
+eye_color = "brown"
+scocial_security = "unknown"
+metadata/_custom_type_script = "uid://l3v0m3s3okyk"
+
+[sub_resource type="Resource" id="Resource_wimtb"]
+script = ExtResource("7_4t5ay")
+prompt = "What did you bring?"
+answer = Array[String](["Thats a good question", "This can expose some vampires"])
+metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
+
+[sub_resource type="Resource" id="Resource_hush4"]
+script = ExtResource("7_4t5ay")
+prompt = "Let me see your invite."
+answer = Array[String](["Good idea", "Some vampires dont have an invite, but also some people dont"])
+metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
+
+[sub_resource type="Resource" id="Resource_0mdo4"]
+script = ExtResource("7_4t5ay")
+prompt = "Can i see your ID?"
+answer = Array[String](["And Id is perfect", "it can easily expose fakers, fidn the difference between nerdy teens and vampires"])
+metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
+
+[sub_resource type="Resource" id="Resource_1tlsp"]
+script = ExtResource("7_4t5ay")
+prompt = "Do you have any dietary requirments?"
+answer = Array[String](["Vampires are notoriously alergic to garlic, keep this in mind", "But they may not state this"])
+metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
+
+[sub_resource type="Resource" id="Resource_c4kb4"]
+script = ExtResource("7_4t5ay")
+prompt = "What is your blood type?"
+answer = Array[String](["This is a tricky one", "Lots of humans dont know theirs, judge their confidence levels instead"])
+metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
+
+[sub_resource type="Resource" id="Resource_lw0dh"]
+script = ExtResource("7_4t5ay")
+prompt = "Where do you live?"
+answer = Array[String](["Another good question", "This works great with your phone data base"])
+metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
+
+[resource]
+script = ExtResource("8_nviys")
+fullName = "The host"
+vampire = true
+outDoorSprite = ExtResource("6_85ist")
+interiorSprite = ExtResource("3_85ist")
+afraidSprite = ExtResource("1_85ist")
+introDialaogue = Array[String](["Hello!!!", "I am the host and I have hired you to distinguish vampires from humans.e ", "You see, vampires can turn themselves into anything so they use that to try to get invited in.", "Your job is to make me have the best party with no vampires getting in.", "You have full permision to kill any vampires that come in.", "After letting someone in go question them in the other rooms, or if no one is in, wait a minute for more people ot arive.", "Why dont you test this on me now?", "meet me in the kitchen on the left."])
+questions = Array[ExtResource("7_4t5ay")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
+information = SubResource("Resource_eud1m")
+metadata/_custom_type_script = "uid://byskr8hlcn2vi"

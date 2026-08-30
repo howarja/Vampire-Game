@@ -404,7 +404,7 @@ scale = Vector2(1.1, 1.1)
 texture = ExtResource("4_vj0vq")
 script = ExtResource("8_f32hw")
 movementButtons = [NodePath("movementButton")]
-characters = [NodePath("InteractableCharacter")]
+characters = [NodePath("InteractableCharacter"), NodePath("InteractableCharacter2"), NodePath("InteractableCharacter3"), NodePath("InteractableCharacter4"), NodePath("InteractableCharacter5"), NodePath("InteractableCharacter6")]
 
 [node name="movementButton" type="Button" parent="CanvasLayer/Lounge" unique_id=904897615 node_paths=PackedStringArray("newArea")]
 offset_left = -61.106384
@@ -524,7 +524,7 @@ frame = 2
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("12_ii36o")
 script = ExtResource("8_f32hw")
-movementButtons = [NodePath("movementButton"), NodePath("movementButton2"), NodePath("movementButton3")]
+movementButtons = [NodePath("movementButton"), NodePath("movementButton2"), NodePath("movementButton3"), NodePath("movementButton4")]
 
 [node name="movementButton" type="Button" parent="CanvasLayer/Hallway" unique_id=1235997405 node_paths=PackedStringArray("newArea")]
 offset_left = 118.18183
@@ -604,12 +604,13 @@ newArea = NodePath("../../peepHole")
 movementSFX = ExtResource("45_x6vsl")
 eyeSymbol = true
 
-[node name="Garage" type="Sprite2D" parent="CanvasLayer" unique_id=1752562995 node_paths=PackedStringArray("movementButtons")]
+[node name="Garage" type="Sprite2D" parent="CanvasLayer" unique_id=1752562995 node_paths=PackedStringArray("movementButtons", "characters")]
 visible = false
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("12_3h27y")
 script = ExtResource("8_f32hw")
 movementButtons = [NodePath("movementButton"), NodePath("movementButton2")]
+characters = [NodePath("InteractableCharacter7"), NodePath("InteractableCharacter8"), NodePath("InteractableCharacter9"), NodePath("InteractableCharacter10"), NodePath("InteractableCharacter11"), NodePath("InteractableCharacter12"), NodePath("InteractableCharacter13"), NodePath("InteractableCharacter14"), NodePath("InteractableCharacter15")]
 
 [node name="movementButton" type="Button" parent="CanvasLayer/Garage" unique_id=1244336808 node_paths=PackedStringArray("newArea")]
 offset_left = -69.999985
@@ -734,11 +735,13 @@ texture = ExtResource("37_nlj8h")
 position = Vector2(178.18182, 83.63635)
 shape = SubResource("CircleShape2D_3xd07")
 
-[node name="Basement" type="Sprite2D" parent="CanvasLayer" unique_id=174614199 node_paths=PackedStringArray("movementButtons")]
+[node name="Basement" type="Sprite2D" parent="CanvasLayer" unique_id=174614199 node_paths=PackedStringArray("movementButtons", "characters")]
+visible = false
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("6_avnbb")
 script = ExtResource("8_f32hw")
 movementButtons = [NodePath("movementButton")]
+characters = [NodePath("InteractableCharacter16"), NodePath("InteractableCharacter17"), NodePath("InteractableCharacter18"), NodePath("InteractableCharacter19"), NodePath("InteractableCharacter20")]
 
 [node name="movementButton" type="Button" parent="CanvasLayer/Basement" unique_id=375303595 node_paths=PackedStringArray("newArea")]
 offset_left = 212.72728
@@ -807,12 +810,13 @@ texture = ExtResource("43_sussc")
 position = Vector2(-31.8182, 103.63636)
 shape = SubResource("CircleShape2D_3xd07")
 
-[node name="Kitchen" type="Sprite2D" parent="CanvasLayer" unique_id=859253974 node_paths=PackedStringArray("movementButtons")]
+[node name="Kitchen" type="Sprite2D" parent="CanvasLayer" unique_id=859253974 node_paths=PackedStringArray("movementButtons", "characters")]
 visible = false
 scale = Vector2(1.1, 1.1)
 texture = ExtResource("44_sussc")
 script = ExtResource("8_f32hw")
 movementButtons = [NodePath("movementButton")]
+characters = [NodePath("InteractableCharacter16"), NodePath("InteractableCharacter17"), NodePath("InteractableCharacter18")]
 
 [node name="movementButton" type="Button" parent="CanvasLayer/Kitchen" unique_id=1961797361 node_paths=PackedStringArray("newArea")]
 offset_left = 306.36365

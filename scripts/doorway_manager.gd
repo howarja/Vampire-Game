@@ -3,7 +3,7 @@ class_name doorwayManager;
 
 @export var text: textGiver;
 var lines: Array[String] = [];
-var audio: Array[AudioStreamWAV] = [];
+@export var audio: Array[AudioStreamWAV] = [];
 var currentLine: int = 0;
 
 @export var acceptButton: Button;
@@ -24,7 +24,10 @@ func _ready() -> void:
 
 func newLine():
 	if currentLine<lines.size():
-		text.triggerDialogue(lines[currentLine], null, renableInput);
+		var currentAudio = null;
+		if audio.size()>currentLine:
+			currentAudio = audio[currentLine];
+		text.triggerDialogue(lines[currentLine], currentAudio, renableInput);
 		currentLine+=1;
 		canInput = false;
 		canQuestion(false);

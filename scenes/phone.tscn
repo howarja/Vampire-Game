@@ -48,6 +48,50 @@ region = Rect2(2430, 0, 270, 480)
 atlas = ExtResource("2_ewalk")
 region = Rect2(2700, 0, 270, 480)
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_eoxts"]
+atlas = ExtResource("2_ewalk")
+region = Rect2(2700, 0, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oijjg"]
+atlas = ExtResource("2_ewalk")
+region = Rect2(2430, 0, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g4p5k"]
+atlas = ExtResource("2_ewalk")
+region = Rect2(2160, 0, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c45ss"]
+atlas = ExtResource("2_ewalk")
+region = Rect2(1890, 0, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ut58g"]
+atlas = ExtResource("2_ewalk")
+region = Rect2(1620, 0, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_csj11"]
+atlas = ExtResource("2_ewalk")
+region = Rect2(1350, 0, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aur2e"]
+atlas = ExtResource("2_ewalk")
+region = Rect2(1080, 0, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dq5l6"]
+atlas = ExtResource("2_ewalk")
+region = Rect2(810, 0, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x55e3"]
+atlas = ExtResource("2_ewalk")
+region = Rect2(540, 0, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ynfyb"]
+atlas = ExtResource("2_ewalk")
+region = Rect2(270, 0, 270, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_283e2"]
+atlas = ExtResource("2_ewalk")
+region = Rect2(0, 0, 270, 480)
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_08mii"]
 animations = [{
 "frames": [],
@@ -91,7 +135,45 @@ animations = [{
 }],
 "loop": 0,
 "name": &"pull_out_phone",
-"speed": 10.0
+"speed": 20.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eoxts")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oijjg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g4p5k")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_c45ss")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ut58g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_csj11")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aur2e")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dq5l6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x55e3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ynfyb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_283e2")
+}],
+"loop": 0,
+"name": &"put_away_phone",
+"speed": 30.0
 }]
 
 [sub_resource type="LabelSettings" id="LabelSettings_08mii"]
@@ -111,9 +193,7 @@ script = ExtResource("1_08mii")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=490454106]
 position = Vector2(866, 512)
 sprite_frames = SubResource("SpriteFrames_08mii")
-animation = &"pull_out_phone"
-frame = 10
-frame_progress = 1.0
+animation = &"put_away_phone"
 
 [node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=849470963]
 layout_mode = 1
@@ -134,6 +214,13 @@ vertical_scroll_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+
+[node name="Header" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=145886746]
+layout_mode = 2
+size_flags_vertical = 5
+text = "DATA BASE:"
+label_settings = SubResource("LabelSettings_08mii")
+horizontal_alignment = 1
 
 [node name="Name" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=66108866]
 layout_mode = 2

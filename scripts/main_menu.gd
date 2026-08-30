@@ -14,8 +14,9 @@ func _ready() -> void:
 	fadeText("A GAME BY\n\nJames Howard\nJoshua Wolf\nTishar Sreekantam\nTijmen Verschueren\nZachary Quinn",3)
 	await get_tree().create_timer(6).timeout;
 	$MenuAnim.play("Logo")
-	var tween = get_tree().create_tween()
+	var tween = get_tree().create_tween().set_parallel(true)
 	tween.tween_property($TextHolder/Blood, "position", Vector2(500,0), 2).set_trans(Tween.TRANS_ELASTIC)
+	tween.tween_property($TextHolder/Blood, "rotation", deg_to_rad(360), 2).set_trans(Tween.TRANS_ELASTIC)
 	await tween.finished
 	
 

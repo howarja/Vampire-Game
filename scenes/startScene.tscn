@@ -1059,6 +1059,7 @@ text = NodePath("../TextBg/Dialgoue")
 audio = NodePath("DialogueAudio")
 
 [node name="DialogueAudio" type="AudioStreamPlayer2D" parent="CanvasLayer/TextGiver" unique_id=1954864631]
+volume_db = -2.0
 
 [node name="TextBg" type="Panel" parent="CanvasLayer" unique_id=1192261869]
 self_modulate = Color(1, 1, 1, 0)
@@ -1086,13 +1087,12 @@ fit_content = true
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="QuestionOptions" type="HBoxContainer" parent="CanvasLayer" unique_id=1973992520]
-offset_left = -473.99994
+[node name="QuestionOptions" type="VBoxContainer" parent="CanvasLayer" unique_id=681083594]
+offset_left = 152.99994
 offset_top = -352.0
-offset_right = 288.00006
-offset_bottom = -165.01312
+offset_right = 836.4692
+offset_bottom = 305.67798
 scale = Vector2(0.46527326, 0.46527326)
-size_flags_horizontal = 3
 size_flags_stretch_ratio = 14.51
 theme_override_constants/separation = 12
 
@@ -1100,24 +1100,24 @@ theme_override_constants/separation = 12
 custom_minimum_size = Vector2(207.545, 0)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("55_jr8db")
-theme_override_font_sizes/font_size = 100
+theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = ExtResource("81_hp6ks")
 theme_override_styles/pressed = ExtResource("81_hp6ks")
 theme_override_styles/hover = ExtResource("81_hp6ks")
 theme_override_styles/disabled = ExtResource("81_hp6ks")
-text = " Exit "
+text = "Exit"
 
 [node name="KillButton" type="Button" parent="CanvasLayer/QuestionOptions" unique_id=1931583917]
 self_modulate = Color(1, 0, 0, 1)
 custom_minimum_size = Vector2(140.365, 0)
 layout_mode = 2
 theme_override_fonts/font = ExtResource("55_jr8db")
-theme_override_font_sizes/font_size = 100
+theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = ExtResource("81_hp6ks")
 theme_override_styles/pressed = ExtResource("81_hp6ks")
 theme_override_styles/hover = ExtResource("81_hp6ks")
 theme_override_styles/disabled = ExtResource("81_hp6ks")
-text = " Kill "
+text = "Kill"
 
 [node name="Settings" parent="CanvasLayer" unique_id=1974824112 instance=ExtResource("7_jmrrm")]
 visible = false
@@ -1131,11 +1131,21 @@ offset_right = -479.0
 offset_bottom = -431.0
 
 [node name="DisplayImage" type="TextureRect" parent="CanvasLayer" unique_id=1652663511]
-offset_left = -415.0
-offset_top = -490.0
-offset_right = 585.0
-offset_bottom = 260.0
+offset_left = -513.0
+offset_top = -316.0
+offset_right = 487.0
+offset_bottom = 434.0
 mouse_filter = 2
+
+[node name="Phone" parent="CanvasLayer" unique_id=2065358974 instance=ExtResource("25_lqxam")]
+anchors_preset = -1
+anchor_left = -0.5
+anchor_top = -0.50100005
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -0.24996948
+offset_right = -3.0
+offset_bottom = -1.0
 
 [node name="BlackFade" type="Panel" parent="CanvasLayer" unique_id=1949933723]
 modulate = Color(0, 0, 0, 0)
@@ -1150,17 +1160,6 @@ grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_kopt5")
-
-[node name="Phone" parent="CanvasLayer" unique_id=2065358974 instance=ExtResource("25_lqxam")]
-visible = false
-anchors_preset = -1
-anchor_left = -0.5
-anchor_top = -0.50100005
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_top = -0.24996948
-offset_right = -3.0
-offset_bottom = -1.0
 
 [node name="VHSfx" parent="CanvasLayer" unique_id=1094916861 instance=ExtResource("8_judpu")]
 z_index = 4096

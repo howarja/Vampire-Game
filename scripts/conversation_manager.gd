@@ -32,7 +32,6 @@ func _ready() -> void:
 	killButton.pressed.connect(killCharacter);
 	canQuestion(false);
 
-
 func newLine():
 	if currentLine<lines.size():
 		text.triggerDialogue(lines[currentLine], null, renableInput);

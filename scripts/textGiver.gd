@@ -10,7 +10,7 @@ var currentCharacterDelay = 0;
 var currentLine: String;
 signal lineComplete;
 
-func triggerDialogue(newLine: String, audioFile: AudioStreamMP3, completeTrigger: Callable):
+func triggerDialogue(newLine: String, audioFile: AudioStreamWAV, completeTrigger: Callable):
 	text.text = "";
 	$"../TextBg".self_modulate = Color.WHITE
 	currentLine = newLine;

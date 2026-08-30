@@ -4,4 +4,4 @@
 
 [resource]
 shader = ExtResource("1_lmpci")
-shader_parameter/pixel_size = 2.0000000149012003
+shader_parameter/pixel_size = 1.0

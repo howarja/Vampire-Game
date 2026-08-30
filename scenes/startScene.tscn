@@ -1088,9 +1088,9 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="QuestionOptions" type="VBoxContainer" parent="CanvasLayer" unique_id=681083594]
-offset_left = 152.99994
+offset_left = 41.00001
 offset_top = -352.0
-offset_right = 836.4692
+offset_right = 724.46924
 offset_bottom = 305.67798
 scale = Vector2(0.46527326, 0.46527326)
 size_flags_stretch_ratio = 14.51

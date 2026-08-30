@@ -6,6 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://y27g4y1o1qhu" path="res://Sprites/Vignete.png" id="5_7nrmo"]
 [ext_resource type="AudioStream" uid="uid://bk2pdxxhbgaej" path="res://music/Epic song but scary.wav" id="5_clbkb"]
 [ext_resource type="AudioStream" uid="uid://bhiws2l6ubvbb" path="res://SFX/logoSound/bloodOfTheHost.mp3" id="6_clbkb"]
+[ext_resource type="PackedScene" uid="uid://o5bvwg7bgbvg" path="res://scenes/vhs_filter_test.tscn" id="7_y35fp"]
+[ext_resource type="Shader" uid="uid://bksk84btj0efx" path="res://shaders/vhs.gdshader" id="8_6b2wv"]
+[ext_resource type="PackedScene" uid="uid://dmmobl341pm1o" path="res://scenes/pixelate.tscn" id="8_dj72i"]
+[ext_resource type="Shader" uid="uid://csyh8nqbp0hvr" path="res://shaders/pixelate.gdshader" id="10_6b2wv"]
 
 [sub_resource type="Animation" id="Animation_l7wge"]
 resource_name = "Logo"
@@ -103,6 +107,20 @@ _data = {
 &"RESET": SubResource("Animation_7nrmo")
 }
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_tov5d"]
+shader = ExtResource("8_6b2wv")
+shader_parameter/smearing = 0.50000002375
+shader_parameter/color_offset = -0.024999999557560004
+shader_parameter/sharpening = 0.4
+shader_parameter/static_noise = 0.08
+shader_parameter/vertical_jitter = 0.002
+shader_parameter/scanline_opacity = 0.1
+shader_parameter/vignette_intensity = 0.3
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_epn8x"]
+shader = ExtResource("10_6b2wv")
+shader_parameter/pixel_size = 2.0000000149012003
+
 [node name="mainMenu" type="Control" unique_id=2134813361]
 layout_mode = 3
 anchors_preset = 15
@@ -151,6 +169,7 @@ text = "Play"
 script = ExtResource("2_48ign")
 
 [node name="Blood" type="RichTextLabel" parent="TextHolder" unique_id=2088444752]
+self_modulate = Color(1, 0, 0, 1)
 layout_mode = 0
 offset_left = 260.0
 offset_top = -423.0
@@ -196,6 +215,28 @@ autoplay = true
 position = Vector2(508, 343)
 stream = ExtResource("6_clbkb")
 volume_db = 10.0
+
+[node name="VHSfx" parent="." unique_id=1094916861 instance=ExtResource("7_y35fp")]
+z_index = 4096
+material = SubResource("ShaderMaterial_tov5d")
+layout_mode = 1
+offset_left = -49.0
+offset_top = -34.0
+offset_right = 60.333252
+offset_bottom = 48.0
+mouse_filter = 2
+
+[node name="BackBufferCopy" type="BackBufferCopy" parent="VHSfx" unique_id=314207505]
+copy_mode = 2
+
+[node name="Pixelate" parent="VHSfx" unique_id=127029814 instance=ExtResource("8_dj72i")]
+material = SubResource("ShaderMaterial_epn8x")
+layout_mode = 1
+offset_left = -48.333374
+offset_top = -83.0
+offset_right = 151.66663
+offset_bottom = 167.0
+mouse_filter = 2
 
 [connection signal="button_down" from="TextHolder/PlayButton" to="TextHolder/PlayButton" method="_on_button_down"]
 [connection signal="button_up" from="TextHolder/PlayButton" to="TextHolder/PlayButton" method="_on_button_up"]

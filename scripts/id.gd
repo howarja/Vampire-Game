@@ -17,8 +17,8 @@ func update_id(person: character):
 	name_label.text = person.fullName;
 	date_of_birth_label.text = person.information.dateOfBirth;
 	address_label.text = person.information.address;
-	height_label.text = person.information.bringing;
-	weight_label.text = person.information.bloodType;
-	hair_label.text = person.information.lifeStatus;
-	#eyes_label
-	#social_security_label
+	height_label.text = person.information.height;
+	weight_label.text = person.information.weight;
+	hair_label.text = person.information.hair_color;
+	eyes_label.text = person.information.eye_color;
+	social_security_label.text = person.information.scocial_security;

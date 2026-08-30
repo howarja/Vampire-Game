@@ -1,46 +1,64 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://bdsbbiwnswj2h"]
 
-[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://Scripts/question.gd" id="2_oj37w"]
-[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://Scripts/character.gd" id="3_yvvos"]
+[ext_resource type="Texture2D" uid="uid://cflfjexky4iwq" path="res://Sprites/People/Garage/InsideGarage2PeopleScared9.png" id="1_oj37w"]
+[ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_oj37w"]
+[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_yhify"]
+[ext_resource type="Texture2D" uid="uid://oovshrghnycj" path="res://Sprites/People/Garage/InsideGarage2PeopleTalking9.png" id="2_yvvos"]
+[ext_resource type="Texture2D" uid="uid://cubgh3qtgt5sc" path="res://Sprites/People/Outside/Jamie.png" id="3_yhify"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_yvvos"]
+
+[sub_resource type="Resource" id="Resource_oj37w"]
+script = ExtResource("2_yhify")
+dateOfBirth = "04/09/1978"
+address = "117 kingston drive"
+bringing = "Helped funding the event"
+bloodType = "O-"
+lifeStatus = "alive"
+metadata/_custom_type_script = "uid://l3v0m3s3okyk"
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_oj37w")
 prompt = "What did you bring?"
-answer = Array[String](["mcCHarles"])
+answer = Array[String](["Why are you asking me that?", "Its none of your buisness."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_hush4"]
 script = ExtResource("2_oj37w")
 prompt = "Let me see your invite."
-answer = Array[String]([""])
+answer = Array[String](["How rude, who wouldnt invite me?"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]
 script = ExtResource("2_oj37w")
 prompt = "Can i see your ID?"
-answer = Array[String]([""])
+answer = Array[String](["Do I look underaged to you! How outragous, I will talk to the host about this."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_1tlsp"]
 script = ExtResource("2_oj37w")
 prompt = "Do you have any dietary requirments?"
-answer = Array[String]([""])
+answer = Array[String](["None, now leave me alone"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_c4kb4"]
 script = ExtResource("2_oj37w")
 prompt = "What is your blood type?"
-answer = Array[String]([""])
+answer = Array[String](["The best type O-"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_lw0dh"]
 script = ExtResource("2_oj37w")
 prompt = "Where do you live?"
-answer = Array[String]([""])
+answer = Array[String](["In my mansion at 117 kingston drive, not that you would know what a mansion is"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [resource]
 script = ExtResource("3_yvvos")
-introDialaogue = Array[String](["", "", ""])
+fullName = "Brunhilde Stone"
+outDoorSprite = ExtResource("3_yhify")
+interiorSprite = ExtResource("2_yvvos")
+afraidSprite = ExtResource("1_oj37w")
+introDialaogue = Array[String](["What do you mean I cant come in, just open the damn door!", "Do I look like one of those things to you how disrespectfull!?!", "Honestly this party sucks already."])
 questions = Array[ExtResource("2_oj37w")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
+information = SubResource("Resource_oj37w")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

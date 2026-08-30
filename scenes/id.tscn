@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://70hcrtv5i5n6"]
 
 [ext_resource type="Script" uid="uid://bxnc4p7h3kc08" path="res://scripts/id.gd" id="1_qc8ly"]
-[ext_resource type="Texture2D" uid="uid://dse5kh8ih8vyw" path="res://IamgesForIdentification3.png" id="1_wubos"]
+[ext_resource type="Texture2D" uid="uid://c74mq4lid4l5" path="res://Sprites/IamgesForIdentification3.png" id="2_fs0u4"]
+[ext_resource type="FontFile" uid="uid://cofv126vqogtf" path="res://BlackOpsOne-Regular.ttf" id="3_fs0u4"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_wubos"]
 line_spacing = -5.0
+font = ExtResource("3_fs0u4")
 font_size = 9
 
 [node name="id" type="Control" unique_id=2141918312]
@@ -17,86 +19,83 @@ grow_vertical = 2
 mouse_filter = 2
 script = ExtResource("1_qc8ly")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=1519873522]
-layout_mode = 0
-offset_left = 755.0
-offset_top = 469.0
-offset_right = 1002.0
-offset_bottom = 750.0
+[node name="ID" type="Sprite2D" parent="." unique_id=1993217306]
+position = Vector2(500, 375)
+texture = ExtResource("2_fs0u4")
 
-[node name="IamgesForIdentification3" type="Sprite2D" parent="TextureRect" unique_id=1993217306]
-position = Vector2(-255, -94)
-texture = ExtResource("1_wubos")
-
-[node name="Name" type="Label" parent="TextureRect" unique_id=66108866]
+[node name="Name" type="Label" parent="." unique_id=66108866]
 layout_mode = 0
-offset_left = -262.0
-offset_top = -125.0
-offset_right = -156.0
-offset_bottom = -102.0
+offset_left = 493.0
+offset_top = 344.0
+offset_right = 598.0
+offset_bottom = 357.0
+rotation = 0.021426931
 text = "county dowm"
 label_settings = SubResource("LabelSettings_wubos")
 
-[node name="Address" type="Label" parent="TextureRect" unique_id=269684565]
+[node name="Address" type="Label" parent="." unique_id=269684565]
 layout_mode = 0
-offset_left = -264.0
-offset_top = -106.0
-offset_right = -218.0
-offset_bottom = -83.0
+offset_left = 491.0
+offset_top = 363.0
+offset_right = 652.0
+offset_bottom = 376.0
+rotation = 0.0153066525
 text = "castle"
 label_settings = SubResource("LabelSettings_wubos")
 
-[node name="Height" type="Label" parent="TextureRect" unique_id=1243512037]
+[node name="Height" type="Label" parent="." unique_id=1243512037]
 layout_mode = 0
-offset_left = -267.0
-offset_top = -62.0
-offset_right = -221.0
-offset_bottom = -35.0
+offset_left = 488.0
+offset_top = 407.0
+offset_right = 525.0
+offset_bottom = 428.0
 text = "5 feet 
 8 inchs"
 label_settings = SubResource("LabelSettings_wubos")
 
-[node name="Weight" type="Label" parent="TextureRect" unique_id=1987218336]
+[node name="Weight" type="Label" parent="." unique_id=1987218336]
 layout_mode = 0
-offset_left = -223.0
-offset_top = -59.0
-offset_right = -176.0
-offset_bottom = -36.0
+offset_left = 532.0
+offset_top = 410.0
+offset_right = 564.0
+offset_bottom = 424.0
 text = "195 lb"
 label_settings = SubResource("LabelSettings_wubos")
 
-[node name="Hair" type="Label" parent="TextureRect" unique_id=1639554434]
+[node name="Hair" type="Label" parent="." unique_id=1639554434]
 layout_mode = 0
-offset_left = -182.0
-offset_top = -60.0
-offset_right = -135.0
-offset_bottom = -37.0
+offset_left = 573.0
+offset_top = 409.0
+offset_right = 608.0
+offset_bottom = 425.0
 text = "Brown"
 label_settings = SubResource("LabelSettings_wubos")
 
-[node name="Eyes" type="Label" parent="TextureRect" unique_id=597690721]
+[node name="Eyes" type="Label" parent="." unique_id=597690721]
 layout_mode = 0
-offset_left = -140.0
-offset_top = -61.0
-offset_right = -93.0
-offset_bottom = -38.0
+offset_left = 615.0
+offset_top = 408.0
+offset_right = 651.0
+offset_bottom = 421.0
 text = "Brown"
 label_settings = SubResource("LabelSettings_wubos")
 
-[node name="Social Security" type="Label" parent="TextureRect" unique_id=1981260260]
+[node name="Social Security" type="Label" parent="." unique_id=1981260260]
 layout_mode = 0
-offset_left = -269.0
-offset_top = -31.0
-offset_right = -222.0
-offset_bottom = -8.0
+offset_left = 486.0
+offset_top = 438.0
+offset_right = 552.0
+offset_bottom = 451.0
+rotation = 0.03148355
 text = "587-39-2354"
 label_settings = SubResource("LabelSettings_wubos")
 
-[node name="DateOfBirth" type="Label" parent="TextureRect" unique_id=117084253]
+[node name="DateOfBirth" type="Label" parent="." unique_id=117084253]
 layout_mode = 0
-offset_left = -273.0
-offset_top = -2.0
-offset_right = -227.0
-offset_bottom = 21.0
+offset_left = 482.0
+offset_top = 467.0
+offset_right = 528.0
+offset_bottom = 490.0
+rotation = 0.010989303
 text = "12345"
 label_settings = SubResource("LabelSettings_wubos")

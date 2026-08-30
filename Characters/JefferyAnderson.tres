@@ -1,43 +1,53 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://b7e2j8yc6oqes"]
 
+[ext_resource type="Texture2D" uid="uid://yn3n6qrpoofg" path="res://Sprites/People/LivingRoom/LivingRoomPeopleAfraid5.png" id="1_gwqjw"]
+[ext_resource type="Texture2D" uid="uid://dn45mb8livwj8" path="res://Sprites/People/LivingRoom/LivingRoomPeopleTalking5.png" id="2_d3sfb"]
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_gwqjw"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_d3sfb"]
+[ext_resource type="Texture2D" uid="uid://dt7xgd06qe87j" path="res://Sprites/People/Outside/James1.png" id="3_nj1cl"]
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_gwqjw")
 prompt = "What did you bring?"
-answer = Array[String]([""])
+answer = Array[String](["I've brought some snacks and a little \"grass\""])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_hush4"]
 script = ExtResource("2_gwqjw")
 prompt = "Let me see your invite."
-answer = Array[String]([""])
+answer = Array[String](["Dude calm down here it is.", "Like seriously why are you such an interagotter."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]
 script = ExtResource("2_gwqjw")
 prompt = "Can i see your ID?"
+answer = Array[String](["Dude I got no ID on me gotta keep the feds searching you know?"])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_1tlsp"]
 script = ExtResource("2_gwqjw")
 prompt = "Do you have any dietary requirments?"
+answer = Array[String](["Yea I cant eat any meats I'm a vegetarian."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_c4kb4"]
 script = ExtResource("2_gwqjw")
 prompt = "What is your blood type?"
+answer = Array[String](["Blood type?", " I dont know that."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_lw0dh"]
 script = ExtResource("2_gwqjw")
 prompt = "Where do you live?"
+answer = Array[String](["I live on vibes man."])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [resource]
 script = ExtResource("3_d3sfb")
 fullName = "Jeffery Anderson"
-introDialaogue = Array[String](["Heya partner!", "I recieved an invite to this glorious party!", "I heard there would be some rootin shootin party!"])
+outDoorSprite = ExtResource("3_nj1cl")
+interiorSprite = ExtResource("2_d3sfb")
+afraidSprite = ExtResource("1_gwqjw")
+introDialaogue = Array[String](["Whats up dude, thanks for the invite.", "Dont worry I got the snacks.", "And it look pretty busy in there, what a good oppourtunity, just what I'm looking for."])
 questions = Array[ExtResource("2_gwqjw")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

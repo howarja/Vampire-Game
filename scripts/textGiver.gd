@@ -12,6 +12,7 @@ signal lineComplete;
 
 func triggerDialogue(newLine: String, audioFile: AudioStreamMP3, completeTrigger: Callable):
 	text.text = "";
+	$"../TextBg".self_modulate = Color.WHITE
 	currentLine = newLine;
 	if !lineComplete.is_connected(completeTrigger):
 		lineComplete.connect(completeTrigger);
@@ -26,6 +27,7 @@ func triggerDialogue(newLine: String, audioFile: AudioStreamMP3, completeTrigger
 func disable():
 	text.text = "";
 	currentLine = "";
+	$"../TextBg".self_modulate = Color.TRANSPARENT
 
 func _process(delta: float) -> void:
 	currentCharacterDelay -= delta;

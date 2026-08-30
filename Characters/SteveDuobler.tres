@@ -10,6 +10,22 @@
 [ext_resource type="AudioStream" uid="uid://bboumecwoe515" path="res://SFX/Voicelines/SteveDuoblerEnter2.wav" id="5_fo0gn"]
 [ext_resource type="AudioStream" uid="uid://coc3ye0hheq11" path="res://SFX/Voicelines/SteveDuoblerEnter3.wav" id="6_g5dwd"]
 [ext_resource type="Texture2D" uid="uid://cmfy7rsqg5ikx" path="res://Sprites/IamgesForIdentification1.png" id="6_jxpct"]
+[ext_resource type="AudioStream" uid="uid://cey1q848qct0p" path="res://SFX/Voicelines/SteveDuoblerAddress1.wav" id="10_mvpxy"]
+[ext_resource type="AudioStream" uid="uid://cl30ujcytijkj" path="res://SFX/Voicelines/SteveDuoblerAddress2.wav" id="11_4dukv"]
+[ext_resource type="AudioStream" uid="uid://bkyrpw5h46baw" path="res://SFX/Voicelines/SteveDuoblerAddress3.wav" id="12_8wiav"]
+[ext_resource type="AudioStream" uid="uid://c1okr4fbb63pc" path="res://SFX/Voicelines/SteveDuoblerAddress4.wav" id="13_2de3n"]
+[ext_resource type="AudioStream" uid="uid://m2kenmmile8x" path="res://SFX/Voicelines/SteveDuoblerAddress5.wav" id="14_f1uly"]
+[ext_resource type="AudioStream" uid="uid://cta5crnr4t8oh" path="res://SFX/Voicelines/SteveDuoblerAddress6.wav" id="15_vgfq2"]
+[ext_resource type="AudioStream" uid="uid://blfbp08ysw0lj" path="res://SFX/Voicelines/SteveDuoblerAddress7.wav" id="16_wy7jn"]
+[ext_resource type="AudioStream" uid="uid://c3lgh7akvs21l" path="res://SFX/Voicelines/SteveDuoblerAddress8.wav" id="17_c8bu5"]
+[ext_resource type="AudioStream" uid="uid://we5fij8iag7f" path="res://SFX/Voicelines/SteveDuoblerAddress9.wav" id="18_dstqq"]
+[ext_resource type="AudioStream" uid="uid://c7lmyib7r4kfc" path="res://SFX/Voicelines/SteveDuoblerAddress10.wav" id="19_lh0rc"]
+[ext_resource type="AudioStream" uid="uid://d4io23taq7ubf" path="res://SFX/Voicelines/SteveDuoblerAddress11.wav" id="20_atppv"]
+[ext_resource type="AudioStream" uid="uid://dfyrv63d27w7o" path="res://SFX/Voicelines/SteveDuoblerAddress12.wav" id="21_dv274"]
+[ext_resource type="AudioStream" uid="uid://ct88k7cc05bkv" path="res://SFX/Voicelines/SteveDuoblerAddress13.wav" id="22_a5m7l"]
+[ext_resource type="AudioStream" uid="uid://c0bbr2x5bd0tj" path="res://SFX/Voicelines/SteveDuoblerAddress14.wav" id="23_7xks4"]
+[ext_resource type="AudioStream" uid="uid://gepay3cakksq" path="res://SFX/Voicelines/SteveDuoblerAddress15.wav" id="24_7se0l"]
+[ext_resource type="AudioStream" uid="uid://y33cbg23lf6l" path="res://SFX/Voicelines/SteveDuoblerAddress16.wav" id="25_3l21i"]
 
 [sub_resource type="Resource" id="Resource_iall0"]
 script = ExtResource("2_jxpct")
@@ -60,7 +76,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 script = ExtResource("1_tr7q8")
 prompt = "Where do you live?"
 answer = Array[String](["So if you imagine this in your head right.", "Begin from the sign between barker and main then walk down to the right of barkers street.", "You will see a small alley, go down that take a right and then a left.", "Then you have arived in a little garden, go to the biggest building there in the blue bricks.", "Do you follow so far?", "Right, then you walk up the stairs to floor 3 and go down the broken elevator shaft.", "There is a removable panel.", "Follow the vent down to the part where it starts to stink of rot.", "You then have to drop down to the second floor and jump the spike pit.", "Afterwards you follow the yellow brick road.", "And then you look to your left in front of the second bridge, where you will find a shack.", "In this shack there will be a compas of gold and you can use it find a cave.", "In that cave there is a trap door that leads to a basement.", "In that basement behind an invisible wall is a small room and thats where I have been camping out. ", "Makes sense?", "Hope not because thats all made up, I live at 61 jumpers lane."])
-audio = Array[AudioStreamWAV]([null, null, null, null, null, null, null, null, null, null, null, null, null, null, null])
+audio = Array[AudioStreamWAV]([ExtResource("10_mvpxy"), ExtResource("11_4dukv"), ExtResource("12_8wiav"), ExtResource("13_2de3n"), ExtResource("14_f1uly"), ExtResource("15_vgfq2"), ExtResource("16_wy7jn"), ExtResource("17_c8bu5"), ExtResource("18_dstqq"), ExtResource("19_lh0rc"), ExtResource("20_atppv"), ExtResource("21_dv274"), ExtResource("22_a5m7l"), ExtResource("23_7xks4"), ExtResource("24_7se0l"), ExtResource("25_3l21i")])
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [resource]

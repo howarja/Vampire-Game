@@ -3,8 +3,23 @@
 [ext_resource type="Texture2D" uid="uid://yn3n6qrpoofg" path="res://Sprites/People/LivingRoom/LivingRoomPeopleAfraid5.png" id="1_gwqjw"]
 [ext_resource type="Texture2D" uid="uid://dn45mb8livwj8" path="res://Sprites/People/LivingRoom/LivingRoomPeopleTalking5.png" id="2_d3sfb"]
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_gwqjw"]
+[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_ymaym"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_d3sfb"]
 [ext_resource type="Texture2D" uid="uid://dt7xgd06qe87j" path="res://Sprites/People/Outside/James1.png" id="3_nj1cl"]
+
+[sub_resource type="Resource" id="Resource_q86ko"]
+script = ExtResource("2_ymaym")
+dateOfBirth = "26/12/1946"
+address = "Unknown"
+bringing = "Cannabis sativa subsp. indica var. kafiristanica"
+bloodType = "B-"
+lifeStatus = "Alive"
+weight = "172 lb"
+height = "5 feet 11 inches"
+hair_color = "dark brown"
+eye_color = "brown"
+scocial_security = "587-39-5268"
+metadata/_custom_type_script = "uid://l3v0m3s3okyk"
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_gwqjw")
@@ -50,4 +65,5 @@ interiorSprite = ExtResource("2_d3sfb")
 afraidSprite = ExtResource("1_gwqjw")
 introDialaogue = Array[String](["Whats up dude, thanks for the invite.", "Dont worry I got the snacks.", "And it look pretty busy in there, what a good oppourtunity, just what I'm looking for."])
 questions = Array[ExtResource("2_gwqjw")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
+information = SubResource("Resource_q86ko")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

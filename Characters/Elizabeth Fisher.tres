@@ -4,7 +4,22 @@
 [ext_resource type="Texture2D" uid="uid://wck5h0ht8hpo" path="res://Sprites/People/LivingRoom/LivingRoomPeopleAfraid3.png" id="1_xxhdo"]
 [ext_resource type="Texture2D" uid="uid://bcitwtc14ouh0" path="res://Sprites/People/LivingRoom/LivingRoomPeopleTalking3.png" id="2_454jn"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="2_c36fj"]
+[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_pvblj"]
 [ext_resource type="Texture2D" uid="uid://r865ghpt15om" path="res://Sprites/People/Outside/Olivia.png" id="3_pvblj"]
+
+[sub_resource type="Resource" id="Resource_efw2u"]
+script = ExtResource("2_pvblj")
+dateOfBirth = "06/12/1941"
+address = "37 kingstong"
+bringing = "\"special\" brownies"
+bloodType = "B-"
+lifeStatus = "Alive"
+weight = "182 lb"
+height = "3 feet 2 inches"
+hair_color = "red"
+eye_color = "brown"
+scocial_security = "587-39-6328"
+metadata/_custom_type_script = "uid://l3v0m3s3okyk"
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("1_ne6w6")
@@ -51,4 +66,5 @@ interiorSprite = ExtResource("2_454jn")
 afraidSprite = ExtResource("1_xxhdo")
 introDialaogue = Array[String](["Sorry I'm a bit late, has the party started yet?", "I brought some good stuff if you know what I'm saying...", "Talking through this door is weird, can I come in yet?"])
 questions = Array[ExtResource("1_ne6w6")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
+information = SubResource("Resource_efw2u")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

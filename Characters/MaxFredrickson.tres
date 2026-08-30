@@ -2,9 +2,24 @@
 
 [ext_resource type="Texture2D" uid="uid://dm4h68pyltv3l" path="res://Sprites/People/Garage/InsideGarage2PeopleScared3.png" id="1_uyyts"]
 [ext_resource type="Texture2D" uid="uid://dxrenqee6jof0" path="res://Sprites/People/Garage/InsideGarage2PeopleTalking3.png" id="2_31eem"]
+[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_amset"]
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_uyyts"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_31eem"]
 [ext_resource type="Texture2D" uid="uid://b7rnsbcb6hmuo" path="res://Sprites/People/Outside/Fishbowl.png" id="3_amset"]
+
+[sub_resource type="Resource" id="Resource_bgc2m"]
+script = ExtResource("2_amset")
+dateOfBirth = "21/03/1947"
+address = "7b victorian street"
+bringing = "cocaine"
+bloodType = "AB+"
+lifeStatus = "Alive"
+weight = "192 lb"
+height = "6 feet 2 inches"
+hair_color = "brown"
+eye_color = "brown"
+scocial_security = "587-39-2945"
+metadata/_custom_type_script = "uid://l3v0m3s3okyk"
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_uyyts")
@@ -50,4 +65,5 @@ interiorSprite = ExtResource("2_31eem")
 afraidSprite = ExtResource("1_uyyts")
 introDialaogue = Array[String](["Hello, anyone home?", "Oh its you!", "I haven't seen you since phew...", "Probably back in 98 when we were studying.", "How's life been treeting ya?", "Ah no matter, funny seeing you here at such a party with all of your strictler behaviour!", "Old chap, mind opening the door?"])
 questions = Array[ExtResource("2_uyyts")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
+information = SubResource("Resource_bgc2m")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

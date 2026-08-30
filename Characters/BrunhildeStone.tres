@@ -2,9 +2,24 @@
 
 [ext_resource type="Texture2D" uid="uid://cflfjexky4iwq" path="res://Sprites/People/Garage/InsideGarage2PeopleScared9.png" id="1_oj37w"]
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_oj37w"]
+[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_yhify"]
 [ext_resource type="Texture2D" uid="uid://oovshrghnycj" path="res://Sprites/People/Garage/InsideGarage2PeopleTalking9.png" id="2_yvvos"]
 [ext_resource type="Texture2D" uid="uid://cubgh3qtgt5sc" path="res://Sprites/People/Outside/Jaime.png" id="3_oj37w"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_yvvos"]
+
+[sub_resource type="Resource" id="Resource_0245l"]
+script = ExtResource("2_yhify")
+dateOfBirth = "04/09/1942"
+address = "117 kingston drive"
+bringing = "Funding event"
+bloodType = "O-"
+lifeStatus = "Alive"
+weight = "unknown"
+height = "unknown"
+hair_color = "red"
+eye_color = "brown"
+scocial_security = "unknown"
+metadata/_custom_type_script = "uid://l3v0m3s3okyk"
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_oj37w")
@@ -50,4 +65,5 @@ interiorSprite = ExtResource("2_yvvos")
 afraidSprite = ExtResource("1_oj37w")
 introDialaogue = Array[String](["What do you mean I cant come in, just open the damn door!", "Do I look like one of those things to you how disrespectfull!?!", "Honestly this party sucks already."])
 questions = Array[ExtResource("2_oj37w")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
+information = SubResource("Resource_0245l")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

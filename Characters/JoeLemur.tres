@@ -2,9 +2,24 @@
 
 [ext_resource type="Texture2D" uid="uid://cr4k6t78d5ggw" path="res://Sprites/People/Kitchen/KitchenPeopleAfraid2.png" id="1_2fyne"]
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_2fyne"]
+[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_ml4ee"]
 [ext_resource type="Texture2D" uid="uid://dywkurr36bxfq" path="res://Sprites/People/Kitchen/KitchenPeopleTalking2.png" id="2_spw87"]
 [ext_resource type="Texture2D" uid="uid://bcfx4kqi3hxy1" path="res://Sprites/People/Outside/OutsidePeopleTake more2.png" id="3_ml4ee"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_spw87"]
+
+[sub_resource type="Resource" id="Resource_ha0l6"]
+script = ExtResource("2_ml4ee")
+dateOfBirth = "03/07/1941"
+address = "67 triple t drive"
+bringing = "strawberrys"
+bloodType = "O-"
+lifeStatus = "Alive"
+weight = "197 lb"
+height = "5 feet 5 inches"
+hair_color = "brown"
+eye_color = "dark brown"
+scocial_security = "587-39-2436"
+metadata/_custom_type_script = "uid://l3v0m3s3okyk"
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_2fyne")
@@ -50,4 +65,5 @@ interiorSprite = ExtResource("2_spw87")
 afraidSprite = ExtResource("1_2fyne")
 introDialaogue = Array[String](["Hey!", "It's me!", "Your friendly neighbourhood Joe!", "Just a gardener who loves nature!"])
 questions = Array[ExtResource("2_2fyne")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
+information = SubResource("Resource_ha0l6")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

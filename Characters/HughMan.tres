@@ -14,6 +14,11 @@ address = " 83 kingston drive"
 bringing = "moonshine"
 bloodType = "A-"
 lifeStatus = "Alive"
+weight = "173 lb"
+height = "5 feet 7 inches"
+hair_color = "dark brown"
+eye_color = "brown"
+scocial_security = "587-39-2582"
 metadata/_custom_type_script = "uid://l3v0m3s3okyk"
 
 [sub_resource type="Resource" id="Resource_wimtb"]

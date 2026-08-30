@@ -1,10 +1,25 @@
 [gd_resource type="Resource" script_class="character" format=3 uid="uid://bhpiqqonswruq"]
 
 [ext_resource type="Texture2D" uid="uid://l5yfyvpcj8fe" path="res://Sprites/People/Garage/InsideGarage2PeopleScared5.png" id="1_6etlt"]
+[ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_4e71w"]
 [ext_resource type="Texture2D" uid="uid://c3citlrx0sdw1" path="res://Sprites/People/Garage/InsideGarage2PeopleTalking5.png" id="2_o6pt7"]
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_q610j"]
 [ext_resource type="Texture2D" uid="uid://d1o70ev7h4tyw" path="res://Sprites/People/Outside/Arlo.png" id="3_4e71w"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_l2is1"]
+
+[sub_resource type="Resource" id="Resource_5halp"]
+script = ExtResource("2_4e71w")
+dateOfBirth = "unknown"
+address = "unknown"
+bringing = "unknown"
+bloodType = "unknown"
+lifeStatus = "unknown"
+weight = "unknown"
+height = "unknown"
+hair_color = "unknown"
+eye_color = "unknown"
+scocial_security = "unknown"
+metadata/_custom_type_script = "uid://l3v0m3s3okyk"
 
 [sub_resource type="Resource" id="Resource_wimtb"]
 script = ExtResource("2_q610j")
@@ -50,4 +65,5 @@ interiorSprite = ExtResource("2_o6pt7")
 afraidSprite = ExtResource("1_6etlt")
 introDialaogue = Array[String](["Hello there.", "You are not the host, some kind of security.", "Interesting.", "I understand, These are dangerous times.", "Good to be watchful.", "I can assure you I am just here to have a good time, nothing more.", "You'll just have to take my word for it."])
 questions = Array[ExtResource("2_q610j")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
+information = SubResource("Resource_5halp")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

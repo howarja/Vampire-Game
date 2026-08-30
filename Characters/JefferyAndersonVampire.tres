@@ -41,6 +41,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [resource]
 script = ExtResource("3_0chsk")
+fullName = "Jeffery Anderson"
 vampire = true
 introDialaogue = Array[String](["", "", ""])
 questions = Array[ExtResource("2_ooaof")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])

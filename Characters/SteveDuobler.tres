@@ -41,6 +41,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [resource]
 script = ExtResource("2_qm2a0")
+fullName = "Steve Doubler"
 introDialaogue = Array[String](["", "", ""])
 questions = Array[ExtResource("1_tr7q8")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

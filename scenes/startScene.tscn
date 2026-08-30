@@ -528,7 +528,7 @@ eyeSymbol = null
 material = SubResource("ShaderMaterial_4lml8")
 
 [node name="MaxTimer" type="Timer" parent="CanvasLayer/peepHole" unique_id=409054883]
-wait_time = 15.0
+wait_time = 60.0
 
 [node name="EmptyTimer" type="Timer" parent="CanvasLayer/peepHole" unique_id=2049869326]
 wait_time = 15.0

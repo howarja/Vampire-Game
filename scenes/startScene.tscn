@@ -474,7 +474,7 @@ offset_bottom = 301.54544
 icon = ExtResource("44_0smob")
 flat = true
 script = ExtResource("3_jmrrm")
-newArea = NodePath("../../Hallway")
+newArea = NodePath("../../Doorway")
 movementSFX = ExtResource("44_jr8db")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/peepHole" unique_id=1678730477]

@@ -6,6 +6,14 @@
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="2_uyyts"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_31eem"]
 [ext_resource type="Texture2D" uid="uid://b7rnsbcb6hmuo" path="res://Sprites/People/Outside/Fishbowl.png" id="3_amset"]
+[ext_resource type="AudioStream" uid="uid://dlhokml35iu7m" path="res://SFX/Voicelines/MaxFredricksonEnter1.wav" id="4_jr6n3"]
+[ext_resource type="AudioStream" uid="uid://cq10ykkdvjnvd" path="res://SFX/Voicelines/MaxFredricksonEnter2.wav" id="5_vbe1t"]
+[ext_resource type="AudioStream" uid="uid://bgd1et0rqc8q6" path="res://SFX/Voicelines/MaxFredricksonEnter3.wav" id="6_qejvf"]
+[ext_resource type="AudioStream" uid="uid://b0njruptkxt5q" path="res://SFX/Voicelines/MaxFredricksonEnter4.wav" id="7_uft50"]
+[ext_resource type="AudioStream" uid="uid://p3ddusmn2tlo" path="res://SFX/Voicelines/MaxFredricksonEnter5.wav" id="8_hepsh"]
+[ext_resource type="AudioStream" uid="uid://dkpi77nia67hf" path="res://SFX/Voicelines/MaxFredricksonEnter6.wav" id="9_3jwy4"]
+[ext_resource type="AudioStream" uid="uid://bn4guoa7n4xnt" path="res://SFX/Voicelines/MaxFredricksonEnter7.wav" id="10_eptfy"]
+[ext_resource type="Texture2D" uid="uid://cmfy7rsqg5ikx" path="res://Sprites/IamgesForIdentification1.png" id="13_vbe1t"]
 
 [sub_resource type="Resource" id="Resource_bgc2m"]
 script = ExtResource("2_amset")
@@ -31,6 +39,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 script = ExtResource("2_uyyts")
 prompt = "Let me see your invite."
 answer = Array[String](["Here it is."])
+image = ExtResource("13_vbe1t")
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]
@@ -64,6 +73,7 @@ outDoorSprite = ExtResource("3_amset")
 interiorSprite = ExtResource("2_31eem")
 afraidSprite = ExtResource("1_uyyts")
 introDialaogue = Array[String](["Hello, anyone home?", "Oh its you!", "I haven't seen you since phew...", "Probably back in 98 when we were studying.", "How's life been treeting ya?", "Ah no matter, funny seeing you here at such a party with all of your strictler behaviour!", "Old chap, mind opening the door?"])
+introVoicelines = Array[AudioStreamWAV]([ExtResource("4_jr6n3"), ExtResource("5_vbe1t"), ExtResource("6_qejvf"), ExtResource("7_uft50"), ExtResource("8_hepsh"), ExtResource("9_3jwy4"), ExtResource("10_eptfy")])
 questions = Array[ExtResource("2_uyyts")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 information = SubResource("Resource_bgc2m")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

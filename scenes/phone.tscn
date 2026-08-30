@@ -221,6 +221,15 @@ size_flags_vertical = 5
 text = "DATA BASE:"
 label_settings = SubResource("LabelSettings_08mii")
 horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="NameTitle" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=1369517457]
+layout_mode = 2
+size_flags_vertical = 5
+text = "--NAME--"
+label_settings = SubResource("LabelSettings_08mii")
+horizontal_alignment = 1
+autowrap_mode = 3
 
 [node name="Name" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=66108866]
 layout_mode = 2
@@ -228,6 +237,15 @@ size_flags_vertical = 5
 text = "county dowm"
 label_settings = SubResource("LabelSettings_08mii")
 horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="DOB" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=232742332]
+layout_mode = 2
+size_flags_vertical = 5
+text = "--DOB--"
+label_settings = SubResource("LabelSettings_08mii")
+horizontal_alignment = 1
+autowrap_mode = 3
 
 [node name="DateOfBirth" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=117084253]
 layout_mode = 2
@@ -235,6 +253,16 @@ size_flags_vertical = 5
 text = "12345"
 label_settings = SubResource("LabelSettings_08mii")
 horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="AddressTitle" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=686858017]
+layout_mode = 2
+size_flags_vertical = 5
+text = "--ADDRESS--
+"
+label_settings = SubResource("LabelSettings_08mii")
+horizontal_alignment = 1
+autowrap_mode = 3
 
 [node name="Address" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=269684565]
 layout_mode = 2
@@ -242,6 +270,15 @@ size_flags_vertical = 5
 text = "castle"
 label_settings = SubResource("LabelSettings_08mii")
 horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Bringining title" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=991687052]
+layout_mode = 2
+size_flags_vertical = 5
+text = "--BRINGING--"
+label_settings = SubResource("LabelSettings_08mii")
+horizontal_alignment = 1
+autowrap_mode = 3
 
 [node name="Bringing" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=1357596991]
 layout_mode = 2
@@ -249,6 +286,15 @@ size_flags_vertical = 5
 text = "Poker"
 label_settings = SubResource("LabelSettings_08mii")
 horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="BType" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=752715343]
+layout_mode = 2
+size_flags_vertical = 5
+text = "--BLOOD--"
+label_settings = SubResource("LabelSettings_08mii")
+horizontal_alignment = 1
+autowrap_mode = 3
 
 [node name="BloodType" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=1772195927]
 layout_mode = 2
@@ -256,6 +302,15 @@ size_flags_vertical = 5
 text = "Good"
 label_settings = SubResource("LabelSettings_08mii")
 horizontal_alignment = 1
+autowrap_mode = 3
+
+[node name="Alive?" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=629090618]
+layout_mode = 2
+size_flags_vertical = 5
+text = "--VITALS--"
+label_settings = SubResource("LabelSettings_08mii")
+horizontal_alignment = 1
+autowrap_mode = 3
 
 [node name="LifeStatus" type="Label" parent="ScrollContainer/VBoxContainer" unique_id=1846907006]
 layout_mode = 2
@@ -263,3 +318,4 @@ size_flags_vertical = 5
 text = "Too alive"
 label_settings = SubResource("LabelSettings_08mii")
 horizontal_alignment = 1
+autowrap_mode = 3

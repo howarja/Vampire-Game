@@ -6,6 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://bduxms8i5x1nn" path="res://Sprites/People/Garage/InsideGarage2PeopleTalking1.png" id="3_8afky"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_q86ko"]
 [ext_resource type="Texture2D" uid="uid://2d4gyq54kfde" path="res://Sprites/People/Outside/Amy.png" id="4_8tc8k"]
+[ext_resource type="AudioStream" uid="uid://jcaep6bpbgh8" path="res://SFX/Voicelines/HughManEnter1.wav" id="4_lsrdt"]
+[ext_resource type="AudioStream" uid="uid://beo1khg8v5eb2" path="res://SFX/Voicelines/HughManEnter2.wav" id="5_mvjko"]
+[ext_resource type="AudioStream" uid="uid://dmykf4bxeaw7c" path="res://SFX/Voicelines/HughManEnter3.wav" id="6_cc510"]
 
 [sub_resource type="Resource" id="Resource_ne6w6"]
 script = ExtResource("2_xeenu")
@@ -64,6 +67,7 @@ outDoorSprite = ExtResource("4_8tc8k")
 interiorSprite = ExtResource("3_8afky")
 afraidSprite = ExtResource("1_q86ko")
 introDialaogue = Array[String](["whhaatsss uppp maaaaannnn.", "Allllriiight llooookk maaaybbee I'm aalreeeady aa litttlee wasssteed.", "Buuuttt its fine, juuusstt lemme innn, hurrryy upppp I wannnnaaa keeepp paarrttyying."])
+introVoicelines = Array[AudioStreamWAV]([ExtResource("4_lsrdt"), ExtResource("5_mvjko"), ExtResource("6_cc510")])
 questions = Array[ExtResource("2_ajy50")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 information = SubResource("Resource_ne6w6")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

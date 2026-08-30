@@ -89,6 +89,8 @@
 [ext_resource type="PackedScene" uid="uid://70hcrtv5i5n6" path="res://scenes/id.tscn" id="76_j33vn"]
 [ext_resource type="StyleBox" uid="uid://davtg7gw60hkc" path="res://UI BG.tres" id="81_hp6ks"]
 [ext_resource type="Script" uid="uid://cuixesoyqhje0" path="res://scripts/buttonEffects.gd" id="82_8e13r"]
+[ext_resource type="AudioStream" uid="uid://dbhnmvlr4crt2" path="res://SFX/finalSFX/Click4.mp3" id="89_rqkno"]
+[ext_resource type="AudioStream" uid="uid://cyir28p37diov" path="res://SFX/finalSFX/Hover1mp3.mp3" id="90_qpw81"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3xd07"]
 radius = 65.97
@@ -1008,7 +1010,7 @@ text = NodePath("../TextGiver")
 acceptButton = NodePath("AcceptButton")
 declineButton = NodePath("DeclineButton")
 
-[node name="AcceptButton" type="Button" parent="CanvasLayer/DoorwayManager" unique_id=704149682]
+[node name="AcceptButton" type="Button" parent="CanvasLayer/DoorwayManager" unique_id=704149682 node_paths=PackedStringArray("hoverStream", "clickStream")]
 visible = false
 self_modulate = Color(6.6901744e-06, 0.74751836, 0.33022302, 1)
 layout_mode = 0
@@ -1027,8 +1029,10 @@ theme_override_styles/disabled = ExtResource("81_hp6ks")
 theme_override_styles/focus = ExtResource("81_hp6ks")
 text = "accept"
 script = ExtResource("82_8e13r")
+hoverStream = NodePath("../../../ButtonSFX")
+clickStream = NodePath("../../../ButtonSFX2")
 
-[node name="DeclineButton" type="Button" parent="CanvasLayer/DoorwayManager" unique_id=623162512]
+[node name="DeclineButton" type="Button" parent="CanvasLayer/DoorwayManager" unique_id=623162512 node_paths=PackedStringArray("hoverStream", "clickStream")]
 visible = false
 self_modulate = Color(1, 0, 0, 1)
 layout_mode = 0
@@ -1047,6 +1051,8 @@ theme_override_styles/disabled = ExtResource("81_hp6ks")
 theme_override_styles/focus = ExtResource("81_hp6ks")
 text = "decline"
 script = ExtResource("82_8e13r")
+hoverStream = NodePath("../../../ButtonSFX")
+clickStream = NodePath("../../../ButtonSFX2")
 
 [node name="TextGiver" type="Control" parent="CanvasLayer" unique_id=1438650801 node_paths=PackedStringArray("text", "audio")]
 layout_mode = 3
@@ -1088,9 +1094,9 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="QuestionOptions" type="VBoxContainer" parent="CanvasLayer" unique_id=681083594]
-offset_left = 152.99994
+offset_left = 41.00001
 offset_top = -352.0
-offset_right = 836.4692
+offset_right = 724.46924
 offset_bottom = 305.67798
 scale = Vector2(0.46527326, 0.46527326)
 size_flags_stretch_ratio = 14.51
@@ -1186,6 +1192,14 @@ visible = false
 texture = ExtResource("4_qlfe6")
 vframes = 3
 frame = 1
+
+[node name="ButtonSFX2" type="AudioStreamPlayer2D" parent="." unique_id=996526734]
+stream = ExtResource("89_rqkno")
+volume_db = 5.0
+
+[node name="ButtonSFX" type="AudioStreamPlayer2D" parent="." unique_id=1540597294]
+stream = ExtResource("90_qpw81")
+volume_db = 5.0
 
 [node name="CanvasLayerBorder" type="CanvasLayer" parent="." unique_id=1724315043]
 layer = 2

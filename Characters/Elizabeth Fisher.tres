@@ -6,6 +6,10 @@
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="2_c36fj"]
 [ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_pvblj"]
 [ext_resource type="Texture2D" uid="uid://r865ghpt15om" path="res://Sprites/People/Outside/Olivia.png" id="3_pvblj"]
+[ext_resource type="AudioStream" uid="uid://c32fkulahmotg" path="res://SFX/Voicelines/ElizabethFisherEnter1.wav" id="4_g3jb6"]
+[ext_resource type="AudioStream" uid="uid://cfr87dc3n7lb1" path="res://SFX/Voicelines/ElizabethFisherEnter2.wav" id="5_irenw"]
+[ext_resource type="AudioStream" uid="uid://dwi77352l0pnx" path="res://SFX/Voicelines/ElizabethFisherEnter3.wav" id="6_d084p"]
+[ext_resource type="Texture2D" uid="uid://cmfy7rsqg5ikx" path="res://Sprites/IamgesForIdentification1.png" id="9_irenw"]
 
 [sub_resource type="Resource" id="Resource_efw2u"]
 script = ExtResource("2_pvblj")
@@ -31,6 +35,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 script = ExtResource("1_ne6w6")
 prompt = "Let me see your invite."
 answer = Array[String](["Here you go!"])
+image = ExtResource("9_irenw")
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]
@@ -65,6 +70,7 @@ outDoorSprite = ExtResource("3_pvblj")
 interiorSprite = ExtResource("2_454jn")
 afraidSprite = ExtResource("1_xxhdo")
 introDialaogue = Array[String](["Sorry I'm a bit late, has the party started yet?", "I brought some good stuff if you know what I'm saying...", "Talking through this door is weird, can I come in yet?"])
+introVoicelines = Array[AudioStreamWAV]([ExtResource("4_g3jb6"), ExtResource("5_irenw"), ExtResource("6_d084p")])
 questions = Array[ExtResource("1_ne6w6")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 information = SubResource("Resource_efw2u")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

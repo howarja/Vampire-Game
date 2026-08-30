@@ -6,6 +6,10 @@
 [ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_ymaym"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_d3sfb"]
 [ext_resource type="Texture2D" uid="uid://dt7xgd06qe87j" path="res://Sprites/People/Outside/James1.png" id="3_nj1cl"]
+[ext_resource type="AudioStream" uid="uid://dolfptskp8db3" path="res://SFX/Voicelines/JefferyAndersonEnter1.wav" id="4_fqv5d"]
+[ext_resource type="AudioStream" uid="uid://drndnyhnkb245" path="res://SFX/Voicelines/JefferyAndersonEnter2.wav" id="5_q4vql"]
+[ext_resource type="AudioStream" uid="uid://yty4lld1ikjk" path="res://SFX/Voicelines/JefferyAndersonEnter3.wav" id="6_rn7yd"]
+[ext_resource type="Texture2D" uid="uid://cmfy7rsqg5ikx" path="res://Sprites/IamgesForIdentification1.png" id="9_q4vql"]
 
 [sub_resource type="Resource" id="Resource_q86ko"]
 script = ExtResource("2_ymaym")
@@ -31,6 +35,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 script = ExtResource("2_gwqjw")
 prompt = "Let me see your invite."
 answer = Array[String](["Dude calm down here it is.", "Like seriously why are you such an interagotter."])
+image = ExtResource("9_q4vql")
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]
@@ -64,6 +69,7 @@ outDoorSprite = ExtResource("3_nj1cl")
 interiorSprite = ExtResource("2_d3sfb")
 afraidSprite = ExtResource("1_gwqjw")
 introDialaogue = Array[String](["Whats up dude, thanks for the invite.", "Dont worry I got the snacks.", "And it look pretty busy in there, what a good oppourtunity, just what I'm looking for."])
+introVoicelines = Array[AudioStreamWAV]([ExtResource("4_fqv5d"), ExtResource("5_q4vql"), ExtResource("6_rn7yd")])
 questions = Array[ExtResource("2_gwqjw")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 information = SubResource("Resource_q86ko")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

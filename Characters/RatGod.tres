@@ -6,6 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://f4acbilmuij6" path="res://Sprites/People/Kitchen/KitchenPeopleTalking3.png" id="2_cdl15"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="2_impvx"]
 [ext_resource type="Texture2D" uid="uid://dkmt4ivj7ahc2" path="res://Sprites/People/Outside/OutsidePeopleTake more3.png" id="3_6hf7l"]
+[ext_resource type="AudioStream" uid="uid://byin4ytgoo47l" path="res://SFX/Voicelines/RatGodEnter1.wav" id="4_8l4cp"]
+[ext_resource type="AudioStream" uid="uid://bq1fnn7tc84ll" path="res://SFX/Voicelines/RatGodEnter2.wav" id="5_wgx6h"]
+[ext_resource type="AudioStream" uid="uid://bxoedgwp78vec" path="res://SFX/Voicelines/RatGodEnter3.wav" id="6_8oknn"]
+[ext_resource type="AudioStream" uid="uid://clwv87xm36t8q" path="res://SFX/Voicelines/RatGodEnter4.wav" id="7_55cjg"]
 
 [sub_resource type="Resource" id="Resource_k84n5"]
 script = ExtResource("1_impvx")
@@ -60,10 +64,12 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 [resource]
 script = ExtResource("2_impvx")
 fullName = "Rat God"
+vampire = true
 outDoorSprite = ExtResource("3_6hf7l")
 interiorSprite = ExtResource("2_cdl15")
 afraidSprite = ExtResource("1_xdaoa")
 introDialaogue = Array[String](["Hehehehe, what is it?", "You ask me if I am a vampire, those creatures are below me!", "I am above all!", "I am the rat god!"])
+introVoicelines = Array[AudioStreamWAV]([ExtResource("4_8l4cp"), ExtResource("5_wgx6h"), ExtResource("6_8oknn"), ExtResource("7_55cjg")])
 questions = Array[ExtResource("1_y821a")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 information = SubResource("Resource_k84n5")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

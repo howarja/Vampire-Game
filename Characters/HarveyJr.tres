@@ -6,6 +6,13 @@
 [ext_resource type="Texture2D" uid="uid://hcw4ncv6a08c" path="res://Sprites/People/Kitchen/KitchenPeopleTalking1.png" id="2_r18tx"]
 [ext_resource type="Texture2D" uid="uid://dqy5600bplwpb" path="res://Sprites/People/Outside/OutsidePeopleTake more1.png" id="3_83sy3"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_r18tx"]
+[ext_resource type="AudioStream" uid="uid://b1448orgdlyrt" path="res://SFX/Voicelines/HarveyJrEnter1.wav" id="4_nghwl"]
+[ext_resource type="AudioStream" uid="uid://b4p3hpfin5f38" path="res://SFX/Voicelines/HarveyJrEnter2.wav" id="5_uhkus"]
+[ext_resource type="AudioStream" uid="uid://d2xy0cif263gi" path="res://SFX/Voicelines/HarveyJrEnter3.wav" id="6_0uffl"]
+[ext_resource type="AudioStream" uid="uid://j6xs8wbo42og" path="res://SFX/Voicelines/HarveyJrEnter4.wav" id="7_6jjht"]
+[ext_resource type="AudioStream" uid="uid://dxy5xum7r5kai" path="res://SFX/Voicelines/HarveyJrEnter5.wav" id="8_vjt18"]
+[ext_resource type="AudioStream" uid="uid://basih8vrbw08o" path="res://SFX/Voicelines/HarveyJrEnter6.wav" id="9_02s5b"]
+[ext_resource type="Texture2D" uid="uid://cmfy7rsqg5ikx" path="res://Sprites/IamgesForIdentification1.png" id="12_uhkus"]
 
 [sub_resource type="Resource" id="Resource_srw4k"]
 script = ExtResource("2_83sy3")
@@ -31,6 +38,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 script = ExtResource("2_qfs7x")
 prompt = "Let me see your invite."
 answer = Array[String](["here you go!"])
+image = ExtResource("12_uhkus")
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]
@@ -64,7 +72,8 @@ vampire = true
 outDoorSprite = ExtResource("3_83sy3")
 interiorSprite = ExtResource("2_r18tx")
 afraidSprite = ExtResource("1_qfs7x")
-introDialaogue = Array[String](["Hiya there! I was invited to some party?", "Am I at the right house?", "Ah, so you are just greeting us, makes sense ever since this vampire problem.", "I hope you've done your job well enough and theres none in there... May I come in?"])
+introDialaogue = Array[String](["Hiya there!", "I was invited to some party?", "Am I at the right house?", "Ah, so you are just greeting us, makes sense ever since this vampire problem.", "I hope you've done your job well enough and theres none in there...", "May I come in?"])
+introVoicelines = Array[AudioStreamWAV]([ExtResource("4_nghwl"), ExtResource("5_uhkus"), ExtResource("6_0uffl"), ExtResource("7_6jjht"), ExtResource("8_vjt18"), ExtResource("9_02s5b")])
 questions = Array[ExtResource("2_qfs7x")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 information = SubResource("Resource_srw4k")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

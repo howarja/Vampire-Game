@@ -6,6 +6,10 @@
 [ext_resource type="Texture2D" uid="uid://c17uv2j3qbd2d" path="res://Sprites/People/Garage/InsideGarage2PeopleTalking7.png" id="2_0245l"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="3_0245l"]
 [ext_resource type="Texture2D" uid="uid://dq8ht1qow0avc" path="res://Sprites/People/Outside/TobyS.png" id="3_gnvrt"]
+[ext_resource type="AudioStream" uid="uid://c10in32gtqgli" path="res://SFX/Voicelines/BillBobbyJrEnter1.wav" id="4_183gl"]
+[ext_resource type="AudioStream" uid="uid://bxwtp55tjxg6t" path="res://SFX/Voicelines/BillyBobbyJrEnter2.wav" id="5_vcayi"]
+[ext_resource type="AudioStream" uid="uid://qwgie171tqv0" path="res://SFX/Voicelines/BillyBobbyJrEnter3.wav" id="6_ts620"]
+[ext_resource type="Texture2D" uid="uid://cmfy7rsqg5ikx" path="res://Sprites/IamgesForIdentification1.png" id="9_vcayi"]
 
 [sub_resource type="Resource" id="Resource_fl2nn"]
 script = ExtResource("2_6hmww")
@@ -31,6 +35,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 script = ExtResource("2_8qroq")
 prompt = "Let me see your invite."
 answer = Array[String](["Oh yes, here you go."])
+image = ExtResource("9_vcayi")
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_0mdo4"]
@@ -64,6 +69,7 @@ outDoorSprite = ExtResource("3_gnvrt")
 interiorSprite = ExtResource("2_0245l")
 afraidSprite = ExtResource("1_8qroq")
 introDialaogue = Array[String](["Heya partner!", "I recieved an invite to this glorious party!", "I heard there would be some rootin shootin party!"])
+introVoicelines = Array[AudioStreamWAV]([ExtResource("4_183gl"), ExtResource("5_vcayi"), ExtResource("6_ts620")])
 questions = Array[ExtResource("2_8qroq")]([SubResource("Resource_wimtb"), SubResource("Resource_hush4"), SubResource("Resource_0mdo4"), SubResource("Resource_1tlsp"), SubResource("Resource_c4kb4"), SubResource("Resource_lw0dh")])
 information = SubResource("Resource_fl2nn")
 metadata/_custom_type_script = "uid://byskr8hlcn2vi"

@@ -208,12 +208,12 @@ script = ExtResource("2_48ign")
 position = Vector2(500, 376)
 texture = ExtResource("5_vt84v")
 
-[node name="Vignete" type="Sprite2D" parent="." unique_id=1364870032]
-position = Vector2(500, 375)
-texture = ExtResource("5_7nrmo")
-
 [node name="MenuAnim" type="AnimationPlayer" parent="." unique_id=761404218]
 libraries/ = SubResource("AnimationLibrary_7nrmo")
+
+[node name="Vignete" type="Sprite2D" parent="MenuAnim" unique_id=1364870032]
+position = Vector2(500, 375)
+texture = ExtResource("5_7nrmo")
 
 [node name="music" type="AudioStreamPlayer2D" parent="." unique_id=1529809983]
 position = Vector2(391, 640)

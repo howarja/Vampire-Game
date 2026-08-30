@@ -1,8 +1,8 @@
 extends Button
 class_name buttonEffects
 
-var hovering=false
-var shaking=false
+var hovering = false
+var shaking = false
 
 func _ready() -> void:
 	button_down.connect(_on_button_down);

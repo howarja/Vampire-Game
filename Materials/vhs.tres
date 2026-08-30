@@ -4,8 +4,8 @@
 
 [resource]
 shader = ExtResource("1_msrwh")
-shader_parameter/smearing = 0.4290000203775
-shader_parameter/color_offset = 0.01700000243744
+shader_parameter/smearing = 0.0
+shader_parameter/color_offset = 1.6299399954733396e-09
 shader_parameter/sharpening = 0.6000000285
 shader_parameter/static_noise = 0.08
 shader_parameter/vertical_jitter = 0.002

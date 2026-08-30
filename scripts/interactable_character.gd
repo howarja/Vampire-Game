@@ -19,7 +19,6 @@ func _input(event: InputEvent) -> void:
 func interact():
 	if Globals.conversation.canStartConversation():
 		hideCharacter();
-		Globals.actionTaken();
 		Globals.conversation.loadCharacter(currentCharacter, self);
 
 func hideCharacter():

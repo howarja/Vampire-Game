@@ -3,26 +3,47 @@ extends Area
 var currentCharacter: character;
 @export var characterSprite: Sprite2D;
 @export var maxTimer: Timer;
-var timerFinished: bool = false;
+@export var emptyTimer: Timer;
+@export var knockingSFX: AudioStreamPlayer2D;
+var maxTimerFinished: bool = false;
+var emptyTimerFinsihed: bool = false;
+
+var guestWaiting: bool = false;
 
 func _ready() -> void:
-	maxTimer.timeout.connect(timerFinish);
+	maxTimer.timeout.connect(maxTimerFinish);
+	emptyTimer.timeout.connect(emptyTimerFinish);
 
 func newGuest():
 	currentCharacter = Globals.characters.getCharacter();
 	if currentCharacter != null:
-		characterSprite.texture = currentCharacter.outDoorSprite;
 		Globals.doorway.loadCharacter(currentCharacter);
+		characterSprite.texture = currentCharacter.outDoorSprite;
 		hideButtons();
-		maxTimer.start();
-		timerFinished = false;
 
-func timerFinish():
-	timerFinished = true;
+		maxTimer.start();
+		emptyTimer.start();
+		maxTimerFinished = false;
+		emptyTimerFinsihed = false;
+		guestWaiting = false;
+
+func maxTimerFinish():
+	maxTimerFinished = true;
+
+func emptyTimerFinish():
+	emptyTimerFinsihed = true;
+
+func _process(delta: float) -> void:
+	if Globals.player.currentArea!=self:
+		if Globals.actionTimer<=0 || maxTimerFinished || Globals.characters.noCharacters():
+			if !guestWaiting:
+				guestWaiting = true;
+				knockingSFX.play();
 
 func onEntered():
-	if Globals.actionTimer<=0||Globals.characters.noCharacters() && timerFinished:
+	knockingSFX.stop();
+	if guestWaiting:
+		Globals.resetActionTimer(min(Globals.characters.totalActiveCharacters()+1, 3));
 		newGuest();
-		Globals.resetActionTimer(1);
 	else:
 		characterSprite.texture = null;

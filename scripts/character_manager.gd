@@ -24,6 +24,9 @@ func acceptCharacter(newCharacter: character) -> void:
 
 func isActiveCharacter(check: character):
 	return acceptedCharacters.has(check);
+	
+func totalActiveCharacters():
+	return acceptedCharacters.size();
 
 func removeCharacter(remove: character) -> void:
 	acceptedCharacters.erase(remove);

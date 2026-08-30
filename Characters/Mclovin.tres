@@ -9,6 +9,7 @@
 [ext_resource type="AudioStream" uid="uid://dimtt8a2i6slv" path="res://SFX/Voicelines/MclovinEnter1.wav" id="4_usgjf"]
 [ext_resource type="AudioStream" uid="uid://dbuab0nfbl1lo" path="res://SFX/Voicelines/MclovinEnter2.wav" id="5_bjsc2"]
 [ext_resource type="AudioStream" uid="uid://c8dvlbc6cm5q3" path="res://SFX/Voicelines/MclovinEnter3.wav" id="6_is5kn"]
+[ext_resource type="Texture2D" uid="uid://b3nxmtame4f36" path="res://Sprites/IamgesForIdentification4.png" id="9_bjsc2"]
 
 [sub_resource type="Resource" id="Resource_1dbfa"]
 script = ExtResource("2_wos81")
@@ -40,6 +41,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 script = ExtResource("2_of7nf")
 prompt = "May I see your ID?"
 answer = Array[String](["Wow this makes me feel young again."])
+image = ExtResource("9_bjsc2")
 metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 
 [sub_resource type="Resource" id="Resource_1tlsp"]

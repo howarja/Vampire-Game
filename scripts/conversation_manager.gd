@@ -34,7 +34,10 @@ func _ready() -> void:
 
 func newLine():
 	if currentLine<lines.size():
-		text.triggerDialogue(lines[currentLine], null, renableInput);
+		var currentAudio = null;
+		if audio.size()>currentLine:
+			currentAudio = audio[currentLine];
+		text.triggerDialogue(lines[currentLine], currentAudio, renableInput);
 		currentLine+=1;
 		canInput = false;
 		canQuestion(false);
@@ -89,7 +92,6 @@ func loadCharacter(newCharacter: character, interacted: interactableCharacter):
 	Globals.player.currentArea.hideButtons();
 	reparent(Globals.player.currentArea, true);
 	canQuestion(true)
-	#beginLine(currentCharacter.introDialaogue, currentCharacter.introVoicelines);
 
 func loadQuestion(newQuestion: question) -> void:
 	lines = newQuestion.answer;
@@ -159,6 +161,7 @@ func exitWithoutFade():
 	display.hide();
 	phone.put_away_phone();
 	Globals.player.changeAreaTo(Globals.player.currentArea)
+	Globals.actionTaken();
 
 func setAfraid():
 	characterSprite.texture = currentCharacter.afraidSprite;

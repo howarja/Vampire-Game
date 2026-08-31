@@ -2,7 +2,9 @@ extends Resource
 class_name character;
 
 @export var fullName: String;
+@export var host: bool;
 @export var vampire: bool;
+@export var not_have_id: bool;
 @export var outDoorSprite: Texture2D;
 @export var interiorSprite: Texture2D;
 @export var afraidSprite: Texture2D;
@@ -10,3 +12,4 @@ class_name character;
 @export var introVoicelines: Array[AudioStreamWAV];
 @export var questions: Array[question];
 @export var information: Information
+@export var fake_information: Information

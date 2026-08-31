@@ -18,6 +18,7 @@ func _ready() -> void:
 	var vampires_let_in = Globals.vampiresLetIn;
 	var humans_killed = Globals.humansKilled;
 	var vampires_killed = Globals.vampiresKilled;
+	var hosts_killed = Globals.hostsKilled;
 	
 	var vampiresAlive: int = vampires_let_in-vampires_killed;
 	var humans_alive: int = humans_let_in-humans_killed;
@@ -36,6 +37,11 @@ func _ready() -> void:
 	Vampires Killed: "+str(vampires_killed)+"
 	
 	Vampires Alive: "+str(vampiresAlive);
+	
+	if hosts_killed > 0:
+		text.text += "\n\n you killed the host, you monster. You failed.";
+		text.text += "\n\n Murderer Ending!";
+		audio_player.stream = bad_ending;
 	
 	if vampiresAlive > 0:
 		text.text += "\n\n the host was killed and eaten by vampires. You failed.";
@@ -80,7 +86,7 @@ func _ready() -> void:
 		else: if(vampires_let_in == 0):
 			## only let humans in only ending(let only humans in your house)
 			text.text += "\n\n You were very picky";
-			text.text += "\n\n Racist Ending!";
+			text.text += "\n\n Human Only Party Ending!";
 			audio_player.stream = detective_ending;
 			return;
 		else: if(vampires_let_in > 0 && humans_let_in == 0):

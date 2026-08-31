@@ -59,7 +59,7 @@ func newLine():
 			canQuestion(true);
 
 func _process(delta: float) -> void:
-	if imageOnScreen  &&imageClickReady:
+	if imageOnScreen && imageClickReady:
 		if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
 			canQuestion(true);
 			putAwayStuff();
@@ -142,6 +142,8 @@ func killCharacter():
 	# kill the character
 	if currentCharacter.vampire:
 		Globals.vampiresKilled+=1;
+	else: if currentCharacter.host:
+		Globals.hostsKilled+=1;
 	else:
 		Globals.humansKilled+=1;
 	
@@ -175,17 +177,18 @@ func setAfraid():
 	
 
 func getOutImage(isID: bool,newQuestion: question):
-	ImageBG.play("FadeIn");
-	imageOnScreen = true;
-	imageClickReady = false;
-	
-	if isID:
-		_id.show();
-	else:
-		display.texture = newQuestion.image;
-		display.show();
-	
-	await get_tree().create_timer(0.2).timeout;
+	if !currentCharacter.not_have_id:
+		ImageBG.play("FadeIn");
+		imageOnScreen = true;
+		imageClickReady = false;
+		
+		if isID:
+			_id.show();
+		else:
+			display.texture = newQuestion.image;
+			display.show();
+		
+		await get_tree().create_timer(0.2).timeout;
 	imageClickReady = true;
 	
 

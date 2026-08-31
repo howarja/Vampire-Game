@@ -17,7 +17,7 @@ config/icon="res://icon.svg"
 
 [audio]
 
-buses/default_bus_layout="uid://p5dohd1og5xf"
+buses/default_bus_layout="uid://dbi3ow5mrvqhl"
 
 [autoload]
 
@@ -27,7 +27,6 @@ Globals="*uid://drsngj503o5k1"
 
 window/size/viewport_width=1000
 window/size/viewport_height=750
-window/size/mode=2
 window/stretch/mode="viewport"
 
 [input]

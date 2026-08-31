@@ -1,12 +1,14 @@
 [gd_scene format=3 uid="uid://gpedpgp5hk8i"]
 
 [ext_resource type="Script" uid="uid://dberhdml3xlet" path="res://scripts/conversation_manager.gd" id="1_rq48i"]
+[ext_resource type="Script" uid="uid://bnby76ugldil5" path="res://scripts/music_manager.gd" id="2_gh80h"]
 [ext_resource type="AudioStream" uid="uid://dljpxhvysohf1" path="res://music/Jingle time.wav" id="2_v3w6o"]
 [ext_resource type="Script" uid="uid://bndg1f3jq34l3" path="res://scripts/textGiver.gd" id="2_yagjw"]
 [ext_resource type="Script" uid="uid://btva2ox1ockyg" path="res://scripts/interactable_character.gd" id="3_ip4ey"]
 [ext_resource type="Script" uid="uid://b7d02u7xi35qp" path="res://scripts/movement_button.gd" id="3_jmrrm"]
 [ext_resource type="AudioStream" uid="uid://dhyfjfkdg5alj" path="res://SFX/finalSFX/Knock5.mp3" id="4_7vq2n"]
 [ext_resource type="Texture2D" uid="uid://cjgwsjboawlj2" path="res://Sprites/areas/Outside.png" id="4_qlfe6"]
+[ext_resource type="AudioStream" uid="uid://cei01vhstieuf" path="res://music/Piano 1.wav" id="4_v6et4"]
 [ext_resource type="Texture2D" uid="uid://b85cn7tf2bm3j" path="res://Sprites/areas/Lounge.png" id="4_vj0vq"]
 [ext_resource type="Script" uid="uid://dgg3qst63mw2m" path="res://scripts/player_manager.gd" id="5_qlfe6"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="5_qpnow"]
@@ -103,6 +105,7 @@ shader = ExtResource("8_2l27o")
 shader_parameter/center = Vector2(0.51, 0.52)
 shader_parameter/power = 4.18999991007044
 shader_parameter/radius = 0.42999999038864
+shader_parameter/pixel_size = 1.0
 
 [sub_resource type="Animation" id="Animation_nxs8g"]
 resource_name = "KillAnim"
@@ -442,19 +445,30 @@ movementSFX = NodePath("MovementSFX")
 houseMusic = NodePath("InHouseMusic")
 outsideMusic = NodePath("PeepHoleMusic")
 
+[node name="Music Manager" type="Node2D" parent="PlayerManager" unique_id=1871316169 node_paths=PackedStringArray("outside_music_player", "inside_music_player")]
+script = ExtResource("2_gh80h")
+outside_music = Array[AudioStreamWAV]([ExtResource("28_judpu")])
+outside_music_player = NodePath("../PeepHoleMusic")
+inside_music = Array[AudioStreamWAV]([ExtResource("4_v6et4"), ExtResource("2_v3w6o")])
+inside_music_player = NodePath("../InHouseMusic")
+
 [node name="InHouseMusic" type="AudioStreamPlayer2D" parent="PlayerManager" unique_id=839886360]
 stream = ExtResource("2_v3w6o")
 autoplay = true
+bus = &"Music"
 
 [node name="PeepHoleMusic" type="AudioStreamPlayer2D" parent="PlayerManager" unique_id=1871301288]
 stream = ExtResource("28_judpu")
 autoplay = true
+bus = &"Music"
 
 [node name="MovementSFX" type="AudioStreamPlayer2D" parent="PlayerManager" unique_id=830269458]
 stream = ExtResource("28_judpu")
+bus = &"SFX"
 
 [node name="Knocking" type="AudioStreamPlayer2D" parent="PlayerManager" unique_id=1144822087]
 stream = ExtResource("4_7vq2n")
+bus = &"SFX"
 
 [node name="CharacterManager" type="Node2D" parent="." unique_id=779009452]
 script = ExtResource("14_jsjc1")
@@ -1260,6 +1274,7 @@ mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_kopt5")
 
 [node name="VHSfx" parent="CanvasLayer" unique_id=1094916861 instance=ExtResource("8_judpu")]
+visible = false
 z_index = 4096
 offset_left = -551.6666
 offset_top = -417.0
@@ -1267,11 +1282,10 @@ offset_right = -442.33337
 offset_bottom = -335.0
 mouse_filter = 2
 
-[node name="BackBufferCopy" type="BackBufferCopy" parent="CanvasLayer/VHSfx" unique_id=203796283]
+[node name="BackBufferCopy" type="BackBufferCopy" parent="CanvasLayer/VHSfx" unique_id=906777253]
 copy_mode = 2
 
 [node name="Pixelate" parent="CanvasLayer/VHSfx" unique_id=127029814 instance=ExtResource("51_nlj8h")]
-visible = false
 layout_mode = 1
 offset_left = -48.333374
 offset_top = -83.0
@@ -1288,10 +1302,12 @@ frame = 1
 [node name="ButtonSFX2" type="AudioStreamPlayer2D" parent="." unique_id=996526734]
 stream = ExtResource("89_rqkno")
 volume_db = 5.0
+bus = &"SFX"
 
 [node name="ButtonSFX" type="AudioStreamPlayer2D" parent="." unique_id=1540597294]
 stream = ExtResource("90_qpw81")
 volume_db = 5.0
+bus = &"SFX"
 
 [node name="CanvasLayerBorder" type="CanvasLayer" parent="." unique_id=1724315043]
 layer = 2

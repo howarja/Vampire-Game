@@ -32,6 +32,18 @@ func fadeText(newText,visibleLength):
 	tween.tween_property(normal_text, "modulate:a", 0, visibleLength).set_trans(Tween.TRANS_CUBIC)
 	await tween.finished
 
+func _on_credits_button_entered():
+	pass
+
+func _on_credits_button_exited():
+	pass
+
+func _on_credits_button_pressed():
+	pass
 
 func _on_play_button_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/startScene.tscn")
+
+
+func _on_exit_button_pressed() -> void:
+	get_tree().root.mode = Window.MODE_MINIMIZED

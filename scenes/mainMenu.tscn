@@ -181,6 +181,7 @@ anchor_bottom = 1.0
 offset_bottom = -7.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 theme_override_fonts/normal_font = ExtResource("3_lam2r")
 theme_override_fonts/bold_font = ExtResource("3_lam2r")
 theme_override_fonts/bold_italics_font = ExtResource("3_lam2r")
@@ -221,6 +222,7 @@ position = Vector2(501, -401)
 texture = ExtResource("3_tov5d")
 
 [node name="Settings" parent="." unique_id=1974824112 instance=ExtResource("2_3d1i7")]
+z_index = 1
 
 [node name="exitButton" type="Button" parent="." unique_id=260818102 node_paths=PackedStringArray("hoverStream", "clickStream")]
 layout_mode = 1
@@ -260,21 +262,25 @@ texture = ExtResource("5_7nrmo")
 position = Vector2(391, 640)
 stream = ExtResource("5_clbkb")
 autoplay = true
+bus = &"Music"
 
 [node name="BloodOfTheHost" type="AudioStreamPlayer2D" parent="." unique_id=541277287]
 position = Vector2(508, 343)
 stream = ExtResource("6_clbkb")
 volume_db = 10.0
+bus = &"SFX"
 
 [node name="ButtonSFX2" type="AudioStreamPlayer2D" parent="." unique_id=64223299]
 position = Vector2(-49, -34)
 stream = ExtResource("16_jfr2g")
 volume_db = 5.0
+bus = &"SFX"
 
 [node name="ButtonSFX" type="AudioStreamPlayer2D" parent="." unique_id=1182532484]
 position = Vector2(-49, -34)
 stream = ExtResource("16_25e00")
 volume_db = 5.0
+bus = &"SFX"
 
 [node name="VHSfx" parent="." unique_id=1094916861 instance=ExtResource("7_y35fp")]
 z_index = 4096

@@ -14,10 +14,12 @@ func _ready() -> void:
 	
 	##outside
 	if outside_music.size() > 0:
-		rand = randi_range(0,outside_music.size() - 1)
+		rand = randi_range(0,outside_music.size() - 1);
 		outside_music_player.stream = outside_music[rand];
+		outside_music_player.play();
 	
 	##inside
 	if inside_music.size() > 0:
-		rand = randi_range(0,inside_music.size() - 1)
+		rand = randi_range(0,inside_music.size() - 1);
 		inside_music_player.stream = inside_music[rand];
+		inside_music_player.play();

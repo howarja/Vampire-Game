@@ -13,7 +13,9 @@ config_version=5
 config/name="VampireGame"
 run/main_scene="uid://c26xead5ij1uf"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="res://icon.svg"
+boot_splash/bg_color=Color(0.17335191, 0.09347012, 0.26306468, 1)
+boot_splash/image="uid://bpmgamxmoe011"
+config/icon="uid://07q2kpwvg43y"
 
 [audio]
 
@@ -27,6 +29,7 @@ Globals="*uid://drsngj503o5k1"
 
 window/size/viewport_width=1000
 window/size/viewport_height=750
+window/size/mode=2
 window/stretch/mode="viewport"
 
 [input]

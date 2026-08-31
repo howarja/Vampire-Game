@@ -10,10 +10,10 @@ var initScale;
 @export var clickStream: AudioStreamPlayer2D
 
 func _ready() -> void:
-	#button_down.connect(_on_button_down);
-	#button_up.connect(_on_button_up);
-	#mouse_entered.connect(_on_mouse_entered);
-	#mouse_exited.connect(_on_mouse_exited);
+	button_down.connect(_on_button_down);
+	button_up.connect(_on_button_up);
+	mouse_entered.connect(_on_mouse_entered);
+	mouse_exited.connect(_on_mouse_exited);
 	initScale = self.scale
 
 func _physics_process(delta: float) -> void:

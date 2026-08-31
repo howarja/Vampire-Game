@@ -189,8 +189,10 @@ func getOutImage(isID: bool,newQuestion: question):
 			display.show();
 		
 		await get_tree().create_timer(0.2).timeout;
-	imageClickReady = true;
-	
+		imageClickReady = true;
+	else:
+		canQuestion(true);
+		
 
 func putAwayStuff():
 	ImageBG.play("FadeOut");

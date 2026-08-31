@@ -26,6 +26,8 @@ func newGuest():
 		maxTimerFinished = false;
 		emptyTimerFinsihed = false;
 		guestWaiting = false;
+	else:
+		print("no one left") ## this kinda fixs the bug?
 
 func maxTimerFinish():
 	maxTimerFinished = true;

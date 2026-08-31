@@ -468,7 +468,7 @@ stream = ExtResource("6_vo31v")
 
 [node name="CharacterManager" type="Node2D" parent="." unique_id=779009452]
 script = ExtResource("7_04k16")
-unEncounteredCharacters = Array[ExtResource("8_7edfg")]([ExtResource("9_t8jdu"), ExtResource("10_d5x6x"), ExtResource("11_ocawo"), ExtResource("12_ijhsd"), ExtResource("13_rq4sk"), ExtResource("14_s1hka"), ExtResource("15_78wmf"), ExtResource("16_cppmr"), ExtResource("17_oc8rh"), ExtResource("18_0jgav"), ExtResource("19_hqxpv"), ExtResource("20_1hol7"), ExtResource("21_hxmce"), ExtResource("22_niinm"), ExtResource("23_q3w5n"), ExtResource("24_5ipdf"), ExtResource("25_ssw8y"), ExtResource("26_t6e4k"), ExtResource("27_bytik"), ExtResource("28_yvl2j"), ExtResource("29_irmu4"), ExtResource("30_10b02"), ExtResource("31_vq70s")])
+unEncounteredCharacters = Array[ExtResource("8_7edfg")]([ExtResource("9_t8jdu"), ExtResource("10_d5x6x")])
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=982724521]
 offset = Vector2(500, 375)

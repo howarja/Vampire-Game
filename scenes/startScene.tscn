@@ -363,6 +363,60 @@ corner_radius_bottom_right = 3
 corner_radius_bottom_left = 3
 corner_detail = 5
 
+[sub_resource type="Animation" id="Animation_kledg"]
+resource_name = "FadeIn"
+length = 0.36666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.33333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_v6et4"]
+resource_name = "FadeOut"
+length = 0.33333334
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.33333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_gh80h"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gh80h"]
+_data = {
+&"FadeIn": SubResource("Animation_kledg"),
+&"FadeOut": SubResource("Animation_v6et4"),
+&"RESET": SubResource("Animation_gh80h")
+}
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kopt5"]
 content_margin_left = 0.0
 content_margin_top = 0.0
@@ -404,7 +458,7 @@ stream = ExtResource("4_7vq2n")
 
 [node name="CharacterManager" type="Node2D" parent="." unique_id=779009452]
 script = ExtResource("14_jsjc1")
-unEncounteredCharacters = Array[ExtResource("5_qpnow")]([ExtResource("76_kledg"), ExtResource("6_judpu"), ExtResource("7_x3tw5"), ExtResource("8_nlj8h"), ExtResource("9_dya7i"), ExtResource("10_sussc"), ExtResource("11_frb8m"), ExtResource("12_x6vsl"), ExtResource("13_hado3"), ExtResource("13_yhoku"), ExtResource("14_03vgi"), ExtResource("15_0smob"), ExtResource("16_s8qox"), ExtResource("17_jr8db"), ExtResource("18_4qcbm"), ExtResource("19_kav1b"), ExtResource("20_tulyn"), ExtResource("21_ce0yk"), ExtResource("23_2kk1b"), ExtResource("27_2xysg"), ExtResource("25_2a0wb"), ExtResource("5_wbdqt"), ExtResource("28_7bw5e")])
+unEncounteredCharacters = Array[ExtResource("5_qpnow")]([ExtResource("6_judpu"), ExtResource("76_kledg"), ExtResource("7_x3tw5"), ExtResource("8_nlj8h"), ExtResource("9_dya7i"), ExtResource("10_sussc"), ExtResource("11_frb8m"), ExtResource("12_x6vsl"), ExtResource("13_hado3"), ExtResource("13_yhoku"), ExtResource("14_03vgi"), ExtResource("15_0smob"), ExtResource("16_s8qox"), ExtResource("17_jr8db"), ExtResource("18_4qcbm"), ExtResource("19_kav1b"), ExtResource("20_tulyn"), ExtResource("21_ce0yk"), ExtResource("23_2kk1b"), ExtResource("27_2xysg"), ExtResource("25_2a0wb"), ExtResource("5_wbdqt"), ExtResource("28_7bw5e")])
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=982724521]
 offset = Vector2(500, 375)
@@ -972,7 +1026,7 @@ texture = ExtResource("76_0y8p8")
 position = Vector2(179.0909, 20.909088)
 shape = SubResource("CircleShape2D_3xd07")
 
-[node name="ConversationManager" type="Control" parent="CanvasLayer" unique_id=648713796 node_paths=PackedStringArray("text", "buttonContainer", "exitButton", "killButton", "characterSprite", "display", "phone", "_id", "anim")]
+[node name="ConversationManager" type="Control" parent="CanvasLayer" unique_id=648713796 node_paths=PackedStringArray("text", "buttonContainer", "exitButton", "killButton", "characterSprite", "display", "phone", "_id", "ImageBG", "anim")]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -993,6 +1047,7 @@ characterSprite = NodePath("InDialogueSprite")
 display = NodePath("../DisplayImage")
 phone = NodePath("../Phone")
 _id = NodePath("../id")
+ImageBG = NodePath("../ImageBG/anims")
 anim = NodePath("ConversationAnim")
 
 [node name="InDialogueSprite" type="Sprite2D" parent="CanvasLayer/ConversationManager" unique_id=1441774159]
@@ -1155,18 +1210,29 @@ text = "Kill"
 visible = false
 position = Vector2(-500, -375)
 
+[node name="ImageBG" type="Panel" parent="CanvasLayer" unique_id=383117624]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -562.0
+offset_top = -425.0
+offset_right = 563.0
+offset_bottom = 422.0
+mouse_filter = 2
+
+[node name="anims" type="AnimationPlayer" parent="CanvasLayer/ImageBG" unique_id=869421564]
+libraries/ = SubResource("AnimationLibrary_gh80h")
+
 [node name="id" parent="CanvasLayer" unique_id=2141918312 instance=ExtResource("76_j33vn")]
 visible = false
-offset_left = -479.0
-offset_top = -431.0
-offset_right = -479.0
-offset_bottom = -431.0
+offset_left = -612.0
+offset_top = -371.0
+offset_right = -612.0
+offset_bottom = -371.0
 
 [node name="DisplayImage" type="TextureRect" parent="CanvasLayer" unique_id=1652663511]
-offset_left = -513.0
-offset_top = -316.0
-offset_right = 487.0
-offset_bottom = 434.0
+offset_left = -614.0
+offset_top = -353.0
+offset_right = 386.0
+offset_bottom = 397.0
 mouse_filter = 2
 
 [node name="Phone" parent="CanvasLayer" unique_id=2065358974 instance=ExtResource("25_lqxam")]

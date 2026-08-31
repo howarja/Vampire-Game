@@ -20,11 +20,17 @@ var lastInteracted: interactableCharacter;
 @export var display: TextureRect;
 @export var phone: Phone;
 @export var _id: id;
+@export var ImageBG: AnimationPlayer;
 @export var anim: AnimationPlayer;
 
 var holdingInput: bool = false;
 var canInput: bool = true;
 var inConversation: bool = false;
+
+var pendingImage: Texture2D = null;
+var pendingIsID: bool = false;
+var imageOnScreen: bool = false;
+var imageClickReady: bool = false;
 
 func _ready() -> void:
 	Globals.conversation = self;
@@ -43,13 +49,22 @@ func newLine():
 		canQuestion(false);
 		anim.play("Talking")
 		
-		if saved_question!=null:
-			if saved_question.prompt != "Can i see your ID?":
-				_id.hide();
+		
 	else:
-		canQuestion(true);
+		if pendingIsID:
+			getOutImage(true, null);
+		elif pendingImage != null:
+			getOutImage(false, saved_question);
+		else:
+			canQuestion(true);
 
 func _process(delta: float) -> void:
+	if imageOnScreen  &&imageClickReady:
+		if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT):
+			canQuestion(true);
+			putAwayStuff();
+			return;
+	
 	if !inConversation:
 		return;
 	
@@ -60,10 +75,6 @@ func _process(delta: float) -> void:
 
 func renableInput():
 	canInput = true;
-	_id.hide();
-	if saved_question!=null:
-		if saved_question.prompt == "Can i see your ID?":
-			_id.show();
 	anim.play("RESET")
 
 func canQuestion(enabled: bool):
@@ -96,11 +107,13 @@ func loadCharacter(newCharacter: character, interacted: interactableCharacter):
 func loadQuestion(newQuestion: question) -> void:
 	lines = newQuestion.answer;
 	saved_question = newQuestion;
-	if newQuestion.image!=null:
-		display.texture = newQuestion.image;
-		display.show();
-	else:
-		display.hide();
+	
+	pendingImage = newQuestion.image;
+	pendingIsID = newQuestion.prompt == "Can i see your ID?";
+
+	display.hide();
+	_id.hide();
+	
 	audio = newQuestion.audio;
 	currentLine = 0;
 	newLine();
@@ -121,8 +134,6 @@ func exitConversation():
 	text.disable();
 	lastInteracted.update();
 	characterSprite.texture = null;
-	display.hide();
-	_id.hide();
 	phone.put_away_phone();
 	saved_question = null;
 	Globals.player.fadeTo(Globals.player.currentArea, 1)
@@ -142,9 +153,7 @@ func killCharacter():
 	canQuestion(false);
 	inConversation = false;
 	lines = [];
-	display.hide();
 	saved_question = null;
-	_id.hide();
 	phone.put_away_phone();
 	text.disable();
 	lastInteracted.update();
@@ -154,14 +163,38 @@ func exitWithoutFade():
 	canQuestion(false);
 	lines = [];
 	text.disable();
-	_id.hide();
 	saved_question = null;
 	lastInteracted.update();
 	characterSprite.texture = null;
-	display.hide();
 	phone.put_away_phone();
 	Globals.player.changeAreaTo(Globals.player.currentArea)
 	Globals.actionTaken();
 
 func setAfraid():
 	characterSprite.texture = currentCharacter.afraidSprite;
+	
+
+func getOutImage(isID: bool,newQuestion: question):
+	ImageBG.play("FadeIn");
+	imageOnScreen = true;
+	imageClickReady = false;
+	
+	if isID:
+		_id.show();
+	else:
+		display.texture = newQuestion.image;
+		display.show();
+	
+	await get_tree().create_timer(0.2).timeout;
+	imageClickReady = true;
+	
+
+func putAwayStuff():
+	ImageBG.play("FadeOut");
+	display.texture = null;
+	display.hide();
+	_id.hide();
+
+	pendingImage = null;
+	pendingIsID = false;
+	imageOnScreen = false;

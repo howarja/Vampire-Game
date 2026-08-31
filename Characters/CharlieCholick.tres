@@ -63,6 +63,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 [resource]
 script = ExtResource("2_0ot8i")
 fullName = "Charlie Cholick"
+not_have_id = true
 outDoorSprite = ExtResource("3_xdc46")
 interiorSprite = ExtResource("2_8gc7m")
 afraidSprite = ExtResource("1_celvo")

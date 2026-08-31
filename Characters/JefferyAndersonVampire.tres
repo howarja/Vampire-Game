@@ -68,6 +68,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 script = ExtResource("3_0chsk")
 fullName = "Jeffery Anderson"
 vampire = true
+not_have_id = true
 outDoorSprite = ExtResource("3_ui0fo")
 interiorSprite = ExtResource("2_0chsk")
 afraidSprite = ExtResource("1_ooaof")

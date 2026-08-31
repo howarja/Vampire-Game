@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" uid="uid://bsj2rcs7yvbxy" path="res://scripts/question.gd" id="1_8i1ka"]
 [ext_resource type="Texture2D" uid="uid://dxpg22q5b3p7k" path="res://Sprites/People/Garage/InsideGarage2PeopleScared4.png" id="1_lem5m"]
-[ext_resource type="Texture2D" uid="uid://due1cmwntrdqe" path="res://Sprites/People/Garage/InsideGarage2PeopleSitting4.png" id="2_2jrfc"]
 [ext_resource type="Script" uid="uid://l3v0m3s3okyk" path="res://scripts/information.gd" id="2_g8nvj"]
 [ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="2_ooas5"]
+[ext_resource type="Texture2D" uid="uid://dkoneknxqfpw8" path="res://Sprites/People/Garage/InsideGarage2PeopleTalking4.png" id="3_bbbgw"]
 [ext_resource type="Texture2D" uid="uid://nbcj41le3p70" path="res://Sprites/People/Outside/TobyG.png" id="3_g8nvj"]
 [ext_resource type="AudioStream" uid="uid://bu6eyk6xga222" path="res://SFX/Voicelines/SebastianSilvesterEnter1.wav" id="4_lwu8c"]
 [ext_resource type="AudioStream" uid="uid://8vi8qhcmean7" path="res://SFX/Voicelines/SebastianSilvesterEnter2.wav" id="5_bbbgw"]
@@ -66,7 +66,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 script = ExtResource("2_ooas5")
 fullName = "Sebastian Silvester"
 outDoorSprite = ExtResource("3_g8nvj")
-interiorSprite = ExtResource("2_2jrfc")
+interiorSprite = ExtResource("3_bbbgw")
 afraidSprite = ExtResource("1_lem5m")
 introDialaogue = Array[String](["Hi-i I I am Seb-sebastian.", "Umm do you know if Br-Brunhilde is here yet?", "I came to see her here."])
 introVoicelines = Array[AudioStreamWAV]([ExtResource("4_lwu8c"), ExtResource("5_bbbgw"), ExtResource("6_lw28w")])

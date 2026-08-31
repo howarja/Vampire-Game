@@ -64,7 +64,7 @@ metadata/_custom_type_script = "uid://bsj2rcs7yvbxy"
 [resource]
 script = ExtResource("2_impvx")
 fullName = "Rat God"
-vampire = true
+not_have_id = true
 outDoorSprite = ExtResource("3_6hf7l")
 interiorSprite = ExtResource("2_cdl15")
 afraidSprite = ExtResource("1_xdaoa")

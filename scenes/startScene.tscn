@@ -1030,10 +1030,11 @@ script = ExtResource("3_ip4ey")
 currentCharacter = ExtResource("76_kledg")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Kitchen/InteractableCharacter19" unique_id=1204735071]
+position = Vector2(-264.54544, 51.818176)
 texture = ExtResource("76_0y8p8")
 
 [node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Kitchen/InteractableCharacter19" unique_id=1499109741]
-position = Vector2(179.0909, 20.909088)
+position = Vector2(-90.90909, 94.54545)
 shape = SubResource("CircleShape2D_3xd07")
 
 [node name="ConversationManager" type="Control" parent="CanvasLayer" unique_id=648713796 node_paths=PackedStringArray("text", "buttonContainer", "exitButton", "killButton", "characterSprite", "display", "phone", "_id", "ImageBG", "anim")]

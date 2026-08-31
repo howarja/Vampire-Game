@@ -7,7 +7,7 @@
 [sub_resource type="LabelSettings" id="LabelSettings_fs0u4"]
 line_spacing = -5.0
 font = ExtResource("3_fs0u4")
-font_size = 9
+font_size = 8
 font_color = Color(0, 0, 0, 1)
 
 [node name="id" type="Control" unique_id=2141918312]
@@ -52,10 +52,11 @@ autowrap_mode = 2
 layout_mode = 0
 offset_left = 488.0
 offset_top = 407.0
-offset_right = 525.0
+offset_right = 526.0
 offset_bottom = 428.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-text = "5 feet 8 inchs"
+text = "5 feet
+8 inches"
 label_settings = SubResource("LabelSettings_fs0u4")
 autowrap_mode = 2
 

@@ -1,0 +1,1312 @@
+[gd_scene format=3 uid="uid://dhn8tbnhwa6kp"]
+
+[ext_resource type="Script" uid="uid://dgg3qst63mw2m" path="res://scripts/player_manager.gd" id="1_eg8rx"]
+[ext_resource type="Script" uid="uid://bnby76ugldil5" path="res://scripts/music_manager.gd" id="2_vvksf"]
+[ext_resource type="AudioStream" uid="uid://ei38ltoqcv4w" path="res://music/ambiance/Ghostly sfx_static.wav" id="3_40fa3"]
+[ext_resource type="AudioStream" uid="uid://cei01vhstieuf" path="res://music/Piano 1.wav" id="4_pqv4d"]
+[ext_resource type="AudioStream" uid="uid://dljpxhvysohf1" path="res://music/Jingle time.wav" id="5_k3v5p"]
+[ext_resource type="AudioStream" uid="uid://dhyfjfkdg5alj" path="res://SFX/finalSFX/Knock5.mp3" id="6_vo31v"]
+[ext_resource type="Script" uid="uid://dep647b6vlno6" path="res://scripts/character_manager.gd" id="7_04k16"]
+[ext_resource type="Script" uid="uid://byskr8hlcn2vi" path="res://scripts/character.gd" id="8_7edfg"]
+[ext_resource type="Resource" uid="uid://6fw7urgsbg71" path="res://Characters/Host.tres" id="9_t8jdu"]
+[ext_resource type="Resource" uid="uid://bkqhvg7bu3eo7" path="res://Characters/SteveDuobler.tres" id="10_d5x6x"]
+[ext_resource type="Resource" uid="uid://cokt4gkwlsj1i" path="res://Characters/TuckerJacobs.tres" id="11_ocawo"]
+[ext_resource type="Resource" uid="uid://d1puh0w3c3eav" path="res://Characters/Batman.tres" id="12_ijhsd"]
+[ext_resource type="Resource" uid="uid://cnsh10eqjmluh" path="res://Characters/Mclovin.tres" id="13_rq4sk"]
+[ext_resource type="Resource" uid="uid://bhpiqqonswruq" path="res://Characters/WilliamGreaves.tres" id="14_s1hka"]
+[ext_resource type="Resource" uid="uid://nyhgm7avmwdt" path="res://Characters/SimSoul.tres" id="15_78wmf"]
+[ext_resource type="Resource" uid="uid://cuggg4fxfk00n" path="res://Characters/MichaelSoul.tres" id="16_cppmr"]
+[ext_resource type="Resource" uid="uid://b7e2j8yc6oqes" path="res://Characters/JefferyAnderson.tres" id="17_oc8rh"]
+[ext_resource type="Resource" uid="uid://54st1ebshao6" path="res://Characters/StarkBeever.tres" id="18_0jgav"]
+[ext_resource type="Resource" uid="uid://btlgqcio47d5v" path="res://Characters/JoeLemur.tres" id="19_hqxpv"]
+[ext_resource type="Resource" uid="uid://bkdcwsj8eieqp" path="res://Characters/HughMan.tres" id="20_1hol7"]
+[ext_resource type="Resource" uid="uid://d10lxijgj1ybh" path="res://Characters/PeterDouglas.tres" id="21_hxmce"]
+[ext_resource type="Resource" uid="uid://c2evxtplxk00u" path="res://Characters/TimmyJimmy.tres" id="22_niinm"]
+[ext_resource type="Resource" uid="uid://s6pp01nkvhg0" path="res://Characters/HarveyJr.tres" id="23_q3w5n"]
+[ext_resource type="Resource" uid="uid://bsqrtayk62lfh" path="res://Characters/Sebastian Silvester.tres" id="24_5ipdf"]
+[ext_resource type="Resource" uid="uid://danc5xfmors2x" path="res://Characters/MaxFredrickson.tres" id="25_ssw8y"]
+[ext_resource type="Resource" uid="uid://bdsbbiwnswj2h" path="res://Characters/BrunhildeStone.tres" id="26_t6e4k"]
+[ext_resource type="Resource" uid="uid://cln0iwyoodaps" path="res://Characters/VonPier.tres" id="27_bytik"]
+[ext_resource type="Resource" uid="uid://ca2bounl3hsv7" path="res://Characters/RatGod.tres" id="28_yvl2j"]
+[ext_resource type="Resource" uid="uid://b4xlaq234u2cd" path="res://Characters/JefferyAndersonVampire.tres" id="29_irmu4"]
+[ext_resource type="Resource" uid="uid://6rs41l7f52yk" path="res://Characters/CharlieCholick.tres" id="30_10b02"]
+[ext_resource type="Resource" uid="uid://c0rssvdil1e7u" path="res://Characters/Elizabeth Fisher.tres" id="31_vq70s"]
+[ext_resource type="Texture2D" uid="uid://b85cn7tf2bm3j" path="res://Sprites/areas/Lounge.png" id="32_j1tub"]
+[ext_resource type="Script" uid="uid://dp7tlannev5hr" path="res://scripts/room.gd" id="33_nla4v"]
+[ext_resource type="Texture2D" uid="uid://dyv7m4ohx54mj" path="res://Sprites/Buttons for moving3.png" id="34_85xdn"]
+[ext_resource type="Script" uid="uid://b7d02u7xi35qp" path="res://scripts/movement_button.gd" id="35_6oejx"]
+[ext_resource type="AudioStream" uid="uid://cwl1o1l7gx5nk" path="res://SFX/doorclose_footsteps.mp3" id="36_31yvr"]
+[ext_resource type="Script" uid="uid://btva2ox1ockyg" path="res://scripts/interactable_character.gd" id="37_b5ekd"]
+[ext_resource type="Texture2D" uid="uid://bhlsph6bm7vge" path="res://Sprites/People/LivingRoom/LivingRoomPeopleSitting1.png" id="38_mp684"]
+[ext_resource type="Texture2D" uid="uid://d25kjtkpgsbvn" path="res://Sprites/People/LivingRoom/LivingRoomPeopleSitting2.png" id="39_ftgok"]
+[ext_resource type="Texture2D" uid="uid://ceawse3w8s3g1" path="res://Sprites/People/LivingRoom/LivingRoomPeopleSitting3.png" id="40_gt6mf"]
+[ext_resource type="Texture2D" uid="uid://dnee5eesfp7go" path="res://Sprites/People/LivingRoom/LivingRoomPeopleSitting4.png" id="41_fh0mk"]
+[ext_resource type="Texture2D" uid="uid://cx6npp12lj0vj" path="res://Sprites/People/LivingRoom/LivingRoomPeopleSitting5.png" id="42_u5bd4"]
+[ext_resource type="Texture2D" uid="uid://bu7jtmdy6v723" path="res://Sprites/People/LivingRoom/LivingRoomPeopleSitting6.png" id="43_c6nno"]
+[ext_resource type="Material" uid="uid://caqmrlgvj6aca" path="res://Materials/fishEyePeephole.tres" id="44_eajpj"]
+[ext_resource type="Texture2D" uid="uid://cjgwsjboawlj2" path="res://Sprites/areas/Outside.png" id="45_nvx86"]
+[ext_resource type="Script" uid="uid://bcpjncrq7w8e3" path="res://scripts/peep_hole.gd" id="46_p6hrc"]
+[ext_resource type="AudioStream" uid="uid://dseues4pyy00i" path="res://SFX/footsteps.mp3" id="47_24ur3"]
+[ext_resource type="Shader" uid="uid://bcfj11konudyk" path="res://shaders/fisheye.gdshader" id="48_lyx6u"]
+[ext_resource type="Texture2D" uid="uid://dchyre33bh0lo" path="res://Sprites/areas/Insidehallway.png" id="49_cilyt"]
+[ext_resource type="Texture2D" uid="uid://b00rmw0e51bv4" path="res://Sprites/Buttons_for_moving3 (2).png" id="50_msr7b"]
+[ext_resource type="AudioStream" uid="uid://cvvm217cqoy5m" path="res://SFX/footsteps_door_open.mp3" id="51_mi717"]
+[ext_resource type="AudioStream" uid="uid://6kthdtpwhkpy" path="res://SFX/DoorOpen.mp3" id="52_kbijj"]
+[ext_resource type="Texture2D" uid="uid://djfjfvhgairv1" path="res://Sprites/areas/Doorway.png" id="53_ch8dv"]
+[ext_resource type="Texture2D" uid="uid://bpmgamxmoe011" path="res://Sprites/Buttons for moving1.png" id="54_6luc5"]
+[ext_resource type="AudioStream" uid="uid://bbw32fx54w3so" path="res://SFX/finalSFX/Zoom3.mp3" id="55_p5151"]
+[ext_resource type="Texture2D" uid="uid://cfeeuq7fj2ixv" path="res://Sprites/areas/InsideGarage2.png" id="56_vlljs"]
+[ext_resource type="AudioStream" uid="uid://mdmbabi2hvgi" path="res://SFX/door_close.mp3" id="57_ofhq8"]
+[ext_resource type="Texture2D" uid="uid://d1vwxxuclqet4" path="res://Sprites/People/Garage/InsideGarage2PeopleSitting1.png" id="58_fw1kp"]
+[ext_resource type="Texture2D" uid="uid://ryjmlku6panf" path="res://Sprites/People/Garage/InsideGarage2PeopleSitting2.png" id="59_5dius"]
+[ext_resource type="Texture2D" uid="uid://3rkva4806xtr" path="res://Sprites/People/Garage/InsideGarage2PeopleSitting3.png" id="60_aipiq"]
+[ext_resource type="Texture2D" uid="uid://due1cmwntrdqe" path="res://Sprites/People/Garage/InsideGarage2PeopleSitting4.png" id="61_e0gye"]
+[ext_resource type="Texture2D" uid="uid://so555v8f6egm" path="res://Sprites/People/Garage/InsideGarage2PeopleSitting5.png" id="62_haq8r"]
+[ext_resource type="Texture2D" uid="uid://bkrxnclhf70o0" path="res://Sprites/People/Garage/InsideGarage2PeopleSitting6.png" id="63_vskat"]
+[ext_resource type="Resource" uid="uid://ddhh8vijouf8k" path="res://Characters/BillyBobbyJr.tres" id="64_61fi2"]
+[ext_resource type="Texture2D" uid="uid://di08hw0k7d2ry" path="res://Sprites/People/Garage/InsideGarage2PeopleSitting7.png" id="65_kl1jb"]
+[ext_resource type="Texture2D" uid="uid://cireyalf02tad" path="res://Sprites/People/Garage/InsideGarage2PeopleSitting8.png" id="66_feldf"]
+[ext_resource type="Texture2D" uid="uid://dk6aoeofgvvkp" path="res://Sprites/People/Garage/InsideGarage2PeopleSitting9.png" id="67_r83oy"]
+[ext_resource type="Texture2D" uid="uid://qlfdpkrwrf" path="res://Sprites/areas/UnderGround.png" id="68_nj044"]
+[ext_resource type="Texture2D" uid="uid://v2b5w6vvnk8m" path="res://Sprites/People/basement/InsideGaragePeopleSitting1.png" id="69_eov4b"]
+[ext_resource type="Texture2D" uid="uid://duprhmwin0e0a" path="res://Sprites/People/basement/InsideGaragePeopleSitting2.png" id="70_7cn3m"]
+[ext_resource type="Texture2D" uid="uid://bok5ra43actjk" path="res://Sprites/People/basement/InsideGaragePeopleSitting3.png" id="71_k6rou"]
+[ext_resource type="Texture2D" uid="uid://cq6tglcujvr1g" path="res://Sprites/People/basement/InsideGaragePeopleSitting4.png" id="72_v2i1i"]
+[ext_resource type="Texture2D" uid="uid://bm4ks5tgj7hnv" path="res://Sprites/People/basement/InsideGaragePeopleSitting5.png" id="73_bmmxb"]
+[ext_resource type="Texture2D" uid="uid://c272n7fep2q5a" path="res://Sprites/areas/Kitchen.png" id="74_f7wfu"]
+[ext_resource type="Script" uid="uid://cldxtjjlmpc50" path="res://scripts/ending.gd" id="75_v8ncu"]
+[ext_resource type="Texture2D" uid="uid://dopv241x543jx" path="res://Sprites/KitchenPeoplecake.png" id="76_jdlui"]
+[ext_resource type="Texture2D" uid="uid://cpiohx3oi3t38" path="res://Sprites/People/Kitchen/KitchenPeopleSitting1.png" id="77_caiko"]
+[ext_resource type="Texture2D" uid="uid://4ka5a8gfnj2p" path="res://Sprites/People/Kitchen/KitchenPeopleSitting2.png" id="78_8q3vb"]
+[ext_resource type="Texture2D" uid="uid://dmdvtj64b40nn" path="res://Sprites/People/Kitchen/KitchenPeopleSitting3.png" id="79_naqg8"]
+[ext_resource type="Texture2D" uid="uid://7l0lr6ppe4us" path="res://Sprites/People/Kitchen/KitchenPeopleHostSitting.png" id="80_lmvxl"]
+[ext_resource type="Script" uid="uid://dberhdml3xlet" path="res://scripts/conversation_manager.gd" id="81_38eja"]
+[ext_resource type="Texture2D" uid="uid://cghiky6m7jhx4" path="res://Sprites/Hand gun anim.png" id="82_pr1jt"]
+[ext_resource type="AudioStream" uid="uid://b7lsqqv46ue8q" path="res://SFX/murder.mp3" id="83_v8qv1"]
+[ext_resource type="Script" uid="uid://syofd8amwhw8" path="res://scripts/doorway_manager.gd" id="84_4ht1u"]
+[ext_resource type="FontFile" uid="uid://cofv126vqogtf" path="res://BlackOpsOne-Regular.ttf" id="85_t050j"]
+[ext_resource type="StyleBox" uid="uid://davtg7gw60hkc" path="res://UI BG.tres" id="86_e7x67"]
+[ext_resource type="Script" uid="uid://cuixesoyqhje0" path="res://scripts/buttonEffects.gd" id="87_14lvh"]
+[ext_resource type="Script" uid="uid://bndg1f3jq34l3" path="res://scripts/textGiver.gd" id="88_crg13"]
+[ext_resource type="PackedScene" uid="uid://llqh6vgtk77" path="res://scenes/settings.tscn" id="89_l36ky"]
+[ext_resource type="PackedScene" uid="uid://70hcrtv5i5n6" path="res://scenes/id.tscn" id="90_wxyq2"]
+[ext_resource type="PackedScene" uid="uid://c7awdxtytslkh" path="res://scenes/phone.tscn" id="91_q6tvy"]
+[ext_resource type="PackedScene" uid="uid://o5bvwg7bgbvg" path="res://scenes/vhs_filter_test.tscn" id="92_elltx"]
+[ext_resource type="PackedScene" uid="uid://dmmobl341pm1o" path="res://scenes/pixelate.tscn" id="93_1mbul"]
+[ext_resource type="AudioStream" uid="uid://dbhnmvlr4crt2" path="res://SFX/finalSFX/Click4.mp3" id="94_vapf4"]
+[ext_resource type="AudioStream" uid="uid://cyir28p37diov" path="res://SFX/finalSFX/Hover1mp3.mp3" id="95_6xeif"]
+[ext_resource type="Texture2D" uid="uid://y27g4y1o1qhu" path="res://Sprites/Vignete.png" id="96_bqawf"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3xd07"]
+radius = 65.97
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4lml8"]
+shader = ExtResource("48_lyx6u")
+shader_parameter/center = Vector2(0.51, 0.52)
+shader_parameter/power = 4.18999991007044
+shader_parameter/radius = 0.42999999038864
+shader_parameter/pixel_size = 1.0
+
+[sub_resource type="Animation" id="Animation_nxs8g"]
+resource_name = "KillAnim"
+length = 11.633333
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GunSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(2, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 9, -0.16666667, -1.5, 0, 0, 0, -0.016666671, 1.5, 0, 0),
+"times": PackedFloat32Array(0, 1, 1.2666667)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("KillFade:modulate:r")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.18333334, 0, 0, 0, 1, -0.18333334, 0, 0, 0, 0, -0.016666671, 0.16666669, 0, 0, 0, -0.016666671, 0.16666669, 0, 0, 0, -0.016666671, 0, 0, 0),
+"times": PackedFloat32Array(0.93333334, 1, 1.0644946, 1.3, 11.233333, 11.633333)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("KillFade:modulate:g")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.18333334, 0, 0, 0, 1, -0.18333334, 0, 0, 0, 0, -0.016666671, 0.16666669, 0, 0, 0, -0.016666671, 0.16666669, 0, 0, 0, -0.016666671, 0, 0, 0),
+"times": PackedFloat32Array(0.93333334, 1, 1.0644946, 1.3, 11.233333, 11.633333)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("KillFade:modulate:b")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0, 1, -0.18333334, 0, 0, 0, 1, -0.18333334, 0, 0, 0, 0, -0.016666671, 0.16666669, 0, 0, 0, -0.016666671, 0.16666669, 0, 0, 0, -0.016666671, 0, 0, 0),
+"times": PackedFloat32Array(0.93333334, 1, 1.0644946, 1.3, 11.233333, 11.633333)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("KillFade:modulate:a")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0, 0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0, 1, -0.18333334, -0.16666667, 0, 0, 1, -0.18333334, -0.16666667, 0, 0, 1, -0.016666671, 0, 0, 0, 1, -0.016666671, 0, 0, 0, 0, -0.016666671, 0.16666669, 0, 0),
+"times": PackedFloat32Array(0.93333334, 1, 1.0644946, 1.3, 11.233333, 11.633333)
+}
+tracks/5/type = "method"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath(".")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.36666667, 2.0666666),
+"transitions": PackedFloat32Array(1, 1),
+"values": [{
+"args": [],
+"method": &"setAfraid"
+}, {
+"args": [],
+"method": &"exitWithoutFade"
+}]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("InDialogueSprite:scale")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.36666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.1, 1.1), Vector2(1.3, 0.9), Vector2(0.9, 1.3), Vector2(1.1, 1.1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("InDialogueSprite:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.36666667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-225, 100), Vector2(-225, 158.34), Vector2(-225, 48.896), Vector2(-225, 100)]
+}
+tracks/8/type = "method"
+tracks/8/imported = false
+tracks/8/enabled = false
+tracks/8/path = NodePath("KillSFX")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(1),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [0.0],
+"method": &"play"
+}]
+}
+tracks/9/type = "audio"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("KillSFX")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"clips": [{
+"end_offset": 0.0,
+"start_offset": 0.0,
+"stream": ExtResource("83_v8qv1")
+}],
+"times": PackedFloat32Array(1)
+}
+tracks/9/use_blend = true
+
+[sub_resource type="Animation" id="Animation_0l8yg"]
+length = 2.5333333
+tracks/0/type = "bezier"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("GunSprite:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/1/type = "bezier"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("KillFade:modulate:r")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/2/type = "bezier"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("KillFade:modulate:g")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/3/type = "bezier"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("KillFade:modulate:b")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(1, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/4/type = "bezier"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("KillFade:modulate:a")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"handle_modes": PackedInt32Array(0),
+"points": PackedFloat32Array(0, -0.25, 0, 0.25, 0),
+"times": PackedFloat32Array(0)
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("InDialogueSprite:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.1, 1.1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("InDialogueSprite:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-225, 100)]
+}
+
+[sub_resource type="Animation" id="Animation_x3tw5"]
+resource_name = "Talking"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("InDialogueSprite:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.26666668, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1.1, 1.1), Vector2(1.15, 1.1), Vector2(1.05, 1.15), Vector2(1.1, 1.1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("InDialogueSprite:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.13333334, 0.26666668, 0.3999667),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(-225, 100), Vector2(-225, 101), Vector2(-225, 85), Vector2(-225, 100)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4lml8"]
+_data = {
+&"KillAnim": SubResource("Animation_nxs8g"),
+&"RESET": SubResource("Animation_0l8yg"),
+&"Talking": SubResource("Animation_x3tw5")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5omdu"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="Animation" id="Animation_kledg"]
+resource_name = "FadeIn"
+length = 0.36666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.33333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_v6et4"]
+resource_name = "FadeOut"
+length = 0.33333334
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.33333334),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_gh80h"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:self_modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gh80h"]
+_data = {
+&"FadeIn": SubResource("Animation_kledg"),
+&"FadeOut": SubResource("Animation_v6et4"),
+&"RESET": SubResource("Animation_gh80h")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kopt5"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[node name="StartScene" type="Node2D" unique_id=2079086675]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=132324970]
+
+[node name="PlayerManager" type="Node2D" parent="." unique_id=374783410 node_paths=PackedStringArray("currentArea", "hallway", "fade", "movementSFX", "houseMusic", "outsideMusic")]
+script = ExtResource("1_eg8rx")
+currentArea = NodePath("../CanvasLayer/Hallway")
+hallway = NodePath("../CanvasLayer/Hallway")
+fade = NodePath("../CanvasLayer/BlackFade")
+movementSFX = NodePath("MovementSFX")
+houseMusic = NodePath("InHouseMusic")
+outsideMusic = NodePath("PeepHoleMusic")
+
+[node name="Music Manager" type="Node2D" parent="PlayerManager" unique_id=1871316169 node_paths=PackedStringArray("outside_music_player", "inside_music_player")]
+script = ExtResource("2_vvksf")
+outside_music = Array[AudioStreamWAV]([ExtResource("3_40fa3")])
+outside_music_player = NodePath("../PeepHoleMusic")
+inside_music = Array[AudioStreamWAV]([ExtResource("4_pqv4d"), ExtResource("5_k3v5p")])
+inside_music_player = NodePath("../InHouseMusic")
+
+[node name="InHouseMusic" type="AudioStreamPlayer2D" parent="PlayerManager" unique_id=839886360]
+stream = ExtResource("5_k3v5p")
+autoplay = true
+
+[node name="PeepHoleMusic" type="AudioStreamPlayer2D" parent="PlayerManager" unique_id=1871301288]
+stream = ExtResource("3_40fa3")
+autoplay = true
+
+[node name="MovementSFX" type="AudioStreamPlayer2D" parent="PlayerManager" unique_id=830269458]
+stream = ExtResource("3_40fa3")
+
+[node name="Knocking" type="AudioStreamPlayer2D" parent="PlayerManager" unique_id=1144822087]
+stream = ExtResource("6_vo31v")
+
+[node name="CharacterManager" type="Node2D" parent="." unique_id=779009452]
+script = ExtResource("7_04k16")
+unEncounteredCharacters = Array[ExtResource("8_7edfg")]([ExtResource("9_t8jdu"), ExtResource("10_d5x6x"), ExtResource("11_ocawo"), ExtResource("12_ijhsd"), ExtResource("13_rq4sk"), ExtResource("14_s1hka"), ExtResource("15_78wmf"), ExtResource("16_cppmr"), ExtResource("17_oc8rh"), ExtResource("18_0jgav"), ExtResource("19_hqxpv"), ExtResource("20_1hol7"), ExtResource("21_hxmce"), ExtResource("22_niinm"), ExtResource("23_q3w5n"), ExtResource("24_5ipdf"), ExtResource("25_ssw8y"), ExtResource("26_t6e4k"), ExtResource("27_bytik"), ExtResource("28_yvl2j"), ExtResource("29_irmu4"), ExtResource("30_10b02"), ExtResource("31_vq70s")])
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=982724521]
+offset = Vector2(500, 375)
+transform = Transform2D(1, 0, 0, 1, 500, 375)
+
+[node name="Lounge" type="Sprite2D" parent="CanvasLayer" unique_id=1352087972 node_paths=PackedStringArray("movementButtons", "characters")]
+visible = false
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("32_j1tub")
+script = ExtResource("33_nla4v")
+movementButtons = [NodePath("movementButton")]
+characters = [NodePath("InteractableCharacter"), NodePath("InteractableCharacter2"), NodePath("InteractableCharacter3"), NodePath("InteractableCharacter4"), NodePath("InteractableCharacter5"), NodePath("InteractableCharacter6")]
+
+[node name="movementButton" type="Button" parent="CanvasLayer/Lounge" unique_id=904897615 node_paths=PackedStringArray("newArea")]
+offset_left = -61.106384
+offset_top = 168.65355
+offset_right = 25.420197
+offset_bottom = 218.51634
+icon = ExtResource("34_85xdn")
+flat = true
+script = ExtResource("35_6oejx")
+newArea = NodePath("../../Hallway")
+movementSFX = ExtResource("36_31yvr")
+fadeLength = 1.5
+eyeSymbol = null
+
+[node name="InteractableCharacter" type="Area2D" parent="CanvasLayer/Lounge" unique_id=656916129]
+script = ExtResource("37_b5ekd")
+currentCharacter = ExtResource("21_hxmce")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Lounge/InteractableCharacter" unique_id=22743380]
+texture = ExtResource("38_mp684")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Lounge/InteractableCharacter" unique_id=2117342533]
+position = Vector2(-111.81818, -108.181816)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter2" type="Area2D" parent="CanvasLayer/Lounge" unique_id=1841598684]
+script = ExtResource("37_b5ekd")
+currentCharacter = ExtResource("22_niinm")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Lounge/InteractableCharacter2" unique_id=782526729]
+texture = ExtResource("39_ftgok")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Lounge/InteractableCharacter2" unique_id=661710949]
+position = Vector2(122.727264, -107.27273)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter3" type="Area2D" parent="CanvasLayer/Lounge" unique_id=1087782006]
+script = ExtResource("37_b5ekd")
+currentCharacter = ExtResource("31_vq70s")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Lounge/InteractableCharacter3" unique_id=1417415536]
+texture = ExtResource("40_gt6mf")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Lounge/InteractableCharacter3" unique_id=1692669148]
+position = Vector2(-269.0909, -179.99998)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter4" type="Area2D" parent="CanvasLayer/Lounge" unique_id=1203240665]
+script = ExtResource("37_b5ekd")
+currentCharacter = ExtResource("18_0jgav")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Lounge/InteractableCharacter4" unique_id=769401867]
+texture = ExtResource("41_fh0mk")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Lounge/InteractableCharacter4" unique_id=1231634949]
+position = Vector2(347.27267, -47.272736)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter5" type="Area2D" parent="CanvasLayer/Lounge" unique_id=99513005]
+script = ExtResource("37_b5ekd")
+currentCharacter = ExtResource("17_oc8rh")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Lounge/InteractableCharacter5" unique_id=1022929033]
+texture = ExtResource("42_u5bd4")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Lounge/InteractableCharacter5" unique_id=1604420785]
+position = Vector2(-392.72726, 20.90908)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter6" type="Area2D" parent="CanvasLayer/Lounge" unique_id=736375813]
+script = ExtResource("37_b5ekd")
+currentCharacter = ExtResource("16_cppmr")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Lounge/InteractableCharacter6" unique_id=729367262]
+texture = ExtResource("43_c6nno")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Lounge/InteractableCharacter6" unique_id=222762204]
+position = Vector2(382.72726, 109.0909)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="peepHole" type="Sprite2D" parent="CanvasLayer" unique_id=195838583 node_paths=PackedStringArray("characterSprite", "maxTimer", "emptyTimer", "knockingSFX", "movementButtons")]
+visible = false
+material = ExtResource("44_eajpj")
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("45_nvx86")
+vframes = 3
+script = ExtResource("46_p6hrc")
+characterSprite = NodePath("Sprite2D")
+maxTimer = NodePath("MaxTimer")
+emptyTimer = NodePath("EmptyTimer")
+knockingSFX = NodePath("../../PlayerManager/Knocking")
+indoors = false
+movementButtons = [NodePath("movementButton")]
+limit = 10.0
+slowness = 100.0
+
+[node name="movementButton" type="Button" parent="CanvasLayer/peepHole" unique_id=1256232738 node_paths=PackedStringArray("newArea")]
+offset_left = -52.727264
+offset_top = 154.54544
+offset_right = 74.272736
+offset_bottom = 301.54544
+icon = ExtResource("34_85xdn")
+flat = true
+script = ExtResource("35_6oejx")
+newArea = NodePath("../../Doorway")
+movementSFX = ExtResource("47_24ur3")
+fadeLength = null
+eyeSymbol = null
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/peepHole" unique_id=1678730477]
+material = SubResource("ShaderMaterial_4lml8")
+
+[node name="MaxTimer" type="Timer" parent="CanvasLayer/peepHole" unique_id=409054883]
+wait_time = 60.0
+
+[node name="EmptyTimer" type="Timer" parent="CanvasLayer/peepHole" unique_id=2049869326]
+wait_time = 15.0
+
+[node name="Vignette" type="Sprite2D" parent="CanvasLayer/peepHole" unique_id=1553481169]
+texture = ExtResource("45_nvx86")
+vframes = 3
+frame = 2
+
+[node name="Hallway" type="Sprite2D" parent="CanvasLayer" unique_id=581124047 node_paths=PackedStringArray("movementButtons")]
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("49_cilyt")
+script = ExtResource("33_nla4v")
+movementButtons = [NodePath("movementButton"), NodePath("movementButton2"), NodePath("movementButton3"), NodePath("movementButton4")]
+
+[node name="movementButton" type="Button" parent="CanvasLayer/Hallway" unique_id=1235997405 node_paths=PackedStringArray("newArea")]
+offset_left = 118.18183
+offset_top = -83.63637
+offset_right = 245.18182
+offset_bottom = 63.363632
+icon = ExtResource("50_msr7b")
+flat = true
+script = ExtResource("35_6oejx")
+newArea = NodePath("../../Lounge")
+movementSFX = ExtResource("51_mi717")
+fadeLength = 2.5
+eyeSymbol = null
+doorArrow = false
+
+[node name="movementButton2" type="Button" parent="CanvasLayer/Hallway" unique_id=188149822 node_paths=PackedStringArray("newArea")]
+offset_left = 273.63635
+offset_top = -40.9091
+offset_right = 400.63635
+offset_bottom = 106.0909
+icon = ExtResource("50_msr7b")
+flat = true
+script = ExtResource("35_6oejx")
+newArea = NodePath("../../Garage")
+movementSFX = ExtResource("52_kbijj")
+fadeLength = null
+eyeSymbol = null
+doorArrow = false
+
+[node name="movementButton3" type="Button" parent="CanvasLayer/Hallway" unique_id=1415821590 node_paths=PackedStringArray("newArea")]
+offset_left = -71.81817
+offset_top = -59.999985
+offset_right = 55.18183
+offset_bottom = 87.000015
+icon = ExtResource("50_msr7b")
+flat = true
+script = ExtResource("35_6oejx")
+newArea = NodePath("../../Doorway")
+movementSFX = ExtResource("47_24ur3")
+fadeLength = 1.8
+eyeSymbol = null
+doorArrow = false
+
+[node name="movementButton4" type="Button" parent="CanvasLayer/Hallway" unique_id=540001184 node_paths=PackedStringArray("newArea")]
+offset_left = -433.63635
+offset_top = -86.363625
+offset_right = -306.63635
+offset_bottom = 60.636375
+icon = ExtResource("50_msr7b")
+flat = true
+script = ExtResource("35_6oejx")
+newArea = NodePath("../../Kitchen")
+movementSFX = ExtResource("51_mi717")
+fadeLength = 1.8
+eyeSymbol = null
+doorArrow = false
+
+[node name="Doorway" type="Sprite2D" parent="CanvasLayer" unique_id=78017150 node_paths=PackedStringArray("movementButtons")]
+visible = false
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("53_ch8dv")
+script = ExtResource("33_nla4v")
+movementButtons = [NodePath("movementButton"), NodePath("movementButton2")]
+
+[node name="movementButton" type="Button" parent="CanvasLayer/Doorway" unique_id=1504971743 node_paths=PackedStringArray("newArea")]
+offset_left = -122.727264
+offset_top = 147.27269
+offset_right = 4.2727356
+offset_bottom = 294.2727
+icon = ExtResource("34_85xdn")
+flat = true
+script = ExtResource("35_6oejx")
+newArea = NodePath("../../Hallway")
+movementSFX = ExtResource("47_24ur3")
+fadeLength = 1.8
+eyeSymbol = null
+
+[node name="movementButton2" type="Button" parent="CanvasLayer/Doorway" unique_id=1311128301 node_paths=PackedStringArray("newArea")]
+offset_left = -156.36363
+offset_top = -264.54544
+offset_right = -29.363632
+offset_bottom = -117.54544
+icon = ExtResource("54_6luc5")
+flat = true
+script = ExtResource("35_6oejx")
+newArea = NodePath("../../peepHole")
+movementSFX = ExtResource("55_p5151")
+fadeLength = null
+eyeSymbol = true
+
+[node name="Garage" type="Sprite2D" parent="CanvasLayer" unique_id=1752562995 node_paths=PackedStringArray("movementButtons", "characters")]
+visible = false
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("56_vlljs")
+script = ExtResource("33_nla4v")
+movementButtons = [NodePath("movementButton"), NodePath("movementButton2")]
+characters = [NodePath("InteractableCharacter7"), NodePath("InteractableCharacter8"), NodePath("InteractableCharacter9"), NodePath("InteractableCharacter10"), NodePath("InteractableCharacter11"), NodePath("InteractableCharacter12"), NodePath("InteractableCharacter13"), NodePath("InteractableCharacter14"), NodePath("InteractableCharacter15")]
+
+[node name="movementButton" type="Button" parent="CanvasLayer/Garage" unique_id=1244336808 node_paths=PackedStringArray("newArea")]
+offset_left = -69.999985
+offset_top = 165.45453
+offset_right = 57.000015
+offset_bottom = 312.45453
+icon = ExtResource("34_85xdn")
+flat = true
+script = ExtResource("35_6oejx")
+newArea = NodePath("../../Hallway")
+movementSFX = ExtResource("57_ofhq8")
+fadeLength = 1.2
+eyeSymbol = null
+
+[node name="movementButton2" type="Button" parent="CanvasLayer/Garage" unique_id=1957635642 node_paths=PackedStringArray("newArea")]
+offset_left = -440.9091
+offset_top = -168.18181
+offset_right = -313.9091
+offset_bottom = -21.181808
+icon = ExtResource("50_msr7b")
+flat = true
+script = ExtResource("35_6oejx")
+newArea = NodePath("../../Basement")
+movementSFX = ExtResource("51_mi717")
+fadeLength = 1.5
+eyeSymbol = null
+doorArrow = false
+
+[node name="InteractableCharacter7" type="Area2D" parent="CanvasLayer/Garage" unique_id=1874917329]
+script = ExtResource("37_b5ekd")
+currentCharacter = ExtResource("20_1hol7")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter7" unique_id=1601721267]
+texture = ExtResource("58_fw1kp")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Garage/InteractableCharacter7" unique_id=1406595775]
+position = Vector2(-217.27274, 38.18181)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter8" type="Area2D" parent="CanvasLayer/Garage" unique_id=420919012]
+script = ExtResource("37_b5ekd")
+currentCharacter = ExtResource("11_ocawo")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter8" unique_id=1344299151]
+texture = ExtResource("59_5dius")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Garage/InteractableCharacter8" unique_id=643998786]
+position = Vector2(106.36362, -14.545464)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter9" type="Area2D" parent="CanvasLayer/Garage" unique_id=376519951]
+script = ExtResource("37_b5ekd")
+currentCharacter = ExtResource("25_ssw8y")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter9" unique_id=1147716020]
+texture = ExtResource("60_aipiq")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Garage/InteractableCharacter9" unique_id=1901696207]
+position = Vector2(236.36362, -88.18182)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter10" type="Area2D" parent="CanvasLayer/Garage" unique_id=739749733]
+script = ExtResource("37_b5ekd")
+currentCharacter = ExtResource("24_5ipdf")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter10" unique_id=509126745]
+texture = ExtResource("61_e0gye")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Garage/InteractableCharacter10" unique_id=1347442285]
+position = Vector2(370.90906, 75.45453)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter11" type="Area2D" parent="CanvasLayer/Garage" unique_id=793108238]
+script = ExtResource("37_b5ekd")
+currentCharacter = ExtResource("14_s1hka")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter11" unique_id=1481931211]
+texture = ExtResource("62_haq8r")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Garage/InteractableCharacter11" unique_id=2086171850]
+position = Vector2(-281.81818, 42.727257)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter12" type="Area2D" parent="CanvasLayer/Garage" unique_id=385038915]
+script = ExtResource("37_b5ekd")
+currentCharacter = ExtResource("15_78wmf")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter12" unique_id=1793006857]
+texture = ExtResource("63_vskat")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Garage/InteractableCharacter12" unique_id=1235859122]
+position = Vector2(-99.09091, -46.363647)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter13" type="Area2D" parent="CanvasLayer/Garage" unique_id=1231971160]
+script = ExtResource("37_b5ekd")
+currentCharacter = ExtResource("64_61fi2")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter13" unique_id=1177189961]
+texture = ExtResource("65_kl1jb")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Garage/InteractableCharacter13" unique_id=2087379446]
+position = Vector2(275.45453, 9.999989)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter14" type="Area2D" parent="CanvasLayer/Garage" unique_id=879521536]
+script = ExtResource("37_b5ekd")
+currentCharacter = ExtResource("13_rq4sk")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter14" unique_id=936392144]
+texture = ExtResource("66_feldf")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Garage/InteractableCharacter14" unique_id=458295847]
+position = Vector2(5.454529, -10.000011)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter15" type="Area2D" parent="CanvasLayer/Garage" unique_id=1924381713]
+script = ExtResource("37_b5ekd")
+currentCharacter = ExtResource("26_t6e4k")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Garage/InteractableCharacter15" unique_id=1497764700]
+texture = ExtResource("67_r83oy")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Garage/InteractableCharacter15" unique_id=1205216770]
+position = Vector2(178.18182, 83.63635)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="Basement" type="Sprite2D" parent="CanvasLayer" unique_id=174614199 node_paths=PackedStringArray("movementButtons", "characters")]
+visible = false
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("68_nj044")
+script = ExtResource("33_nla4v")
+movementButtons = [NodePath("movementButton")]
+characters = [NodePath("InteractableCharacter16"), NodePath("InteractableCharacter17"), NodePath("InteractableCharacter18"), NodePath("InteractableCharacter19"), NodePath("InteractableCharacter20")]
+
+[node name="movementButton" type="Button" parent="CanvasLayer/Basement" unique_id=375303595 node_paths=PackedStringArray("newArea")]
+offset_left = 212.72728
+offset_top = 140.90906
+offset_right = 339.7273
+offset_bottom = 287.90906
+icon = ExtResource("34_85xdn")
+flat = true
+script = ExtResource("35_6oejx")
+newArea = NodePath("../../Garage")
+movementSFX = ExtResource("57_ofhq8")
+fadeLength = 1.2
+eyeSymbol = null
+
+[node name="InteractableCharacter16" type="Area2D" parent="CanvasLayer/Basement" unique_id=1019637325]
+script = ExtResource("37_b5ekd")
+currentCharacter = ExtResource("10_d5x6x")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Basement/InteractableCharacter16" unique_id=1989212685]
+texture = ExtResource("69_eov4b")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Basement/InteractableCharacter16" unique_id=1860724896]
+position = Vector2(-189.09088, 6.3636246)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter17" type="Area2D" parent="CanvasLayer/Basement" unique_id=699019801]
+script = ExtResource("37_b5ekd")
+currentCharacter = ExtResource("12_ijhsd")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Basement/InteractableCharacter17" unique_id=144851562]
+texture = ExtResource("70_7cn3m")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Basement/InteractableCharacter17" unique_id=1517934042]
+position = Vector2(301.81818, -111.81819)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter18" type="Area2D" parent="CanvasLayer/Basement" unique_id=2047766395]
+script = ExtResource("37_b5ekd")
+currentCharacter = ExtResource("30_10b02")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Basement/InteractableCharacter18" unique_id=787803059]
+texture = ExtResource("71_k6rou")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Basement/InteractableCharacter18" unique_id=1294311831]
+position = Vector2(-76.36362, -213.63635)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter19" type="Area2D" parent="CanvasLayer/Basement" unique_id=1919882017]
+script = ExtResource("37_b5ekd")
+currentCharacter = ExtResource("27_bytik")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Basement/InteractableCharacter19" unique_id=558010024]
+texture = ExtResource("72_v2i1i")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Basement/InteractableCharacter19" unique_id=2028733991]
+position = Vector2(83.636345, -53.63636)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter20" type="Area2D" parent="CanvasLayer/Basement" unique_id=606103486]
+script = ExtResource("37_b5ekd")
+currentCharacter = ExtResource("29_irmu4")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Basement/InteractableCharacter20" unique_id=1872902281]
+texture = ExtResource("73_bmmxb")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Basement/InteractableCharacter20" unique_id=1643892375]
+position = Vector2(-31.8182, 103.63636)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="Kitchen" type="Sprite2D" parent="CanvasLayer" unique_id=859253974 node_paths=PackedStringArray("movementButtons", "characters")]
+visible = false
+scale = Vector2(1.1, 1.1)
+texture = ExtResource("74_f7wfu")
+script = ExtResource("33_nla4v")
+movementButtons = [NodePath("movementButton")]
+characters = [NodePath("InteractableCharacter16"), NodePath("InteractableCharacter17"), NodePath("InteractableCharacter18"), NodePath("InteractableCharacter19")]
+
+[node name="movementButton" type="Button" parent="CanvasLayer/Kitchen" unique_id=1961797361 node_paths=PackedStringArray("newArea")]
+offset_left = 306.36365
+offset_top = -60.000004
+offset_right = 433.36365
+offset_bottom = 87.0
+icon = ExtResource("50_msr7b")
+flat = true
+script = ExtResource("35_6oejx")
+newArea = NodePath("../../Hallway")
+movementSFX = ExtResource("57_ofhq8")
+fadeLength = 1.2
+eyeSymbol = null
+doorArrow = false
+
+[node name="EndingManager" type="Control" parent="CanvasLayer/Kitchen" unique_id=668338982 node_paths=PackedStringArray("endingButton", "confirmButton", "cancelButton", "endingInfo")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("75_v8ncu")
+endingButton = NodePath("EndingButton")
+confirmButton = NodePath("Panel/ConfirmButton")
+cancelButton = NodePath("Panel/CancelButton")
+endingInfo = NodePath("Panel")
+
+[node name="Panel" type="Panel" parent="CanvasLayer/Kitchen/EndingManager" unique_id=900292247]
+visible = false
+layout_mode = 0
+offset_left = -181.0
+offset_top = -95.0
+offset_right = 181.0
+offset_bottom = 132.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Kitchen/EndingManager/Panel" unique_id=392955541]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "All of the guests have arrived. You are ready to celebrate, this means ending your duties. If any vampires are on the premises then they will eat the host."
+
+[node name="ConfirmButton" type="Button" parent="CanvasLayer/Kitchen/EndingManager/Panel" unique_id=102045945]
+layout_mode = 0
+offset_left = 22.0
+offset_top = 160.0
+offset_right = 164.0
+offset_bottom = 209.0
+text = "Confirm"
+
+[node name="CancelButton" type="Button" parent="CanvasLayer/Kitchen/EndingManager/Panel" unique_id=1188443232]
+layout_mode = 0
+offset_left = 185.0
+offset_top = 161.0
+offset_right = 327.0
+offset_bottom = 210.0
+text = "Cancel"
+
+[node name="EndingButton" type="Button" parent="CanvasLayer/Kitchen/EndingManager" unique_id=981702094]
+layout_mode = 0
+offset_left = 139.99998
+offset_top = 34.54545
+offset_right = 222.35785
+offset_bottom = 144.90906
+flat = true
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Kitchen/EndingManager/EndingButton" unique_id=2111044160]
+layout_mode = 0
+offset_left = -657.2727
+offset_top = -404.54547
+offset_right = 342.7273
+offset_bottom = 345.45453
+mouse_filter = 2
+texture = ExtResource("76_jdlui")
+
+[node name="InteractableCharacter16" type="Area2D" parent="CanvasLayer/Kitchen" unique_id=1238769231]
+script = ExtResource("37_b5ekd")
+currentCharacter = ExtResource("23_q3w5n")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Kitchen/InteractableCharacter16" unique_id=1843707180]
+texture = ExtResource("77_caiko")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Kitchen/InteractableCharacter16" unique_id=566207580]
+position = Vector2(-225.45454, 113.636345)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter17" type="Area2D" parent="CanvasLayer/Kitchen" unique_id=448071690]
+script = ExtResource("37_b5ekd")
+currentCharacter = ExtResource("19_hqxpv")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Kitchen/InteractableCharacter17" unique_id=1883967492]
+texture = ExtResource("78_8q3vb")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Kitchen/InteractableCharacter17" unique_id=691851094]
+position = Vector2(0, -4.545471)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter18" type="Area2D" parent="CanvasLayer/Kitchen" unique_id=1373793539]
+script = ExtResource("37_b5ekd")
+currentCharacter = ExtResource("28_yvl2j")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Kitchen/InteractableCharacter18" unique_id=722204449]
+texture = ExtResource("79_naqg8")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Kitchen/InteractableCharacter18" unique_id=1744341899]
+position = Vector2(406.36362, 256.36365)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="InteractableCharacter19" type="Area2D" parent="CanvasLayer/Kitchen" unique_id=913356674]
+script = ExtResource("37_b5ekd")
+currentCharacter = ExtResource("9_t8jdu")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Kitchen/InteractableCharacter19" unique_id=1204735071]
+texture = ExtResource("80_lmvxl")
+
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="CanvasLayer/Kitchen/InteractableCharacter19" unique_id=1499109741]
+position = Vector2(179.0909, 20.909088)
+shape = SubResource("CircleShape2D_3xd07")
+
+[node name="ConversationManager" type="Control" parent="CanvasLayer" unique_id=648713796 node_paths=PackedStringArray("text", "buttonContainer", "exitButton", "killButton", "characterSprite", "display", "phone", "_id", "ImageBG", "anim")]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 11.0
+offset_top = 8.0
+offset_right = 11.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("81_38eja")
+text = NodePath("../TextGiver")
+buttonContainer = NodePath("../QuestionOptions")
+exitButton = NodePath("../QuestionOptions/ExitDialogueButton")
+killButton = NodePath("../QuestionOptions/KillButton")
+characterSprite = NodePath("InDialogueSprite")
+display = NodePath("../DisplayImage")
+phone = NodePath("../Phone")
+_id = NodePath("../id")
+ImageBG = NodePath("../ImageBG/anims")
+anim = NodePath("ConversationAnim")
+
+[node name="InDialogueSprite" type="Sprite2D" parent="CanvasLayer/ConversationManager" unique_id=1441774159]
+position = Vector2(-225, 100)
+scale = Vector2(1.1, 1.1)
+offset = Vector2(225, -90)
+
+[node name="GunSprite" type="Sprite2D" parent="CanvasLayer/ConversationManager" unique_id=348738408]
+position = Vector2(0, 98)
+texture = ExtResource("82_pr1jt")
+hframes = 10
+
+[node name="ConversationAnim" type="AnimationPlayer" parent="CanvasLayer/ConversationManager" unique_id=1858851757]
+libraries/ = SubResource("AnimationLibrary_4lml8")
+
+[node name="KillFade" type="Panel" parent="CanvasLayer/ConversationManager" unique_id=1742685063]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -508.0
+offset_top = -381.0
+offset_right = -496.0
+offset_bottom = -377.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_5omdu")
+
+[node name="KillSFX" type="AudioStreamPlayer2D" parent="CanvasLayer/ConversationManager" unique_id=742006860]
+
+[node name="DoorwayManager" type="Control" parent="CanvasLayer" unique_id=1390457711 node_paths=PackedStringArray("text", "acceptButton", "declineButton")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+script = ExtResource("84_4ht1u")
+text = NodePath("../TextGiver")
+acceptButton = NodePath("AcceptButton")
+declineButton = NodePath("DeclineButton")
+
+[node name="AcceptButton" type="Button" parent="CanvasLayer/DoorwayManager" unique_id=704149682 node_paths=PackedStringArray("hoverStream", "clickStream")]
+visible = false
+self_modulate = Color(6.6901744e-06, 0.74751836, 0.33022302, 1)
+layout_mode = 0
+offset_left = 143.0
+offset_top = -241.0
+offset_right = 433.7764
+offset_bottom = -127.287445
+scale = Vector2(0.52018094, 0.5137473)
+pivot_offset = Vector2(152.36304, 60.340942)
+theme_override_fonts/font = ExtResource("85_t050j")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = ExtResource("86_e7x67")
+theme_override_styles/pressed = ExtResource("86_e7x67")
+theme_override_styles/hover = ExtResource("86_e7x67")
+theme_override_styles/disabled = ExtResource("86_e7x67")
+theme_override_styles/focus = ExtResource("86_e7x67")
+text = "accept"
+script = ExtResource("87_14lvh")
+hoverStream = NodePath("../../../ButtonSFX")
+clickStream = NodePath("../../../ButtonSFX2")
+
+[node name="DeclineButton" type="Button" parent="CanvasLayer/DoorwayManager" unique_id=623162512 node_paths=PackedStringArray("hoverStream", "clickStream")]
+visible = false
+self_modulate = Color(1, 0, 0, 1)
+layout_mode = 0
+offset_left = -444.00003
+offset_top = -256.0
+offset_right = -133.2233
+offset_bottom = -134.50146
+scale = Vector2(0.52018094, 0.5137473)
+pivot_offset = Vector2(155.06169, 72.01985)
+theme_override_fonts/font = ExtResource("85_t050j")
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = ExtResource("86_e7x67")
+theme_override_styles/pressed = ExtResource("86_e7x67")
+theme_override_styles/hover = ExtResource("86_e7x67")
+theme_override_styles/disabled = ExtResource("86_e7x67")
+theme_override_styles/focus = ExtResource("86_e7x67")
+text = "decline"
+script = ExtResource("87_14lvh")
+hoverStream = NodePath("../../../ButtonSFX")
+clickStream = NodePath("../../../ButtonSFX2")
+
+[node name="TextGiver" type="Control" parent="CanvasLayer" unique_id=1438650801 node_paths=PackedStringArray("text", "audio")]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+script = ExtResource("88_crg13")
+text = NodePath("../TextBg/Dialgoue")
+audio = NodePath("DialogueAudio")
+
+[node name="DialogueAudio" type="AudioStreamPlayer2D" parent="CanvasLayer/TextGiver" unique_id=1954864631]
+volume_db = -2.0
+
+[node name="TextBg" type="Panel" parent="CanvasLayer" unique_id=1192261869]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -292.0
+offset_top = 156.0
+offset_right = 306.0
+offset_bottom = 331.0
+mouse_filter = 2
+theme_override_styles/panel = ExtResource("86_e7x67")
+
+[node name="Dialgoue" type="RichTextLabel" parent="CanvasLayer/TextBg" unique_id=1094312030]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 10.0
+offset_right = 576.0
+offset_bottom = 164.0
+mouse_filter = 2
+theme_override_colors/default_color = Color(0.6079645, 0.4625635, 1.0954857, 1)
+theme_override_fonts/normal_font = ExtResource("85_t050j")
+theme_override_fonts/bold_font = ExtResource("85_t050j")
+theme_override_fonts/bold_italics_font = ExtResource("85_t050j")
+theme_override_fonts/italics_font = ExtResource("85_t050j")
+theme_override_fonts/mono_font = ExtResource("85_t050j")
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="QuestionOptions" type="VBoxContainer" parent="CanvasLayer" unique_id=681083594]
+offset_left = 41.00001
+offset_top = -352.0
+offset_right = 724.46924
+offset_bottom = 305.67798
+scale = Vector2(0.46527326, 0.46527326)
+size_flags_stretch_ratio = 14.51
+theme_override_constants/separation = 12
+
+[node name="ExitDialogueButton" type="Button" parent="CanvasLayer/QuestionOptions" unique_id=582315368]
+custom_minimum_size = Vector2(207.545, 0)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("85_t050j")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = ExtResource("86_e7x67")
+theme_override_styles/pressed = ExtResource("86_e7x67")
+theme_override_styles/hover = ExtResource("86_e7x67")
+theme_override_styles/disabled = ExtResource("86_e7x67")
+text = "Exit"
+
+[node name="KillButton" type="Button" parent="CanvasLayer/QuestionOptions" unique_id=1931583917]
+self_modulate = Color(1, 0, 0, 1)
+custom_minimum_size = Vector2(140.365, 0)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("85_t050j")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = ExtResource("86_e7x67")
+theme_override_styles/pressed = ExtResource("86_e7x67")
+theme_override_styles/hover = ExtResource("86_e7x67")
+theme_override_styles/disabled = ExtResource("86_e7x67")
+text = "Kill"
+
+[node name="Settings" parent="CanvasLayer" unique_id=1974824112 instance=ExtResource("89_l36ky")]
+visible = false
+position = Vector2(-500, -375)
+
+[node name="ImageBG" type="Panel" parent="CanvasLayer" unique_id=383117624]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -562.0
+offset_top = -425.0
+offset_right = 563.0
+offset_bottom = 422.0
+mouse_filter = 2
+
+[node name="anims" type="AnimationPlayer" parent="CanvasLayer/ImageBG" unique_id=869421564]
+libraries/ = SubResource("AnimationLibrary_gh80h")
+
+[node name="id" parent="CanvasLayer" unique_id=2141918312 instance=ExtResource("90_wxyq2")]
+visible = false
+offset_left = -612.0
+offset_top = -371.0
+offset_right = -612.0
+offset_bottom = -371.0
+
+[node name="DisplayImage" type="TextureRect" parent="CanvasLayer" unique_id=1652663511]
+offset_left = -614.0
+offset_top = -353.0
+offset_right = 386.0
+offset_bottom = 397.0
+mouse_filter = 2
+
+[node name="Phone" parent="CanvasLayer" unique_id=2065358974 instance=ExtResource("91_q6tvy")]
+anchors_preset = -1
+anchor_left = -0.5
+anchor_top = -0.50100005
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -0.24996948
+offset_right = -3.0
+offset_bottom = -1.0
+
+[node name="BlackFade" type="Panel" parent="CanvasLayer" unique_id=1949933723]
+modulate = Color(0, 0, 0, 0)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -508.0
+offset_top = -381.0
+offset_right = -496.0
+offset_bottom = -377.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_kopt5")
+
+[node name="VHSfx" parent="CanvasLayer" unique_id=1094916861 instance=ExtResource("92_elltx")]
+visible = false
+z_index = 4096
+offset_left = -551.6666
+offset_top = -417.0
+offset_right = -442.33337
+offset_bottom = -335.0
+mouse_filter = 2
+
+[node name="BackBufferCopy" type="BackBufferCopy" parent="CanvasLayer/VHSfx" unique_id=906777253]
+copy_mode = 2
+
+[node name="Pixelate" parent="CanvasLayer/VHSfx" unique_id=127029814 instance=ExtResource("93_1mbul")]
+layout_mode = 1
+offset_left = -48.333374
+offset_top = -83.0
+offset_right = 151.66663
+offset_bottom = 167.0
+mouse_filter = 2
+
+[node name="Person" type="Sprite2D" parent="." unique_id=430508438]
+visible = false
+texture = ExtResource("45_nvx86")
+vframes = 3
+frame = 1
+
+[node name="ButtonSFX2" type="AudioStreamPlayer2D" parent="." unique_id=996526734]
+stream = ExtResource("94_vapf4")
+volume_db = 5.0
+
+[node name="ButtonSFX" type="AudioStreamPlayer2D" parent="." unique_id=1540597294]
+stream = ExtResource("95_6xeif")
+volume_db = 5.0
+
+[node name="CanvasLayerBorder" type="CanvasLayer" parent="." unique_id=1724315043]
+layer = 2
+offset = Vector2(500, 375)
+transform = Transform2D(1, 0, 0, 1, 500, 375)
+
+[node name="Border" type="Sprite2D" parent="CanvasLayerBorder" unique_id=266346529]
+texture = ExtResource("96_bqawf")
